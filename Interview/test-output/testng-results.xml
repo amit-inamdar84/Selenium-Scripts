@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3711" started-at="2018-02-28T17:58:20Z" finished-at="2018-02-28T17:58:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3711" started-at="2018-02-28T17:58:20Z" finished-at="2018-02-28T17:58:24Z">
+      <class name="com.amit.web.testscripts.DatabaseTesting">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amit.web.testscripts.DatabaseTesting@3e6fa38a]" name="setUp" is-config="true" duration-ms="48" started-at="2018-02-28T23:28:20Z" finished-at="2018-02-28T23:28:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="selectDBdata(java.lang.String)[pri:0, instance:com.amit.web.testscripts.DatabaseTesting@3e6fa38a]" name="selectDBdata" duration-ms="1042" started-at="2018-02-28T23:28:23Z" data-provider="DBTesting" finished-at="2018-02-28T23:28:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[select * from Orders;]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDBdata -->
+        <test-method status="PASS" signature="selectDBdata(java.lang.String)[pri:0, instance:com.amit.web.testscripts.DatabaseTesting@3e6fa38a]" name="selectDBdata" duration-ms="48" started-at="2018-02-28T23:28:24Z" data-provider="DBTesting" finished-at="2018-02-28T23:28:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[select FirstName, LastName,Order_date, Amount
+from Info i
+inner join Orders o
+on i.CustomerID = o.CustomerID]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDBdata -->
+      </class> <!-- com.amit.web.testscripts.DatabaseTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
