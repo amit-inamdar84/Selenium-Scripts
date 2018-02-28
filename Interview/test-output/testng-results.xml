@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3711" started-at="2018-02-28T17:58:20Z" finished-at="2018-02-28T17:58:24Z">
+  <suite name="Default suite" duration-ms="2829" started-at="2018-02-28T19:05:41Z" finished-at="2018-02-28T19:05:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3711" started-at="2018-02-28T17:58:20Z" finished-at="2018-02-28T17:58:24Z">
+    <test name="Default test" duration-ms="2829" started-at="2018-02-28T19:05:41Z" finished-at="2018-02-28T19:05:44Z">
       <class name="com.amit.web.testscripts.DatabaseTesting">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amit.web.testscripts.DatabaseTesting@3e6fa38a]" name="setUp" is-config="true" duration-ms="48" started-at="2018-02-28T23:28:20Z" finished-at="2018-02-28T23:28:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amit.web.testscripts.DatabaseTesting@3e6fa38a]" name="setUp" is-config="true" duration-ms="33" started-at="2018-03-01T00:35:41Z" finished-at="2018-03-01T00:35:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="selectDBdata(java.lang.String)[pri:0, instance:com.amit.web.testscripts.DatabaseTesting@3e6fa38a]" name="selectDBdata" duration-ms="1042" started-at="2018-02-28T23:28:23Z" data-provider="DBTesting" finished-at="2018-02-28T23:28:24Z">
+        <test-method status="PASS" signature="selectDBdata(java.lang.String)[pri:0, instance:com.amit.web.testscripts.DatabaseTesting@3e6fa38a]" name="selectDBdata" duration-ms="805" started-at="2018-03-01T00:35:43Z" data-provider="DBTesting" finished-at="2018-03-01T00:35:44Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDBdata -->
-        <test-method status="PASS" signature="selectDBdata(java.lang.String)[pri:0, instance:com.amit.web.testscripts.DatabaseTesting@3e6fa38a]" name="selectDBdata" duration-ms="48" started-at="2018-02-28T23:28:24Z" data-provider="DBTesting" finished-at="2018-02-28T23:28:24Z">
+        <test-method status="PASS" signature="selectDBdata(java.lang.String)[pri:0, instance:com.amit.web.testscripts.DatabaseTesting@3e6fa38a]" name="selectDBdata" duration-ms="31" started-at="2018-03-01T00:35:44Z" data-provider="DBTesting" finished-at="2018-03-01T00:35:44Z">
           <params>
             <param index="0">
               <value>
