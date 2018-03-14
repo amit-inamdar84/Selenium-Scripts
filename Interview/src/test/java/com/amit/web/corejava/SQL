@@ -1,0 +1,180 @@
+CREATE TABLE Orders (
+    OrderID int,
+    Order_date varchar(255),
+    Amount varchar(255),
+    CustomerID int(255)
+);
+use customers;
+
+select * from Orders;
+select * from Info;
+
+INSERT INTO Orders (OrderID, Order_date, Amount,CustomerID)
+VALUES ('713','2000-05-15 00:00:00','833','789');
+
+INSERT INTO Info (CustomerID,LastName, FirstName, City, Country)
+VALUES ('456','Wanderhault','Van','Dublin', 'Ireland');
+
+select OrderID as 'Order_ID',Amount as 'Amt', CustomerID as 'Cust_ID' from Orders;
+
+select * from Orders where OrderID in (123);
+
+select * from Orders where Amount between 100 and 500;
+
+select * from Orders where CustomerID in ('60','345');
+
+select * from Orders where CustomerID not in ('60','345');
+
+select * from Info where LastName like 'Wash%';
+
+select * from Info where LastName like 'm%e';
+
+select * from Info where FirstName like 'J___%';
+
+select * from Info where Country in ('USA') and CustomerID>60;
+
+select * from Orders where CustomerID IS NULL;
+
+select CustomerID,LastName from Info order by CustomerID; 
+
+select OrderID,Order_date,CustomerID from Orders order by CustomerID desc; 
+
+select CustomerID,LastName from Info order by LastName desc,CustomerID asc; 
+
+select CustomerID,LastName from Info order by LastName desc,CustomerID desc; 
+
+select CustomerID,LastName from Info order by LastName asc,CustomerID asc; 
+
+---------------------------------------------------------------------------------------------
+select * from Orders;
+select * from Info;
+
+update Orders
+set Order_Date='2010-05-15 00:00:00'
+where OrderID='1099';
+
+select Country, count(*) from Info group by Country;
+
+select count(*) Country from Info;
+
+select CustomerID, count(*), max(Amount), min(Amount), avg(Amount) from Orders group by CustomerID;
+
+select Order_date, count(*), max(Amount), min(Amount), avg(Amount) from Orders group by Order_date;
+
+select date_format(Order_Date, '%b') month, count(*) from Orders group by date_format(Order_Date, '%b') order by month;
+
+select date_format(Order_Date, '%y') year,date_format(Order_Date, '%b') month, count(*) from Orders group by date_format(Order_Date, '%y'),date_format(Order_Date, '%b');
+
+select CustomerID, count(*) from Orders group by CustomerID having count(*)>=2;
+
+select date_format(Order_Date, '%b') month, count(*) from Orders group by date_format(Order_Date, '%b') having month='Dec';
+
+select date_format(Order_Date, '%b') month, count(*) from Orders group by date_format(Order_Date, '%b') having month in ('Dec','Nov');
+
+select date_format(Order_Date, '%y') year, count(*) from Orders group by date_format(Order_Date, '%y') having year='14';
+
+select date_format(Order_Date, '%y') year,date_format(Order_Date, '%b') month, count(*) from Orders group by date_format(Order_Date, '%b') having year='12';
+
+select date_format(Order_Date, '%y') year,date_format(Order_Date, '%b') month, count(*) from Orders group by date_format(Order_Date, '%b') having year='14' and month='Jul';
+
+select CustomerID, count(*) 
+from Orders 
+where date_format(Order_Date, '%y')='10' and date_format(Order_Date, '%b')='May' 
+group by date_format(Order_Date, '%y'),date_format(Order_Date, '%b')
+having count(*)>=1;
+
+----------------------------------------------------------------------------------------------
+
+select * from Orders;
+select * from Info;
+
+select i.CustomerID,FirstName, LastName,Order_date, Amount,City,Country
+from Info i
+inner join Orders o
+on i.CustomerID = o.CustomerID;
+
+select i.CustomerID,FirstName, LastName,Order_date, Amount,City,Country
+from Info i
+left join Orders o
+on i.CustomerID = o.CustomerID;
+
+select i.CustomerID,FirstName, LastName,Order_date, Amount,City,Country
+from Info i
+right join Orders o
+on i.CustomerID = o.CustomerID;
+
+select i.CustomerID,FirstName, LastName,Order_date, Amount,City,Country
+from Info i
+right join Orders o
+on i.CustomerID = o.CustomerID
+where FirstName is NULL;
+
+select i.CustomerID,FirstName, LastName,Order_date, Amount,City,Country
+from Info i
+left join Orders o
+on i.CustomerID = o.CustomerID
+UNION
+select i.CustomerID,FirstName, LastName,Order_date, Amount,City,Country
+from Info i
+right join Orders o
+on i.CustomerID = o.CustomerID;
+
+update Info
+set City='Jacksonville'
+where CustomerID='345';
+
+SELECT A.FirstName,A.LastName,A.City
+FROM Info A, Info B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City 
+ORDER BY A.City;
+
+-------------------------------------------------------------------------
+
+-- https://www.scribd.com/doc/21390228/SQL-Queries
+
+select * from Orders;
+
+select * from Info;
+
+SELECT * FROM Info 
+WHERE CustomerID IN 
+(SELECT CustomerID 
+FROM Info 
+WHERE Country='USA') ;
+
+select * from
+(select Amount from Orders
+order by Amount desc
+LIMIT 3) as Order_Amounts
+order by Amount asc
+LIMIT 1;
+
+select distinct(Amount) from Orders order by Amount desc limit 2,1;
+
+-- SELECT CURRENT_DATE();
+
+-- SELECT NOW();
+
+select * from Orders
+where Amount between 500 and 1000;
+
+select * from Orders
+where Amount IN (234.25,120);
+
+select DISTINCT Country from Info;
+
+select * from info
+where Country IN ('USA','France')
+and CustomerID>60;
+
+select * from info
+where FirstName LIKE '_A%';
+
+select sum(Amount) from Orders;
+
+select max(Amount) from Orders
+where CustomerID='789';
+
+
+
