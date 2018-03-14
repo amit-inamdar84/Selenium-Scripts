@@ -176,5 +176,22 @@ select sum(Amount) from Orders;
 select max(Amount) from Orders
 where CustomerID='789';
 
+ALTER TABLE Orders ADD Commission varchar(255);
 
+update Orders
+set Commission=Amount*5/100;
+
+-- Display the various customers along with totalnumber of orders placed for each customer.The output should contain only those customers with more than 2 orders.
+select i.CustomerID,FirstName, count(o.CustomerID)
+from Info i
+inner join Orders o
+on i.CustomerID = o.CustomerID
+group by i.CustomerID
+having count(o.CustomerID)>1;
+
+-- Display the name of the customer who earns highest commission
+select * from Orders
+where Commission=
+(select max(Commission) 
+from Orders);
 
