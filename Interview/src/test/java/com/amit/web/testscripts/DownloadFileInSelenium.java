@@ -1,9 +1,15 @@
 package com.amit.web.testscripts;
 
+import java.io.File;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
-public class DownloadFileInSelenium {
+import com.amit.web.testBase.TestBase;
+
+public class DownloadFileInSelenium extends TestBase{
 	
 	@BeforeTest
 	public void StartBrowser() {
@@ -50,6 +56,47 @@ public class DownloadFileInSelenium {
 		fprofile.setPreference("pdfjs.disabled", true);
 		// Pass fprofile parameter In webdriver to use preferences to download
 		// file.
+	}
+	
+	@Test
+	public void OpenURL() throws InterruptedException {
+		
+		File f = new File("/Users/bsingh5/Downloads/eclipse-inst-mac64.tar.gz");
+		if (f.exists()) {
+			f.delete();
+			System.out.println("file deleted");
+		}
+		
+		driver.get("https://www.eclipse.org/downloads/");
+		driver.findElement(By.xpath("//*[contains(text(),'Download 64 bit')]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id='novaContent']/div[1]/div[1]/div/div/a")).click();
+		Thread.sleep(5000);
+
+		File file = new File("/Users/bsingh5/Downloads/eclipse-inst-mac64.tar.gz");
+		int count = 0;
+		System.out.println(file.exists());
+		
+		while (!file.exists()) {
+			System.out.println("waiting for download to complete....." + count++);
+			Thread.sleep(2000);
+		}
+		
+		File f1 = new File("/Users/bsingh5/Downloads/eclipse-inst-mac64.tar.gz");
+
+		long file1;
+		do {
+			file1 = f1.length(); // check file size
+			System.out.println(file1);
+			Thread.sleep(8000); // wait for 5 seconds
+		} while (file1 == 0);
+
+		f = new File("/Users/bsingh5/Downloads/eclipse-inst-mac64.tar.gz");
+		if (f.exists() && file1>0) {
+			System.out.println("Test is pass");
+		} else {
+			System.out.println("Test is fail");
+		}
 	}
 
 }
