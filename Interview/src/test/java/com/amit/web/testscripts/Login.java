@@ -16,7 +16,7 @@ public class Login extends TestBase{
 
 	@DataProvider(name = "SingleLogin")
 	public String[][] getTestData() {
-		String[][] testRecords = getData("TestData.xlsx", "LoginTestData");
+		String[][] testRecords = getData("TestData.xlsx", "SingleLogin");
 		return testRecords;
 	}
 
@@ -26,7 +26,7 @@ public class Login extends TestBase{
 		loginpage = new LoginPage(driver);
 	}
 
-	@Test(dataProvider = "LoginTestData")
+	@Test(dataProvider = "SingleLogin")
 	public void mutipleLogin(String userName, String password, String runMode) {
 		if (runMode.equalsIgnoreCase("n")) {
 			throw new SkipException("Skipped this data");

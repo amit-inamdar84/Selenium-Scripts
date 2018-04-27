@@ -2,6 +2,7 @@ package com.amit.web.testBase;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -23,11 +24,18 @@ public class TestBase {
 	public void loadData() throws IOException {
 		File file = new File(System.getProperty("user.dir") + "/src/main/java/com/amit/web/config/config.properties");
 		FileInputStream f = new FileInputStream(file);
+		//Below is another class to read file contents instead of FileInputStream class
+		//FileReader obj= new FileReader(file);
 		OR.load(f);
+		
+		File file1 = new File(System.getProperty("user.dir") + "/src/main/java/com/amit/web/config/config1.properties");
+		FileInputStream f1 = new FileInputStream(file1);
+		OR.load(f1);
 	}
 
 	public void init() throws IOException {
 		loadData();
+		System.out.println(OR.getProperty("Domain"));
 		System.out.println(OR.getProperty("browser"));
 		selectBrowser(OR.getProperty("browser"));
 		getUrl(OR.getProperty("url"));
