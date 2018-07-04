@@ -9,6 +9,7 @@ public class GitNotes {
 		Install in C:\Program Files\Git
 		If project already exists in eclipse do Team>>Share Project and create a git local repository in same drive as eclipse workspace
 		Open command prompt go to local repository
+		C:\>D:
 		D:\Git>git status
 		Type 
 		D:\Git>git add filename
