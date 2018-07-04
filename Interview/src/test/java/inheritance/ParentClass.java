@@ -1,4 +1,5 @@
 package inheritance;
+//We cannot inherit multiple classes in Java. However multi level inheritance is allowed. Class B extends A. Class C extends B.
 
 public class ParentClass {
 	private int i = 90;// Cannot be inherited in child class
