@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package interfaceInJava;
 
 public interface InterfaceInJava1 {
 	int k = 50;

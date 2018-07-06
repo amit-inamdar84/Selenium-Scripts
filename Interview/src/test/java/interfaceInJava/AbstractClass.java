@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package interfaceInJava;
 
 public abstract class AbstractClass implements InterfaceInJava1{
 	//Contains implemented and non-implemented methods both

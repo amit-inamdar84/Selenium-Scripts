@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package interfaceInJava;
 
 public class TestInterfaceInheritance implements InterfaceInJava,InterfaceInJava1{
 
