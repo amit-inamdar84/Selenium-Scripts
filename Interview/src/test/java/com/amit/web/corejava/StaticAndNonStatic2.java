@@ -13,6 +13,13 @@ public class StaticAndNonStatic2 {
 		college = "TCE";
 	}
 	
+/**
+ * Used to initialize static variables
+ * When class is loaded into memory static block is executed and is not dependent on object creation
+ * Static block will execute before object creation
+ * When we have multiple static blocks they will execute in the order they appear
+ * Static block will execute only once per object/class	
+ */
 	static {
 		campus = "Common";
 	}
