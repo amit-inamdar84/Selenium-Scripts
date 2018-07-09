@@ -15,7 +15,9 @@ public abstract class AbstractClass implements InterfaceInJava1{
 	//We cannot extend more than 1 abstract class in a normal class- No multiple inheritance
 	//We cannot extend more than 1 abstract class in a abstract class- No multiple inheritance
 	//When we extend abstract class, child class should also implement constructor if present in abstract class
-	
+	//We cannot create abstract method in normal class.
+	//We cannot create private abstract method in abstract class
+	//When we implement abstract class method in child class we cannot narrow down the access modifier
 	
 	int a = 10;
 	

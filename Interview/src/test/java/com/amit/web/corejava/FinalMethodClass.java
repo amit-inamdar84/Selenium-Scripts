@@ -1,9 +1,11 @@
 package com.amit.web.corejava;
+//Final variable should always be initialized
 
 public class FinalMethodClass {
 	final int i=10;
 	static final int j;
 	
+	//Static final variable can be initialized using static block below
 	static{
 		j=90;
 	}

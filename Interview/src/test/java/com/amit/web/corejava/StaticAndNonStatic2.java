@@ -5,6 +5,7 @@ public class StaticAndNonStatic2 {
 	int age;
 	//Static variable can be used to share same data between multiple objects, classes, methods
 	static String college;
+	static String campus;
 	
 	StaticAndNonStatic2(int rollNo, int ageData) {
 		rollNumber = rollNo;
@@ -12,8 +13,12 @@ public class StaticAndNonStatic2 {
 		college = "TCE";
 	}
 	
+	static {
+		campus = "Common";
+	}
+	
 	public void display() {
-		System.out.println(rollNumber + " " + age + " " + college);
+		System.out.println(rollNumber + " " + age + " " + college + " " +campus);
 	}
 
 	public static void main(String[] args) {

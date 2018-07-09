@@ -1,4 +1,5 @@
 package com.amit.web.corejava;
+//Constructor cannot be declared final. It can be public, private or protected
 
 import java.util.ArrayList;
 import java.util.List;
