@@ -5,6 +5,7 @@ package strings;
  * a class in java String represents sequence of characters String comparison is
  * done by content and reference - equals(), == and compareTo() methods
  * available
+ * getChars method pending
  */
 
 public class String1 {
