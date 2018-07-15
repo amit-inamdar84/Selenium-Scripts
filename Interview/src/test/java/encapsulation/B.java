@@ -11,6 +11,10 @@ public class B {
 		A obj1 = new A();
 		//obj1.setAge(50);
 		System.out.println(obj1.getAge());
+		
+		A obj2 = new A();
+		obj2.setId(9);
+		System.out.println(obj2.getId());
 
 	}
 

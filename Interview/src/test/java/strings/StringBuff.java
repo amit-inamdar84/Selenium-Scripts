@@ -1,7 +1,12 @@
 package strings;
 /**String buffer is used to create mutable strings. Means we can modify the string once it is created
  * String buffer is a class in Java same as String class except it is mutable
- * 
+ * It is synchronized. 2 threads cannot access methods simultaneously
+ * Difference between String buffer and String class
+ * String is slow and consumes more memory when you concat because every time it creates new instance
+ * String buff is fast and consumes less memory.
+ * String class overrides equals method of object class
+ * String buff does not override equals method.
  * @author AMIT
  *
  */
