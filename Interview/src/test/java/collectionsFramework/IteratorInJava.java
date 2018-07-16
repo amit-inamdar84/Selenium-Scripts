@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package collectionsFramework;
 
 import java.util.ArrayList;
 import java.util.Iterator;

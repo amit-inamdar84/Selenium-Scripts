@@ -4,7 +4,10 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ExceptionClass {
+//Exception handling is a mechanism to handle the run time errors so that the normal flow of the application can be maintained
+
+
+public class ExceptionClass extends TestException{
 	double d;
 	int i = 10;
 	int j = 0;
@@ -27,7 +30,8 @@ public class ExceptionClass {
 			array.add(10);
 		}
 	}
-
+    
+	//Checked exception - Compile time error
 	public void fileNotFound() throws FileNotFoundException {
 		FileReader f = new FileReader("C:\\Test.xlsx");
 	}
@@ -44,12 +48,34 @@ public class ExceptionClass {
 		int[] a = new int[5];
 		System.out.println(a[6]);
 	}
-
-	public void classCastException() throws ClassNotFoundException {
+    
+	//Checked exception - Compile time error
+	public void classNotFoundException() throws ClassNotFoundException {
 		Class.forName("TTE");
 	}
-
+	
+	public void classCastException() {
+		//Below code will give error as we cannot cast parent class object to child class type
+		TestException obj = new TestException();
+		System.out.println((ExceptionClass)obj);
+		
+		////Below code will run fine as we can cast child class object to parent class type
+		/*ExceptionClass obj1 = new ExceptionClass();
+		System.out.println((TestException)obj1);*/
+	}
+	
+	public void numberFormatException(){
+		String s = "Test";
+		int t = Integer.parseInt(s);
+	}
+	
+    //Checked exception
+	public void test() throws InterruptedException {
+		Thread.sleep(1000);
+	}
+	
 	public void tryCatch() {
+		//exception class is parent of all checked and unchecked exceptions
 		try {
 			int[] a = new int[5];
 			a[5] = 30 / 0;
@@ -58,7 +84,7 @@ public class ExceptionClass {
 			e.printStackTrace();
 		}
 
-		// Below catch blocks are invalid as we cannot use child class
+		// Below catch blocks are invalid (compile time error) as we cannot use child class
 		// exceptions when parent is already handling
 		/*
 		 * catch (ArithmeticException e) { // TODO Auto-generated catch block
@@ -91,6 +117,7 @@ public class ExceptionClass {
 	}
 
 	public void nestedTryBlock() {
+		//Try catch block within a try block in known as nested try catch block
 		// Here exception thrown by first inner try block will catch and then go
 		// to outer catch block
 		// Second inner try will not be executed
@@ -119,8 +146,11 @@ public class ExceptionClass {
 	}
 
 	public void tryFinally() {
+		//Finally block will always run whether we have handled the exception or not
 		//Instead of catch we can use finally block
-		//even if we have catch block its is executed and also finally block is executed
+		//Even if we have catch block its is executed and also finally block is executed
+		//After encountering exception if we want to close DB connection, close file etc we can use finally
+		//even after return statement in method finally will execute
 		try {
 			int[] a = new int[5];
 			a[5] = 30 / 0;
@@ -138,8 +168,10 @@ public class ExceptionClass {
 		// obj.fileNotFound();
 		// obj.illegalStateException();
 		// obj.arrayIndexOutOfBound();
-		// obj.classCastException();
-		obj.tryFinally();
+		// obj.classNotFoundException();
+		 obj.classCastException();
+		// obj.numberFormatException();
+		// obj.tryFinally();
 
 	}
 
