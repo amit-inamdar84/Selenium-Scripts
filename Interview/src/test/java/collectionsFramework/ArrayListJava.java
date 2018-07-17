@@ -2,8 +2,16 @@ package collectionsFramework;
 
 import java.util.ArrayList;
 import java.util.List;
+//Array list accepts duplicate elements
+//Array list prints elements is same order as inserted
+//It is non-synchronized
+//Data manipulation is slow as shifting needs to happen if any element is removed
+//All collections are available in java.util package
+//All elements in collections are stored as object. ex: int value 2 is stored as Integer.valueOf(2)
 
 public class ArrayListJava {
+	
+	
 
 	public static void main(String[] args) {
 		List arrayList = new ArrayList();
@@ -32,11 +40,11 @@ public class ArrayListJava {
 		arrayList2.add(300);
 		arrayList2.add(400);
 		
-		//arrayList1.addAll(arrayList2);
-		//System.out.println(arrayList1);
-		//arrayList1.add(4, 900);
-		//System.out.println(arrayList1);
-		
+		arrayList1.addAll(arrayList2);
+		System.out.println(arrayList1);
+		arrayList1.add(4, 900);
+		System.out.println(arrayList1);
+		//removeAll method removes all elements common between the specified collections
 		arrayList1.removeAll(arrayList2);
 		System.out.println(arrayList1);
 
