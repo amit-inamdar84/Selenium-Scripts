@@ -17,7 +17,7 @@ public class PriorityQueueInJava {
 		queue.add("test4");
 		queue.add("test5");
 		//queue.element() Retrieves, but does not remove, the head of this queue. 
-		//This method differs from peek only in that it throws an exception if this queue is empty.
+		//This method differs from peek only in that it throws an exception(java.util.NoSuchElementException) if this queue is empty.
 		System.out.println("Head: " +queue.element());
 		//Retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.
 		System.out.println("Head: " +queue.peek());
@@ -26,7 +26,10 @@ public class PriorityQueueInJava {
 			System.out.println(itr.next());
 		}
 		
+		//Retrieves and removes the head of this queue
+		//Throws java.util.NoSuchElementException if queue is empty
 		queue.remove();
+		//Retrieves and removes the head of this queue, or returns null if this queue is empty.
 		queue.poll();
 		
 		Iterator itr1 = queue.iterator();

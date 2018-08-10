@@ -8,20 +8,20 @@ import java.util.TreeMap;
 
 public class TreeMapInJava {
 //Tree map maintains ascending order wrt keys
-//Null keys are not allowed
+//Null keys are not allowed (java.lang.NullPointerException)
 //Contains unique elements
-//For generic map declaration keys should be of same type
+//For generic map declaration keys should be of same type (java.lang.ClassCastException). However values can be different type
 	
 	public static void main(String[] args) {
 		
-/*		Map var = new TreeMap();
+		Map var = new TreeMap();
 		var.put(1, "Test1");
 		var.put(4, "Test4");
 		var.put(2, "Test2");
 		var.put(3, "Test3");
-		var.put(3, "Test");
+		var.put(5, 10);
 		
-		System.out.println(var);*/
+		System.out.println(var);
 		
 		TreeMap<Integer, String> treemap = new TreeMap<Integer, String>();
 		treemap.put(1, "Test1");
@@ -44,6 +44,15 @@ public class TreeMapInJava {
 		for(Map.Entry<Integer, String> ref1 : treemap.entrySet()) {
 			System.out.println(ref1.getKey()+"-"+ref1.getValue());
 		}
+		
+		TreeMap<Integer, String> treemap1 = new TreeMap<Integer, String>();
+		treemap1.put(1, "Test1");
+		treemap1.put(4, "Test4");
+		treemap1.put(2, "Test2");
+		treemap1.put(3, "Test3");
+		treemap1.put(null, "Test");//Null is not allowed
+		
+		System.out.println(treemap1);
 
 	}
 

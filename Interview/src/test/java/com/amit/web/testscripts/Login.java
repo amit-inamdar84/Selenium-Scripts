@@ -41,5 +41,20 @@ public class Login extends TestBase{
 		loginpage.clickLoginButton();
 		loginpage.verifyNewsFeedText();
 	}
+	
+	@Test (groups={"Sanity"})
+	public void test1() {
+		
+	}
+	
+	@Test (groups={"Sanity","regression"})
+	public void test2() {
+		
+	}
+	
+	@Test (groups={"regression"})
+	public void test3() {
+		
+	}
 
 }

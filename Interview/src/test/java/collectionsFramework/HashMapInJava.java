@@ -11,6 +11,7 @@ public class HashMapInJava {
 	//Key is unique while value can duplicate
 	//Only one null key can be stored and multiple null values are allowed
 	//It maintains no order
+	//Map.Entry is a sub interface of map.
 
 	public static void main(String[] args) {
 		Map<Integer,String> hashMap = new HashMap<Integer,String>();
@@ -32,7 +33,15 @@ public class HashMapInJava {
 		hashMap1.put(null, "Test4");
 		
 		System.out.println(hashMap1);
+		System.out.println("Null value is: " +hashMap1.get(null));
 		System.out.println("-----------------------------");
+		
+		HashMap<String,String> hp1 = new HashMap<String,String>();
+		hp1.put("A:", "Value1");
+		hp1.put("B:", "Value2");
+		System.out.println("Before map delete: " +hp1);
+		hp1.remove("B:");
+		System.out.println("After map delete: " +hp1);
 		
 		Map<Integer,String> hashMap2 = new HashMap<Integer,String>();
 		hashMap2.put(1,"Test1");
@@ -65,11 +74,11 @@ public class HashMapInJava {
 		hashMap3.put(70, "Shailesh");
 		
 		//Method 3
-		Set<Entry<Integer, String>> entry = hashMap3.entrySet();
+		Set<Map.Entry<Integer, String>> entry = hashMap3.entrySet();
 		Iterator<Entry<Integer, String>> itr1 = entry.iterator();
 		while(itr1.hasNext()) {
-			//System.out.println(itr1.next().getKey());
-			System.out.println(itr1.next().getValue());
+			Map.Entry<Integer, String> map = (Map.Entry<Integer, String>) itr1.next();
+			System.out.println(map.getKey()+ " " +  map.getValue());
 		}
 
 	}

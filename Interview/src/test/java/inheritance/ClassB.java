@@ -2,7 +2,7 @@ package inheritance;
 
 import com.amit.web.corejava.InstanceOfOperator;
 
-public class ClassB {
+public class ClassB extends ClassA{
 	
 	public void test1() {
 		System.out.println("Method from ClassB");
@@ -14,7 +14,8 @@ public class ClassB {
 		int x =obj.a;
 		System.out.println(x);
 		
-		InstanceOfOperator obj1 = new InstanceOfOperator();
+		ClassA obj1 = new ClassB();
+		obj1.test1();
 
 	}
 

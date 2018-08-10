@@ -1,0 +1,18 @@
+package collectionsFramework;
+//Same as hash map but is synchronized
+//Null keys and values are not allowed - java.lang.NullPointerException
+//Contains unique elements
+
+import java.util.Hashtable;
+
+public class HashTableInJava {
+
+	public static void main(String[] args) {
+		Hashtable<Integer,String> t1 = new Hashtable<Integer,String>();
+		t1.put(1, "A");
+		t1.put(2, "B");
+		t1.put(null, "A");
+
+	}
+
+}
