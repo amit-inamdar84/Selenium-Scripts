@@ -7,15 +7,15 @@ package innerClass;
 
 public class InnerClass {
 	private int i = 10;
-	
-	class B{
+
+	class B {
 		public void display() {
-		//Printing value of instance variable
+			// Printing value of instance variable
 			System.out.println(i);
 		}
-		
+
 		public void display(int i) {
-			//Printing value of local variable
+			// Printing value of local variable
 			System.out.println(i);
 		}
 	}

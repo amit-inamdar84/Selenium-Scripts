@@ -28,6 +28,20 @@ public class ArrayListJava1 {
 		System.out.println(arrayList1.contains(40));
 		
 		System.out.println(arrayList.containsAll(arrayList1));
+		
+		List<Integer> arrayList2 = new ArrayList<Integer>();
+		arrayList2.add(1);
+		arrayList2.add(2);
+		arrayList2.add(300);
+		arrayList2.add(400);
+		
+		List<Integer> arrayList3 = new ArrayList<Integer>();
+		arrayList3.add(1);
+		arrayList3.add(3);
+		arrayList3.add(300);
+		arrayList3.add(400);
+		
+		System.out.println("Array list equality: " +arrayList2.equals(arrayList3));
 
 	}
 
