@@ -1,28 +1,32 @@
 package javaPrograms;
-//All characters of 1st string should be present in 2nd string
 
 public class AnagramProgram {
-	String s1 = new String("abc");
-	String s2 = new String("cbad");
-
-	public void checkAnagram(String s1, String s2) {
-		for (int i = 0; i < s1.length(); i++) {
-			for (int j = 0; j < s2.length(); j++) {
-				if (s1.charAt(i) == s2.charAt(j)) {
-					continue;
-					//System.out.println("String is anagram");
-				}
-				else{
-					System.out.println("Not an anagram");
-				}
+	String s1 = "abc";
+	String s2 = "cba";
+	
+	public boolean isAnagram(String a1, String a2){
+		char[] chars = a1.toCharArray();
+		StringBuilder secondString = new StringBuilder(a2);
+		for(Character ch:chars){
+			int index = secondString.indexOf(""+ch);
+			System.out.println(index);
+			if(index!=-1){
+				secondString.deleteCharAt(index);
 			}
 		}
+		if(secondString.length()==0){
+			return true;
+		}
 		
+		else{
+			return false;
+		}
 	}
-
+	
 	public static void main(String[] args) {
 		AnagramProgram obj = new AnagramProgram();
-		obj.checkAnagram(obj.s1, obj.s2);
+		boolean isAnagram = obj.isAnagram(obj.s1, obj.s2); 
+		System.out.println("Is Anagram? " +isAnagram);
 	}
 
 }
