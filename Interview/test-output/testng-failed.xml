@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.amit.web.testscripts.TestSeleniumCode">
+      <class name="com.amit.web.testscripts.SeleniumCommands">
         <methods>
-          <include name="test"/>
+          <include name="basicCommands"/>
         </methods>
-      </class> <!-- com.amit.web.testscripts.TestSeleniumCode -->
+      </class> <!-- com.amit.web.testscripts.SeleniumCommands -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

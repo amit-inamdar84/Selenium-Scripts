@@ -1,10 +1,18 @@
 package com.amit.web.testscripts;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,7 +25,7 @@ import com.amit.web.testBase.TestBase;
 public class SeleniumCommands extends TestBase {
 
 	@Test
-	public void basicCommands() {
+	public void basicCommands() throws IOException {
 		// List of all web elements matching a criteria
 		List<WebElement> allElements = driver.findElements(By.xpath("xpath"));
 		for (WebElement element : allElements) {
@@ -146,7 +154,25 @@ public class SeleniumCommands extends TestBase {
 		driver.switchTo().frame("Frame");
 		driver.switchTo().frame(des);
 		driver.switchTo().defaultContent();
-
+		
+		//Fetching all hyperlinks in a web page
+		List<WebElement> allLinks = driver.findElements(By.tagName("a"));
+		System.out.println(allLinks.size());
+		for(WebElement link:allLinks){
+			if(link.getText().contains("google")){
+			System.out.println(link.getAttribute("href"));
+			}
+		}
+		
+		//Display date in required format
+		SimpleDateFormat formattedDate = new SimpleDateFormat("MM/dd/yyyy");
+		Date date = new Date();
+		System.out.println(date);
+		System.out.println(formattedDate.format(date));
+		
+		//Take screenshot
+		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(srcFile, new File("D:\\Screenshot.png"));
 	}
 
 }
