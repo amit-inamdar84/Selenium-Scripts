@@ -1,10 +1,15 @@
 package com.amit.web.testscripts;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Properties;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
@@ -13,10 +18,13 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
@@ -41,17 +49,32 @@ public class SeleniumCommands extends TestBase {
 		driver.findElement(By.xpath("xpath")).getAttribute("Title");
 		driver.findElement(By.xpath("xpath")).getAttribute("Value");
 
-		// Switching window
+		// Switching window using for each loop
 		for (String childWindow : driver.getWindowHandles()) {
+			driver.switchTo().window(childWindow);
+		}
+		
+		// Switching window using iterator on Set interface
+		Set<String> windows = driver.getWindowHandles();
+		Iterator<String> itr = windows.iterator();
+		while(itr.hasNext()){
+			String childWindow = itr.next();
 			driver.switchTo().window(childWindow);
 		}
 
 		// Get URL of current page
 		driver.getCurrentUrl();
 
-		// Explicit, implicit and fluent waits
+		// Explicit waits
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("xpath")));
+		
+		//Implicit wait
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
+		//Fluent wait
+		Wait wait1 = new FluentWait<WebDriver>(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(5, TimeUnit.SECONDS);
+		wait1.until(isTrue);
 
 		// Close browser
 		driver.close();// Close the current window, quitting the browser if it's
@@ -173,6 +196,16 @@ public class SeleniumCommands extends TestBase {
 		//Take screenshot
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(srcFile, new File("D:\\Screenshot.png"));
+		
+		//Reading property file
+		Properties OR = new Properties();
+		File file = new File("D:\\Git\\Interview\\src\\main\\java\\com\\amit\\web\\config\\config1.properties");
+		FileInputStream f = new FileInputStream(file);
+		OR.load(f);
+		System.out.println(OR.getProperty("Domain"));
+		
+
+		
 	}
 
 }
