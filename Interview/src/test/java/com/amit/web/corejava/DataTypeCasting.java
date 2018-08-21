@@ -1,4 +1,10 @@
 package com.amit.web.corejava;
+//Variable is a name of memory location
+//Primitive and non-primitive
+//Local, instance and static variables
+//Variable declared inside a method is called local variable
+//Variable declared inside a class and outside a method is called instance variable. It is not static
+//Variable declared as static is static variable. It cannot be local.
 
 public class DataTypeCasting {
 	

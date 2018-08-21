@@ -74,7 +74,7 @@ public class SeleniumCommands extends TestBase {
 		
 		//Fluent wait
 		Wait wait1 = new FluentWait<WebDriver>(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(5, TimeUnit.SECONDS);
-		wait1.until(isTrue);
+		//wait1.until(isTrue);
 
 		// Close browser
 		driver.close();// Close the current window, quitting the browser if it's

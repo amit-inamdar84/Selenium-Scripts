@@ -6,9 +6,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.log4testng.Logger;
 
 import com.amit.web.excelReader.ExcelReader;
 
@@ -16,6 +18,7 @@ public class TestBase {
 	public WebDriver driver;
 	ExcelReader excel;
 	public Properties OR = new Properties();
+	public static final Logger log = Logger.getLogger(TestBase.class);
 
 	public WebDriver getDriver() {
 		return driver;
@@ -35,6 +38,8 @@ public class TestBase {
 
 	public void init() throws IOException {
 		loadData();
+		String log4jConfPath = "log4j.properties";
+		PropertyConfigurator.configure(log4jConfPath);
 		System.out.println(OR.getProperty("Domain"));
 		System.out.println(OR.getProperty("browser"));
 		selectBrowser(OR.getProperty("browser"));

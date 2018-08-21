@@ -13,13 +13,23 @@ public class WhileLoop {
 			i++;
 			System.out.println(i++);
 		}
+		System.out.println("--------------------");
+		// Output: 2,4,6,8,10
+		int k = 1;
+		while (k <= 10) {
+			k++;
+			System.out.println(k++);
+		}
+		System.out.println("--------------------");
 
 		// Output 0,1,2,3,4
 		int p = 0;
 		while (p < 5) {
 			System.out.println(p++);
 		}
+		System.out.println("--------------------");
 
+		// Sum of numbers from 0 to 6
 		int n = 0;
 		int sum = 0;
 

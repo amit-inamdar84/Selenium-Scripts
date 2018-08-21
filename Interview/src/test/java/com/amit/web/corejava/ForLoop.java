@@ -34,7 +34,7 @@ public class ForLoop {
 		Label1: for (int x = 1; x <= 3; x++) {
 			Label2: for (int y = 1; y <= 3; y++) {
 				if (x == 2 && y == 2) {
-					break Label1;
+					break Label2;
 				}
 				System.out.println(x + " " + y);
 			}
