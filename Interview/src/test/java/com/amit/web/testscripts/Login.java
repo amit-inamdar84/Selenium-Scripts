@@ -42,20 +42,19 @@ public class Login extends TestBase{
 		loginpage.verifyNewsFeedText();
 	}
 	
-	@Test (groups={"Sanity"})
+/*	@Test (groups={"Sanity"})
 	public void test1() {
-		System.out.println("Running test1");
+		
 	}
 	
 	@Test (groups={"Sanity","regression"})
 	public void test2() {
-		System.out.println("Running test2");
+		
 	}
 	
 	@Test (groups={"regression"})
 	public void test3() {
-		System.out.println("Running test3");
 		
-	}
+	}*/
 
 }
