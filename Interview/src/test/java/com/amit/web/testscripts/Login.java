@@ -28,7 +28,7 @@ public class Login extends TestBase{
 	}
 
 	@Test(dataProvider = "SingleLogin")
-	public void mutipleLogin(String userName, String password, String runMode) {
+	public void testLogin(String userName, String password, String runMode) {
 		if (runMode.equalsIgnoreCase("n")) {
 			throw new SkipException("Skipped this data");
 		}
