@@ -2,16 +2,37 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34176" started-at="2018-08-21T18:23:53Z" finished-at="2018-08-21T18:24:27Z">
+  <suite name="Default suite" duration-ms="13956" started-at="2018-09-03T18:15:29Z" finished-at="2018-09-03T18:15:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34176" started-at="2018-08-21T18:23:53Z" finished-at="2018-08-21T18:24:27Z">
-      <class name="com.amit.web.testscripts.TestSeleniumCode">
-        <test-method status="PASS" signature="test()[pri:0, instance:com.amit.web.testscripts.TestSeleniumCode@29774679]" name="test" duration-ms="34113" started-at="2018-08-21T23:53:53Z" finished-at="2018-08-21T23:54:27Z">
+    <test name="Default test" duration-ms="13956" started-at="2018-09-03T18:15:29Z" finished-at="2018-09-03T18:15:43Z">
+      <class name="com.amit.web.testscripts.Login">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amit.web.testscripts.Login@77caeb3e]" name="setUp" is-config="true" duration-ms="10543" started-at="2018-09-03T23:45:29Z" finished-at="2018-09-03T23:45:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.amit.web.testscripts.TestSeleniumCode -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="mutipleLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.Login@77caeb3e]" name="mutipleLogin" duration-ms="946" started-at="2018-09-03T23:45:42Z" data-provider="SingleLogin" finished-at="2018-09-03T23:45:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Screener]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mutipleLogin -->
+      </class> <!-- com.amit.web.testscripts.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

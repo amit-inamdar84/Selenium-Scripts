@@ -65,10 +65,28 @@ public class LoginPage extends TestBase {
 	public void clickLogoutButton() {
 		logoutButton.click();
 	}
+	
+	@FindBy(xpath = "//a[contains(text(),'About Us')]")
+	WebElement aboutUsLink;
+
+	public void clickAboutUsLink() {
+		aboutUsLink.click();
+	}
+	
+	@FindBy(xpath = "//h1[@id='about-screenerin']")
+	WebElement aboutUsText;
+
+	public String readAboutUsText() {
+		return aboutUsText.getText();
+	}
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+	}
+	
+	public long getImplicitWait() {
+		return Integer.parseInt(System.getProperty("implicitWait"));
 	}
 
 }

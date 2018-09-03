@@ -70,7 +70,11 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.0</version>
 				<configuration>
-					<suiteXmlFiles>testng.xml</suiteXmlFiles>
+				<systemPropertyVariables>
+				<implicitWait>${DimplicitWait}</implicitWait>
+				</systemPropertyVariables>
+					<!-- <suiteXmlFiles>testng.xml</suiteXmlFiles> -->
+					<suiteXmlFiles>${suiteXmlFiles}</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>

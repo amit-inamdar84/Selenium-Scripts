@@ -2,6 +2,7 @@ package com.amit.web.testscripts;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -34,12 +35,15 @@ public class Login extends TestBase{
 
 		// Assert.assertEquals(loginpage.getWelcomeText(), "Welcome to
 		// Screener.in");
-		loginpage.clickLoginLink();
+/*		loginpage.clickLoginLink();
 		loginpage.clickLoginHere();
 		loginpage.typeUserName(userName);
 		loginpage.typePassword(password);
 		loginpage.clickLoginButton();
-		loginpage.verifyNewsFeedText();
+		loginpage.verifyNewsFeedText();*/
+		loginpage.clickAboutUsLink();
+		implicitWait(loginpage.getImplicitWait());
+		Assert.assertEquals(loginpage.readAboutUsText(), "About Screener.in");
 	}
 	
 /*	@Test (groups={"Sanity"})

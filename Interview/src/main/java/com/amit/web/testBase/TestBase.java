@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -82,5 +83,9 @@ public class TestBase {
 		excel = new ExcelReader(path);
 		String[][] data = excel.getDataFromSheet(sheetName, excelName);
 		return data;
+	}
+	
+	public void implicitWait(long time){
+		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 	}
 }
