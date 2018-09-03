@@ -74,7 +74,7 @@
 				<implicitWait>${DimplicitWait}</implicitWait>
 				</systemPropertyVariables>
 					<!-- <suiteXmlFiles>testng.xml</suiteXmlFiles> -->
-					<suiteXmlFiles>${suiteXmlFiles}</suiteXmlFiles>
+					<suiteXmlFiles>${suiteXmlFile}</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>

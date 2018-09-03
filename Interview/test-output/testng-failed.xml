@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Practice Selenium]">
+  <test name="Test(failed)">
     <classes>
       <class name="com.amit.web.testscripts.Login">
         <methods>
           <include name="setUp"/>
-          <include name="mutipleLogin" invocation-numbers="0"/>
+          <include name="testLogin" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.amit.web.testscripts.Login -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Practice Selenium] -->

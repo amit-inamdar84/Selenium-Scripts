@@ -6,7 +6,7 @@
       <class name="com.amit.web.testscripts.Login">
         <methods>
           <include name="setUp"/>
-          <include name="mutipleLogin" invocation-numbers="0"/>
+          <include name="testLogin" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.amit.web.testscripts.Login -->
     </classes>
