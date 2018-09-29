@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed tests">
+	<listeners>
+		<listener class-name="com.amit.web.listeners.Retry"></listener>
+	</listeners>
+	<test name="Retry failed tests">
+		<classes>
+			<class name="testNG.RetryFailedTest"></class>
+		</classes>
+	</test>
+</suite>

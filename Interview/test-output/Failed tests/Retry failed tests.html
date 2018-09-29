@@ -1,16 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" total="4" passed="0">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Failed tests" duration-ms="226" started-at="2018-09-29T19:08:01Z" finished-at="2018-09-29T19:08:01Z">
-    <groups>
-    </groups>
-    <test name="Retry failed tests" duration-ms="226" started-at="2018-09-29T19:08:01Z" finished-at="2018-09-29T19:08:01Z">
-      <class name="testNG.RetryFailedTest">
-        <test-method status="FAIL" signature="test1()[pri:0, instance:testNG.RetryFailedTest@4501b7af]" name="test1" duration-ms="58" started-at="2018-09-30T00:38:01Z" finished-at="2018-09-30T00:38:01Z">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
+<html>
+<head>
+<title>TestNG:  Retry failed tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Retry failed tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Sep 30 00:38:01 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (226 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNG.RetryFailedTest.test1()'><b>test1</b><br>Test class: testNG.RetryFailedTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at testNG.RetryFailedTest.test1(RetryFailedTest.java:10)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1050349584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1050349584'><pre>java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
@@ -39,16 +111,18 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test1()[pri:0, instance:testNG.RetryFailedTest@4501b7af]" name="test1" duration-ms="5" started-at="2018-09-30T00:38:01Z" finished-at="2018-09-30T00:38:01Z">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
+</pre></div></td>
+<td>0</td>
+<td>testNG.RetryFailedTest@4501b7af</td></tr>
+<tr>
+<td title='testNG.RetryFailedTest.test1()'><b>test1</b><br>Test class: testNG.RetryFailedTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at testNG.RetryFailedTest.test1(RetryFailedTest.java:10)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1864350231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1864350231'><pre>java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
@@ -77,16 +151,18 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test1()[pri:0, instance:testNG.RetryFailedTest@4501b7af]" name="test1" duration-ms="7" started-at="2018-09-30T00:38:01Z" finished-at="2018-09-30T00:38:01Z">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
+</pre></div></td>
+<td>0</td>
+<td>testNG.RetryFailedTest@4501b7af</td></tr>
+<tr>
+<td title='testNG.RetryFailedTest.test1()'><b>test1</b><br>Test class: testNG.RetryFailedTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at testNG.RetryFailedTest.test1(RetryFailedTest.java:10)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1735934726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1735934726'><pre>java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
@@ -115,16 +191,18 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test1()[pri:0, instance:testNG.RetryFailedTest@4501b7af]" name="test1" duration-ms="5" started-at="2018-09-30T00:38:01Z" finished-at="2018-09-30T00:38:01Z">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
+</pre></div></td>
+<td>0</td>
+<td>testNG.RetryFailedTest@4501b7af</td></tr>
+<tr>
+<td title='testNG.RetryFailedTest.test1()'><b>test1</b><br>Test class: testNG.RetryFailedTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at testNG.RetryFailedTest.test1(RetryFailedTest.java:10)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace553871028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace553871028'><pre>java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
@@ -153,13 +231,9 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- testNG.RetryFailedTest -->
-    </test> <!-- Retry failed tests -->
-  </suite> <!-- Failed tests -->
-</testng-results>
+</pre></div></td>
+<td>0</td>
+<td>testNG.RetryFailedTest@4501b7af</td></tr>
+</table><p>
+</body>
+</html>
