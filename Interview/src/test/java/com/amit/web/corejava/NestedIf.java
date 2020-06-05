@@ -1,5 +1,6 @@
 package com.amit.web.corejava;
 //If inside if block
+//We can also use if else inside if block
 
 public class NestedIf {
 	public static void main(String[] args) {

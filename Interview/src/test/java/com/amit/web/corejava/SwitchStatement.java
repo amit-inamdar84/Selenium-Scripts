@@ -2,7 +2,7 @@ package com.amit.web.corejava;
 
 public class SwitchStatement {
 	public static void main(String[] args) {
-		int i = 3;
+		int i = 0;
 		switch (i) {
 		case 0:
 			System.out.println("i is 0");

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Failed tests]">
-  <listeners>
-    <listener class-name="com.amit.web.listeners.Retry"/>
-  </listeners>
-  <test name="Retry failed tests(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testNG.RetryFailedTest">
+      <class name="com.amit.web.testscripts.Login">
         <methods>
-          <include name="test1"/>
+          <include name="setUp"/>
+          <include name="testLogin" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testNG.RetryFailedTest -->
+      </class> <!-- com.amit.web.testscripts.Login -->
     </classes>
-  </test> <!-- Retry failed tests(failed) -->
-</suite> <!-- Failed suite [Failed tests] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

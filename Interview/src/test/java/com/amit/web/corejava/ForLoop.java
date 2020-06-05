@@ -24,7 +24,7 @@ public class ForLoop {
 		System.out.println("------------------------------");
 
 		// For each loop with string array
-		String name[] = { "Amit", "Vedha" };
+		String name[] = { "XYZ", "ABC" };
 		for (String j : name) {
 			System.out.println("Array elements: " + j);
 		}
