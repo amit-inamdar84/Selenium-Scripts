@@ -174,10 +174,22 @@ public class JavaIntroNotes {
 		where every frame will contain the state of single method. Here methods are executed. JVM by default creates two threads: main method and garbage
 		collection thread. main thread is responsible to execute main program and create objects in heap area if it finds the new keyword in any method logic.
 		Garbage collection thread is responsible to destroy all unused objects from heap area.
-		4. PC register: 
+		4. PC register: This area will contain the address of the next instruction that have to be executed. If there are multiple threads in a program
+		these threads will be registered by PC register. It also also allocates memory for such threads to execute.
+		5. Java native stack: It is used for storing non java code. Non java code is called as native code.
+		6. Execution engine: It is responsible for executing the program and contains two parts - Interpreter and JIT compiler. The java code will be executed
+		by both of these simultaneously which will reduce the execution time and provides high performance. 	
 		
+		Comment : CTRL+SHIFT+/
+		Format : CTRL+SHIFT+F
+		Auto suggest syntax: CTRL+SPACEBAR
 		
-		
+		Old log4j details:
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
 		
 		*/
 	

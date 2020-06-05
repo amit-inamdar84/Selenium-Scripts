@@ -3,7 +3,8 @@ package com.amit.web.corejava;
 public class GitNotes {
 
 	public static void main(String[] args) {
-/*		Login to Github and create a repository
+/*	    How to use Git hub : https://guides.github.com/activities/hello-world/	
+ *      Login to Github and create a repository
 		If repository already exists, import or clone to your eclipse
 		Download git from https://git-scm.com/download/
 		Install in C:\Program Files\Git
