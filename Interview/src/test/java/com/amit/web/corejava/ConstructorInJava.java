@@ -5,8 +5,9 @@ public class ConstructorInJava {
 	//Used to initialize the objects of a class
 	//Used to initialize global variable
 	// It has no return type and should be named same as class name
-	// When we have a parameterized constructor, we cannot create object of
-	// default constructor
+	//If we do not create a constructor Java compiler will create a default constructor.
+	// When we have only a parameterized constructor, we cannot create object of
+	// default constructor. i.e. when we have a parameterized constructor in class, Java compiler will not keep default constructor.
 	//The parameterized constructor is used to provide different values to the distinct objects. However, you can provide the same values also.
 	// Constructor overloading is possible. We need to change parameter num.
 
@@ -22,14 +23,14 @@ public class ConstructorInJava {
 	// Parameterized constructor
 	ConstructorInJava(int a) {
 		this.a = a;
-		System.out.println(a);
+		System.out.println(this.a);
 	}
 
 	// Constructor overloading
 	ConstructorInJava(int a, int b) {
 		this.a = a;
 		this.b = b;
-		System.out.println(a + " " + b);
+		System.out.println(this.a + " " + this.b);
 	}
 
 	public static void main(String[] args) {

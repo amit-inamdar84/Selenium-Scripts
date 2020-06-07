@@ -190,7 +190,12 @@ public class JavaIntroNotes {
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-		//Testing github branch commit
+		
+		* main method is static because we can call the method without having to create object of the class
+		* *A java class will contain - fields, methods, constructors, blocks, nested class and interface.
+		* To call method use obj.methodname and to call variable use obj.variable name.
+		* When we create an object of class using - Test obj = new Test(); Basically we are creating object of constructor.
+		* In the above line of code Test() is nothing but constructor name. Constructors are used to create objects.
 		
 		*/
 	
