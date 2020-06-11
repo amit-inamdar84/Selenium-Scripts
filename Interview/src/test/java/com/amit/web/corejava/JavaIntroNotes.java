@@ -191,11 +191,42 @@ public class JavaIntroNotes {
 			<version>1.2.17</version>
 		</dependency>
 		
+	    * boolean false 1 bit 
+	    * char '\u0000' 2 byte 
+	    * byte 0 2 byte
+	    * short 0 2 byte 
+	    * int 0 4 byte
+	    * long 0L 8 byte 
+	    * float 0.0f 4 byte 
+	    * double 0.0d 8 byte
+		
 		* main method is static because we can call the method without having to create object of the class
 		* *A java class will contain - fields, methods, constructors, blocks, nested class and interface.
 		* To call method use obj.methodname and to call variable use obj.variable name.
 		* When we create an object of class using - Test obj = new Test(); Basically we are creating object of constructor.
 		* In the above line of code Test() is nothing but constructor name. Constructors are used to create objects.
+		* When we print the object - the output can be understood as packagename.classname@Address
+		* We can inherit only non-static members.
+		* 
+		* public class Object - Class Object is the root of the class hierarchy. Every class has Object as a superclass. 
+		* All objects, including arrays, implement the methods of this class.
+		* 
+		* Difference between method overloading and overriding
+		* 1. Overloading happens at compile-time while Overriding happens at runtime: The binding of overloaded method call to its definition has happens at
+		* compile-time however binding of overridden method call to its definition happens at runtime.
+		* 2. Static methods can be overloaded which means a class can have more than one static method of same name.
+		* Static methods cannot be overridden, even if you declare a same static method in child class it has nothing to do with the same method of parent class.
+		* 3. The most basic difference is that overloading is being done in the same class while for overriding base and child classes are required.
+		* Overriding is all about giving a specific implementation to the inherited method of parent class.
+		* 4. Static binding is being used for overloaded methods and dynamic binding is being used for overridden/overriding methods.
+		* 5. Performance: Overloading gives better performance compared to overriding. The reason is that the binding of overridden methods is being done at runtime.
+		* 6. private and final methods can be overloaded but they cannot be overridden. It means a class can have more than one private/final methods of same
+		* name but a child class cannot override the private/final methods of their base class.
+		* 7. Return type of method does not matter in case of method overloading, it can be same or different.
+		* However in case of method overriding the overriding method can have more specific return type.
+		* 8. Argument list should be different while doing method overloading. Argument list should be same in method Overriding.
+		* 
+		* Difference between interface and abstract
 		
 		*/
 	
