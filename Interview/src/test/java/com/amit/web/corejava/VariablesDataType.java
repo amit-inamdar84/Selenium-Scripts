@@ -23,14 +23,14 @@ public class VariablesDataType {
 		// System.out.println("Local variable" +a);
 	}
 
-	/*
-	 * boolean false 1 bit 
-	 * char '\u0000' 2 byte 
-	 * byte 0 2 byte
-	 * short 0 2 byte 
-	 * int 0 4 byte
-	 * long 0L 8 byte 
-	 * float 0.0f 4 byte 
-	 * double 0.0d 8 byte
+	/*Type      Default   Size    Range
+	 * boolean   false   1 bit    
+	 * char     '\u0000' 2 byte    0 to 65535
+	 * byte         0    2 byte   -128 to 127
+	 * short        0    2 byte   -32768 to 32767
+	 * int          0    4 byte   -2147483648 to 2147483647
+	 * long         0L   8 byte 
+	 * float       0.0f  4 byte 
+	 * double      0.0d  8 byte
 	 */
 }

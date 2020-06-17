@@ -205,11 +205,18 @@ public class JavaIntroNotes {
 		* To call method use obj.methodname and to call variable use obj.variable name.
 		* When we create an object of class using - Test obj = new Test(); Basically we are creating object of constructor.
 		* In the above line of code Test() is nothing but constructor name. Constructors are used to create objects.
+		* Method can can also be accessed using - new Test().methodname. which is equivalent to - 
+		* Test obj = new Test(); obj.methodname;
 		* When we print the object - the output can be understood as packagename.classname@Address
 		* We can inherit only non-static members.
 		* 
 		* public class Object - Class Object is the root of the class hierarchy. Every class has Object as a superclass. 
 		* All objects, including arrays, implement the methods of this class.
+		* System.out.println will print new line. If it is required to print output in same line use System.out.print
+		* To use Java API library classes, in any user defines class we need to import the package in which the class resides.
+		* i.e. To use Scanner class we need to add a import statement - import java.util.scanner
+		* Few exceptions to above rule is String class. It can be shared or used in any class because of their immutable property. Refer String class API doc
+		* 
 		* 
 		* Difference between method overloading and overriding
 		* 1. Overloading happens at compile-time while Overriding happens at runtime: The binding of overloaded method call to its definition has happens at

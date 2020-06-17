@@ -1,9 +1,14 @@
 package instanceInitializerBlock;
-//The child class IIB is invoked after the parent class constructor is invoked.
-//This class will have default constructor kept by compiler. Here super() is invoked and parent class constructor will be called
-//Hence first parent class IIB will execute, then parent class constructor and then the child class IIB
+//In main method when new keyword passes control to constructor to create object, compiler's super keyword is first encountered.
+//Then parent class constructor has the control. So before object initialization parent IIB is executed and then constructor is executed.
+//Next child class IIB is executed and then child class constructor.
+
 
 public class ChildIIB extends ParentIIB{
+	
+	ChildIIB(){
+		System.out.println("Child class constructor");
+	}
 	
 	{
 		System.out.println("Child class IIB");

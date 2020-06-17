@@ -5,6 +5,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 //Exception handling is a mechanism to handle the run time errors so that the normal flow of the application can be maintained
+//Exception type: Checked exceptions and Unchecked exceptions.
+//The classes that extends Throwable class except Runtime and Error are known as checked exceptions. Ex: FileNotFoundException, classNotFoundException,
+//InterruptedException
+//The classes that extend RuntimeException are known as unchecked exceptions.
+//Error is irrecoverable. Ex: OutOfMemoryError, VirtualMachineError, AssertionError etc.
 
 
 public class ExceptionClass extends TestException{
@@ -70,7 +75,7 @@ public class ExceptionClass extends TestException{
 	}
 	
     //Checked exception
-	public void test() throws InterruptedException {
+	public void test() throws InterruptedException{
 		Thread.sleep(1000);
 	}
 	
@@ -162,15 +167,16 @@ public class ExceptionClass extends TestException{
 
 	public static void main(String[] args) throws Exception {
 		ExceptionClass obj = new ExceptionClass();
-		// obj.divide();
-		// obj.concatentate();
-		// obj.stackoverflow();
-		// obj.fileNotFound();
-		// obj.illegalStateException();
-		// obj.arrayIndexOutOfBound();
-		// obj.classNotFoundException();
-		 obj.classCastException();
-		// obj.numberFormatException();
+		 //obj.divide();
+		//obj.concatentate();
+		//obj.stackoverflow();
+		//obj.fileNotFound();
+		//obj.illegalStateException();
+		//obj.arrayIndexOutOfBound();
+		//obj.classNotFoundException();
+		 //obj.classCastException();
+		//obj.numberFormatException();
+		obj.test();
 		// obj.tryFinally();
 
 	}

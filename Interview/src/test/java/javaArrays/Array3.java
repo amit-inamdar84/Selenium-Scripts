@@ -17,6 +17,10 @@ public class Array3 {
 	}
 
 	public static void main(String[] args) {
+		Array3 obj = new Array3();
+		System.out.println(obj.test1());
+		System.out.println(obj.test2());
+		System.out.println(obj.test3());
 
 	}
 
