@@ -11,9 +11,9 @@ public class HashSetInJava1 {
 		hashSet2.add(44);
 		hashSet2.add(67);
 		hashSet2.add(34);
-		
+
 		Iterator<Integer> itr = hashSet2.iterator();
-		while(itr.hasNext()) {
+		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
 

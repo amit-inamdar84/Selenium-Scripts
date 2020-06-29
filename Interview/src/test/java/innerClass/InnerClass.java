@@ -1,7 +1,7 @@
 package innerClass;
 //One class within another class is called inner class
 //Inner class can access private member of outer class
-//Code is optimized
+//Code is optimized - One java file will have all the classes required for a project.
 //Readable code
 //Create object of inner class: OuterClass.InnerClass obj1 = obj.new InnerClass();
 

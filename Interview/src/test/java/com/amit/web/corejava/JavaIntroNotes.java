@@ -183,6 +183,10 @@ public class JavaIntroNotes {
 		Comment : CTRL+SHIFT+/
 		Format : CTRL+SHIFT+F
 		Auto suggest syntax: CTRL+SPACEBAR
+		CTRL+D - To remove unwanted line.
+		F6 to debug step by step.
+		F5 to step inside a method when there is a method caller.
+		
 		
 		Old log4j details:
 		<dependency>
@@ -214,8 +218,9 @@ public class JavaIntroNotes {
 		* All objects, including arrays, implement the methods of this class.
 		* System.out.println will print new line. If it is required to print output in same line use System.out.print
 		* To use Java API library classes, in any user defines class we need to import the package in which the class resides.
-		* i.e. To use Scanner class we need to add a import statement - import java.util.scanner
+		* i.e. To use Scanner class we need to add a import statement - import java.util.scanner. Other ex: Collections
 		* Few exceptions to above rule is String class. It can be shared or used in any class because of their immutable property. Refer String class API doc
+		* 
 		* 
 		* 
 		* Difference between method overloading and overriding

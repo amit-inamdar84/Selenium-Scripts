@@ -1,5 +1,6 @@
 package collectionsFramework;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
 
@@ -17,6 +18,11 @@ public class VectorClass {
 		obj.add("test");
 		obj.add(98.99);
 		System.out.println(obj);
+		
+		Iterator<Object> itr = obj.iterator();
+		while(itr.hasNext()){
+			System.out.println(itr.next());
+		}
 
 	}
 

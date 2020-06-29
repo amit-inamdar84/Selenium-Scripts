@@ -10,6 +10,7 @@ import java.util.Scanner;
 //InterruptedException
 //The classes that extend RuntimeException are known as unchecked exceptions.
 //Error is irrecoverable. Ex: OutOfMemoryError, VirtualMachineError, AssertionError etc.
+//Exception class is parent class for both checked and unchecked exceptions. That is why in catch block we write - catch(Exception e) 
 
 
 public class ExceptionClass extends TestException{
@@ -99,6 +100,28 @@ public class ExceptionClass extends TestException{
 		 * catch block e.printStackTrace(); }
 		 */
 	}
+	
+	public void tryCatch1() {
+		//Here if the exceptions are not caught by any catch block the exception class at the end will catch it.
+		try {
+			int[] a = new int[5];
+			a[4] = 30 / 1;
+			String s = null;
+			s.toCharArray();
+		} catch (ArithmeticException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		 catch (ArrayIndexOutOfBoundsException e) { // TODO Auto-generated catch block
+		 e.printStackTrace(); }
+		 
+		 catch (Exception e) { 
+		 e.printStackTrace(); 
+		 }
+		System.out.println("All exceptions failed. Parent class caught the exception that was not defined");
+		 
+	}
 
 	public void multipleTryCatch() {
 		// Here exception thrown by catch block are caught by outer catch blocks
@@ -123,15 +146,71 @@ public class ExceptionClass extends TestException{
 
 	public void nestedTryBlock() {
 		//Try catch block within a try block in known as nested try catch block
-		// Here exception thrown by first inner try block will catch and then go
-		// to outer catch block
+		// If first inner try block catches the exception, second inner try block will execute.
+		// If second try block also catches the exception, outer catch block will not execute.
+		try {
+			try {
+				int[] a = new int[5];
+				a[5] = 30 / 0;
+			} catch (ArithmeticException e) {
+				e.printStackTrace();
+				System.out.println("Catching exception in first inner try catch block");
+				//throw new ArithmeticException("Arithmetic exception");
+			}
+			
+			try {
+				int[] a = new int[5];
+				a[5] = 30 / 5;
+			} catch (ArrayIndexOutOfBoundsException e) {
+				e.printStackTrace();
+				System.out.println("Catching exception in second inner try catch block");
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Outer catch block 1");
+		}
+		System.out.println("Ending all blocks");
+	}
+	
+	public void nestedTryBlock1() {
+		//If there is uncaught exception in first inner try block, it will skip the remaining code and go to outer catch block.
+		try {
+			try {
+				String s1 = null;
+				s1.toLowerCase();//This null pointer exception is uncaught
+				int[] a = new int[5];
+				a[5] = 30 / 0;
+			} catch (ArithmeticException e) {
+				e.printStackTrace();
+				//throw new ArithmeticException("Arithmetic exception");
+			}
+			// This block will not execute if above blocks exception is uncaught
+			try {
+				int[] a = new int[5];
+				a[5] = 30 / 5;
+			} catch (ArrayIndexOutOfBoundsException e) {
+				e.printStackTrace();
+				System.out.println("This block will not execute");
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Outer catch block 1");
+		}
+		System.out.println("Ending all blocks");
+	}
+	
+	public void nestedTryBlock2() {
+		//Try catch block within a try block in known as nested try catch block
+		//Here exception thrown by first inner try block will be caught. Then forcibly throwing exception using throw keyword will stop execution and
+		//pass control to outer catch block.
 		// Second inner try will not be executed
 		try {
 			try {
 				int[] a = new int[5];
 				a[5] = 30 / 0;
 			} catch (ArithmeticException e) {
-				// TODO Auto-generated catch block
 				throw new ArithmeticException("Arithmetic exception");
 			}
 			// This block will not execute if above try and then in catch throw
@@ -144,7 +223,7 @@ public class ExceptionClass extends TestException{
 			}
 
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			e.printStackTrace();
 			System.out.println("Outer catch block 1");
 		}
 		System.out.println("Ending all blocks");
@@ -160,8 +239,17 @@ public class ExceptionClass extends TestException{
 			int[] a = new int[5];
 			a[5] = 30 / 0;
 		} finally {
-			// TODO Auto-generated catch block
 			System.out.println("Who cares about exceptions. I am executing");
+		}
+	}
+	
+	public boolean tryFinally1() {
+		//Finally block will execute even after return statement.
+		try {
+			return true;
+			
+		} finally {
+			System.out.println("Tresspassing return statement");
 		}
 	}
 
@@ -176,8 +264,14 @@ public class ExceptionClass extends TestException{
 		//obj.classNotFoundException();
 		 //obj.classCastException();
 		//obj.numberFormatException();
-		obj.test();
-		// obj.tryFinally();
+		//obj.test();
+		//obj.tryCatch();
+		//obj.tryCatch1();
+		//obj.nestedTryBlock();
+		//obj.nestedTryBlock1();
+		//obj.nestedTryBlock2();
+		//obj.tryFinally();
+		obj.tryFinally1();
 
 	}
 
