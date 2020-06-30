@@ -11,7 +11,7 @@ public class ThreadNotes {
 	//Thread is a class
 	//Thread can be created by extending thread class or implementing runnable interface
 	//Multithreading saves memory as all threads are allocated same memory space by JVM
-	//Constructors - Thread(), Thread(String name), Thread(Runnable target), Thread(Runnable target, String name)
+	//Constructors - Thread(), Thread(String name), Thread(Runnable target), Thread(Runnable target, String name), Thread(ThreadGroup group, Runnable target, String name) {
 	//Difference between Multiprocessing and multithreading:
 	//1. Multiprocessing is heavyweight process while multithreading is light weight process.
 	//2. Separate memory area is allocated for each process in multiprocessing while in multithreading all threads are allocated the same memory space by JVM.
