@@ -1,5 +1,7 @@
 package com.amit.web.corejava;
 
+import java.io.File;
+
 public class JavaIntroNotes {
 	
 	/*Core Java Includes:
@@ -204,8 +206,8 @@ public class JavaIntroNotes {
 	    * float 0.0f 4 byte 
 	    * double 0.0d 8 byte
 		
-		* main method is static because we can call the method without having to create object of the class
-		* *A java class will contain - fields, methods, constructors, blocks, nested class and interface.
+		* main method is static because we can call the method without having to create object of the class.
+		* *A java class will contain - instance(object), fields, methods, constructors, blocks, nested class and interface.
 		* To call method use obj.methodname and to call variable use obj.variable name.
 		* When we create an object of class using - Test obj = new Test(); Basically we are creating object of constructor.
 		* In the above line of code Test() is nothing but constructor name. Constructors are used to create objects.
@@ -220,6 +222,9 @@ public class JavaIntroNotes {
 		* To use Java API library classes, in any user defines class we need to import the package in which the class resides.
 		* i.e. To use Scanner class we need to add a import statement - import java.util.scanner. Other ex: Collections
 		* Few exceptions to above rule is String class. It can be shared or used in any class because of their immutable property. Refer String class API doc
+		* Create a new file - 
+		* File srcFile = new File("D:\\Screenshot.png");
+		* srcFile.createNewFile();
 		* 
 		* 
 		* 

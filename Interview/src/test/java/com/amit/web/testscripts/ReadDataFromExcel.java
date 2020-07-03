@@ -1,10 +1,24 @@
 package com.amit.web.testscripts;
+//Logic: Create object of current class and pass file path as argument to its parameterized constructor.
+//Define instance variables.
+//Invoke constructor and initialize object of FileInputStream class and pass FileInputStream object to XSSFWorkbook class constructor.
+//Now call the function from main method
+//Call getSheet() method on workbook and pass sheet name as argument.
+//Call rowIterator method on sheet and iterate through rows.
+//Store the first row reference in XSSF row variable.
+//On first row call cell iterator on XSSF row variable and iterate on each cell in that row.
+//Store the first cell reference in XSSF cell variable.
+//Compare the cell value using getCellType method of XSSFCell class with CELL_TYPE_STRING variable of CELL interface. Note: XSSFCell implements CELL interface
+//Print value for string, numeric and boolean values.
+//Print a new line after all cells are iterated in that row.
+//Iterate through next row and repeat till all rows are complete.
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Iterator;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -25,15 +39,15 @@ public class ReadDataFromExcel {
 	@SuppressWarnings("deprecation")
 	public void readXLSData() {
 		XSSFSheet sheet = workbook.getSheet("Sheet1");
-		Iterator rows = sheet.rowIterator();
-		while (rows.hasNext()) {
-			row = (XSSFRow) rows.next();
+		Iterator<Row> rowsitr = sheet.rowIterator();
+		while (rowsitr.hasNext()) {
+			row = (XSSFRow) rowsitr.next();
 
 			// Iterating all the cells of the current row
-			Iterator cells = row.cellIterator();
+			Iterator<Cell> cellsitr = row.cellIterator();
 
-			while (cells.hasNext()) {
-				cell = (XSSFCell) cells.next();
+			while (cellsitr.hasNext()) {
+				cell = (XSSFCell) cellsitr.next();
 
 				if (cell.getCellType() == Cell.CELL_TYPE_STRING) {
 					System.out.print(cell.getStringCellValue() + " ");
