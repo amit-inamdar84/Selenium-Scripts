@@ -1,6 +1,6 @@
 com\amit\web\testBase\TestBase.class
+com\amit\web\excelReader\ExcelReader.class
 com\amit\web\databaseConnections\DatabaseMySQL.class
 com\amit\web\excelReader\ExcelReader1.class
-com\amit\web\pageObjects\LoginPage.class
-com\amit\web\excelReader\ExcelReader.class
 com\amit\web\pageObjects\BullCartel.class
+com\amit\web\pageObjects\LoginPage.class

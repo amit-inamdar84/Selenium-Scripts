@@ -2,37 +2,23 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Practice Selenium" duration-ms="17617" started-at="2018-09-03T19:22:48Z" finished-at="2018-09-03T19:23:06Z">
+  <suite name="Practice Selenium" duration-ms="103" started-at="2020-07-03T14:03:23Z" finished-at="2020-07-03T14:03:23Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="17617" started-at="2018-09-03T19:22:48Z" finished-at="2018-09-03T19:23:06Z">
-      <class name="com.amit.web.testscripts.Login">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amit.web.testscripts.Login@13a57a3b]" name="setUp" is-config="true" duration-ms="12534" started-at="2018-09-04T00:52:48Z" finished-at="2018-09-04T00:53:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.Login@13a57a3b]" name="testLogin" duration-ms="916" started-at="2018-09-04T00:53:05Z" data-provider="SingleLogin" finished-at="2018-09-04T00:53:06Z">
+    <test name="Test" duration-ms="103" started-at="2020-07-03T14:03:23Z" finished-at="2020-07-03T14:03:23Z">
+      <class name="testNG.PassingParameters">
+        <test-method status="PASS" signature="test1(java.lang.String)[pri:0, instance:testNG.PassingParameters@17550481]" name="test1" duration-ms="55" started-at="2020-07-03T19:33:23Z" finished-at="2020-07-03T19:33:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Screener]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[y]]>
+                <![CDATA[Bengaluru]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- com.amit.web.testscripts.Login -->
+        </test-method> <!-- test1 -->
+      </class> <!-- testNG.PassingParameters -->
     </test> <!-- Test -->
   </suite> <!-- Practice Selenium -->
 </testng-results>
