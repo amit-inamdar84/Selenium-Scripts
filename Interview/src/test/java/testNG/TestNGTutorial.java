@@ -10,8 +10,12 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestNGTutorial {
+//TestNG installation - Install TestNG plugin from eclipse market place. Specify testng dependency in pom.xml
 
+public class TestNGTutorial {
+//TestNG Annotation is a piece of code which is inserted inside a program or business logic used to control the flow of execution of test methods.
+//After running this program the annotations will be be executed as per the testNG hierarchy and not in the order mentioned below.
+	
 	@BeforeSuite
 	public void test1() {
 		//The annotated method will be run before all tests in this suite have run

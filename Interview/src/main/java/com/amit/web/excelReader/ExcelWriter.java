@@ -74,10 +74,10 @@ public class ExcelWriter {
 		System.out.println("Data written to excel sheet successfully");
 	}
 
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		//Create object of class, call method and pass sheet name.
 		ExcelWriter xls = new ExcelWriter();
 		xls.writeXLS("Test");
-	}
+	}*/
 
 }
