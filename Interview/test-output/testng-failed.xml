@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.PassingParameters">
+      <class name="com.amit.web.testscripts.Login">
         <methods>
-          <include name="test1"/>
+          <include name="setUp"/>
+          <include name="testLogin" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testNG.PassingParameters -->
+      </class> <!-- com.amit.web.testscripts.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

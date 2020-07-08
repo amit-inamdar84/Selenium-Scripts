@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
@@ -91,8 +92,9 @@ public class SeleniumCommands extends TestBase {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		//Fluent wait
-		Wait wait1 = new FluentWait<WebDriver>(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(5, TimeUnit.SECONDS);
+		Wait<WebDriver> wait1 = new FluentWait<WebDriver>(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(5, TimeUnit.SECONDS);//Deprecated
 		//wait1.until(isTrue);
+		Wait<WebDriver> wait2 = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(5));
 
 		// Close browser
 		driver.close();// Close the current window, quitting the browser if it's

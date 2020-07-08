@@ -1,40 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Practice Selenium" duration-ms="105" started-at="2020-07-05T14:37:35Z" finished-at="2020-07-05T14:37:36Z">
+  <suite name="Default suite" duration-ms="27622" started-at="2020-07-08T12:55:19Z" finished-at="2020-07-08T12:55:46Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="105" started-at="2020-07-05T14:37:35Z" finished-at="2020-07-05T14:37:36Z">
-      <class name="testNG.PassingParameters">
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:testNG.PassingParameters@5e5792a0]" name="test1" duration-ms="23" started-at="2020-07-05T14:37:35Z" finished-at="2020-07-05T14:37:36Z">
+    <test name="Default test" duration-ms="27622" started-at="2020-07-08T12:55:19Z" finished-at="2020-07-08T12:55:46Z">
+      <class name="com.amit.web.testscripts.Login">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amit.web.testscripts.Login@6d4b1c02]" name="setUp" is-config="true" duration-ms="21374" started-at="2020-07-08T12:55:19Z" finished-at="2020-07-08T12:55:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.Login@6d4b1c02]" name="testLogin" duration-ms="1036" started-at="2020-07-08T12:55:45Z" data-provider="SingleLogin" finished-at="2020-07-08T12:55:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Amit]]>
+                <![CDATA[test@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[28]]>
+                <![CDATA[Screener]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2(java.lang.String)[pri:0, instance:testNG.PassingParameters@5e5792a0]" name="test2" duration-ms="3" started-at="2020-07-05T14:37:36Z" finished-at="2020-07-05T14:37:36Z">
-          <params>
-            <param index="0">
+            <param index="2">
               <value>
-                <![CDATA[Bengaluru]]>
+                <![CDATA[y]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: null
+at java.lang.Integer.parseInt(Integer.java:542)
+at java.lang.Integer.parseInt(Integer.java:615)
+at com.amit.web.pageObjects.LoginPage.getImplicitWait(LoginPage.java:89)
+at com.amit.web.testscripts.Login.testLogin(Login.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- testNG.PassingParameters -->
-    </test> <!-- Test -->
-  </suite> <!-- Practice Selenium -->
+        </test-method> <!-- testLogin -->
+      </class> <!-- com.amit.web.testscripts.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

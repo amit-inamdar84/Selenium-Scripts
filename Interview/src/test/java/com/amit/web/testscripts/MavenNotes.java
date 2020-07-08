@@ -25,6 +25,9 @@ package com.amit.web.testscripts;
  * Verify: Run checks on integration test to ensure quality
  * Install: Install the package in local repository for use as a dependency in other project locally
  * Deploy: Copy final package in remote repository for sharing with other developers and projects
+ * Commands:
+ * Right click on POM.xml. Run as Maven install. Will download all dependencies from Google.
+ * Right click on project and do Maven>>Update Project. This will update the entire project components with the dependencies downloaded.
  */
 
 public class MavenNotes {

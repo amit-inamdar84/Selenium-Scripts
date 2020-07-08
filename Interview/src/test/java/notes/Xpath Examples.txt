@@ -1,0 +1,84 @@
+<input id="loginform:userName" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all userName form-control loginInputs !important; ui-state-hover" name="loginform:userName" maxlength="50" placeholder="Username" aria-required="true" role="textbox" aria-disabled="false" aria-readonly="false" type="text"/>
+//input[@placeholder='Username']
+
+
+<a id="loginform:login" class="ui-commandlink ui-widget enterButton" href="#" onclick="PF('mp').show();;PrimeFaces.ab({s:"loginform:login",u:"loginform:msg loginform:dialog",onco:function(xhr,status,args){PF('mp').hide();;}});return false;">
+<img src="../../images/login/clickage-icon.png"/>
+</a>
+
+//img[@src='../../images/login/clickage-icon.png']
+img[src='../../images/login/clickage-icon.png']
+
+------------------------------------------------------------------------------------------
+HTML
+<a href="/projects/" title="Selenium Projects">Projects</a>
+
+X Path
+//tagName[@attributeName='AttributeValue']
+//a[@href='/projects/']
+//a[@title='Selenium Projects']
+CSS
+tagName[attributeName='AttributeValue']
+a[href='/projects/']
+a[title='Selenium Projects']
+
+<a href="/download/" title="Get Selenium">Download</a>
+X Path
+//a[@href='/download/']
+//title[@href='Get Selenium']
+//a[contains(text(),'Download')]
+CSS
+a[href='/download/']
+title[href='Get Selenium']
+
+<li id="menu_documentation">
+  <a href="/docs/" title="Technical references and guides">Documentation</a>
+  
+X Path
+//li[@id='menu_documentation']/a
+//a[@href='/docs/']
+//a[@title='Technical references and guides']
+//a[contains(text(),'Documentation')]
+CSS
+li[id='menu_documentation']>a
+a[title='Technical references and guides']
+
+---------------------------------------------------------------------------------------------------
+HTML <div id="mBody">
+ <div id="sidebar">
+ <script src="/analytics.js" type="text/javascript">
+ <div id="mainContent">
+   <h2>What is Selenium?</h2>
+ X Path
+ //h2[contains(text(),'What is Selenium?')]
+ //div[@id='mainContent']/h2
+ //div[@id='mBody']/div[2]/h2[1]
+ 
+CSS
+#mainContent>:nth-child(1)
+#mBody>:nth-child(3)>:nth-child(1)
+
+<input id="q" name="q" accesskey="s" size="30" type="text">
+X Path
+//input[@id='q']
+//input[@name='q']
+
+CSS
+#q
+input[name='q']
+input[id='q']
+
+<input id="submit" value="Go" type="submit">
+X path
+//input[@id='submit']
+//input[@id='submit' and @type='submit']
+CSS
+input[id='submit'][type='submit']
+#submit
+-------------------------------------------------------------------------------------------------------
+Month
+X Path
+//select[@id='day']/following-sibling::select[1]
+
+Year
+//select[@id='day']/following-sibling::select[2]

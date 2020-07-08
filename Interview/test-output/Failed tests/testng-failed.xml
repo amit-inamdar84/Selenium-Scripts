@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Failed tests]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed tests]">
   <listeners>
     <listener class-name="com.amit.web.listeners.Retry"/>
   </listeners>
-  <test name="Retry failed tests(failed)">
+  <test thread-count="5" name="Retry failed tests(failed)">
     <classes>
       <class name="testNG.RetryFailedTest">
         <methods>
           <include name="test1"/>
         </methods>
       </class> <!-- testNG.RetryFailedTest -->
+      <class name="testNG.RetryAgain">
+        <methods>
+          <include name="tryAgain"/>
+        </methods>
+      </class> <!-- testNG.RetryAgain -->
     </classes>
   </test> <!-- Retry failed tests(failed) -->
 </suite> <!-- Failed suite [Failed tests] -->

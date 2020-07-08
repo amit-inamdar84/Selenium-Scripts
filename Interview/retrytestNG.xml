@@ -7,6 +7,7 @@
 	<test name="Retry failed tests">
 		<classes>
 			<class name="testNG.RetryFailedTest"></class>
+			<class name="testNG.RetryAgain"></class>
 		</classes>
 	</test>
 </suite>

@@ -1,0 +1,99 @@
+Basic structure:
+Xpath=//tagname[@attribute='value']
+To find the element on web pages accurately there are different types of locators:
+ID	To find the element by ID of the element
+Classname	To find the element by Classname of the element
+Name	To find the element by name of the element
+Link text	To find the element by text of the link
+Partial Link Text  To find the element by partial text of the link
+XPath	XPath required for finding the dynamic element and traverse between various elements of the web page
+CSS path	CSS path also locates elements having no name, class or ID.
+
+Link: http://demo.guru99.com/v1/
+//input[@name='uid']
+Xpath=//input[@type='text']				
+Xpath=	//label[@id='message23']
+Xpath=	//input[@value='RESET']
+Xpath=//*[@class='barone']
+Xpath=//a[@href='http://demo.guru99.com/']
+Xpath= //img[@src='//cdn.guru99.com/images/home/java.png']
+
+
+Absolute xpath:It is the direct way to find the element, but the disadvantage of the absolute XPath
+is that if there are any changes made in the path of the element then that XPath gets failed.
+
+The key characteristic of XPath is that it begins with the single forward slash(/) ,which means you
+can select the element from the root node.
+html/body/main/div/div/div/h2
+
+Relative xpath:
+For Relative Xpath the path starts from the middle of the HTML DOM structure.
+It starts with the double forward slash (//), which means it can search the element
+anywhere at the webpage.
+You can start from the middle of the HTML DOM structure and no need to write long xpath.
+
+Contains():
+//*[contains(@type,'sub')]
+//*[contains(text(),'here')]
+
+
+And/Or:
+//*[@type='submit' or @name='btnReset']
+//*[@type='submit' and @name='btnReset']
+
+Starts with:
+//label[starts-with(@id,'message')]
+
+Text():
+//td[text()='UserID']
+
+Axes methods are used to find those elements, which dynamically change on refresh or any other
+operations. There are few axes methods commonly used in Selenium Webdriver like child, parent,
+ancestor, sibling, preceding, self, etc.
+Following:  See below
+Ancestor: See below
+Child: //*[@id='java_technologies']//child::li[1]
+Preceding: //*[@type='submit']//preceding::input
+Following-sibling: //*[@type='submit']//following-sibling::input
+Parent: //*[@id='rt-feature']//parent::div
+Self: //*[@type='password']//self::input
+Descendant: See below
+
+
+Screener xpaths: For practice only.....
+Company website: 
+Xpath: //div[@id='content-area']/section/ul/li[11]/a/b
+CSS: div[id='content-area']>:nth-child(5)>:nth-child(1)>:nth-child(11)>:nth-child(1)>:nth-child(1)
+
+All fields:
+//div[@id='content-area']/section/ul/child::*
+
+BSE Link:
+div[id='content-area']>:nth-child(5)>:nth-child(1)>:nth-child(10)>a
+
+Add ratio text box: //*[contains(@id,'quick-ratio-search')]
+
+Peer comparison:
+//a[contains(text(),'Aarti Industries')]/parent::td/parent::tr/following-sibling::tr[1]/child::td[3]
+//a[contains(text(),'Aarti Industries')]/parent::td/parent::tr/preceding-sibling::tr[1]/child::td[3]
+//*[starts-with(@data-row-company-name,'Solar')]
+
+Features tab:
+(//img[starts-with(@src,'/static/icons/')])[3]
+Descendant traverses all the nodes under the root node plus all the sub nodes under those nodes.
+//div[@class='flex-row'][1]/descendant::*
+
+Screens:
+Undervalued growth stocks: 
+Ancestor starts from grandparent and then moves above.
+//strong[contains(text(),'Undervalue')]/ancestor::div
+Preceding tag is previous to previous tag and all tags above it.
+//strong[contains(text(),'Undervalue')]/preceding::li
+
+
+
+
+
+
+
+
