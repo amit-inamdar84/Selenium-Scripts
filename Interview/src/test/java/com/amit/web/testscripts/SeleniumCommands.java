@@ -28,8 +28,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
@@ -202,6 +205,8 @@ public class SeleniumCommands extends TestBase {
 		//Prefer to use sendKeys in WebElement interface. Use Actions class sendKeys method when performing complex interactions.
 		//Here the keys pressed are not released and there is no attempt to refocus on the element.
 		action.sendKeys(des, Keys.CLEAR).build().perform();
+		//Mouse over
+		action.moveToElement(des);
 
 		// Handling iFrames
 		List frames = driver.findElements(By.tagName("iframe"));
@@ -250,6 +255,36 @@ public class SeleniumCommands extends TestBase {
 		
 		System.setProperty("webdriver.gecko.driver", "path of gecko driver.exe");
 		driver = new FirefoxDriver();
+		
+		//All classes related to firefox options/launching/capabilities
+		//Create FirefoxOptions class object and access its method addPreference to set properties to browser.
+		FirefoxOptions options = new FirefoxOptions();
+		options.addPreference("browser.download.dir", "/Users/AMIT/Downloads");
+		//Then supply options as an argument to FirefoxDriver driver class constructor. This will help to launch the browser with specific options that
+		//are defined in addPreference method.
+		driver = new FirefoxDriver(options);
+		//The desired capability is a series of key/value pairs that stores the browser properties like browsername, browser version, the path of the browser
+		//driver in the system, etc. to determine the behaviour of the browser at run time.
+		//Desired capability can also be used to configure the driver instance of Selenium WebDriver.
+		//We can configure driver instance like FirefoxDriver, ChromeDriver, InternetExplorerDriver by using desired capabilities.
+		//The Desired Capabilities class will help to set an environment to define the behaviour of the browser/environment on which the test can be executed.
+		//DesiredCapabilities.firefox() is a firefox specific static method. We have similar methods for Chrome Android etc.
+		DesiredCapabilities firefox = DesiredCapabilities.firefox();
+		FirefoxProfile profile = new FirefoxProfile();
+		profile.setAcceptUntrustedCertificates(true);
+		profile.setAssumeUntrustedCertificateIssuer(true);
+		
+		firefox.setCapability(FirefoxDriver.PROFILE, profile);
+		firefox.setCapability("marionette", true);
+        
+		//Finally we have to pass desired capability to FirefoxOptions class and the pass options to FirefoxDriver class constructor
+		FirefoxOptions firefoxOptions = new FirefoxOptions(firefox);
+		// Linux
+		if (System.getProperty("os.name").contains("Linux")) {
+			firefoxOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+		}
+		
+		
 		
 		//DB Connection
 		try {

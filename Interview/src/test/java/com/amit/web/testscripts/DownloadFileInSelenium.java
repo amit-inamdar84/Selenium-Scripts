@@ -19,7 +19,7 @@ public class DownloadFileInSelenium extends TestBase{
 		// For Window OS
 		// System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+ "/drivers/geckodriver.exe");
 		// about:config
-		// Create object of FirefoxProfile in built class to access Its
+		// Create object of FirefoxOptions in built class to access Its
 		// properties.
 		FirefoxOptions options = new FirefoxOptions();
 		/**

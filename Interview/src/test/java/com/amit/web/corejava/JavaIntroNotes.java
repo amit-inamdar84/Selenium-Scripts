@@ -188,6 +188,7 @@ public class JavaIntroNotes {
 		CTRL+D - To remove unwanted line.
 		F6 to debug step by step.
 		F5 to step inside a method when there is a method caller.
+		Select a class, method, field. Right click and select open call hierarchy. It will show where all the class, method or field is called or referred.
 		
 		
 		Old log4j details:

@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -16,12 +17,11 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
 
 import com.amit.web.testBase.TestBase;
 
 public class TestSeleniumCode extends TestBase {
-	public static final Logger log = Logger.getLogger(TestSeleniumCode.class);
+	public static final Logger log = Logger.getLogger(TestSeleniumCode.class);//Classname.class will return an instance of the class.
 
 	@Test
 	public void test() throws IOException {
