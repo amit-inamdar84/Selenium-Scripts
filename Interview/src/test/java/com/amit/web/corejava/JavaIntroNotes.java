@@ -181,6 +181,9 @@ public class JavaIntroNotes {
 		5. Java native stack: It is used for storing non java code. Non java code is called as native code.
 		6. Execution engine: It is responsible for executing the program and contains two parts - Interpreter and JIT compiler. The java code will be executed
 		by both of these simultaneously which will reduce the execution time and provides high performance. 	
+		Java™ system properties determine the environment in which a Java program runs by starting a Java virtual machine with a set of values.
+		You can choose to use the default values for Java system properties or you can specify values for them by adding parameters to the command line
+		when you start your application.
 		
 		Comment : CTRL+SHIFT+/
 		Format : CTRL+SHIFT+F

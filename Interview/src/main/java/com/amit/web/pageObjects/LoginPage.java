@@ -87,6 +87,12 @@ public class LoginPage extends TestBase {
 	public boolean verifyAboutUsText() {
 		return new VerificationHelper(driver).isDisplayed(aboutUsText);
 	}
+	
+	//This method helps us to click on any link when we pass the web element variable.
+	//This is useful when there are too many links to click under a menu. Write xpath for all links but have one single click method.
+	public void clickOnMenu(WebElement element){
+		element.click();
+	}
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;

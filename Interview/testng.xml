@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Practice Selenium">
-<parameter name="Name" value="Amit"></parameter>
-<parameter name="Age" value="28"></parameter>
-<parameter name="Place" value="Bengaluru"></parameter>
-  <test name="Test">
+<suite name="FrameworkTest">
+  <test name="JenkinsTest">
     <classes>
-      <class name="testNG.PassingParameters"/>
+      <class name="com.amit.web.testscripts.Login"/>
     </classes>
   </test>
 </suite>

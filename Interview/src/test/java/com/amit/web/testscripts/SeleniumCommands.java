@@ -77,6 +77,32 @@ public class SeleniumCommands extends TestBase {
 			String childWindow = itr.next();
 			driver.switchTo().window(childWindow);
 		}
+		
+		//This method will switch to child window based on index
+		Set<String> windows1 = driver.getWindowHandles();
+		int i = 1;
+		int index=3;//This should be a local variable passed as an argument to method.
+		for (String window : windows1) {
+			if (i == index) {
+				System.out.println("switched to : " + index + " window");
+				driver.switchTo().window(window);
+			} else {
+				i++;
+			}
+		}
+		
+		//This method will close all tabbed windows and switched to main window
+		Set<String> windows2 = driver.getWindowHandles();
+		String mainwindow = driver.getWindowHandle();
+
+		for (String window : windows2) {
+			if (!window.equalsIgnoreCase(mainwindow)) {
+				driver.close();
+			}
+		}
+		System.out.println("switched to main window");
+		driver.switchTo().window(mainwindow);
+		
 
 		// Get URL of current page
 		driver.getCurrentUrl();
@@ -140,6 +166,7 @@ public class SeleniumCommands extends TestBase {
 		driver.navigate().refresh();
 
 		// Javascript functions
+		//We can practice java script in browser console
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement element1 = driver.findElement(By.xpath("xpath"));
 		js.executeScript("arguments[0].click();", element1);// Click
@@ -166,12 +193,18 @@ public class SeleniumCommands extends TestBase {
 		js.executeScript("window.scrollBy(0,500)");
 		// for scrolling till the bottom of the page we can use the code like
 		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		//Scroll up vertically
+		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
+		//Scroll till element
+		js.executeScript("window.scrollTo(arguments[0],arguments[1])", element.getLocation().x, element.getLocation().y);
 		js.executeScript("window.location = 'https://www.softwaretestingmaterial.com");// Navigate
 																						// to
 																						// some
 																						// page
 		// To click on a SubMenu which is only visible on mouse hover on Menu
 		js.executeScript("$('ul.menus.menu-secondary.sf-js-enabled.sub-menu li').hover()");
+		//Zoom in
+		js.executeScript("document.body.style.zoom='100%'");
 
 		// Drop down selection
 		WebElement element2 = driver.findElement(By.xpath("xpath"));
@@ -326,6 +359,19 @@ public class SeleniumCommands extends TestBase {
 		 * Include <suiteXmlFiles>testng.xml</suiteXmlFiles> dependency in pom.xml file. Right click and Run as Maven test.
 		 */
 		//Mime type information: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+		
+/*		Methods in ExpectedConditions class:
+		wait.until(ExpectedConditions.alertIsPresent());
+		wait.until(ExpectedConditions.attributeContains(element2, attribute, value);
+		wait.until(ExpectedConditions.attributeToBe(element2, attribute, value);
+		wait.until(ExpectedConditions.elementToBeClickable(element2);
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameLocator);
+		wait.until(ExpectedConditions.invisibilityOf(element2);
+		wait.until(ExpectedConditions.numberOfElementsToBe(locator, number);
+		wait.until(ExpectedConditions.stalenessOf(element2);
+		wait.until(ExpectedConditions.textToBe(locator, value);
+		wait.until(ExpectedConditions.visibilityOf(element2);
+		wait.until(ExpectedConditions.visibilityOfAllElements(elements);*/
 	}
 
 }

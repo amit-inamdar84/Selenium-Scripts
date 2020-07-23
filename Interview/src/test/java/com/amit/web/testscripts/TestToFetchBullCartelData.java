@@ -15,6 +15,7 @@ import com.amit.web.pageObjects.LoginPage;
 import com.amit.web.pageObjects.ScreensPage;
 import com.amit.web.testBase.TestBase;
 
+//This test case fetches data in bull cartel screen and verifies sorting in ascending and descending order.
 public class TestToFetchBullCartelData extends TestBase {
 	private final Logger log = LoggerHelper.getLogger(TestToFetchBullCartelData.class);
 	LoginPage loginpage;
@@ -29,7 +30,7 @@ public class TestToFetchBullCartelData extends TestBase {
 	}
 
 	@Test(dataProvider = "BullCartelData")
-	public void mutipleLogin(String userName, String password, String runMode) throws InterruptedException {
+	public void readBullCartelData(String userName, String password, String runMode) throws InterruptedException {
 		if (runMode.equalsIgnoreCase("n")) {
 			throw new SkipException("Skipped this data");
 		}
@@ -49,20 +50,26 @@ public class TestToFetchBullCartelData extends TestBase {
 		screensPage.verifyScreensPageHeader();
 		bullcartel = screensPage.clickBullCartelLink();
 		bullcartel.getBullCartelText();
-		
-		
+
+		// Fetch unsorted data in array list
 		ArrayList<Double> unsorted = bullcartel.readUnSortedCMPList();
-		log.info("Final unsorted list: "+unsorted);
+		log.info("Final unsorted list: " + unsorted);
+		// Sort the unsorted data using Collections.sort() method and store in
+		// array list.
 		ArrayList<Double> desc = bullcartel.sortDescCMPList(unsorted);
 		ArrayList<Double> asc = bullcartel.sortAscCMPList(unsorted);
+		// Click on header to sort data manually in descending order
 		bullcartel.clickCMPRs();
-		Thread.sleep(2000);
+		// Fetch manually sorted data(descending) and store in array list
 		ArrayList<Double> manualDescSort = bullcartel.readUnSortedCMPList();
-		log.info("List after descending order manual sort: "+manualDescSort);
+		log.info("List after descending order manual sort: " + manualDescSort);
+		// Click on header to sort data manually in ascending order
 		bullcartel.clickCMPRs();
+		// Fetch manually sorted data(ascending) and store in array list
 		ArrayList<Double> manualAscSort = bullcartel.readUnSortedCMPList();
-		log.info("List after ascending order manual sort: "+manualAscSort);
-		//bullcartel.compareCMPList(desc, manualDescSort);
+		log.info("List after ascending order manual sort: " + manualAscSort);
+		// Compare both array lists using equals method.
+		// bullcartel.compareCMPList(desc, manualDescSort);
 		bullcartel.compareCMPList(asc, manualAscSort);
 	}
 

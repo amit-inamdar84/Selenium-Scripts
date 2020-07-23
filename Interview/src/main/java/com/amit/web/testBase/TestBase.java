@@ -120,7 +120,7 @@ public class TestBase {
 	
 	public void setUpDriver(BrowserType btype) throws Exception{
 		driver = getBrowserObject(btype);
-		log.info("Initialize Web driver: "+driver.hashCode());
+		log.info("Web driver is now initialized: "+driver.hashCode());
 		WaitHelper wait = new WaitHelper(driver);
 		wait.setImplicitWait(ObjectReader.reader.getImplicitWait(), TimeUnit.SECONDS);
 		wait.pageLoadTime(ObjectReader.reader.getPageLoadTime(), TimeUnit.SECONDS);
@@ -174,7 +174,7 @@ public class TestBase {
 	}
 	
 	public String[][] getData(String excelName, String sheetName) {
-		String path = System.getProperty("user.dir") + "/src/main/java/com/amit/web/testData/" + excelName;
+		String path = ResourceHelper.getResourcePath("/src/main/java/com/amit/web/testData/" + excelName);
 		ExcelReader excel = new ExcelReader(path);
 		String[][] data = excel.getDataFromSheet(sheetName, excelName);
 		return data;

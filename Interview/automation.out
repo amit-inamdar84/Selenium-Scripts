@@ -1445,3 +1445,1066 @@
 2020-07-15 20:33:42 INFO  BullCartel:66 - No more records to navigate...
 2020-07-15 20:33:42 INFO  TestToFetchBullCartelData:64 - List after ascending order manual sort: [3.25, 3.93, 6.42, 7.1, 9.09, 9.24, 13.0, 13.42, 13.65, 15.01, 20.65, 21.7, 21.75, 24.25, 24.9, 26.55, 30.7, 33.4, 33.9, 34.15, 34.95, 35.05, 35.5, 37.25, 37.4, 38.45, 38.5, 38.85, 39.0, 40.0, 41.5, 43.55, 46.9, 47.55, 50.85, 55.2, 58.75, 59.3, 60.75, 63.1, 64.05, 71.25, 72.45, 74.35, 75.9, 80.0, 82.05, 83.0, 89.1, 96.1, 99.0, 101.8, 104.85, 107.3, 107.6, 125.45, 135.1, 137.55, 148.2, 154.3, 173.05, 187.6, 188.65, 206.25, 206.9, 210.05, 217.2, 217.35, 227.2, 244.15, 258.0, 280.15, 287.85, 288.3, 301.0, 309.0, 322.4, 341.45, 343.7, 362.25, 365.1, 375.8, 390.25, 401.3, 408.85, 436.8, 437.55, 442.3, 526.9, 550.8, 569.05, 615.2, 620.9, 624.4, 808.15, 840.05, 945.85, 945.9, 994.05, 1040.15, 1077.3, 1313.55, 1350.55, 1351.95, 1485.6, 1532.25, 2176.5, 3038.85, 5597.05]
 2020-07-15 20:33:42 INFO  TestBase:82 - **************mutipleLoginFinished***************
+2020-07-16 11:35:17 INFO  TestBase:123 - Initialize Web driver: 1975873209
+2020-07-16 11:35:17 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:35:17 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-16 11:35:17 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-16 11:35:17 INFO  WaitHelper:141 - page is loaded
+2020-07-16 11:35:22 INFO  TestBase:64 - **************mutipleLoginStarted***************
+2020-07-16 11:35:25 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:35:25 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (d80d722a19477e6255ee9f0e8bb2cfea)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-16 11:35:26 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:35:26 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:35:26 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:35:27 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:35:28 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-16 11:35:28 INFO  LoginPage:37 - Clicked login link
+2020-07-16 11:35:29 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-16 11:35:29 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-16 11:35:30 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-16 11:35:30 INFO  LoginPage:71 - clicking on login button...
+2020-07-16 11:35:31 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:35:32 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (d80d722a19477e6255ee9f0e8bb2cfea)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 11:35:32 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:35:32 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:35:32 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:35:33 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:35:33 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:35:33 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (d80d722a19477e6255ee9f0e8bb2cfea)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 11:35:33 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:35:33 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:35:33 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:35:34 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:35:35 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-16 11:35:35 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:35:35 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (d80d722a19477e6255ee9f0e8bb2cfea)] -> xpath: //*[@id='content-area']/div[1]/h1] for :20 seconds
+2020-07-16 11:35:35 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:35:35 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:35:35 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:35:36 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:35:37 INFO  VerificationHelper:21 - element is Displayed..Popular Stock Screens
+2020-07-16 11:35:38 INFO  VerificationHelper:21 - element is Displayed..The Bull Cartel by Pratyush
+2020-07-16 11:35:40 INFO  BullCartel:59 - Navigating to next page: 
+2020-07-16 11:35:41 INFO  VerificationHelper:21 - element is Displayed..Next Page ›
+2020-07-16 11:35:44 INFO  BullCartel:59 - Navigating to next page: 
+2020-07-16 11:35:44 INFO  VerificationHelper:21 - element is Displayed..Next Page ›
+2020-07-16 11:35:46 INFO  BullCartel:59 - Navigating to next page: 
+2020-07-16 11:36:06 INFO  BullCartel:66 - No more records to navigate...
+2020-07-16 11:36:06 INFO  TestToFetchBullCartelData:55 - Final unsorted list: [137.55, 526.9, 187.6, 188.65, 217.35, 206.25, 38.45, 206.9, 945.9, 309.0, 75.9, 1351.95, 280.15, 322.4, 615.2, 365.1, 37.4, 5597.05, 442.3, 288.3, 24.25, 50.85, 362.25, 1077.3, 154.3, 96.1, 569.05, 994.05, 210.05, 301.0, 945.85, 34.15, 55.2, 550.8, 375.8, 1350.55, 840.05, 40.0, 436.8, 808.15, 13.42, 72.45, 343.7, 104.85, 624.4, 34.95, 401.3, 437.55, 30.7, 9.09, 74.35, 33.4, 173.05, 258.0, 3.25, 33.9, 80.0, 38.5, 83.0, 13.65, 41.5, 107.3, 46.9, 244.15, 89.1, 125.45, 1485.6, 287.85, 13.0, 1040.15, 35.05, 101.8, 620.9, 1532.25, 135.1, 39.0, 20.65, 21.7, 148.2, 82.05, 71.25, 7.1, 1313.55, 227.2, 408.85, 12.55, 3038.85, 99.0, 47.55, 9.24, 58.75, 107.6, 217.2, 60.75, 38.85, 14.2, 37.25, 26.55, 63.1, 59.3, 3.93, 390.25, 64.05, 341.45, 43.55, 21.75, 6.42, 24.9, 15.01, 2176.5]
+2020-07-16 11:36:06 INFO  BullCartel:90 - List after sorting in descending order using sort() method: [5597.05, 3038.85, 2176.5, 1532.25, 1485.6, 1351.95, 1350.55, 1313.55, 1077.3, 1040.15, 994.05, 945.9, 945.85, 840.05, 808.15, 624.4, 620.9, 615.2, 569.05, 550.8, 526.9, 442.3, 437.55, 436.8, 408.85, 401.3, 390.25, 375.8, 365.1, 362.25, 343.7, 341.45, 322.4, 309.0, 301.0, 288.3, 287.85, 280.15, 258.0, 244.15, 227.2, 217.35, 217.2, 210.05, 206.9, 206.25, 188.65, 187.6, 173.05, 154.3, 148.2, 137.55, 135.1, 125.45, 107.6, 107.3, 104.85, 101.8, 99.0, 96.1, 89.1, 83.0, 82.05, 80.0, 75.9, 74.35, 72.45, 71.25, 64.05, 63.1, 60.75, 59.3, 58.75, 55.2, 50.85, 47.55, 46.9, 43.55, 41.5, 40.0, 39.0, 38.85, 38.5, 38.45, 37.4, 37.25, 35.05, 34.95, 34.15, 33.9, 33.4, 30.7, 26.55, 24.9, 24.25, 21.75, 21.7, 20.65, 15.01, 14.2, 13.65, 13.42, 13.0, 12.55, 9.24, 9.09, 7.1, 6.42, 3.93, 3.25]
+2020-07-16 11:36:06 INFO  BullCartel:96 - List after sorting in ascending order using sort() method: [3.25, 3.93, 6.42, 7.1, 9.09, 9.24, 12.55, 13.0, 13.42, 13.65, 14.2, 15.01, 20.65, 21.7, 21.75, 24.25, 24.9, 26.55, 30.7, 33.4, 33.9, 34.15, 34.95, 35.05, 37.25, 37.4, 38.45, 38.5, 38.85, 39.0, 40.0, 41.5, 43.55, 46.9, 47.55, 50.85, 55.2, 58.75, 59.3, 60.75, 63.1, 64.05, 71.25, 72.45, 74.35, 75.9, 80.0, 82.05, 83.0, 89.1, 96.1, 99.0, 101.8, 104.85, 107.3, 107.6, 125.45, 135.1, 137.55, 148.2, 154.3, 173.05, 187.6, 188.65, 206.25, 206.9, 210.05, 217.2, 217.35, 227.2, 244.15, 258.0, 280.15, 287.85, 288.3, 301.0, 309.0, 322.4, 341.45, 343.7, 362.25, 365.1, 375.8, 390.25, 401.3, 408.85, 436.8, 437.55, 442.3, 526.9, 550.8, 569.05, 615.2, 620.9, 624.4, 808.15, 840.05, 945.85, 945.9, 994.05, 1040.15, 1077.3, 1313.55, 1350.55, 1351.95, 1485.6, 1532.25, 2176.5, 3038.85, 5597.05]
+2020-07-16 11:36:07 INFO  BullCartel:43 - Clicked on sort header
+2020-07-16 11:36:10 INFO  BullCartel:59 - Navigating to next page: 
+2020-07-16 11:36:10 INFO  VerificationHelper:21 - element is Displayed..Next Page ›
+2020-07-16 11:36:13 INFO  BullCartel:59 - Navigating to next page: 
+2020-07-16 11:36:13 INFO  VerificationHelper:21 - element is Displayed..Next Page ›
+2020-07-16 11:36:15 INFO  BullCartel:59 - Navigating to next page: 
+2020-07-16 11:36:35 INFO  BullCartel:66 - No more records to navigate...
+2020-07-16 11:36:35 INFO  TestToFetchBullCartelData:63 - List after descending order manual sort: [5597.05, 3038.85, 2176.5, 1532.25, 1485.6, 1351.95, 1350.55, 1313.55, 1077.3, 1040.15, 994.05, 945.9, 945.85, 840.05, 808.15, 624.4, 620.9, 615.2, 569.05, 550.8, 526.9, 442.3, 437.55, 436.8, 408.85, 401.3, 390.25, 375.8, 365.1, 362.25, 343.7, 341.45, 322.4, 309.0, 301.0, 288.3, 287.85, 280.15, 258.0, 244.15, 227.2, 217.35, 217.2, 210.05, 206.9, 206.25, 188.65, 187.6, 173.05, 154.3, 148.2, 137.55, 135.1, 125.45, 107.6, 107.3, 104.85, 101.8, 99.0, 96.1, 89.1, 83.0, 82.05, 80.0, 75.9, 74.35, 72.45, 71.25, 64.05, 63.1, 60.75, 59.3, 58.75, 55.2, 50.85, 47.55, 46.9, 43.55, 41.5, 40.0, 39.0, 38.85, 38.5, 38.45, 37.4, 37.25, 35.05, 34.95, 34.15, 33.9, 33.4, 30.7, 26.55, 24.9, 24.25, 21.75, 21.7, 20.65, 15.01, 14.2, 13.65, 13.42, 13.0, 12.55, 9.24, 9.09, 7.1, 6.42, 3.93, 3.25]
+2020-07-16 11:36:36 INFO  BullCartel:43 - Clicked on sort header
+2020-07-16 11:36:38 INFO  BullCartel:59 - Navigating to next page: 
+2020-07-16 11:36:38 INFO  VerificationHelper:21 - element is Displayed..Next Page ›
+2020-07-16 11:36:42 INFO  BullCartel:59 - Navigating to next page: 
+2020-07-16 11:36:42 INFO  VerificationHelper:21 - element is Displayed..Next Page ›
+2020-07-16 11:36:44 INFO  BullCartel:59 - Navigating to next page: 
+2020-07-16 11:37:04 INFO  BullCartel:66 - No more records to navigate...
+2020-07-16 11:37:04 INFO  TestToFetchBullCartelData:68 - List after ascending order manual sort: [3.25, 3.93, 6.42, 7.1, 9.09, 9.24, 12.55, 13.0, 13.42, 13.65, 14.2, 15.01, 20.65, 21.7, 21.75, 24.25, 24.9, 26.55, 30.7, 33.4, 33.9, 34.15, 34.95, 35.05, 37.25, 37.4, 38.45, 38.5, 38.85, 39.0, 40.0, 41.5, 43.55, 46.9, 47.55, 50.85, 55.2, 58.75, 59.3, 60.75, 63.1, 64.05, 71.25, 72.45, 74.35, 75.9, 80.0, 82.05, 83.0, 89.1, 96.1, 99.0, 101.8, 104.85, 107.3, 107.6, 125.45, 135.1, 137.55, 148.2, 154.3, 173.05, 187.6, 188.65, 206.25, 206.9, 210.05, 217.2, 217.35, 227.2, 244.15, 258.0, 280.15, 287.85, 288.3, 301.0, 309.0, 322.4, 341.45, 343.7, 362.25, 365.1, 375.8, 390.25, 401.3, 408.85, 436.8, 437.55, 442.3, 526.9, 550.8, 569.05, 615.2, 620.9, 624.4, 808.15, 840.05, 945.85, 945.9, 994.05, 1040.15, 1077.3, 1313.55, 1350.55, 1351.95, 1485.6, 1532.25, 2176.5, 3038.85, 5597.05]
+2020-07-16 11:37:04 INFO  TestBase:82 - **************mutipleLoginFinished***************
+2020-07-16 11:49:34 INFO  TestBase:123 - Initialize Web driver: 1975873209
+2020-07-16 11:49:34 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:49:34 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-16 11:49:34 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-16 11:49:34 INFO  WaitHelper:141 - page is loaded
+2020-07-16 11:49:39 INFO  TestBase:64 - **************mutipleLoginStarted***************
+2020-07-16 11:49:42 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:49:42 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (030d0c663c7b03ea24703e233d778e08)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-16 11:49:42 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:49:42 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:49:42 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:49:43 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:49:43 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-16 11:49:43 INFO  LoginPage:37 - Clicked login link
+2020-07-16 11:49:44 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-16 11:49:44 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-16 11:49:44 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-16 11:49:44 INFO  LoginPage:71 - clicking on login button...
+2020-07-16 11:49:45 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:49:45 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (030d0c663c7b03ea24703e233d778e08)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 11:49:45 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:49:45 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:49:45 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:49:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:49:46 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:49:46 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (030d0c663c7b03ea24703e233d778e08)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 11:49:46 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:49:46 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:49:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:49:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:49:47 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-16 11:49:47 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:49:47 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (030d0c663c7b03ea24703e233d778e08)] -> xpath: //*[@id='content-area']/div[1]/h1] for :20 seconds
+2020-07-16 11:49:47 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:49:47 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:49:47 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:49:48 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:49:48 INFO  VerificationHelper:21 - element is Displayed..Popular Stock Screens
+2020-07-16 11:49:51 INFO  VerificationHelper:21 - element is Displayed..The Bull Cartel by Pratyush
+2020-07-16 11:49:53 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:49:53 INFO  VerificationHelper:21 - element is Displayed..Next Page ›
+2020-07-16 11:49:54 INFO  VerificationHelper:21 - element is Displayed..Next Page ›
+2020-07-16 11:49:55 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:50:15 ERROR VerificationHelper:25 - element is not Displayed..
+2020-07-16 11:50:15 INFO  BullCartel:82 - No more page to navigate...
+2020-07-16 11:50:15 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:50:35 ERROR VerificationHelper:25 - element is not Displayed..
+2020-07-16 11:50:35 INFO  BullCartel:82 - No more page to navigate...
+2020-07-16 11:50:36 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:50:56 ERROR VerificationHelper:25 - element is not Displayed..
+2020-07-16 11:50:56 INFO  BullCartel:82 - No more page to navigate...
+2020-07-16 11:50:56 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:51:16 ERROR VerificationHelper:25 - element is not Displayed..
+2020-07-16 11:51:16 INFO  BullCartel:82 - No more page to navigate...
+2020-07-16 11:51:17 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:51:37 ERROR VerificationHelper:25 - element is not Displayed..
+2020-07-16 11:51:37 INFO  BullCartel:82 - No more page to navigate...
+2020-07-16 11:51:37 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:57:30 INFO  TestBase:123 - Initialize Web driver: 1975873209
+2020-07-16 11:57:30 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:57:30 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-16 11:57:30 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-16 11:57:30 INFO  WaitHelper:141 - page is loaded
+2020-07-16 11:57:35 INFO  TestBase:64 - **************mutipleLoginStarted***************
+2020-07-16 11:57:39 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:57:39 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (19b196caa6e9a4e197cddb7018dad9d9)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-16 11:57:40 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:57:40 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:57:40 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:57:40 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:57:41 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-16 11:57:41 INFO  LoginPage:37 - Clicked login link
+2020-07-16 11:57:42 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-16 11:57:42 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-16 11:57:42 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-16 11:57:42 INFO  LoginPage:71 - clicking on login button...
+2020-07-16 11:57:43 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:57:43 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (19b196caa6e9a4e197cddb7018dad9d9)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 11:57:44 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:57:44 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:57:44 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:57:45 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:57:45 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:57:45 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (19b196caa6e9a4e197cddb7018dad9d9)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 11:57:46 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:57:46 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:57:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:57:47 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:57:47 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-16 11:57:48 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 11:57:48 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (19b196caa6e9a4e197cddb7018dad9d9)] -> xpath: //*[@id='content-area']/div[1]/h1] for :20 seconds
+2020-07-16 11:57:48 INFO  WaitHelper:154 - element is visible now
+2020-07-16 11:57:48 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 11:57:48 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:57:49 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 11:57:49 INFO  VerificationHelper:21 - element is Displayed..Popular Stock Screens
+2020-07-16 11:57:51 INFO  VerificationHelper:21 - element is Displayed..The Bull Cartel by Pratyush
+2020-07-16 11:57:53 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:57:53 INFO  VerificationHelper:21 - element is Displayed..Next Page ›
+2020-07-16 11:57:57 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:57:57 INFO  VerificationHelper:21 - element is Displayed..Next Page ›
+2020-07-16 11:57:59 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:58:19 ERROR VerificationHelper:25 - element is not Displayed..
+2020-07-16 11:58:19 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:58:39 ERROR VerificationHelper:25 - element is not Displayed..
+2020-07-16 11:58:39 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:58:59 ERROR VerificationHelper:25 - element is not Displayed..
+2020-07-16 11:59:00 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:59:20 ERROR VerificationHelper:25 - element is not Displayed..
+2020-07-16 11:59:20 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 11:59:40 ERROR VerificationHelper:25 - element is not Displayed..
+2020-07-16 11:59:41 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 12:28:31 INFO  TestBase:123 - Initialize Web driver: 1975873209
+2020-07-16 12:28:31 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 12:28:31 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-16 12:28:31 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-16 12:28:31 INFO  WaitHelper:141 - page is loaded
+2020-07-16 12:28:36 INFO  TestBase:64 - **************mutipleLoginStarted***************
+2020-07-16 12:28:40 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 12:28:40 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (a79b31b21f9553601362a9a7f39d2742)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-16 12:28:41 INFO  WaitHelper:154 - element is visible now
+2020-07-16 12:28:41 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 12:28:41 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 12:28:42 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 12:28:42 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-16 12:28:42 INFO  LoginPage:37 - Clicked login link
+2020-07-16 12:28:44 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-16 12:28:44 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-16 12:28:44 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-16 12:28:44 INFO  LoginPage:71 - clicking on login button...
+2020-07-16 12:28:46 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 12:28:46 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (a79b31b21f9553601362a9a7f39d2742)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 12:28:46 INFO  WaitHelper:154 - element is visible now
+2020-07-16 12:28:46 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 12:28:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 12:28:47 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 12:28:48 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 12:28:48 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (a79b31b21f9553601362a9a7f39d2742)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 12:28:48 INFO  WaitHelper:154 - element is visible now
+2020-07-16 12:28:48 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 12:28:48 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 12:28:49 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 12:28:49 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-16 12:28:50 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 12:28:50 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (a79b31b21f9553601362a9a7f39d2742)] -> xpath: //*[@id='content-area']/div[1]/h1] for :20 seconds
+2020-07-16 12:28:50 INFO  WaitHelper:154 - element is visible now
+2020-07-16 12:28:50 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 12:28:50 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 12:28:51 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 12:28:51 INFO  VerificationHelper:21 - element is Displayed..Popular Stock Screens
+2020-07-16 12:28:53 INFO  VerificationHelper:21 - element is Displayed..The Bull Cartel by Pratyush
+2020-07-16 12:28:55 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 12:28:57 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 12:28:58 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 12:29:18 INFO  BullCartel:65 - No more records to navigate...
+2020-07-16 12:29:18 INFO  TestToFetchBullCartelData:56 - Final unsorted list: [137.55, 526.9, 187.6, 188.65, 217.35, 206.25, 38.45, 206.9, 945.9, 309.0, 75.9, 1351.95, 280.15, 322.4, 615.2, 365.1, 37.4, 5597.05, 442.3, 288.3, 24.25, 50.85, 362.25, 1077.3, 154.3, 96.1, 569.05, 994.05, 210.05, 301.0, 945.85, 34.15, 55.2, 550.8, 375.8, 1350.55, 840.05, 40.0, 436.8, 808.15, 13.42, 72.45, 343.7, 104.85, 624.4, 34.95, 401.3, 437.55, 30.7, 9.09, 74.35, 33.4, 173.05, 258.0, 3.25, 33.9, 80.0, 38.5, 83.0, 13.65, 41.5, 107.3, 46.9, 244.15, 89.1, 125.45, 1485.6, 287.85, 13.0, 1040.15, 35.05, 101.8, 620.9, 1532.25, 135.1, 39.0, 20.65, 21.7, 148.2, 82.05, 71.25, 7.1, 1313.55, 227.2, 408.85, 12.55, 3038.85, 99.0, 47.55, 9.24, 58.75, 107.6, 217.2, 60.75, 38.85, 14.2, 37.25, 26.55, 63.1, 59.3, 3.93, 390.25, 64.05, 341.45, 43.55, 21.75, 6.42, 24.9, 15.01, 2176.5]
+2020-07-16 12:29:18 INFO  BullCartel:83 - List after sorting in descending order using sort() method: [5597.05, 3038.85, 2176.5, 1532.25, 1485.6, 1351.95, 1350.55, 1313.55, 1077.3, 1040.15, 994.05, 945.9, 945.85, 840.05, 808.15, 624.4, 620.9, 615.2, 569.05, 550.8, 526.9, 442.3, 437.55, 436.8, 408.85, 401.3, 390.25, 375.8, 365.1, 362.25, 343.7, 341.45, 322.4, 309.0, 301.0, 288.3, 287.85, 280.15, 258.0, 244.15, 227.2, 217.35, 217.2, 210.05, 206.9, 206.25, 188.65, 187.6, 173.05, 154.3, 148.2, 137.55, 135.1, 125.45, 107.6, 107.3, 104.85, 101.8, 99.0, 96.1, 89.1, 83.0, 82.05, 80.0, 75.9, 74.35, 72.45, 71.25, 64.05, 63.1, 60.75, 59.3, 58.75, 55.2, 50.85, 47.55, 46.9, 43.55, 41.5, 40.0, 39.0, 38.85, 38.5, 38.45, 37.4, 37.25, 35.05, 34.95, 34.15, 33.9, 33.4, 30.7, 26.55, 24.9, 24.25, 21.75, 21.7, 20.65, 15.01, 14.2, 13.65, 13.42, 13.0, 12.55, 9.24, 9.09, 7.1, 6.42, 3.93, 3.25]
+2020-07-16 12:29:18 INFO  BullCartel:89 - List after sorting in ascending order using sort() method: [3.25, 3.93, 6.42, 7.1, 9.09, 9.24, 12.55, 13.0, 13.42, 13.65, 14.2, 15.01, 20.65, 21.7, 21.75, 24.25, 24.9, 26.55, 30.7, 33.4, 33.9, 34.15, 34.95, 35.05, 37.25, 37.4, 38.45, 38.5, 38.85, 39.0, 40.0, 41.5, 43.55, 46.9, 47.55, 50.85, 55.2, 58.75, 59.3, 60.75, 63.1, 64.05, 71.25, 72.45, 74.35, 75.9, 80.0, 82.05, 83.0, 89.1, 96.1, 99.0, 101.8, 104.85, 107.3, 107.6, 125.45, 135.1, 137.55, 148.2, 154.3, 173.05, 187.6, 188.65, 206.25, 206.9, 210.05, 217.2, 217.35, 227.2, 244.15, 258.0, 280.15, 287.85, 288.3, 301.0, 309.0, 322.4, 341.45, 343.7, 362.25, 365.1, 375.8, 390.25, 401.3, 408.85, 436.8, 437.55, 442.3, 526.9, 550.8, 569.05, 615.2, 620.9, 624.4, 808.15, 840.05, 945.85, 945.9, 994.05, 1040.15, 1077.3, 1313.55, 1350.55, 1351.95, 1485.6, 1532.25, 2176.5, 3038.85, 5597.05]
+2020-07-16 12:29:19 INFO  BullCartel:42 - Clicked on sort header
+2020-07-16 12:29:21 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 12:29:25 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 12:29:26 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 12:29:46 INFO  BullCartel:65 - No more records to navigate...
+2020-07-16 12:29:46 INFO  TestToFetchBullCartelData:65 - List after descending order manual sort: [5597.05, 3038.85, 2176.5, 1532.25, 1485.6, 1351.95, 1350.55, 1313.55, 1077.3, 1040.15, 994.05, 945.9, 945.85, 840.05, 808.15, 624.4, 620.9, 615.2, 569.05, 550.8, 526.9, 442.3, 437.55, 436.8, 408.85, 401.3, 390.25, 375.8, 365.1, 362.25, 343.7, 341.45, 322.4, 309.0, 301.0, 288.3, 287.85, 280.15, 258.0, 244.15, 227.2, 217.35, 217.2, 210.05, 206.9, 206.25, 188.65, 187.6, 173.05, 154.3, 148.2, 137.55, 135.1, 125.45, 107.6, 107.3, 104.85, 101.8, 99.0, 96.1, 89.1, 83.0, 82.05, 80.0, 75.9, 74.35, 72.45, 71.25, 64.05, 63.1, 60.75, 59.3, 58.75, 55.2, 50.85, 47.55, 46.9, 43.55, 41.5, 40.0, 39.0, 38.85, 38.5, 38.45, 37.4, 37.25, 35.05, 34.95, 34.15, 33.9, 33.4, 30.7, 26.55, 24.9, 24.25, 21.75, 21.7, 20.65, 15.01, 14.2, 13.65, 13.42, 13.0, 12.55, 9.24, 9.09, 7.1, 6.42, 3.93, 3.25]
+2020-07-16 12:29:48 INFO  BullCartel:42 - Clicked on sort header
+2020-07-16 12:29:51 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 12:29:55 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 12:29:56 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 12:30:16 INFO  BullCartel:65 - No more records to navigate...
+2020-07-16 12:30:16 INFO  TestToFetchBullCartelData:70 - List after ascending order manual sort: [3.25, 3.93, 6.42, 7.1, 9.09, 9.24, 12.55, 13.0, 13.42, 13.65, 14.2, 15.01, 20.65, 21.7, 21.75, 24.25, 24.9, 26.55, 30.7, 33.4, 33.9, 34.15, 34.95, 35.05, 37.25, 37.4, 38.45, 38.5, 38.85, 39.0, 40.0, 41.5, 43.55, 46.9, 47.55, 50.85, 55.2, 58.75, 59.3, 60.75, 63.1, 64.05, 71.25, 72.45, 74.35, 75.9, 80.0, 82.05, 83.0, 89.1, 96.1, 99.0, 101.8, 104.85, 107.3, 107.6, 125.45, 135.1, 137.55, 148.2, 154.3, 173.05, 187.6, 188.65, 206.25, 206.9, 210.05, 217.2, 217.35, 227.2, 244.15, 258.0, 280.15, 287.85, 288.3, 301.0, 309.0, 322.4, 341.45, 343.7, 362.25, 365.1, 375.8, 390.25, 401.3, 408.85, 436.8, 437.55, 442.3, 526.9, 550.8, 569.05, 615.2, 620.9, 624.4, 808.15, 840.05, 945.85, 945.9, 994.05, 1040.15, 1077.3, 1313.55, 1350.55, 1351.95, 1485.6, 1532.25, 2176.5, 3038.85, 5597.05]
+2020-07-16 12:30:16 INFO  TestBase:82 - **************mutipleLoginFinished***************
+2020-07-16 14:59:30 INFO  TestBase:123 - Initialize Web driver: 1975873209
+2020-07-16 14:59:30 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 14:59:30 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-16 14:59:30 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-16 14:59:30 INFO  WaitHelper:141 - page is loaded
+2020-07-16 14:59:38 INFO  TestBase:64 - **************verifySortStarted***************
+2020-07-16 14:59:43 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 14:59:43 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (401ab6d3bd4ef5244d63f7bc144aa586)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-16 14:59:44 INFO  WaitHelper:154 - element is visible now
+2020-07-16 14:59:44 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 14:59:44 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 14:59:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 14:59:46 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-16 14:59:46 INFO  LoginPage:37 - Clicked login link
+2020-07-16 14:59:48 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-16 14:59:48 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-16 14:59:49 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-16 14:59:50 INFO  LoginPage:71 - clicking on login button...
+2020-07-16 14:59:51 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 14:59:52 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (401ab6d3bd4ef5244d63f7bc144aa586)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 14:59:52 INFO  WaitHelper:154 - element is visible now
+2020-07-16 14:59:52 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 14:59:52 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 14:59:54 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 14:59:54 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 14:59:54 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (401ab6d3bd4ef5244d63f7bc144aa586)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 14:59:54 INFO  WaitHelper:154 - element is visible now
+2020-07-16 14:59:54 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 14:59:54 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 14:59:55 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 14:59:56 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-16 14:59:57 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 14:59:57 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (401ab6d3bd4ef5244d63f7bc144aa586)] -> xpath: //*[@id='content-area']/div[1]/h1] for :20 seconds
+2020-07-16 14:59:57 INFO  WaitHelper:154 - element is visible now
+2020-07-16 14:59:57 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 14:59:57 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 14:59:59 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 14:59:59 INFO  VerificationHelper:21 - element is Displayed..Popular Stock Screens
+2020-07-16 15:00:02 INFO  VerificationHelper:21 - element is Displayed..The Bull Cartel by Pratyush
+2020-07-16 15:00:03 INFO  BullCartel:42 - Clicked on sort header
+2020-07-16 15:00:07 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 15:00:11 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 15:00:12 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 15:00:33 INFO  BullCartel:65 - No more records to navigate...
+2020-07-16 15:00:33 INFO  TestToVerifyBullCartelDataSort:58 - Final sorted list: [5597.05, 3038.85, 2176.5, 1532.25, 1485.6, 1351.95, 1350.55, 1313.55, 1077.3, 1040.15, 994.05, 945.9, 945.85, 840.05, 808.15, 624.4, 620.9, 615.2, 569.05, 550.8, 526.9, 442.3, 437.55, 436.8, 408.85, 401.3, 390.25, 375.8, 365.1, 362.25, 343.7, 341.45, 322.4, 309.0, 301.0, 288.3, 287.85, 280.15, 258.0, 244.15, 227.2, 217.35, 217.2, 210.05, 206.9, 206.25, 188.65, 187.6, 173.05, 154.3, 148.2, 137.55, 135.1, 125.45, 107.6, 107.3, 104.85, 101.8, 99.0, 96.1, 89.1, 83.0, 82.05, 80.0, 75.9, 74.35, 72.45, 71.25, 64.05, 63.1, 60.75, 59.3, 58.75, 55.2, 50.85, 47.55, 46.9, 43.55, 41.5, 40.0, 39.0, 38.85, 38.5, 38.45, 37.4, 37.25, 35.05, 34.95, 34.15, 33.9, 33.4, 30.7, 26.55, 24.9, 24.25, 21.75, 21.7, 20.65, 15.01, 14.2, 13.65, 13.42, 13.0, 12.55, 9.24, 9.09, 7.1, 6.42, 3.93, 3.25]
+2020-07-16 15:00:33 INFO  BullCartel:108 - Elements are not properly sorted
+2020-07-16 15:00:35 INFO  TestBase:82 - **************verifySortFinished***************
+2020-07-16 15:08:27 INFO  TestBase:123 - Initialize Web driver: 1975873209
+2020-07-16 15:08:27 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 15:08:27 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-16 15:08:27 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-16 15:08:27 INFO  WaitHelper:141 - page is loaded
+2020-07-16 15:08:32 INFO  TestBase:64 - **************verifySortStarted***************
+2020-07-16 15:08:35 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 15:08:35 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (bc104487e0db080fe78c8aab9e4bf450)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-16 15:08:36 INFO  WaitHelper:154 - element is visible now
+2020-07-16 15:08:36 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 15:08:36 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 15:08:37 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 15:08:38 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-16 15:08:38 INFO  LoginPage:37 - Clicked login link
+2020-07-16 15:08:39 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-16 15:08:39 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-16 15:08:40 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-16 15:08:41 INFO  LoginPage:71 - clicking on login button...
+2020-07-16 15:08:42 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 15:08:42 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (bc104487e0db080fe78c8aab9e4bf450)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 15:08:42 INFO  WaitHelper:154 - element is visible now
+2020-07-16 15:08:42 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 15:08:42 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 15:08:44 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 15:08:44 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 15:08:44 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (bc104487e0db080fe78c8aab9e4bf450)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-16 15:08:44 INFO  WaitHelper:154 - element is visible now
+2020-07-16 15:08:44 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 15:08:44 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 15:08:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 15:08:46 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-16 15:08:47 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-16 15:08:47 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (bc104487e0db080fe78c8aab9e4bf450)] -> xpath: //*[@id='content-area']/div[1]/h1] for :20 seconds
+2020-07-16 15:08:47 INFO  WaitHelper:154 - element is visible now
+2020-07-16 15:08:47 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-16 15:08:47 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 15:08:48 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-16 15:08:49 INFO  VerificationHelper:21 - element is Displayed..Popular Stock Screens
+2020-07-16 15:08:51 INFO  VerificationHelper:21 - element is Displayed..The Bull Cartel by Pratyush
+2020-07-16 15:08:53 INFO  BullCartel:42 - Clicked on sort header
+2020-07-16 15:08:54 INFO  BullCartel:42 - Clicked on sort header
+2020-07-16 15:08:57 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 15:09:00 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 15:09:02 INFO  BullCartel:58 - Navigating to next page: 
+2020-07-16 15:09:22 INFO  BullCartel:65 - No more records to navigate...
+2020-07-16 15:09:22 INFO  TestToVerifyBullCartelDataSort:59 - Final sorted list: [3.25, 3.93, 6.42, 7.1, 9.09, 9.24, 12.55, 13.0, 13.42, 13.65, 14.2, 15.01, 20.65, 21.7, 21.75, 24.25, 24.9, 26.55, 30.7, 33.4, 33.9, 34.15, 34.95, 35.05, 37.25, 37.4, 38.45, 38.5, 38.85, 39.0, 40.0, 41.5, 43.55, 46.9, 47.55, 50.85, 55.2, 58.75, 59.3, 60.75, 63.1, 64.05, 71.25, 72.45, 74.35, 75.9, 80.0, 82.05, 83.0, 89.1, 96.1, 99.0, 101.8, 104.85, 107.3, 107.6, 125.45, 135.1, 137.55, 148.2, 154.3, 173.05, 187.6, 188.65, 206.25, 206.9, 210.05, 217.2, 217.35, 227.2, 244.15, 258.0, 280.15, 287.85, 288.3, 301.0, 309.0, 322.4, 341.45, 343.7, 362.25, 365.1, 375.8, 390.25, 401.3, 408.85, 436.8, 437.55, 442.3, 526.9, 550.8, 569.05, 615.2, 620.9, 624.4, 808.15, 840.05, 945.85, 945.9, 994.05, 1040.15, 1077.3, 1313.55, 1350.55, 1351.95, 1485.6, 1532.25, 2176.5, 3038.85, 5597.05]
+2020-07-16 15:09:22 INFO  BullCartel:104 - 3.25
+2020-07-16 15:09:22 INFO  BullCartel:105 - 3.93
+2020-07-16 15:09:22 INFO  BullCartel:104 - 3.93
+2020-07-16 15:09:22 INFO  BullCartel:105 - 6.42
+2020-07-16 15:09:22 INFO  BullCartel:104 - 6.42
+2020-07-16 15:09:22 INFO  BullCartel:105 - 7.1
+2020-07-16 15:09:22 INFO  BullCartel:104 - 7.1
+2020-07-16 15:09:22 INFO  BullCartel:105 - 9.09
+2020-07-16 15:09:22 INFO  BullCartel:104 - 9.09
+2020-07-16 15:09:22 INFO  BullCartel:105 - 9.24
+2020-07-16 15:09:22 INFO  BullCartel:104 - 9.24
+2020-07-16 15:09:22 INFO  BullCartel:105 - 12.55
+2020-07-16 15:09:22 INFO  BullCartel:104 - 12.55
+2020-07-16 15:09:22 INFO  BullCartel:105 - 13.0
+2020-07-16 15:09:22 INFO  BullCartel:104 - 13.0
+2020-07-16 15:09:22 INFO  BullCartel:105 - 13.42
+2020-07-16 15:09:22 INFO  BullCartel:104 - 13.42
+2020-07-16 15:09:22 INFO  BullCartel:105 - 13.65
+2020-07-16 15:09:22 INFO  BullCartel:104 - 13.65
+2020-07-16 15:09:22 INFO  BullCartel:105 - 14.2
+2020-07-16 15:09:22 INFO  BullCartel:104 - 14.2
+2020-07-16 15:09:22 INFO  BullCartel:105 - 15.01
+2020-07-16 15:09:22 INFO  BullCartel:104 - 15.01
+2020-07-16 15:09:22 INFO  BullCartel:105 - 20.65
+2020-07-16 15:09:22 INFO  BullCartel:104 - 20.65
+2020-07-16 15:09:22 INFO  BullCartel:105 - 21.7
+2020-07-16 15:09:22 INFO  BullCartel:104 - 21.7
+2020-07-16 15:09:22 INFO  BullCartel:105 - 21.75
+2020-07-16 15:09:22 INFO  BullCartel:104 - 21.75
+2020-07-16 15:09:22 INFO  BullCartel:105 - 24.25
+2020-07-16 15:09:22 INFO  BullCartel:104 - 24.25
+2020-07-16 15:09:22 INFO  BullCartel:105 - 24.9
+2020-07-16 15:09:22 INFO  BullCartel:104 - 24.9
+2020-07-16 15:09:22 INFO  BullCartel:105 - 26.55
+2020-07-16 15:09:22 INFO  BullCartel:104 - 26.55
+2020-07-16 15:09:22 INFO  BullCartel:105 - 30.7
+2020-07-16 15:09:22 INFO  BullCartel:104 - 30.7
+2020-07-16 15:09:22 INFO  BullCartel:105 - 33.4
+2020-07-16 15:09:22 INFO  BullCartel:104 - 33.4
+2020-07-16 15:09:22 INFO  BullCartel:105 - 33.9
+2020-07-16 15:09:22 INFO  BullCartel:104 - 33.9
+2020-07-16 15:09:22 INFO  BullCartel:105 - 34.15
+2020-07-16 15:09:22 INFO  BullCartel:104 - 34.15
+2020-07-16 15:09:22 INFO  BullCartel:105 - 34.95
+2020-07-16 15:09:22 INFO  BullCartel:104 - 34.95
+2020-07-16 15:09:22 INFO  BullCartel:105 - 35.05
+2020-07-16 15:09:22 INFO  BullCartel:104 - 35.05
+2020-07-16 15:09:22 INFO  BullCartel:105 - 37.25
+2020-07-16 15:09:22 INFO  BullCartel:104 - 37.25
+2020-07-16 15:09:22 INFO  BullCartel:105 - 37.4
+2020-07-16 15:09:22 INFO  BullCartel:104 - 37.4
+2020-07-16 15:09:22 INFO  BullCartel:105 - 38.45
+2020-07-16 15:09:22 INFO  BullCartel:104 - 38.45
+2020-07-16 15:09:22 INFO  BullCartel:105 - 38.5
+2020-07-16 15:09:22 INFO  BullCartel:104 - 38.5
+2020-07-16 15:09:22 INFO  BullCartel:105 - 38.85
+2020-07-16 15:09:22 INFO  BullCartel:104 - 38.85
+2020-07-16 15:09:22 INFO  BullCartel:105 - 39.0
+2020-07-16 15:09:22 INFO  BullCartel:104 - 39.0
+2020-07-16 15:09:22 INFO  BullCartel:105 - 40.0
+2020-07-16 15:09:22 INFO  BullCartel:104 - 40.0
+2020-07-16 15:09:22 INFO  BullCartel:105 - 41.5
+2020-07-16 15:09:22 INFO  BullCartel:104 - 41.5
+2020-07-16 15:09:22 INFO  BullCartel:105 - 43.55
+2020-07-16 15:09:22 INFO  BullCartel:104 - 43.55
+2020-07-16 15:09:22 INFO  BullCartel:105 - 46.9
+2020-07-16 15:09:22 INFO  BullCartel:104 - 46.9
+2020-07-16 15:09:22 INFO  BullCartel:105 - 47.55
+2020-07-16 15:09:22 INFO  BullCartel:104 - 47.55
+2020-07-16 15:09:22 INFO  BullCartel:105 - 50.85
+2020-07-16 15:09:22 INFO  BullCartel:104 - 50.85
+2020-07-16 15:09:22 INFO  BullCartel:105 - 55.2
+2020-07-16 15:09:22 INFO  BullCartel:104 - 55.2
+2020-07-16 15:09:22 INFO  BullCartel:105 - 58.75
+2020-07-16 15:09:22 INFO  BullCartel:104 - 58.75
+2020-07-16 15:09:22 INFO  BullCartel:105 - 59.3
+2020-07-16 15:09:22 INFO  BullCartel:104 - 59.3
+2020-07-16 15:09:22 INFO  BullCartel:105 - 60.75
+2020-07-16 15:09:22 INFO  BullCartel:104 - 60.75
+2020-07-16 15:09:22 INFO  BullCartel:105 - 63.1
+2020-07-16 15:09:22 INFO  BullCartel:104 - 63.1
+2020-07-16 15:09:22 INFO  BullCartel:105 - 64.05
+2020-07-16 15:09:22 INFO  BullCartel:104 - 64.05
+2020-07-16 15:09:22 INFO  BullCartel:105 - 71.25
+2020-07-16 15:09:22 INFO  BullCartel:104 - 71.25
+2020-07-16 15:09:22 INFO  BullCartel:105 - 72.45
+2020-07-16 15:09:22 INFO  BullCartel:104 - 72.45
+2020-07-16 15:09:22 INFO  BullCartel:105 - 74.35
+2020-07-16 15:09:22 INFO  BullCartel:104 - 74.35
+2020-07-16 15:09:22 INFO  BullCartel:105 - 75.9
+2020-07-16 15:09:22 INFO  BullCartel:104 - 75.9
+2020-07-16 15:09:22 INFO  BullCartel:105 - 80.0
+2020-07-16 15:09:22 INFO  BullCartel:104 - 80.0
+2020-07-16 15:09:22 INFO  BullCartel:105 - 82.05
+2020-07-16 15:09:22 INFO  BullCartel:104 - 82.05
+2020-07-16 15:09:22 INFO  BullCartel:105 - 83.0
+2020-07-16 15:09:22 INFO  BullCartel:104 - 83.0
+2020-07-16 15:09:22 INFO  BullCartel:105 - 89.1
+2020-07-16 15:09:22 INFO  BullCartel:104 - 89.1
+2020-07-16 15:09:22 INFO  BullCartel:105 - 96.1
+2020-07-16 15:09:22 INFO  BullCartel:104 - 96.1
+2020-07-16 15:09:22 INFO  BullCartel:105 - 99.0
+2020-07-16 15:09:22 INFO  BullCartel:104 - 99.0
+2020-07-16 15:09:22 INFO  BullCartel:105 - 101.8
+2020-07-16 15:09:22 INFO  BullCartel:104 - 101.8
+2020-07-16 15:09:22 INFO  BullCartel:105 - 104.85
+2020-07-16 15:09:22 INFO  BullCartel:104 - 104.85
+2020-07-16 15:09:22 INFO  BullCartel:105 - 107.3
+2020-07-16 15:09:22 INFO  BullCartel:104 - 107.3
+2020-07-16 15:09:22 INFO  BullCartel:105 - 107.6
+2020-07-16 15:09:22 INFO  BullCartel:104 - 107.6
+2020-07-16 15:09:22 INFO  BullCartel:105 - 125.45
+2020-07-16 15:09:22 INFO  BullCartel:104 - 125.45
+2020-07-16 15:09:22 INFO  BullCartel:105 - 135.1
+2020-07-16 15:09:22 INFO  BullCartel:104 - 135.1
+2020-07-16 15:09:22 INFO  BullCartel:105 - 137.55
+2020-07-16 15:09:22 INFO  BullCartel:104 - 137.55
+2020-07-16 15:09:22 INFO  BullCartel:105 - 148.2
+2020-07-16 15:09:22 INFO  BullCartel:104 - 148.2
+2020-07-16 15:09:22 INFO  BullCartel:105 - 154.3
+2020-07-16 15:09:22 INFO  BullCartel:104 - 154.3
+2020-07-16 15:09:22 INFO  BullCartel:105 - 173.05
+2020-07-16 15:09:22 INFO  BullCartel:104 - 173.05
+2020-07-16 15:09:22 INFO  BullCartel:105 - 187.6
+2020-07-16 15:09:22 INFO  BullCartel:104 - 187.6
+2020-07-16 15:09:22 INFO  BullCartel:105 - 188.65
+2020-07-16 15:09:22 INFO  BullCartel:104 - 188.65
+2020-07-16 15:09:22 INFO  BullCartel:105 - 206.25
+2020-07-16 15:09:22 INFO  BullCartel:104 - 206.25
+2020-07-16 15:09:22 INFO  BullCartel:105 - 206.9
+2020-07-16 15:09:22 INFO  BullCartel:104 - 206.9
+2020-07-16 15:09:22 INFO  BullCartel:105 - 210.05
+2020-07-16 15:09:22 INFO  BullCartel:104 - 210.05
+2020-07-16 15:09:22 INFO  BullCartel:105 - 217.2
+2020-07-16 15:09:22 INFO  BullCartel:104 - 217.2
+2020-07-16 15:09:22 INFO  BullCartel:105 - 217.35
+2020-07-16 15:09:22 INFO  BullCartel:104 - 217.35
+2020-07-16 15:09:22 INFO  BullCartel:105 - 227.2
+2020-07-16 15:09:22 INFO  BullCartel:104 - 227.2
+2020-07-16 15:09:22 INFO  BullCartel:105 - 244.15
+2020-07-16 15:09:22 INFO  BullCartel:104 - 244.15
+2020-07-16 15:09:22 INFO  BullCartel:105 - 258.0
+2020-07-16 15:09:22 INFO  BullCartel:104 - 258.0
+2020-07-16 15:09:22 INFO  BullCartel:105 - 280.15
+2020-07-16 15:09:22 INFO  BullCartel:104 - 280.15
+2020-07-16 15:09:22 INFO  BullCartel:105 - 287.85
+2020-07-16 15:09:22 INFO  BullCartel:104 - 287.85
+2020-07-16 15:09:22 INFO  BullCartel:105 - 288.3
+2020-07-16 15:09:22 INFO  BullCartel:104 - 288.3
+2020-07-16 15:09:22 INFO  BullCartel:105 - 301.0
+2020-07-16 15:09:22 INFO  BullCartel:104 - 301.0
+2020-07-16 15:09:22 INFO  BullCartel:105 - 309.0
+2020-07-16 15:09:22 INFO  BullCartel:104 - 309.0
+2020-07-16 15:09:22 INFO  BullCartel:105 - 322.4
+2020-07-16 15:09:22 INFO  BullCartel:104 - 322.4
+2020-07-16 15:09:22 INFO  BullCartel:105 - 341.45
+2020-07-16 15:09:22 INFO  BullCartel:104 - 341.45
+2020-07-16 15:09:22 INFO  BullCartel:105 - 343.7
+2020-07-16 15:09:22 INFO  BullCartel:104 - 343.7
+2020-07-16 15:09:22 INFO  BullCartel:105 - 362.25
+2020-07-16 15:09:22 INFO  BullCartel:104 - 362.25
+2020-07-16 15:09:22 INFO  BullCartel:105 - 365.1
+2020-07-16 15:09:22 INFO  BullCartel:104 - 365.1
+2020-07-16 15:09:22 INFO  BullCartel:105 - 375.8
+2020-07-16 15:09:22 INFO  BullCartel:104 - 375.8
+2020-07-16 15:09:22 INFO  BullCartel:105 - 390.25
+2020-07-16 15:09:22 INFO  BullCartel:104 - 390.25
+2020-07-16 15:09:22 INFO  BullCartel:105 - 401.3
+2020-07-16 15:09:23 INFO  BullCartel:104 - 401.3
+2020-07-16 15:09:23 INFO  BullCartel:105 - 408.85
+2020-07-16 15:09:23 INFO  BullCartel:104 - 408.85
+2020-07-16 15:09:23 INFO  BullCartel:105 - 436.8
+2020-07-16 15:09:23 INFO  BullCartel:104 - 436.8
+2020-07-16 15:09:23 INFO  BullCartel:105 - 437.55
+2020-07-16 15:09:23 INFO  BullCartel:104 - 437.55
+2020-07-16 15:09:23 INFO  BullCartel:105 - 442.3
+2020-07-16 15:09:23 INFO  BullCartel:104 - 442.3
+2020-07-16 15:09:23 INFO  BullCartel:105 - 526.9
+2020-07-16 15:09:23 INFO  BullCartel:104 - 526.9
+2020-07-16 15:09:23 INFO  BullCartel:105 - 550.8
+2020-07-16 15:09:23 INFO  BullCartel:104 - 550.8
+2020-07-16 15:09:23 INFO  BullCartel:105 - 569.05
+2020-07-16 15:09:23 INFO  BullCartel:104 - 569.05
+2020-07-16 15:09:23 INFO  BullCartel:105 - 615.2
+2020-07-16 15:09:23 INFO  BullCartel:104 - 615.2
+2020-07-16 15:09:23 INFO  BullCartel:105 - 620.9
+2020-07-16 15:09:23 INFO  BullCartel:104 - 620.9
+2020-07-16 15:09:23 INFO  BullCartel:105 - 624.4
+2020-07-16 15:09:23 INFO  BullCartel:104 - 624.4
+2020-07-16 15:09:23 INFO  BullCartel:105 - 808.15
+2020-07-16 15:09:23 INFO  BullCartel:104 - 808.15
+2020-07-16 15:09:23 INFO  BullCartel:105 - 840.05
+2020-07-16 15:09:23 INFO  BullCartel:104 - 840.05
+2020-07-16 15:09:23 INFO  BullCartel:105 - 945.85
+2020-07-16 15:09:23 INFO  BullCartel:104 - 945.85
+2020-07-16 15:09:23 INFO  BullCartel:105 - 945.9
+2020-07-16 15:09:23 INFO  BullCartel:104 - 945.9
+2020-07-16 15:09:23 INFO  BullCartel:105 - 994.05
+2020-07-16 15:09:23 INFO  BullCartel:104 - 994.05
+2020-07-16 15:09:23 INFO  BullCartel:105 - 1040.15
+2020-07-16 15:09:23 INFO  BullCartel:104 - 1040.15
+2020-07-16 15:09:23 INFO  BullCartel:105 - 1077.3
+2020-07-16 15:09:23 INFO  BullCartel:104 - 1077.3
+2020-07-16 15:09:23 INFO  BullCartel:105 - 1313.55
+2020-07-16 15:09:23 INFO  BullCartel:104 - 1313.55
+2020-07-16 15:09:23 INFO  BullCartel:105 - 1350.55
+2020-07-16 15:09:23 INFO  BullCartel:104 - 1350.55
+2020-07-16 15:09:23 INFO  BullCartel:105 - 1351.95
+2020-07-16 15:09:23 INFO  BullCartel:104 - 1351.95
+2020-07-16 15:09:23 INFO  BullCartel:105 - 1485.6
+2020-07-16 15:09:23 INFO  BullCartel:104 - 1485.6
+2020-07-16 15:09:23 INFO  BullCartel:105 - 1532.25
+2020-07-16 15:09:23 INFO  BullCartel:104 - 1532.25
+2020-07-16 15:09:23 INFO  BullCartel:105 - 2176.5
+2020-07-16 15:09:23 INFO  BullCartel:104 - 2176.5
+2020-07-16 15:09:23 INFO  BullCartel:105 - 3038.85
+2020-07-16 15:09:23 INFO  BullCartel:104 - 3038.85
+2020-07-16 15:09:23 INFO  BullCartel:105 - 5597.05
+2020-07-16 15:09:23 INFO  TestBase:82 - **************verifySortFinished***************
+2020-07-17 17:39:42 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-07-17 17:39:42 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-17 17:39:42 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-17 17:39:42 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-17 17:39:42 INFO  WaitHelper:141 - page is loaded
+2020-07-17 17:39:52 INFO  TestBase:64 - **************testLoginStarted***************
+2020-07-17 17:39:57 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-17 17:39:58 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (ac3696ce8d09181baf0bdbe4e3f3f1e4)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-17 17:39:58 INFO  WaitHelper:154 - element is visible now
+2020-07-17 17:39:58 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-17 17:39:58 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-17 17:40:00 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-17 17:40:01 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-17 17:40:01 INFO  LoginPage:37 - Clicked login link
+2020-07-17 17:40:03 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-17 17:40:03 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-17 17:40:04 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-17 17:40:05 INFO  LoginPage:71 - clicking on login button...
+2020-07-17 17:40:07 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-17 17:40:07 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (ac3696ce8d09181baf0bdbe4e3f3f1e4)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-17 17:40:07 INFO  WaitHelper:154 - element is visible now
+2020-07-17 17:40:07 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-17 17:40:07 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-17 17:40:09 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-17 17:40:09 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-17 17:40:09 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (ac3696ce8d09181baf0bdbe4e3f3f1e4)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-17 17:40:09 INFO  WaitHelper:154 - element is visible now
+2020-07-17 17:40:09 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-17 17:40:09 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-17 17:40:11 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-17 17:40:11 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-17 17:40:11 INFO  LoginPage:30 - Logging out
+2020-07-17 17:40:12 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-17 17:40:14 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-17 17:40:14 INFO  TestBase:82 - **************testLoginFinished***************
+2020-07-23 11:21:01 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-07-23 11:21:01 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:21:01 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 11:21:01 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 11:21:01 INFO  WaitHelper:141 - page is loaded
+2020-07-23 11:21:07 INFO  TestBase:64 - **************testLoginStarted***************
+2020-07-23 11:21:15 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:21:16 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (f8310e0e58597008558dd27ecee91fa5)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 11:21:16 INFO  WaitHelper:154 - element is visible now
+2020-07-23 11:21:16 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 11:21:16 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:21:18 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:21:18 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 11:21:18 INFO  LoginPage:37 - Clicked login link
+2020-07-23 11:21:21 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 11:21:21 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 11:21:22 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 11:21:23 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 11:21:25 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:21:26 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (f8310e0e58597008558dd27ecee91fa5)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 11:21:26 INFO  WaitHelper:154 - element is visible now
+2020-07-23 11:21:26 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 11:21:26 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:21:27 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:21:28 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:21:28 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (f8310e0e58597008558dd27ecee91fa5)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 11:21:28 INFO  WaitHelper:154 - element is visible now
+2020-07-23 11:21:28 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 11:21:28 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:21:29 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:21:30 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 11:21:30 INFO  LoginPage:30 - Logging out
+2020-07-23 11:21:31 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 11:21:33 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 11:21:33 INFO  TestBase:82 - **************testLoginFinished***************
+2020-07-23 11:24:43 INFO  TestBase:123 - Web driver is now initialized: 1237912220
+2020-07-23 11:24:43 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:24:43 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 11:24:43 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 11:24:43 INFO  WaitHelper:141 - page is loaded
+2020-07-23 11:24:49 INFO  TestBase:64 - **************testLoginStarted***************
+2020-07-23 11:24:55 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:25:03 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (9a4a22375aa2e44e2fb496fca56b24f6)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 11:25:04 INFO  WaitHelper:154 - element is visible now
+2020-07-23 11:25:04 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 11:25:04 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:25:06 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:25:06 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 11:25:06 INFO  LoginPage:37 - Clicked login link
+2020-07-23 11:25:09 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 11:25:09 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 11:25:11 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 11:25:13 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 11:25:15 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:25:15 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (9a4a22375aa2e44e2fb496fca56b24f6)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 11:25:15 INFO  WaitHelper:154 - element is visible now
+2020-07-23 11:25:15 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 11:25:15 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:25:17 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:25:17 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:25:17 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (9a4a22375aa2e44e2fb496fca56b24f6)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 11:25:18 INFO  WaitHelper:154 - element is visible now
+2020-07-23 11:25:18 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 11:25:18 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:25:19 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:25:19 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 11:25:19 INFO  LoginPage:30 - Logging out
+2020-07-23 11:25:21 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 11:25:23 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 11:25:23 INFO  TestBase:82 - **************testLoginFinished***************
+2020-07-23 11:52:06 INFO  TestBase:123 - Web driver is now initialized: 757708014
+2020-07-23 11:52:06 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:52:06 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 11:52:06 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 11:52:06 INFO  WaitHelper:141 - page is loaded
+2020-07-23 11:52:12 INFO  TestBase:64 - **************testLoginStarted***************
+2020-07-23 11:52:19 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:52:19 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (997c6e9057d2cf8d0b050311ac459878)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 11:52:19 INFO  WaitHelper:154 - element is visible now
+2020-07-23 11:52:19 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 11:52:19 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:52:21 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:52:22 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 11:52:22 INFO  LoginPage:37 - Clicked login link
+2020-07-23 11:52:25 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 11:52:25 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 11:52:25 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 11:52:26 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 11:52:29 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:52:29 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (997c6e9057d2cf8d0b050311ac459878)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 11:52:29 INFO  WaitHelper:154 - element is visible now
+2020-07-23 11:52:29 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 11:52:29 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:52:31 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:52:31 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 11:52:32 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (997c6e9057d2cf8d0b050311ac459878)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 11:52:32 INFO  WaitHelper:154 - element is visible now
+2020-07-23 11:52:32 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 11:52:32 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:52:33 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 11:52:34 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 11:52:34 INFO  LoginPage:30 - Logging out
+2020-07-23 11:52:36 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 11:52:37 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 11:52:37 INFO  TestBase:82 - **************testLoginFinished***************
+2020-07-23 12:17:25 INFO  TestBase:123 - Web driver is now initialized: 1237912220
+2020-07-23 12:17:25 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 12:17:25 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 12:17:25 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 12:17:25 INFO  WaitHelper:141 - page is loaded
+2020-07-23 12:17:31 INFO  TestBase:64 - **************testLoginStarted***************
+2020-07-23 12:17:41 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 12:17:41 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (824a13a5920cd6972693a35033821fee)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 12:17:42 INFO  WaitHelper:154 - element is visible now
+2020-07-23 12:17:42 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 12:17:42 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 12:17:43 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 12:17:44 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 12:17:44 INFO  LoginPage:37 - Clicked login link
+2020-07-23 12:17:47 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 12:17:47 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 12:17:48 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 12:17:49 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 12:17:53 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 12:17:53 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (824a13a5920cd6972693a35033821fee)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 12:17:53 INFO  WaitHelper:154 - element is visible now
+2020-07-23 12:17:53 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 12:17:53 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 12:17:55 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 12:17:55 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 12:17:55 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (824a13a5920cd6972693a35033821fee)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 12:17:55 INFO  WaitHelper:154 - element is visible now
+2020-07-23 12:17:56 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 12:17:56 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 12:17:57 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 12:17:58 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 12:17:58 INFO  LoginPage:30 - Logging out
+2020-07-23 12:17:59 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 12:18:02 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 12:18:02 INFO  TestBase:82 - **************testLoginFinished***************
+2020-07-23 14:59:18 INFO  TestBase:123 - Web driver is now initialized: 1237912220
+2020-07-23 14:59:18 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 14:59:18 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 14:59:18 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 14:59:18 INFO  WaitHelper:141 - page is loaded
+2020-07-23 14:59:23 INFO  TestBase:64 - **************testLoginStarted***************
+2020-07-23 14:59:27 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 14:59:27 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (4a37a630f12519f711bdde5905511665)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 14:59:28 INFO  WaitHelper:154 - element is visible now
+2020-07-23 14:59:28 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 14:59:28 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 14:59:30 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 14:59:30 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 14:59:30 INFO  LoginPage:37 - Clicked login link
+2020-07-23 14:59:32 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 14:59:32 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 14:59:33 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 14:59:33 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 14:59:34 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 14:59:34 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (4a37a630f12519f711bdde5905511665)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 14:59:34 INFO  WaitHelper:154 - element is visible now
+2020-07-23 14:59:34 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 14:59:34 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 14:59:36 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 14:59:36 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 14:59:36 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (4a37a630f12519f711bdde5905511665)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 14:59:36 INFO  WaitHelper:154 - element is visible now
+2020-07-23 14:59:36 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 14:59:36 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 14:59:37 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 14:59:38 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 14:59:38 INFO  LoginPage:30 - Logging out
+2020-07-23 14:59:38 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 14:59:39 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 14:59:39 INFO  TestBase:82 - **************testLoginFinished***************
+2020-07-23 15:00:15 INFO  TestBase:123 - Web driver is now initialized: 1237912220
+2020-07-23 15:00:15 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 15:00:15 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 15:00:15 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 15:00:15 INFO  WaitHelper:141 - page is loaded
+2020-07-23 15:00:20 INFO  TestBase:64 - **************testLoginStarted***************
+2020-07-23 15:00:23 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 15:00:23 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (b566b809a2390881e5b846ae83f5ec09)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 15:00:23 INFO  WaitHelper:154 - element is visible now
+2020-07-23 15:00:23 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 15:00:23 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 15:00:24 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 15:00:25 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 15:00:25 INFO  LoginPage:37 - Clicked login link
+2020-07-23 15:00:26 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 15:00:26 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 15:00:26 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 15:00:27 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 15:00:28 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 15:00:28 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (b566b809a2390881e5b846ae83f5ec09)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 15:00:28 INFO  WaitHelper:154 - element is visible now
+2020-07-23 15:00:28 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 15:00:28 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 15:00:29 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 15:00:29 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 15:00:29 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (b566b809a2390881e5b846ae83f5ec09)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 15:00:29 INFO  WaitHelper:154 - element is visible now
+2020-07-23 15:00:29 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 15:00:29 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 15:00:29 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 15:00:29 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 15:00:29 INFO  LoginPage:30 - Logging out
+2020-07-23 15:00:30 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 15:00:30 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 15:00:30 INFO  TestBase:82 - **************testLoginFinished***************
+2020-07-23 17:34:41 INFO  TestBase:123 - Web driver is now initialized: 757708014
+2020-07-23 17:34:41 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 17:34:41 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 17:34:41 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 17:34:41 INFO  WaitHelper:141 - page is loaded
+2020-07-23 17:34:47 INFO  TestBase:64 - **************testLoginStarted***************
+2020-07-23 17:34:54 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 17:34:54 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (5c049d621b02495aff9d324ea97a0c3e)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 17:34:55 INFO  WaitHelper:154 - element is visible now
+2020-07-23 17:34:55 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 17:34:55 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:34:56 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:34:57 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 17:34:57 INFO  LoginPage:37 - Clicked login link
+2020-07-23 17:35:01 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 17:35:01 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 17:35:02 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 17:35:04 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 17:35:07 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 17:35:08 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (5c049d621b02495aff9d324ea97a0c3e)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 17:35:08 INFO  WaitHelper:154 - element is visible now
+2020-07-23 17:35:08 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 17:35:08 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:35:10 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:35:11 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 17:35:11 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (5c049d621b02495aff9d324ea97a0c3e)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 17:35:11 INFO  WaitHelper:154 - element is visible now
+2020-07-23 17:35:11 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 17:35:11 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:35:13 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:35:13 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 17:35:13 INFO  LoginPage:30 - Logging out
+2020-07-23 17:35:15 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 17:35:17 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 17:35:17 INFO  TestBase:82 - **************testLoginFinished***************
+2020-07-23 17:50:24 INFO  TestBase:123 - Web driver is now initialized: 2100440237
+2020-07-23 17:50:24 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 17:50:24 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 17:50:24 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 17:50:24 INFO  WaitHelper:141 - page is loaded
+2020-07-23 17:50:30 INFO  TestBase:64 - **************testParametersStarted***************
+2020-07-23 17:50:35 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 17:50:35 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (6f217074059422a4a5f87a31cc8da1fe)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 17:50:35 INFO  WaitHelper:154 - element is visible now
+2020-07-23 17:50:35 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 17:50:35 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:50:37 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:50:37 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 17:50:37 INFO  LoginPage:37 - Clicked login link
+2020-07-23 17:50:40 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 17:50:40 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 17:50:41 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 17:50:42 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 17:50:44 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 17:50:44 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (6f217074059422a4a5f87a31cc8da1fe)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 17:50:44 INFO  WaitHelper:154 - element is visible now
+2020-07-23 17:50:44 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 17:50:44 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:50:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:50:46 INFO  JenkinsParameterTest:41 - 
+2020-07-23 17:50:46 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 17:50:46 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (6f217074059422a4a5f87a31cc8da1fe)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 17:50:46 INFO  WaitHelper:154 - element is visible now
+2020-07-23 17:50:46 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 17:50:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:50:48 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 17:50:48 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 17:50:48 INFO  LoginPage:30 - Logging out
+2020-07-23 17:50:50 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 17:50:51 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 17:50:51 INFO  TestBase:82 - **************testParametersFinished***************
+2020-07-23 17:50:53 INFO  TestBase:64 - **************testStarted***************
+2020-07-23 17:50:54 INFO  TestBase:132 - driver is null..
+2020-07-23 17:50:54 INFO  TestBase:82 - **************testFinished***************
+2020-07-23 17:50:54 INFO  TestBase:64 - **************test1Started***************
+2020-07-23 17:50:54 INFO  AssertionHelper:17 - making script PASS..
+2020-07-23 17:50:54 INFO  TestBase:82 - **************test1Finished***************
+2020-07-23 17:50:54 INFO  TestBase:64 - **************test2Started***************
+2020-07-23 17:50:54 INFO  AssertionHelper:27 - making script FAIL..
+2020-07-23 17:50:54 INFO  TestBase:132 - driver is null..
+2020-07-23 17:50:54 INFO  TestBase:82 - **************test2Finished***************
+2020-07-23 17:50:55 INFO  TestBase:64 - **************testStarted***************
+2020-07-23 17:50:55 INFO  TestBase:132 - driver is null..
+2020-07-23 17:50:55 INFO  TestBase:82 - **************testFinished***************
+2020-07-23 17:50:55 INFO  TestBase:64 - **************readBullCartelDataStarted***************
+2020-07-23 17:50:55 INFO  TestBase:132 - driver is null..
+2020-07-23 17:50:55 INFO  TestBase:82 - **************readBullCartelDataFinished***************
+2020-07-23 17:50:56 INFO  TestBase:64 - **************verifySortStarted***************
+2020-07-23 17:50:56 INFO  TestBase:132 - driver is null..
+2020-07-23 17:50:56 INFO  TestBase:82 - **************verifySortFinished***************
+2020-07-23 18:05:44 INFO  TestBase:123 - Web driver is now initialized: 1237912220
+2020-07-23 18:05:44 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:05:44 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 18:05:44 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 18:05:44 INFO  WaitHelper:141 - page is loaded
+2020-07-23 18:05:54 INFO  TestBase:64 - **************testParametersStarted***************
+2020-07-23 18:06:02 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:06:02 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (f045fe0f7ab4090799b9ef96182ccafa)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 18:06:03 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:06:03 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:06:03 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:06:04 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:06:05 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 18:06:05 INFO  LoginPage:37 - Clicked login link
+2020-07-23 18:06:08 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 18:06:08 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 18:06:09 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 18:06:10 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 18:06:13 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:06:13 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (f045fe0f7ab4090799b9ef96182ccafa)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 18:06:13 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:06:13 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:06:13 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:06:15 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:06:16 INFO  JenkinsParameterTest:41 - 50
+2020-07-23 18:06:16 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:06:16 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (f045fe0f7ab4090799b9ef96182ccafa)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 18:06:16 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:06:16 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:06:16 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:06:18 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:06:19 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 18:06:19 INFO  LoginPage:30 - Logging out
+2020-07-23 18:06:21 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 18:06:24 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 18:06:24 INFO  TestBase:82 - **************testParametersFinished***************
+2020-07-23 18:10:25 INFO  TestBase:123 - Web driver is now initialized: 1237912220
+2020-07-23 18:10:25 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:10:25 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 18:10:25 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 18:10:25 INFO  WaitHelper:141 - page is loaded
+2020-07-23 18:10:37 INFO  TestBase:64 - **************testParametersStarted***************
+2020-07-23 18:10:50 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:10:54 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (178052a450c4a8588b709bb5b52a4191)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 18:10:56 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:10:56 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:10:56 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:11:00 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:11:02 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 18:11:02 INFO  LoginPage:37 - Clicked login link
+2020-07-23 18:11:08 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 18:11:08 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 18:11:10 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 18:11:11 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 18:11:15 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:11:15 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (178052a450c4a8588b709bb5b52a4191)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 18:11:16 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:11:16 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:11:16 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:11:19 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:11:20 INFO  JenkinsParameterTest:41 - 50
+2020-07-23 18:11:20 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:11:20 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (178052a450c4a8588b709bb5b52a4191)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 18:11:20 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:11:20 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:11:20 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:11:23 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:11:24 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 18:11:24 INFO  LoginPage:30 - Logging out
+2020-07-23 18:11:26 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 18:11:32 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 18:11:32 INFO  TestBase:82 - **************testParametersFinished***************
+2020-07-23 18:26:25 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-07-23 18:26:25 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:26:25 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 18:26:25 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 18:26:25 INFO  WaitHelper:141 - page is loaded
+2020-07-23 18:26:29 INFO  TestBase:64 - **************testParametersStarted***************
+2020-07-23 18:26:34 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:26:34 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (1e3452719cb0e2703cf04e35836df989)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 18:26:34 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:26:34 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:26:34 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:26:36 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:26:36 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 18:26:36 INFO  LoginPage:37 - Clicked login link
+2020-07-23 18:26:38 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 18:26:38 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 18:26:38 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 18:26:38 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 18:26:39 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:26:39 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (1e3452719cb0e2703cf04e35836df989)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 18:26:39 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:26:39 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:26:39 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:26:40 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:26:40 INFO  JenkinsParameterTest:41 - 
+2020-07-23 18:26:40 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:26:40 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (1e3452719cb0e2703cf04e35836df989)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 18:26:40 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:26:40 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:26:40 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:26:41 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:26:42 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 18:26:42 INFO  LoginPage:30 - Logging out
+2020-07-23 18:26:43 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 18:26:44 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 18:26:44 INFO  TestBase:82 - **************testParametersFinished***************
+2020-07-23 18:27:33 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-07-23 18:27:33 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:27:33 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 18:27:33 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 18:27:33 INFO  WaitHelper:141 - page is loaded
+2020-07-23 18:27:37 INFO  TestBase:64 - **************testParametersStarted***************
+2020-07-23 18:27:40 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:27:40 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (b9c4997cda23cc23bd67649bd70c3d47)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 18:27:40 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:27:40 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:27:40 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:27:42 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:27:42 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 18:27:42 INFO  LoginPage:37 - Clicked login link
+2020-07-23 18:27:43 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 18:27:43 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 18:27:43 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 18:27:44 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 18:27:45 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:27:45 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (b9c4997cda23cc23bd67649bd70c3d47)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 18:27:45 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:27:45 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:27:45 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:27:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:27:46 INFO  JenkinsParameterTest:41 - 
+2020-07-23 18:27:46 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 18:27:46 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (b9c4997cda23cc23bd67649bd70c3d47)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 18:27:47 INFO  WaitHelper:154 - element is visible now
+2020-07-23 18:27:47 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 18:27:47 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:27:48 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 18:27:48 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 18:27:48 INFO  LoginPage:30 - Logging out
+2020-07-23 18:27:49 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 18:27:49 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 18:27:49 INFO  TestBase:82 - **************testParametersFinished***************
+2020-07-23 19:20:02 INFO  TestBase:123 - Web driver is now initialized: 1237912220
+2020-07-23 19:20:02 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 19:20:02 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-07-23 19:20:02 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-07-23 19:20:02 INFO  WaitHelper:141 - page is loaded
+2020-07-23 19:20:07 INFO  TestBase:64 - **************testParametersStarted***************
+2020-07-23 19:20:12 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 19:20:12 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (2830bb14ad67ad0c371f5bfd49d73628)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-07-23 19:20:12 INFO  WaitHelper:154 - element is visible now
+2020-07-23 19:20:12 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 19:20:12 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 19:20:13 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 19:20:14 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 19:20:14 INFO  LoginPage:37 - Clicked login link
+2020-07-23 19:20:17 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-07-23 19:20:17 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-07-23 19:20:18 INFO  LoginPage:62 - entering password....Screener_3007
+2020-07-23 19:20:18 INFO  LoginPage:71 - clicking on login button...
+2020-07-23 19:20:20 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 19:20:20 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (2830bb14ad67ad0c371f5bfd49d73628)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 19:20:20 INFO  WaitHelper:154 - element is visible now
+2020-07-23 19:20:20 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 19:20:20 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 19:20:22 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 19:20:22 INFO  JenkinsParameterTest:41 - 
+2020-07-23 19:20:22 INFO  WaitHelper:26 - WaitHelper object created..
+2020-07-23 19:20:22 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (2830bb14ad67ad0c371f5bfd49d73628)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-07-23 19:20:22 INFO  WaitHelper:154 - element is visible now
+2020-07-23 19:20:22 INFO  TestBase:156 - capturing ui navigation screen...
+2020-07-23 19:20:22 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 19:20:23 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-07-23 19:20:23 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-07-23 19:20:23 INFO  LoginPage:30 - Logging out
+2020-07-23 19:20:24 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-07-23 19:20:25 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-07-23 19:20:25 INFO  TestBase:82 - **************testParametersFinished***************

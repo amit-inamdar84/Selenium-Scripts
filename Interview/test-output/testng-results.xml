@@ -5,52 +5,35 @@
       <![CDATA[captureScreen method called]]>
     </line>
     <line>
-      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_31_58.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_31_58.png'height='100' width='100'/></a>]]>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'height='100' width='100'/></a>]]>
     </line>
     <line>
       <![CDATA[captureScreen method called]]>
     </line>
     <line>
-      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_05.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_05.png'height='100' width='100'/></a>]]>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'height='100' width='100'/></a>]]>
     </line>
     <line>
       <![CDATA[captureScreen method called]]>
     </line>
     <line>
-      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_07.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_07.png'height='100' width='100'/></a>]]>
-    </line>
-    <line>
-      <![CDATA[captureScreen method called]]>
-    </line>
-    <line>
-      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_10.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_10.png'height='100' width='100'/></a>]]>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'height='100' width='100'/></a>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="122682" started-at="2020-07-15T15:01:41Z" finished-at="2020-07-15T15:03:44Z">
+  <suite name="Default suite" duration-ms="25565" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="122682" started-at="2020-07-15T15:01:41Z" finished-at="2020-07-15T15:03:44Z">
-      <class name="com.amit.web.testscripts.TestToFetchBullCartelData">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amit.web.testscripts.TestToFetchBullCartelData@7fac631b]" name="beforeSuite" is-config="true" duration-ms="578" started-at="2020-07-15T15:01:41Z" finished-at="2020-07-15T15:01:41Z">
+    <test name="Default test" duration-ms="25565" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:50Z">
+      <class name="com.amit.web.testscripts.JenkinsParameterTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="beforeSuite" is-config="true" duration-ms="691" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amit.web.testscripts.TestToFetchBullCartelData@7fac631b]" name="beforeTest" is-config="true" duration-ms="10064" started-at="2020-07-15T15:01:41Z" finished-at="2020-07-15T15:01:51Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="beforeTest" is-config="true" duration-ms="10558" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.amit.web.testscripts.TestToFetchBullCartelData@7fac631b]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2020-07-15T15:01:54Z" finished-at="2020-07-15T15:01:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.amit.web.testscripts.TestToFetchBullCartelData.mutipleLogin(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="mutipleLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.TestToFetchBullCartelData@7fac631b]" name="mutipleLogin" duration-ms="108529" started-at="2020-07-15T15:01:54Z" data-provider="BullCartelData" finished-at="2020-07-15T15:03:42Z">
+        <test-method status="PASS" signature="testParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="testParameters" duration-ms="11895" started-at="2020-07-23T12:57:37Z" data-provider="SingleLogin" finished-at="2020-07-23T12:57:49Z">
           <params>
             <param index="0">
               <value>
@@ -73,44 +56,49 @@
               <![CDATA[captureScreen method called]]>
             </line>
             <line>
-              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_31_58.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_31_58.png'height='100' width='100'/></a>]]>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'height='100' width='100'/></a>]]>
             </line>
             <line>
               <![CDATA[captureScreen method called]]>
             </line>
             <line>
-              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_05.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_05.png'height='100' width='100'/></a>]]>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'height='100' width='100'/></a>]]>
             </line>
             <line>
               <![CDATA[captureScreen method called]]>
             </line>
             <line>
-              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_07.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_07.png'height='100' width='100'/></a>]]>
-            </line>
-            <line>
-              <![CDATA[captureScreen method called]]>
-            </line>
-            <line>
-              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_10.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_15_07_2020_08_32_10.png'height='100' width='100'/></a>]]>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'height='100' width='100'/></a>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- mutipleLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amit.web.testscripts.TestToFetchBullCartelData@7fac631b]" name="afterMethod" is-config="true" duration-ms="1518" started-at="2020-07-15T15:03:42Z" finished-at="2020-07-15T15:03:44Z">
+        </test-method> <!-- testParameters -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-23T12:57:37Z" finished-at="2020-07-23T12:57:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=mutipleLogin status=SUCCESS method=TestToFetchBullCartelData.mutipleLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.TestToFetchBullCartelData@7fac631b] output=captureScreen method called]]]>
+                <![CDATA[public void com.amit.web.testscripts.JenkinsParameterTest.testParameters(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="afterMethod" is-config="true" duration-ms="734" started-at="2020-07-23T12:57:49Z" finished-at="2020-07-23T12:57:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testParameters status=SUCCESS method=JenkinsParameterTest.testParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b] output=captureScreen method called]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amit.web.testscripts.TestToFetchBullCartelData@7fac631b]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-07-15T15:03:44Z" finished-at="2020-07-15T15:03:44Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-07-23T12:57:50Z" finished-at="2020-07-23T12:57:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.amit.web.testscripts.TestToFetchBullCartelData -->
+      </class> <!-- com.amit.web.testscripts.JenkinsParameterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

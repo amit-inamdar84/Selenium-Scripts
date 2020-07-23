@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.amit.web.testscripts.TestToFetchBullCartelData">
+      <class name="com.amit.web.testscripts.TestToVerifyBullCartelDataSort">
         <methods>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="mutipleLogin" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
+          <include name="verifySort" invocation-numbers="0"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.amit.web.testscripts.TestToFetchBullCartelData -->
+      </class> <!-- com.amit.web.testscripts.TestToVerifyBullCartelDataSort -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

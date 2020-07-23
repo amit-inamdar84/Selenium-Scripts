@@ -1,7 +1,6 @@
 package com.amit.web.pageObjects;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -48,24 +47,24 @@ public class BullCartel extends TestBase {
 
 	public ArrayList<Double> readUnSortedCMPList() {
 		ArrayList<Double> db = new ArrayList<Double>();
-		if (cmpList.size() == 0) {
+		if (cmpList.size() == 0) {//If data is not present.
 			log.info("No elements present in the list...");
 		} else {
-			for (int i = 0;; i++) {
+			for (int i = 0;; i++) {//Start from i=0.i.e. first page.
 				for (WebElement priceList : cmpList) {
 					String s = (priceList.getText());
-					db.add(Double.parseDouble(s));
+					db.add(Double.parseDouble(s));//Getting text from web element and adding to array list
 				}
 				log.info("Navigating to next page: ");
 				try {
-					if (nextPageButton.isDisplayed()) {
-						navigateToNextPage();
-						i++;
-					} 
-				} catch (NoSuchElementException e) {
+					if (nextPageButton.isDisplayed()) {//If next page button is displayed
+						navigateToNextPage();//Click on it
+						i++;//Increment i to repeat the loop. Loops exist when i is not incremented.i.e. if navigateToNextPage() is false.
+					}
+				} catch (NoSuchElementException e) {//At last page when next page button is not displayed catch the exception.
 					log.info("No more records to navigate...");
-					break;
-				} 
+					break;//Discontinue the looping when there are no more pages to navigate.
+				}
 			}
 		}
 		return db;
@@ -75,14 +74,8 @@ public class BullCartel extends TestBase {
 	@FindBy(xpath = "//a[contains(text(),'Next Page')]")
 	WebElement nextPageButton;
 
-	public boolean navigateToNextPage() {
-		if (new VerificationHelper(driver).isDisplayed(nextPageButton) == true) {
-			nextPageButton.click();
-			return true;
-		} else {
-			log.info("No more page to navigate...");
-			return false;
-		}
+	public void navigateToNextPage() {
+		nextPageButton.click();
 	}
 
 	public ArrayList<Double> sortDescCMPList(ArrayList<Double> cList) {
@@ -90,7 +83,7 @@ public class BullCartel extends TestBase {
 		log.info("List after sorting in descending order using sort() method: " + cList);
 		return cList;
 	}
-	
+
 	public ArrayList<Double> sortAscCMPList(ArrayList<Double> cList) {
 		Collections.sort(cList);
 		log.info("List after sorting in ascending order using sort() method: " + cList);
@@ -103,6 +96,20 @@ public class BullCartel extends TestBase {
 		} else {
 			AssertionHelper.updateTestStatus(false);
 		}
+	}
+	
+	public boolean traverseSortedArrayList(ArrayList<Double> arr){
+		for(int i=0;i<arr.size()-1;i++){
+			if(arr.get(i)<=arr.get(i+1)){
+				log.info(arr.get(i));
+				log.info(arr.get(i+1));
+			}
+			else{
+				log.info("Elements are not properly sorted");
+				return false;
+			}
+		}
+		return true;
 	}
 
 	public BullCartel(WebDriver driver) {
