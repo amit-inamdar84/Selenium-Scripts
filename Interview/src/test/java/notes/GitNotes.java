@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package notes;
 
 public class GitNotes {
 
