@@ -5,7 +5,7 @@ import java.util.Queue;
 
 //Queue is an interface
 //FIFO - First element is removed first and last element is removed last
-//
+//Queue interface methods - add(), element(), peek(), remove(), poll(), offer()
 
 public class PriorityQueueInJava {
 
@@ -25,6 +25,7 @@ public class PriorityQueueInJava {
 		while(itr.hasNext()) {
 			System.out.println(itr.next());
 		}
+		System.out.println("------------------------");
 		
 		//Retrieves and removes the head of this queue
 		//Throws java.util.NoSuchElementException if queue is empty

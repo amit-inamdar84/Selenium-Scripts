@@ -1,0 +1,100 @@
+<input id="lgnUserForm:userName" name="lgnUserForm:userName" size="20" style="background-color:white;-moz-border-radius:08px;-webkit-border-radius:08px;border-radius:08px; width : 160px;" type="text">
+Xpath:
+//tagName[@attribute='Attribute Value']
+//input[@id='lgnUserForm:userName']
+//input[@name='lgnUserForm:userName']
+
+CSS:
+input[id='lgnUserForm:userName']
+input[name='lgnUserForm:userName']
+--------------------------------------------------------------------------------------------------------------------------------------
+<input id="lgnUserForm:Login" name="lgnUserForm:Login" onclick="Richfaces.showModalPanel('mp');;A4J.AJAX.Submit('lgnUserForm',event,{'oncomplete':function(request,event,data){Richfaces.hideModalPanel('mp');},'similarityGroupingId':'lgnUserForm:Login','parameters':{'lgnUserForm:Login':'lgnUserForm:Login'} } );return false;" value="Sign In" style="color:#FFFFFF;background-image: url();background-color: #2e2f29;-moz-border-radius:07px;-webkit-border-radius:08px;border-radius:08px;width:66px;margin-left:20px;" type="button"/>
+//input[@id='lgnUserForm:Login']
+//input[@value='Sign In']
+
+
+
+----------------------------------------------------------------------
+<a class="loginpage" href="../jsp/user/ForgotPassword.cactus;jsessionid=0D14D81C29BBB06136D44025EF690DEA" style="color:#2e2f29">
+<span class="loginpage" style="color:#2e2f29;width:50px;">Forgot Password?</span>
+</a>
+
+Xpath:
+//a[@class='loginpage']
+//a[@href='../jsp/user/ForgotPassword.cactus;jsessionid=0D14D81C29BBB06136D44025EF690DEA']
+//span[contains(text(),'Forgot Password?')]
+
+CSS:
+a[class='loginpage']
+a[href='../jsp/user/ForgotPassword.cactus;jsessionid=0D14D81C29BBB06136D44025EF690DEA']
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Talon: ECR Form
+<form id="changeOrderForm" class="formborder" name="changeOrderForm" method="post" action="/jsp/ChangeOrder/ChangeOrderLandingPage.cactus" enctype="application/x-www-form-urlencoded">
+ <input name="changeOrderForm" value="changeOrderForm" type="hidden"/>
+ <div id="changeOrderForm:mp" style="display: none;">
+ <table class="headertable" cellspacing="0" cellpadding="0" width="100%">
+ <table class="infoTable" cellspacing="0px" cellpadding="0px" width="100%">
+ <table class="saidpan_main" cellspacing="0px" cellpadding="0px" width="100%">
+ <script type="text/javascript" src="../../css/CactusFooterJavaScript.js"/>
+ <script type="text/javascript" src="../../css/jquery.min.js"/>
+ <script>jQuery.noConflict();</script>
+ <table style="background-color: #D6E6EF;" cellspacing="0px" cellpadding="0px" height="20px" width="100%">
+  <tbody>
+   <tr>
+     <td style="white-space: nowrap;" valign="top" width="100%">
+          <hr style="position: relative; top: -9px;color:#848c91;"/>
+          <div id="blanket" style="display: none;"/>
+       <div style="background-color: #D6E6EF">
+          <div align="center">
+             <span class="headers" style="color:#000000;font-style:Arial;font-size:10pts;">Copyright 2017, Xorail,Inc.</span>
+			 
+Xpath: //form[@id='changeOrderForm']/table[3]/tbody/tr/td/div[2]/div/span
+CSS: form[id='changeOrderForm']>:nth-child(8)>:nth-child(1)>:nth-child(1)>:nth-child(1)>:nth-child(4)>:nth-child(1)>:nth-child(1)
+--------------------------------------------------------------------------------------------------------------------------------------------
+//table[@id='editLocnForm:j_id71']/tbody/tr/child::*
+//table[@id='editLocnForm:locList1']/tbody/tr/child::*	 
+------------------------------------------------------------
+div[id='container']>:nth-child(1)>:nth-child(1)>:nth-child(9)>:nth-child(1)>:nth-child(1)
+div[id='container']>:nth-child(1)>:nth-child(1)>:nth-child(9)>text
+-----------------------------------------------------------------------------------------------
+div[id='container']>:nth-child(1)>:nth-child(1)>:nth-child(14)>rect
+--------------------------------------------------------------------------
+//tbody[@id='toolInstrctr:datatableList:tb']/child::*/child::td[1]
+-----------------------------------------------------------------------------
+Decide the text to find on run time. Pass the value using excel.
+driver.findElement(By.xpath("//*[contains(text(), '"+softwareName+"')]")).click();
+//*[contains(@id,'dwnm')]
+--------------------------------------------------------------------------------------
+CSS And Operator
+input[id='toolInstrctr:SW_IN_TXT'][name='toolInstrctr:SW_IN_TXT']
+--------------------------------------------------------------------
+//div[contains(text(),'Change Reference Panel for Software')]
+------------------------------------------------------------------------
+//span[contains(text(),'SoftwareType')]/parent::td/following-sibling::td/child::input
+-------------------------------------------------------------------------------------
+//*[contains(text(), '"+softwareName+"')]
+//*[contains(text(), '"+softwareName+"')]/parent::td/following-sibling::td[6]/button[1]
+------------------------------------------------------------------------------------------
+//table[@id='toolInstrctr:datatableList:sw_scroller_table']/tbody/tr/td[6]
+table[id='toolInstrctr:datatableList:sw_scroller_table']>:nth-child(1)>:nth-child(1)>:nth-child(6)
+-----------------------------------------------------------------------------------------------------
+//td[@class='rich-calendar-cell-size rich-calendar-cell rich-calendar-today rich-calendar-select']
+.rich-calendar-cell-size.rich-calendar-cell.rich-calendar-today.rich-calendar-select
+--------------------------------------------------------------------------------------------------
+//input[starts-with(@id,'Drawref:j_id')]
+---------------------------------------------
+//tbody[@id='toolInstrctr:DRAWINGS:drawList1:tb']/child::*/td[2]/a
+tbody[id='toolInstrctr:DRAWINGS:drawList1:tb']>tr>:nth-child(2)>:nth-child(1)
+select[id='toolInstrctr:DRAWINGS:LOCN']
+----------------------------------------------------------------------------------
+External brackets and specifying the element num just outside the bracket:
+(//img[contains(@src,'/jsp/files/download.png')])[1]/parent::a/following-sibling::a
+----------------------------------------------------------------------------------
+table[id='toolInstrctr:DRAWINGS:drawList1:sel_exe']>:nth-child(1)>:nth-child(1)>:nth-child(1)>:nth-child(1)>:nth-child(1)>:nth-child(1)>:nth-child(1)>:nth-child(6)
+-----------------------------------------------------------------------------------------------------
+//*[text()='SouthAfrica']/parent::td/following-sibling::td[6]/button[1]
+----------------------------------------------------------------------------
+//strong[contains(text(),'Undervalue')]/ancestor::div
+------------------------------------------------------------------
+//div[@class='flex-row'][1]/descendant::*

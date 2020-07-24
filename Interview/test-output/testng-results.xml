@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'height='100' width='100'/></a>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30965" started-at="2020-06-04T12:31:41Z" finished-at="2020-06-04T12:32:12Z">
+  <suite name="Default suite" duration-ms="25565" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30965" started-at="2020-06-04T12:31:41Z" finished-at="2020-06-04T12:32:12Z">
-      <class name="com.amit.web.testscripts.Login">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amit.web.testscripts.Login@7823a2f9]" name="setUp" is-config="true" duration-ms="23914" started-at="2020-06-04T18:01:41Z" finished-at="2020-06-04T18:02:05Z">
+    <test name="Default test" duration-ms="25565" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:50Z">
+      <class name="com.amit.web.testscripts.JenkinsParameterTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="beforeSuite" is-config="true" duration-ms="691" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.Login@7823a2f9]" name="testLogin" duration-ms="2093" started-at="2020-06-04T18:02:10Z" data-provider="SingleLogin" finished-at="2020-06-04T18:02:12Z">
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="beforeTest" is-config="true" duration-ms="10558" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="testParameters" duration-ms="11895" started-at="2020-07-23T12:57:37Z" data-provider="SingleLogin" finished-at="2020-07-23T12:57:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test@gmail.com]]>
+                <![CDATA[amit.inamdar84@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Screener]]>
+                <![CDATA[Screener_3007]]>
               </value>
             </param>
             <param index="2">
@@ -29,47 +51,54 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: null
-	at java.lang.Integer.parseInt(Integer.java:542)
-	at java.lang.Integer.parseInt(Integer.java:615)
-	at com.amit.web.pageObjects.LoginPage.getImplicitWait(LoginPage.java:89)
-	at com.amit.web.testscripts.Login.testLogin(Login.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'height='100' width='100'/></a>]]>
+            </line>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'height='100' width='100'/></a>]]>
+            </line>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'height='100' width='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testParameters -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-23T12:57:37Z" finished-at="2020-07-23T12:57:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.amit.web.testscripts.JenkinsParameterTest.testParameters(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- com.amit.web.testscripts.Login -->
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="afterMethod" is-config="true" duration-ms="734" started-at="2020-07-23T12:57:49Z" finished-at="2020-07-23T12:57:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testParameters status=SUCCESS method=JenkinsParameterTest.testParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b] output=captureScreen method called]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-07-23T12:57:50Z" finished-at="2020-07-23T12:57:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.amit.web.testscripts.JenkinsParameterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,5 +1,7 @@
 package com.amit.web.corejava;
 
+import java.io.File;
+
 public class JavaIntroNotes {
 	
 	/*Core Java Includes:
@@ -174,10 +176,78 @@ public class JavaIntroNotes {
 		where every frame will contain the state of single method. Here methods are executed. JVM by default creates two threads: main method and garbage
 		collection thread. main thread is responsible to execute main program and create objects in heap area if it finds the new keyword in any method logic.
 		Garbage collection thread is responsible to destroy all unused objects from heap area.
-		4. PC register: 
+		4. PC register: This area will contain the address of the next instruction that have to be executed. If there are multiple threads in a program
+		these threads will be registered by PC register. It also also allocates memory for such threads to execute.
+		5. Java native stack: It is used for storing non java code. Non java code is called as native code.
+		6. Execution engine: It is responsible for executing the program and contains two parts - Interpreter and JIT compiler. The java code will be executed
+		by both of these simultaneously which will reduce the execution time and provides high performance. 	
+		Java™ system properties determine the environment in which a Java program runs by starting a Java virtual machine with a set of values.
+		You can choose to use the default values for Java system properties or you can specify values for them by adding parameters to the command line
+		when you start your application.
+		
+		Comment : CTRL+SHIFT+/
+		Format : CTRL+SHIFT+F
+		Auto suggest syntax: CTRL+SPACEBAR
+		CTRL+D - To remove unwanted line.
+		F6 to debug step by step.
+		F5 to step inside a method when there is a method caller.
+		Select a class, method, field. Right click and select open call hierarchy. It will show where all the class, method or field is called or referred.
 		
 		
+		Old log4j details:
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
 		
+	    * boolean false 1 bit 
+	    * char '\u0000' 2 byte 
+	    * byte 0 2 byte
+	    * short 0 2 byte 
+	    * int 0 4 byte
+	    * long 0L 8 byte 
+	    * float 0.0f 4 byte 
+	    * double 0.0d 8 byte
+		
+		* main method is static because we can call the method without having to create object of the class.
+		* *A java class will contain - instance(object), fields, methods, constructors, blocks, nested class and interface.
+		* To call method use obj.methodname and to call variable use obj.variable name.
+		* When we create an object of class using - Test obj = new Test(); Basically we are creating object of constructor.
+		* In the above line of code Test() is nothing but constructor name. Constructors are used to create objects.
+		* Method can can also be accessed using - new Test().methodname. which is equivalent to - 
+		* Test obj = new Test(); obj.methodname;
+		* When we print the object - the output can be understood as packagename.classname@Address
+		* We can inherit only non-static members.
+		* 
+		* public class Object - Class Object is the root of the class hierarchy. Every class has Object as a superclass. 
+		* All objects, including arrays, implement the methods of this class.
+		* System.out.println will print new line. If it is required to print output in same line use System.out.print
+		* To use Java API library classes, in any user defines class we need to import the package in which the class resides.
+		* i.e. To use Scanner class we need to add a import statement - import java.util.scanner. Other ex: Collections
+		* Few exceptions to above rule is String class. It can be shared or used in any class because of their immutable property. Refer String class API doc
+		* Create a new file - 
+		* File srcFile = new File("D:\\Screenshot.png");
+		* srcFile.createNewFile();
+		* 
+		* 
+		* 
+		* Difference between method overloading and overriding
+		* 1. Overloading happens at compile-time while Overriding happens at runtime: The binding of overloaded method call to its definition has happens at
+		* compile-time however binding of overridden method call to its definition happens at runtime.
+		* 2. Static methods can be overloaded which means a class can have more than one static method of same name.
+		* Static methods cannot be overridden, even if you declare a same static method in child class it has nothing to do with the same method of parent class.
+		* 3. The most basic difference is that overloading is being done in the same class while for overriding base and child classes are required.
+		* Overriding is all about giving a specific implementation to the inherited method of parent class.
+		* 4. Static binding is being used for overloaded methods and dynamic binding is being used for overridden/overriding methods.
+		* 5. Performance: Overloading gives better performance compared to overriding. The reason is that the binding of overridden methods is being done at runtime.
+		* 6. private and final methods can be overloaded but they cannot be overridden. It means a class can have more than one private/final methods of same
+		* name but a child class cannot override the private/final methods of their base class.
+		* 7. Return type of method does not matter in case of method overloading, it can be same or different.
+		* However in case of method overriding the overriding method can have more specific return type.
+		* 8. Argument list should be different while doing method overloading. Argument list should be same in method Overriding.
+		* 
+		* Difference between interface and abstract
 		
 		*/
 	

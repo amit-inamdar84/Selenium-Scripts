@@ -3,7 +3,13 @@ package com.amit.web.testscripts;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
@@ -20,7 +26,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
@@ -46,8 +58,12 @@ public class SeleniumCommands extends TestBase {
 		alert.dismiss();
 
 		// Reading tooltip
+		//driver.findElement(By.xpath("xpath")) returns a web element on which we can call getAttribute method.
 		driver.findElement(By.xpath("xpath")).getAttribute("Title");
 		driver.findElement(By.xpath("xpath")).getAttribute("Value");
+		
+		//Fetching css value:
+		driver.findElement(By.xpath("xpath")).getCssValue("font-size");
 
 		// Switching window using for each loop
 		for (String childWindow : driver.getWindowHandles()) {
@@ -61,25 +77,69 @@ public class SeleniumCommands extends TestBase {
 			String childWindow = itr.next();
 			driver.switchTo().window(childWindow);
 		}
+		
+		//This method will switch to child window based on index
+		Set<String> windows1 = driver.getWindowHandles();
+		int i = 1;
+		int index=3;//This should be a local variable passed as an argument to method.
+		for (String window : windows1) {
+			if (i == index) {
+				System.out.println("switched to : " + index + " window");
+				driver.switchTo().window(window);
+			} else {
+				i++;
+			}
+		}
+		
+		//This method will close all tabbed windows and switched to main window
+		Set<String> windows2 = driver.getWindowHandles();
+		String mainwindow = driver.getWindowHandle();
+
+		for (String window : windows2) {
+			if (!window.equalsIgnoreCase(mainwindow)) {
+				driver.close();
+			}
+		}
+		System.out.println("switched to main window");
+		driver.switchTo().window(mainwindow);
+		
 
 		// Get URL of current page
 		driver.getCurrentUrl();
+		
+		//Maximize window.
+		driver.manage().window().maximize();
 
 		// Explicit waits
+		//Waits till expected condition occurs to a maximum of specified time and then throws exception.
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("xpath")));
 		
 		//Implicit wait
+		//Waits for specified time to find an element which comes after the wait statement. If found within the time, next statement is executed.
+		//Else after specified time NoSuchElementException is thrown.
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		//Fluent wait
-		Wait wait1 = new FluentWait<WebDriver>(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(5, TimeUnit.SECONDS);
+		Wait<WebDriver> wait1 = new FluentWait<WebDriver>(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(5, TimeUnit.SECONDS);//Deprecated
 		//wait1.until(isTrue);
+		Wait<WebDriver> wait2 = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(5));
 
 		// Close browser
 		driver.close();// Close the current window, quitting the browser if it's
 						// the last window currently open.
 		driver.quit();// Quits this driver, closing every associated window.
+		
+		//Locators
+		WebElement element = driver.findElement(By.xpath("xpath"));
+		driver.findElement(By.id("ID"));
+		driver.findElement(By.className("className"));
+		driver.findElement(By.linkText("linkText"));
+		driver.findElement(By.partialLinkText("partialLinkText"));
+		driver.findElement(By.cssSelector("cssSelector"));//# for ID, Dot . for class
+		driver.findElement(By.tagName("tagName"));
+		
+		
 
 		// Send Keys
 		driver.findElement(By.xpath("xpath")).sendKeys("Text");
@@ -106,9 +166,10 @@ public class SeleniumCommands extends TestBase {
 		driver.navigate().refresh();
 
 		// Javascript functions
+		//We can practice java script in browser console
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		WebElement element = driver.findElement(By.xpath("xpath"));
-		js.executeScript("arguments[0].click();", element);// Click
+		WebElement element1 = driver.findElement(By.xpath("xpath"));
+		js.executeScript("arguments[0].click();", element1);// Click
 		js.executeScript("document.getElementById('some id').value='someValue';");// Type
 																					// text
 		js.executeScript("document.getElementById('enter element id').checked=false;");// Handle
@@ -132,16 +193,22 @@ public class SeleniumCommands extends TestBase {
 		js.executeScript("window.scrollBy(0,500)");
 		// for scrolling till the bottom of the page we can use the code like
 		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		//Scroll up vertically
+		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
+		//Scroll till element
+		js.executeScript("window.scrollTo(arguments[0],arguments[1])", element.getLocation().x, element.getLocation().y);
 		js.executeScript("window.location = 'https://www.softwaretestingmaterial.com");// Navigate
 																						// to
 																						// some
 																						// page
 		// To click on a SubMenu which is only visible on mouse hover on Menu
 		js.executeScript("$('ul.menus.menu-secondary.sf-js-enabled.sub-menu li').hover()");
+		//Zoom in
+		js.executeScript("document.body.style.zoom='100%'");
 
 		// Drop down selection
-		WebElement element1 = driver.findElement(By.xpath("xpath"));
-		Select dd = new Select(element1);
+		WebElement element2 = driver.findElement(By.xpath("xpath"));
+		Select dd = new Select(element2);
 		dd.selectByIndex(1);
 		dd.selectByValue("value");
 		dd.selectByVisibleText("text");
@@ -168,7 +235,11 @@ public class SeleniumCommands extends TestBase {
 		action.doubleClick(des).build().perform();
 		action.keyDown(des, "test");
 		action.keyUp(Keys.ALT);
+		//Prefer to use sendKeys in WebElement interface. Use Actions class sendKeys method when performing complex interactions.
+		//Here the keys pressed are not released and there is no attempt to refocus on the element.
 		action.sendKeys(des, Keys.CLEAR).build().perform();
+		//Mouse over
+		action.moveToElement(des);
 
 		// Handling iFrames
 		List frames = driver.findElements(By.tagName("iframe"));
@@ -193,7 +264,10 @@ public class SeleniumCommands extends TestBase {
 		System.out.println(date);
 		System.out.println(formattedDate.format(date));
 		
-		//Take screenshot
+		//Take screenshot of a web page
+		//driver is of type Webdriver interface which come higher in hierarchy of interfaces. TakesScreenshot is an interface which is lower in hierarchy
+		//compared to Webdriver. So we cast driver variable to TakesScreenshot type in order to call the method getScreenshotAs() which belongs to
+		//TakesScreenshot interface.
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(srcFile, new File("D:\\Screenshot.png"));
 		
@@ -204,8 +278,100 @@ public class SeleniumCommands extends TestBase {
 		OR.load(f);
 		System.out.println(OR.getProperty("Domain"));
 		
-
+		//Configuring browsers
+		//setProperty accepts a key and a value
+		System.setProperty("webdriver.chrome.driver", "path of chrome driver.exe");
+		driver = new ChromeDriver();
 		
+		System.setProperty("webdriver.ie.driver", "path of ie driver.exe");
+		driver = new InternetExplorerDriver();
+		
+		System.setProperty("webdriver.gecko.driver", "path of gecko driver.exe");
+		driver = new FirefoxDriver();
+		
+		//All classes related to firefox options/launching/capabilities
+		//Create FirefoxOptions class object and access its method addPreference to set properties to browser.
+		FirefoxOptions options = new FirefoxOptions();
+		options.addPreference("browser.download.dir", "/Users/AMIT/Downloads");
+		//Then supply options as an argument to FirefoxDriver driver class constructor. This will help to launch the browser with specific options that
+		//are defined in addPreference method.
+		driver = new FirefoxDriver(options);
+		//The desired capability is a series of key/value pairs that stores the browser properties like browsername, browser version, the path of the browser
+		//driver in the system, etc. to determine the behaviour of the browser at run time.
+		//Desired capability can also be used to configure the driver instance of Selenium WebDriver.
+		//We can configure driver instance like FirefoxDriver, ChromeDriver, InternetExplorerDriver by using desired capabilities.
+		//The Desired Capabilities class will help to set an environment to define the behaviour of the browser/environment on which the test can be executed.
+		//DesiredCapabilities.firefox() is a firefox specific static method. We have similar methods for Chrome Android etc.
+		DesiredCapabilities firefox = DesiredCapabilities.firefox();
+		FirefoxProfile profile = new FirefoxProfile();
+		profile.setAcceptUntrustedCertificates(true);
+		profile.setAssumeUntrustedCertificateIssuer(true);
+		
+		firefox.setCapability(FirefoxDriver.PROFILE, profile);
+		firefox.setCapability("marionette", true);
+        
+		//Finally we have to pass desired capability to FirefoxOptions class and the pass options to FirefoxDriver class constructor
+		FirefoxOptions firefoxOptions = new FirefoxOptions(firefox);
+		// Linux
+		if (System.getProperty("os.name").contains("Linux")) {
+			firefoxOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+		}
+		
+		
+		
+		//DB Connection
+		try {
+			String driver = "com.mysql.cj.jdbc.Driver";
+			String connection = "jdbc:mysql://localhost:3306/customers";
+			String userName = "root";
+			String password = "MySQL_3007";
+			//A call to forName("X") causes the class named X to be initialized.
+			//Also the JDBC driver gets registered
+			Class.forName(driver);
+			//Driver manager provides basic service for managing JDBC drivers. getConnection establishes connection to give DB URL.
+			Connection con = DriverManager.getConnection(connection, userName, password);
+			//On a connection session createStatement() method creates a statement object.
+			Statement stmt = con.createStatement();
+			//On that statement object we can send SQL statements to DB and executeQuery() method executes queries.
+			//ResultSet is an interface. A ResultSet object maintains a cursor pointing to its current row of data. Initially the cursor is positioned
+			//before the first row. The next method moves the cursor to the next row, and because it returns false when there are no more rows in the
+			//ResultSet object,it can be used in a while loop to iterate through the result set. 
+			ResultSet data = stmt.executeQuery("Select *");
+			while(data.next()){
+				//The columns here must match the actual no of columns returned in database.
+				System.out.println(data.getString(1)+" "+data.getString(2)+" "+data.getString(3)+" "+data.getString(4));
+			}
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+		/*
+		 * Ways to run test scripts:
+		 * Right click Run as Java to run single java program.
+		 * Right click Run as TestNG Test to run single selenium script with TestNG.
+		 * Include all scripts to be run in testng.xml file. Right click on testng.xml file and Run as TestNG suite.
+		 * Include <suiteXmlFiles>testng.xml</suiteXmlFiles> dependency in pom.xml file. Right click and Run as Maven test.
+		 */
+		//Mime type information: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+		
+/*		Methods in ExpectedConditions class:
+		wait.until(ExpectedConditions.alertIsPresent());
+		wait.until(ExpectedConditions.attributeContains(element2, attribute, value);
+		wait.until(ExpectedConditions.attributeToBe(element2, attribute, value);
+		wait.until(ExpectedConditions.elementToBeClickable(element2);
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameLocator);
+		wait.until(ExpectedConditions.invisibilityOf(element2);
+		wait.until(ExpectedConditions.numberOfElementsToBe(locator, number);
+		wait.until(ExpectedConditions.stalenessOf(element2);
+		wait.until(ExpectedConditions.textToBe(locator, value);
+		wait.until(ExpectedConditions.visibilityOf(element2);
+		wait.until(ExpectedConditions.visibilityOfAllElements(elements);*/
 	}
 
 }

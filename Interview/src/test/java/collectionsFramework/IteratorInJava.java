@@ -8,9 +8,13 @@ import java.util.ListIterator;
 
 public class IteratorInJava {
 //Two types - Iterator and list iterator.
+//Iterator is an interface. It can be used to iterate over elements in a collection. It is used to print and remove elements.
+//In Arraylist and linked list we can create a reference of iterator interface and the call iterator() method. This method comes from List interface which
+//in turn extends Collection interface.
+//The only difference between both these iterators is iterator traverses in forward direction. List iterator traverses in forward and backward directions.
 
 	public static void main(String[] args) {
-		/*List<Object> arrayList = new ArrayList<Object>();
+		List<Object> arrayList = new ArrayList<Object>();
 		arrayList.add(2);
 		arrayList.add(2);
 		arrayList.add("test");
@@ -20,6 +24,10 @@ public class IteratorInJava {
 		System.out.println(arrayList);
 		
 		Iterator<Object> itr = arrayList.iterator();
+		//Iterator interface reference can be created if we import the package java.util.Iterator
+		//itr is a reference of interface called Iterator. hasNext() and next are two of its methods.
+		//hasNext() - Returns true if the iteration has more elements. 
+		//next() - Returns the next element in the iteration.
 		while(itr.hasNext()){ //iterator will go in forward direction 
 			System.out.println(itr.next());
 			itr.remove();
@@ -68,7 +76,7 @@ public class IteratorInJava {
 		
 		//System.out.println(arrayList3);
 		System.out.println("----------------------------------");
-		*/
+		
 		
 		
 		List<Object> linkedList = new LinkedList<Object>();
@@ -79,13 +87,15 @@ public class IteratorInJava {
 		linkedList.add('A');
 		
 		//Linked list iterator has 2 additional methods - hasPrevious and previous
-		ListIterator<Object> itr1 = linkedList.listIterator();
-		while(itr1.hasNext()){ //iterator will go in forward direction 
-			System.out.println(itr1.next());
+		//itr3 is a reference of interface called ListIterator which extends Iterator interface
+		//listIterator() is a method called from interface called List.
+		ListIterator<Object> itr3 = linkedList.listIterator();
+		while(itr3.hasNext()){ //iterator will go in forward direction 
+			System.out.println(itr3.next());
 		}
 		
-		while(itr1.hasPrevious()) { //This iterator will go in backward direction. However we need to traverse in forward direction first.
-			System.out.println(itr1.previous());
+		while(itr3.hasPrevious()) { //This iterator will go in backward direction. However we need to traverse in forward direction first.
+			System.out.println(itr3.previous());
 		}
 	}
 

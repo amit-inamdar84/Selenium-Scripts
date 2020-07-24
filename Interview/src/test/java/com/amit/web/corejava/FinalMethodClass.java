@@ -1,5 +1,7 @@
 package com.amit.web.corejava;
-//Final variable should always be initialized
+//Final keyword is used to restrict the user to change the implementation of the method or change the initialized value of variable.
+//Final variable should always be initialized. It can be done using a constructor and IIB.Static final variable can be initialized using static block.
+//Final is applicable to class, method and variable.
 
 public class FinalMethodClass {
 	final int i=10;

@@ -3,7 +3,7 @@ package com.amit.web.corejava;
 
 //This is used to invoke current class method
 //This can be passed as an argument in the method call
-//This can be passed as an argument in the constructor call - Did not understand
+//This can be passed as an argument in the constructor call - See classes - ThisKeyword2 and ThisKeyword3
 //This is used to return current class instance
 //Available only for non static members
 

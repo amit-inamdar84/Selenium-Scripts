@@ -3,13 +3,13 @@
 <suite name="Group suite">
 	<groups>
 		<run>
-			<include name="Sanity">
+			<include name="regression">
 			</include>
 		</run>
 	</groups>
 	<test name="Grouping in TestNG">
 		<classes>
-			<class name="com.amit.web.testscripts.Login"></class>
+			<class name="testNG.GroupsInTestng"></class>
 		</classes>
 	</test>
 

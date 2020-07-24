@@ -9,6 +9,8 @@ public class InstanceOfOperator {
 
 		String s = "Test";
 		System.out.println(s instanceof String);
+		
+		System.out.println(obj instanceof Object);
 
 	}
 

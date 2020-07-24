@@ -8,7 +8,8 @@ public class String2 {
 		String s3 = "ABC";
 		String s4 = "CDF";
 		String s5 = "cdf";
-
+		
+        //equals method in string class will check for content.
 		System.out.println(s1.equals(s2));
 		System.out.println(s2.equals(s3));
 		System.out.println(s3.equals(s4));

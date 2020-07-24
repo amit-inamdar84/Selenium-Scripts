@@ -1,26 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_23_57.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_23_57.png'height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_24_12.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_24_12.png'height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_24_16.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_24_16.png'height='100' width='100'/></a>]]>
+    </line>
   </reporter-output>
-  <suite name="Practice Selenium" duration-ms="17617" started-at="2018-09-03T19:22:48Z" finished-at="2018-09-03T19:23:06Z">
+  <suite name="FrameworkTest" duration-ms="74123" started-at="2020-07-24T06:53:18Z" finished-at="2020-07-24T06:54:32Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="17617" started-at="2018-09-03T19:22:48Z" finished-at="2018-09-03T19:23:06Z">
+    <test name="JenkinsTest" duration-ms="74123" started-at="2020-07-24T06:53:18Z" finished-at="2020-07-24T06:54:32Z">
       <class name="com.amit.web.testscripts.Login">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amit.web.testscripts.Login@13a57a3b]" name="setUp" is-config="true" duration-ms="12534" started-at="2018-09-04T00:52:48Z" finished-at="2018-09-04T00:53:01Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amit.web.testscripts.Login@604ed9f0]" name="beforeSuite" is-config="true" duration-ms="1146" started-at="2020-07-24T06:53:16Z" finished-at="2020-07-24T06:53:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.Login@13a57a3b]" name="testLogin" duration-ms="916" started-at="2018-09-04T00:53:05Z" data-provider="SingleLogin" finished-at="2018-09-04T00:53:06Z">
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amit.web.testscripts.Login@604ed9f0]" name="beforeTest" is-config="true" duration-ms="16073" started-at="2020-07-24T06:53:18Z" finished-at="2020-07-24T06:53:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.amit.web.testscripts.Login@604ed9f0]" name="beforeMethod" is-config="true" duration-ms="52" started-at="2020-07-24T06:53:38Z" finished-at="2020-07-24T06:53:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test@gmail.com]]>
+                <![CDATA[public void com.amit.web.testscripts.Login.testLogin(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.Login@604ed9f0]" name="testLogin" duration-ms="50866" started-at="2020-07-24T06:53:38Z" data-provider="SingleLogin" finished-at="2020-07-24T06:54:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amit.inamdar84@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Screener]]>
+                <![CDATA[Screener_3007]]>
               </value>
             </param>
             <param index="2">
@@ -30,9 +63,42 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_23_57.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_23_57.png'height='100' width='100'/></a>]]>
+            </line>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_24_12.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_24_12.png'height='100' width='100'/></a>]]>
+            </line>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_24_16.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_24_07_2020_12_24_16.png'height='100' width='100'/></a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amit.web.testscripts.Login@604ed9f0]" name="afterMethod" is-config="true" duration-ms="2740" started-at="2020-07-24T06:54:29Z" finished-at="2020-07-24T06:54:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=Login.testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.Login@604ed9f0] output=captureScreen method called]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amit.web.testscripts.Login@604ed9f0]" name="afterTest" is-config="true" duration-ms="8" started-at="2020-07-24T06:54:32Z" finished-at="2020-07-24T06:54:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- com.amit.web.testscripts.Login -->
-    </test> <!-- Test -->
-  </suite> <!-- Practice Selenium -->
+    </test> <!-- JenkinsTest -->
+  </suite> <!-- FrameworkTest -->
 </testng-results>

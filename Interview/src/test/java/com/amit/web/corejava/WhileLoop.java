@@ -1,6 +1,9 @@
 package com.amit.web.corejava;
 
 public class WhileLoop {
+	
+	//It is used to iterate over data based on condition
+	//i.e. while some condition is true keep executing the code in the body of while loop
 
 	public static void main(String[] args) {
 		// 0 will enter loop, increments to 1, prints 1 and increments to 2.

@@ -24,5 +24,10 @@ public class DependsOnMethod {
 	public void test4() {
 		System.out.println("Skips if test3 is failed");
 	}
+	
+	@Test(dependsOnMethods={"test3","test4"})
+	public void test5(){
+		System.out.println("Skips if test3 and test4 are skipped");
+	}
 
 }

@@ -1,11 +1,16 @@
 package collectionsFramework;
-//Using comparable interface
+//Using comparable interface we can sort string, wrapper class and user defined objects.
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 
 //Only compareTo method available
 //Can sort based on only single data type
+//compareTo method cannot sort Strings or other kind of data as String comparison conditions in method do not apply to strings.
+//Mainly used to sort lists. Sets can be sorted using Tree set.
+//Primitive data types can be sorted directly using Collection.sort method. However for custom data type like class type we need to implement
+//Comparable interface which has only compareTo() method.
 
 public class Customer implements Comparable<Customer> {
 	String name;
@@ -49,6 +54,18 @@ public class Customer implements Comparable<Customer> {
 
 		for (Customer str : arr1) {
 			System.out.println(str.name+ " "+ str.age+ " "+str.area);
+		}
+		
+		LinkedList<String> ll = new LinkedList<String>();
+		ll.add("Vedha");
+		ll.add("Ramesh");
+		ll.add("Rama");
+		ll.add("Amit");
+		
+		Collections.sort(ll);
+		
+		for(String temp:ll){
+			System.out.println(temp);
 		}
 
 	}

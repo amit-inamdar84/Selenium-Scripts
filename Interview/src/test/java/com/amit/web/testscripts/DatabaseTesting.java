@@ -6,8 +6,7 @@ import java.sql.SQLException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import com.amit.web.databaseConnections.DatabaseMySQL;
+import com.amit.web.helper.database.DatabaseMySQL;
 import com.amit.web.testBase.TestBase;
 
 public class DatabaseTesting extends TestBase{

@@ -1,6 +1,6 @@
 package innerClass;
 //A class that does not have name is called Anonymous Inner Class
-//We can create object of interface in Anonymous class and implement methods with the main class implementing interface
+//We can create object of interface in Anonymous class and implement methods within the object.
 
 public class AnonymousInnerClass {
 

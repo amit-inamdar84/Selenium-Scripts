@@ -22,10 +22,10 @@ public class MethodOverloading2 {
 
 	public static void main(String[] args) {
 		MethodOverloading2 obj = new MethodOverloading2();
-		obj.add(5,10);
-		obj.add(50.60,10);
-		obj.add(8,10.52);
-		obj.add(5.8f,10.6f);
+		obj.add(5,10);//As per data promotion, int,int will call method add(long,long)
+		obj.add(50.60,10);//As per data promotion, double,int will call method add(double,double)
+		obj.add(8,10.52);//As per data promotion,int, double will call method add(double.double)
+		obj.add(5.8f,10.6f);//As per data promotion, float,float will call method add(float,float)
 
 	}
 

@@ -17,6 +17,7 @@ public abstract class Person {
 		name = newName;
 	}
 
+	//This below method returns string representation of the object. Here the objects obj and obj1 addresses are converted to their values and printed.
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", gender=" + gender + "]";
