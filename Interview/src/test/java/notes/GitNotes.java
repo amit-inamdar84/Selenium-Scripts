@@ -13,6 +13,7 @@ public class GitNotes {
 		C:\>D:
 		D:\>cd Git
 		D:\Git>git status
+		D:\Git>git pull - This is required if we want to get the code updates/commits of other team members.
 		Type 
 		D:\Git>git add filename
 		OR

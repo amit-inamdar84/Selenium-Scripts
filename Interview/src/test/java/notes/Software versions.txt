@@ -1,0 +1,4 @@
+Maven - Current version - 3.5.4. Latest version 3.6.3
+Selenium - Current version - 3.141.59 Latest version - 4.0 Alpha version
+Java - Current version - 1.8 Latest version 14.0
+Testng - Current version - 6.14.3 Latest version - 7.1.0
