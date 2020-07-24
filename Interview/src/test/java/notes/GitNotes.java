@@ -14,6 +14,8 @@ public class GitNotes {
 		D:\>cd Git
 		D:\Git>git status
 		D:\Git>git pull - This is required if we want to get the code updates/commits of other team members.
+		D:\Git>git stash - Temporarily saves only modified files and will not be listed for commit.
+		D:\Git>git stash -u - Temporarily saves both modified files and new files and will not be listed for commit.
 		Type 
 		D:\Git>git add filename
 		OR
@@ -22,32 +24,32 @@ public class GitNotes {
 		D:\Git>git push
 		After above commands are executed, code will be committed to remote repository-master
 		-----------------------------------------------------------------------------------------------------
-		Then create a branch
+		Then create a branch. -b argument should be given only when creating new branch. For existing branch checkout skip -b.
 		
-		C:\Bhanu\seleniumScripts>git checkout -b "bhanu_local"
-Switched to a new branch 'bhanu_local'
-C:\Bhanu\seleniumScripts>git branch
+		D:\Git>git checkout -b "branch name"
+Switched to a new branch 'branch name'
+D:\Git>git branch
+* branch name
+  master
+D:\Git>git branch
 * bhanu_local
   master
-C:\Bhanu\seleniumScripts>git branch
-* bhanu_local
-  master
-C:\Bhanu\seleniumScripts>git status
-On branch bhanu_local
+D:\Git>git status
+On branch branch name
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
         modified:   src/main/java/com/test/selenium/testbase/B.java
 no changes added to commit (use "git add" and/or "git commit -a")
-C:\Bhanu\seleniumScripts>git add .
-C:\Bhanu\seleniumScripts>git commit -m "Modifed some code in class"
-[bhanu_local d7a53c6] Modifed some code in class
+D:\Git>git add .
+D:\Git>git commit -m "Modifed some code in class"
+[branch name d7a53c6] Modifed some code in class
  1 file changed, 4 insertions(+)
-C:\Bhanu\seleniumScripts>git push
+D:\Git>git push
 fatal: The current branch bhanu_local has no upstream branch.
 To push the current branch and set the remote as upstream, use
     git push --set-upstream origin bhanu_local
-C:\Bhanu\seleniumScripts>git push origin bhanu_local
+D:\Git>git push origin branch name
 Counting objects: 10, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (6/6), done.
@@ -56,40 +58,37 @@ Total 10 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/LearnByBhanuPratap/seleniumScripts.git
  * [new branch]      bhanu_local -> bhanu_local
-C:\Bhanu\seleniumScripts>git pull
-remote: Counting objects: 1, done.
-remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (1/1), done.
-From https://github.com/LearnByBhanuPratap/seleniumScripts
-   1f1689f..225a089  master     -> origin/master
-There is no tracking information for the current branch.
-Please specify which branch you want to merge with.
-See git-pull(1) for details.
-    git pull <remote> <branch>
-If you wish to set tracking information for this branch you can do so with:
-    git branch --set-upstream-to=origin/<branch> bhanu_local
-C:\Bhanu\seleniumScripts>git pull origin master
+ * 
+ * Now we have to get the peer review done. Go to Git hub and click on Compare and pull request.
+ * Click on create pull request after seeing the comparison.
+ * Share the pull request URL for peer review.
+ * Once review is done and approved, go to the same URL and click on Merge pull request. This will send code to the master branch.
+ *  
+ * The below command will give the latest code from master
+D:\Git>git pull origin master
 From https://github.com/LearnByBhanuPratap/seleniumScripts
  * branch            master     -> FETCH_HEAD
 Updating d7a53c6..225a089
 Fast-forward
-C:\Bhanu\seleniumScripts>git status
-On branch bhanu_local
+D:\Git>git status
+On branch branch name
 nothing to commit, working tree clean
-C:\Bhanu\seleniumScripts>git branch
-* bhanu_local
+D:\Git>git branch
+* branch name
   master
-C:\Bhanu\seleniumScripts>git checkout master
+  
+  Or instead of above code below code will also give the latest code from master
+D:\Git>git checkout master
 Switched to branch 'master'
 Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
-C:\Bhanu\seleniumScripts>git branch
-  bhanu_local
+D:\Git>git branch
+  branch name
 * master
-C:\Bhanu\seleniumScripts>git checkout bhanu_local
-Switched to branch 'bhanu_local'
-C:\Bhanu\seleniumScripts>git branch
-* bhanu_local
+D:\Git>git checkout branch name
+Switched to branch 'branch name'
+D:\Git>git branch
+* branch name
   master
 */		
 
