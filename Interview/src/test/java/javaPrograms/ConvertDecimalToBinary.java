@@ -1,4 +1,9 @@
 package javaPrograms;
+//Define a array list to hold the binary numbers.
+//while (number > 0), divide the number by 2 and store the remainder(0 or 1) in array list.
+//Make the number half and repeat the while loop with its quotient.
+//While loop will end when quotient<=0.
+//Print the array list containing binary number.
 
 import java.util.ArrayList;
 
@@ -22,11 +27,15 @@ public class ConvertDecimalToBinary {
 			number = number / 2;
 		}
 
-		int length = obj.size() - 1;
-		while (length >= 0) {
-			System.out.println(obj.get(length));
-			length--;
+		int index = obj.size() - 1;
+		while (index >= 0) {
+			System.out.println(obj.get(index));
+			index--;
 		}
+
+		/*
+		 * for(Integer bin: obj){ System.out.println(bin); }
+		 */
 	}
 
 	public static void main(String[] args) {

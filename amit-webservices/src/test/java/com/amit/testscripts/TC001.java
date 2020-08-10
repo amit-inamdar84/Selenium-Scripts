@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.amit.pojoclass.GetTodos;
+import com.amit.response.pojoclass.GetTodos;
 import com.amit.utils.EndpointURL;
 import com.amit.utils.URL;
 import com.amit.webservices.methods.Webservices;
@@ -42,7 +42,25 @@ public class TC001 {
 		return result;
 	}
 	
-	@Test(description = "Test to verify all todos")
+	@DataProvider(name = "postTodos")
+	public Object[][] postTodos(){
+		Object[][] result = new Object[2][5];
+			result[0][0] = "{\"userId\": 11,\"id\": 201,\"title\": \"delectus auto\",\"completed\": false}";
+			result[0][1] = 11;
+			result[0][2] = 201;
+			result[0][3] = "delectus auto";
+			result[0][4] = false;
+			
+			result[1][0] = "{\"userId\": 11,\"id\": 202,\"title\": \"miniemus\",\"completed\": true}";
+			result[1][1] = 11;
+			result[1][2] = 202;
+			result[1][3] = "miniemus";
+			result[1][4] = true;
+			
+		return result;
+	}
+	
+	//@Test(description = "Test to verify all todos",dependsOnMethods="addTodos")
 	public void verifyTodos() {
 		Gson gson = new GsonBuilder().create();// Create instance of GsonBuilder
 		GetTodos[] getTodos;//Create reference of pojo class of array type as json data is in the form of array
@@ -88,10 +106,13 @@ public class TC001 {
 			// stored in DB or collections.
 			Assert.assertEquals(x, userID);
 		}
+		else{
+			Assert.assertEquals(response.getStatusCode() == 200, true);
+		}
 		System.out.println("----------------------------------");
 	}
 
-	@Test(description = "Test to verify todos by ID",dataProvider = "getID")
+	//@Test(description = "Test to verify todos by ID",dataProvider = "getID")
 	public void verifyTodosByID(Integer userID,Integer id,String title,Boolean completed) {
 		Gson gson = new GsonBuilder().create();
 		GetTodos getTodos;//This time reference is not an array because when fetching by ID we will get only 1 record per call.
@@ -104,6 +125,34 @@ public class TC001 {
 			Assert.assertEquals(getTodos.getUserId(),userID);
 			Assert.assertEquals(getTodos.getTitle(),title);
 			Assert.assertEquals(getTodos.getCompleted(),completed);
+		}
+		else{
+			Assert.assertEquals(response.getStatusCode() == 200, true);
+		}
+	}
+	
+	@Test(description = "Add todos using post api call",dataProvider = "postTodos")
+	public void addTodos(String JSON,Integer userID,Integer id, String title,Boolean completed){
+		Gson gson = new GsonBuilder().create();
+		//Data provider provides just one json value set per iteration. So no need to declare array.
+		GetTodos getTodos;
+		String url = URL.fixURL + EndpointURL.TODOS.getResourcePath();
+		System.out.println(url);
+		Response response = Webservices.Post(url, JSON);
+		if(response.getStatusCode()==201){
+			getTodos = gson.fromJson(response.asString(), GetTodos.class);
+			Assert.assertEquals(getTodos.getUserId(), userID);
+			//Below assertion will fail for 2nd iteration as there is no actual data created during 1st post call. Since this is fake API.
+			//2nd post request also will post the same id as previous one.
+			//Assert.assertEquals(getTodos.getId(), id);
+			Assert.assertEquals(getTodos.getTitle(), title);
+			Assert.assertEquals(getTodos.getCompleted(), completed);
+			
+			System.out.println("Printing response: "+response.asString());
+		}
+		
+		else{
+			Assert.assertEquals(response.getStatusCode() == 201, true);
 		}
 	}
 

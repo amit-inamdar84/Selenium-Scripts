@@ -1,9 +1,10 @@
-package com.amit.pojoclass;
+package com.amit.request.pojoclass;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class GetTodos {
+public class UpdatePosts {
+
 	@SerializedName("userId")
 	@Expose
 	private Integer userId;
@@ -13,40 +14,40 @@ public class GetTodos {
 	@SerializedName("title")
 	@Expose
 	private String title;
-	@SerializedName("completed")
+	@SerializedName("body")
 	@Expose
-	private Boolean completed;
+	private String body;
 
 	public Integer getUserId() {
-	return userId;
+		return userId;
 	}
 
 	public void setUserId(Integer userId) {
-	this.userId = userId;
+		this.userId = userId;
 	}
 
 	public Integer getId() {
-	return id;
+		return id;
 	}
 
 	public void setId(Integer id) {
-	this.id = id;
+		this.id = id;
 	}
 
 	public String getTitle() {
-	return title;
+		return title;
 	}
 
 	public void setTitle(String title) {
-	this.title = title;
+		this.title = title;
 	}
 
-	public Boolean getCompleted() {
-	return completed;
+	public String getBody() {
+		return body;
 	}
 
-	public void setCompleted(Boolean completed) {
-	this.completed = completed;
+	public void setBody(String body) {
+		this.body = body;
 	}
 
 }

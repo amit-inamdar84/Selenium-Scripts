@@ -1,8 +1,10 @@
 package com.amit.utils;
 
 public enum EndpointURL {
-	TODOS("/todos"),
-	TODOS_BY_ID("/todos/");//Declaring endpoint URL for todo by ID
+	TODOS("/todos"),//API for get and post todos
+	TODOS_BY_ID("/todos/"),//Declaring endpoint URL for todo by ID
+	ADD_USERS("/users/"),//Post API call for creating new user
+	CREATE_POSTS("/posts/");
 	
 	String resourcePath;
 	EndpointURL(String resourcePath){
