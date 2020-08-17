@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaExceptions;
 //When we want to throw exception based on a condition, we can use throw keyword. This will be a runtime exception.
 
 public class ThrowException {

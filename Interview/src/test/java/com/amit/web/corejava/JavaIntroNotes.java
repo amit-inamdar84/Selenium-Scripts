@@ -167,7 +167,7 @@ public class JavaIntroNotes {
 		JDK = JRE+Development tools
 		JRE = JVM+Library classes
 		
-		JVM architecture: See com.amit.web.screenshots/Temp.png
+		JVM architecture: See src/test/java/notes/JVMArchitecture.png
 		1. Method area: This area can be used to store all class code and method code. All classes bytecode is loaded and stored in this run time area and
 		all static variable are created here.
 		2. Heap memory: This area stores all objects that are created. It is the main memory of JVM. Non static variables are created in this area. This runtime
@@ -180,7 +180,8 @@ public class JavaIntroNotes {
 		these threads will be registered by PC register. It also also allocates memory for such threads to execute.
 		5. Java native stack: It is used for storing non java code. Non java code is called as native code.
 		6. Execution engine: It is responsible for executing the program and contains two parts - Interpreter and JIT compiler. The java code will be executed
-		by both of these simultaneously which will reduce the execution time and provides high performance. 	
+		by both of these simultaneously which will reduce the execution time and provides high performance. 
+			
 		Java™ system properties determine the environment in which a Java program runs by starting a Java virtual machine with a set of values.
 		You can choose to use the default values for Java system properties or you can specify values for them by adding parameters to the command line
 		when you start your application.
@@ -191,7 +192,7 @@ public class JavaIntroNotes {
 		CTRL+D - To remove unwanted line.
 		F6 to debug step by step.
 		F5 to step inside a method when there is a method caller.
-		F8 to come out of an unwanted system class or java library.
+		F8 to come out of an unwanted system class or java library and stop at next debug point if there is any.
 		Select a class, method, field. Right click and select open call hierarchy. It will show where all the class, method or field is called or referred.
 		
 		
@@ -219,12 +220,12 @@ public class JavaIntroNotes {
 		* Method can can also be accessed using - new Test().methodname. which is equivalent to - 
 		* Test obj = new Test(); obj.methodname;
 		* When we print the object - the output can be understood as packagename.classname@Address
-		* We can inherit only non-static members.
+		* We can inherit only non-static members. Static members will not participate in inheritance.
 		* 
 		* public class Object - Class Object is the root of the class hierarchy. Every class has Object as a superclass. 
 		* All objects, including arrays, implement the methods of this class.
 		* System.out.println will print new line. If it is required to print output in same line use System.out.print
-		* To use Java API library classes, in any user defines class we need to import the package in which the class resides.
+		* To use Java API library classes, in any user defined class we need to import the package in which the class resides.
 		* i.e. To use Scanner class we need to add a import statement - import java.util.scanner. Other ex: Collections
 		* Few exceptions to above rule is String class. It can be shared or used in any class because of their immutable property. Refer String class API doc
 		* Create a new file - 

@@ -1,5 +1,6 @@
-package com.amit.web.corejava;
+package javaControlStatements;
 //if(condition)
+//Combinations - if, if-else
 
 public class IfBlocks {
 

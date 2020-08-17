@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaFinalKeyword;
 
 final public class FinalClass {
 	

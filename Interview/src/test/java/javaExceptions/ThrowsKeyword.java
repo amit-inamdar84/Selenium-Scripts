@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaExceptions;
 
 import java.io.IOException;
 

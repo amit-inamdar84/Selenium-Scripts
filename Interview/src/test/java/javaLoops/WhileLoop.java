@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaLoops;
 
 public class WhileLoop {
 	
@@ -37,8 +37,9 @@ public class WhileLoop {
 		int sum = 0;
 
 		while (n <= 6) {
-			sum = sum + n++;
-			System.out.println("Value of sum: " + sum + "and Value of n: " + n);
+			sum = sum + n;
+			n++;
+			System.out.println("Value of sum: " + sum + " and Value of n: " + n);
 		}
 		System.out.println("Sum=" + sum);
 

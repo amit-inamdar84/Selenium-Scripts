@@ -1,6 +1,6 @@
 package testModifier;
 
-import com.amit.web.corejava.AccessModifiers;
+import javaAccessModifiers.AccessModifiers;
 
 public class AccessModifier3 extends AccessModifiers {
 

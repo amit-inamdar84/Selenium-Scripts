@@ -1,4 +1,6 @@
-package com.amit.web.corejava;
+package javaLoops;
+//For loop can be used to simply print numbers, iterate over arrays and collections.
+//For each loop can be used to iterate over arrays and collections.
 
 public class ForLoop {
 

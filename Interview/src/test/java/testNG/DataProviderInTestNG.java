@@ -1,5 +1,7 @@
 package testNG;
 
+import java.lang.reflect.Method;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -30,7 +32,7 @@ public class DataProviderInTestNG {
 		// data[1][0] = 3;
 		// data[1][1] = 4;
 
-		Object[][] data = { { 1, 2 }, { 3, 4 },{ 5,6 } };
+		Object[][] data = { { 1, 2 }, { 3, 4 }, { 5, 6 } };
 
 		return data;
 	}
@@ -43,6 +45,28 @@ public class DataProviderInTestNG {
 	@Test(dataProvider = "testData1")
 	public void test2(int a, int b) {
 		System.out.println(a + " " + b);
+	}
+
+	// If you declare your @DataProvider as taking a java.lang.reflect.Method as
+	// first parameter, TestNG will pass the current test method for this first
+	// parameter. This is particularly useful when several test methods use the
+	// same @DataProvider and you want it to return different values depending
+	// on which test method it is supplying data for.
+	// For example, the following code prints the name of the test method inside
+	// its @DataProvider:
+
+	@DataProvider(name = "dp")
+	public Object[][] createData(Method m) {
+		System.out.println(m.getName()); // print test method name
+		return new Object[][] { new Object[] { "Cedric" } };
+	}
+
+	@Test(dataProvider = "dp")
+	public void test3(String s) {
+	}
+
+	@Test(dataProvider = "dp")
+	public void test4(String s) {
 	}
 
 }

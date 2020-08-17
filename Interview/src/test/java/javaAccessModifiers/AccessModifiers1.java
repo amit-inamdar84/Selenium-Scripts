@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaAccessModifiers;
 
 public class AccessModifiers1 {
 	public static void main(String[] args) {

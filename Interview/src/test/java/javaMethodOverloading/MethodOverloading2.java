@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaMethodOverloading;
 
 public class MethodOverloading2 {
 	//byte<short<int<long<float<double

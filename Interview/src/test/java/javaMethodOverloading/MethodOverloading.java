@@ -1,10 +1,10 @@
-package com.amit.web.corejava;
+package javaMethodOverloading;
 //Method overloading is a feature that allows a class to have more than one method to have the same name provide their argument list are different
 //No of arguments, Sequence of arguments, Data type in argument list changed.
 //Increased code readability, code reuse and cleanliness.
 //Also known as compile time polymorphism
 //We cannot overload a method just by changing the return type of the method
-//It is possible to overload main method by changing argument data type - For ex see MethodOverloading1 class. Those mthods will work like normal methods
+//It is possible to overload main method by changing argument data type - For ex see MethodOverloading1 class. Those methods will work like normal methods
 //When we overload main method, in the original main method we should not call the same method. Leads to stack overflow error.
 
 

@@ -5,7 +5,8 @@
     <classes>
       <class name="com.amit.testscripts.TC004">
         <methods>
-          <include name="getAllPosts"/>
+          <include name="testCreatePosts"/>
+          <include name="getPostsByID"/>
         </methods>
       </class> <!-- com.amit.testscripts.TC004 -->
     </classes>

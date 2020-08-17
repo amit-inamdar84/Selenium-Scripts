@@ -1,15 +1,17 @@
-package com.amit.web.corejava;
+package javaExceptions;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
 //Exception handling is a mechanism to handle the run time errors so that the normal flow of the application can be maintained
 //Exception type: Checked exceptions and Unchecked exceptions.
-//The classes that extends Throwable class except Runtime and Error are known as checked exceptions. Ex: FileNotFoundException, classNotFoundException,
-//InterruptedException
-//The classes that extend RuntimeException are known as unchecked exceptions.
+//The exceptions that are checked by compiler during compilation to see whether the programmer has handled or not are called checked exceptions.
+//Ex: FileNotFoundException, classNotFoundException, SQLException, IOException, InterruptedException etc.
+//Exceptions that occur at run time are called unchecked exceptions. Ex: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc
 //Error is irrecoverable. Ex: OutOfMemoryError, VirtualMachineError, AssertionError etc.
+//Runtime exceptions extend the class RuntimeException and it further extends Exception class. (Refer ExceptionHierarchy.png)
 //Exception class is parent class for both checked and unchecked exceptions. That is why in catch block we write - catch(Exception e) 
 
 
@@ -93,11 +95,11 @@ public class ExceptionClass extends TestException{
 		// Below catch blocks are invalid (compile time error) as we cannot use child class
 		// exceptions when parent is already handling
 		/*
-		 * catch (ArithmeticException e) { // TODO Auto-generated catch block
+		 * catch (ArithmeticException e) {
 		 * e.printStackTrace(); }
 		 * 
-		 * catch (ArrayIndexOutOfBoundsException e) { // TODO Auto-generated
-		 * catch block e.printStackTrace(); }
+		 * catch (ArrayIndexOutOfBoundsException e) {
+		 * e.printStackTrace(); }
 		 */
 	}
 	
@@ -107,20 +109,19 @@ public class ExceptionClass extends TestException{
 			int[] a = new int[5];
 			a[4] = 30 / 1;
 			String s = null;
-			s.toCharArray();
+			s.toCharArray();//This will throw NullPointerException
 		} catch (ArithmeticException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		 catch (ArrayIndexOutOfBoundsException e) { // TODO Auto-generated catch block
+		 catch (ArrayIndexOutOfBoundsException e) {
 		 e.printStackTrace(); }
 		 
 		 catch (Exception e) { 
 		 e.printStackTrace(); 
 		 }
-		System.out.println("All exceptions failed. Parent class caught the exception that was not defined");
-		 
+		System.out.println();
+		System.out.print("All exceptions failed. Parent class caught the exception that was not defined");
 	}
 
 	public void multipleTryCatch() {
@@ -147,7 +148,7 @@ public class ExceptionClass extends TestException{
 	public void nestedTryBlock() {
 		//Try catch block within a try block in known as nested try catch block
 		// If first inner try block catches the exception, second inner try block will execute.
-		// If second try block also catches the exception, outer catch block will not execute.
+		// If second inner try block also catches the exception, outer catch block will not execute.
 		try {
 			try {
 				int[] a = new int[5];
@@ -267,11 +268,12 @@ public class ExceptionClass extends TestException{
 		//obj.test();
 		//obj.tryCatch();
 		//obj.tryCatch1();
+		//obj.multipleTryCatch();
 		//obj.nestedTryBlock();
 		//obj.nestedTryBlock1();
 		//obj.nestedTryBlock2();
 		//obj.tryFinally();
-		obj.tryFinally1();
+		//obj.tryFinally1();
 
 	}
 

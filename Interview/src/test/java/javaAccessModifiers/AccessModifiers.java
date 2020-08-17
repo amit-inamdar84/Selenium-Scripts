@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaAccessModifiers;
 
 public class AccessModifiers {
 	//Private - Can be accessed with the class only

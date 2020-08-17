@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaFinalKeyword;
 
 public class FinalInherit extends FinalMethodClass{
 	final int k;

@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaControlStatements;
 //If inside if block
 //We can also use if else inside if block
 //We can also use if and if else inside if block
