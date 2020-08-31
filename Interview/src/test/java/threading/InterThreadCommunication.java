@@ -3,6 +3,8 @@ package threading;
 //object, or a specified amount of time has elapsed.
 //notify() - Wakes up a single thread that is waiting on this object's monitor.
 //notifyAll() - Wakes up all threads that are waiting on this object's monitor.
+//Synchronized method is used to lock an object for any shared resource. When a thread invokes a synchronized method, it automatically acquires the lock for that
+//object and releases it when the thread completes its task.
 
 public class InterThreadCommunication {
 	int amount = 10000;

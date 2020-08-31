@@ -55,6 +55,7 @@ public class HashMapInJava {
 		hashMap2.put(null, "Test5");
 		
 		//Map interface is not a part of collection. Hence iterator cannot be directly run over Map.
+		//So first we need to use keyset method and convert to Set and then run iterator on it.
 		//Method 1
 		Set<Integer> keySet = hashMap2.keySet();
 		Iterator<Integer> itr = keySet.iterator();

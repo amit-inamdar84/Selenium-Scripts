@@ -8,7 +8,7 @@ public class VectorClass {
 //Vector class is thread safe. If multiple resources access vector class data corruption will not happen.
 //Whereas in array list and linked list data corruption will happen.
 //Vector maintains insertion order and allows duplicate items.
-//Iterator will also work for vectors. We also use enums instead which serve same purpose
+//Iterator will also work for vectors. We also use Enumeration instead which serve same purpose
 	
 	public static void main(String[] args) {
 		List<Object> obj = new Vector<Object>();

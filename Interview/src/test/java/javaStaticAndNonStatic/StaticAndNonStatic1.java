@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaStaticAndNonStatic;
 
 public class StaticAndNonStatic1 {
 	static int counter = 0;
@@ -16,6 +16,7 @@ public class StaticAndNonStatic1 {
 	}
 
 	public static void main(String[] args) {
+		System.out.println("Debug point");
 		StaticAndNonStatic1 obj1 = new StaticAndNonStatic1();// Once object is
 																// created it
 																// will receive

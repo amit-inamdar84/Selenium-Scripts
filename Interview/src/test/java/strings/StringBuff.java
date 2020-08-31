@@ -7,8 +7,9 @@ package strings;
  * String buff is fast and consumes less memory.
  * String class overrides equals method of object class
  * String buff does not override equals method.
+ * Methods - equals, append, insert, replace, delete, reverse, capacity, ensureCapacity
  * @author AMIT
- *
+ * 
  */
 
 public class StringBuff {
@@ -30,6 +31,7 @@ public class StringBuff {
 		
 		StringBuffer s4 = new StringBuffer(64);
 		System.out.println(s4.capacity());
+		System.out.println("---------------");
 		
 		String s = "Test1";
 		//This statement will not change the original string
@@ -44,6 +46,14 @@ public class StringBuff {
 		s1.append("etsteettetteetetetettetetetet");
 		//Capacity increases by (old capacity*2)+2
 		System.out.println(s1.capacity());
+		System.out.println("---------------");
+		
+		//append() - Appends to the end of specified string.
+		StringBuffer str = new StringBuffer("app test");
+		System.out.println(str);
+		str.append("n");
+		System.out.println(str);
+		System.out.println(str.equals(str));//Separate equals method in StringBuffer class. Not overridden.
 		System.out.println("---------------");
 		
 		//insert() - Inserts the given string in the current string at the given position
@@ -68,10 +78,10 @@ public class StringBuff {
 		
 		
 		//Capacity method - Returns the current capacity of the buffer. Default is 16.
-		////Capacity increases by (old capacity*2)+2
+		//Capacity increases by (old capacity*2)+2
 		StringBuffer s6 = new StringBuffer();
 		System.out.println(s6.capacity());
-		s6.append("01234567891234567");
+		s6.append("01234567891234567");//Inserting 17 characters. 16+17=33
 		System.out.println(s6.capacity());
 		System.out.println("-------------------------");
 		
@@ -80,13 +90,10 @@ public class StringBuff {
 		//Ex: initial capacity is 16. Next should be 34. We can specify 36. Next should be (36*2)+2=74. We can specify 75.
 		StringBuffer s7 = new StringBuffer();
 		System.out.println(s7.capacity());
-		s7.append("as12as12as12as12");
+		s7.append("as12as12as12as12");//16+16=32
 		s7.ensureCapacity(36);
 		System.out.println(s7.capacity());
 		s7.ensureCapacity(75);
 		System.out.println(s7.capacity());
 	}
-	
-	
-
 }

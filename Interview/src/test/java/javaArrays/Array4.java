@@ -8,6 +8,11 @@ public class Array4 {
 		
 		System.arraycopy(c1, 0, c2, 0, 2);
 		System.out.println(c2);
+		
+		int[] a = {2,5};
+		int[] b = new int[2];
+		System.arraycopy(a, 0, b, 0, 2);
+		System.out.println(b[0]+" "+b[1]);
 
 	}
 

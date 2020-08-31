@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaStaticAndNonStatic;
 
 public class StaticAndNonStatic2 {
 	int rollNumber;
@@ -29,14 +29,13 @@ public class StaticAndNonStatic2 {
 	}
 
 	public static void main(String[] args) {
+		System.out.println("Debug point");
 		StaticAndNonStatic2 obj1 = new StaticAndNonStatic2(1,20);
 		obj1.display();
 		StaticAndNonStatic2 obj2 = new StaticAndNonStatic2(2,22);
 		obj2.display();
 		StaticAndNonStatic2 obj3 = new StaticAndNonStatic2(3,23);
 		obj3.display();
-		
-
 	}
 
 }

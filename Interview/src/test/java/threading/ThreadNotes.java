@@ -21,5 +21,19 @@ public class ThreadNotes {
 	//Running: Thread is running if scheduler has selected it to run.
 	//Non-runnable(Blocked): This is the state when thread is still alive, but is currently not eligible to run.
 	//Terminated : A thread is in terminated state when its run() method exits.
-
+	
+    //Class hierarchy for learning:
+    //ThreadNotes
+	//Example1 - Creating thread using Thread class and Methods
+	//Example2 - Runnable interface and creating thread
+	//Example3 - Thread scheduler
+	//Example4 and Example5 - join and sleep methods
+	//Example 6
+	//Example 7
+	//DaemonThread
+	//ThreadPool
+	//ThreadPool1
+	//TG1
+	//InterThreadCommunication and TestThreadComm
+	//Deadlock
 }

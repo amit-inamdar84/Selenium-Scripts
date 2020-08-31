@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaThisKeyword;
 
 public class ThisKeyword {
 	int i;

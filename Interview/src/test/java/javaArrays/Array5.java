@@ -1,5 +1,5 @@
 package javaArrays;
-
+//See next class Array6 for explanation.
 public class Array5 {
 	String title;
 	String author;

@@ -194,6 +194,7 @@ public class JavaIntroNotes {
 		F5 to step inside a method when there is a method caller.
 		F8 to come out of an unwanted system class or java library and stop at next debug point if there is any.
 		Select a class, method, field. Right click and select open call hierarchy. It will show where all the class, method or field is called or referred.
+		Select an interface, right click and select quick type hierarchy. Or press CTRL+T. It will shows which classes implemented the interface.
 		
 		
 		Old log4j details:
@@ -221,6 +222,7 @@ public class JavaIntroNotes {
 		* Test obj = new Test(); obj.methodname;
 		* When we print the object - the output can be understood as packagename.classname@Address
 		* We can inherit only non-static members. Static members will not participate in inheritance.
+		* Method signature - Consists of method name and parameter list.
 		* 
 		* public class Object - Class Object is the root of the class hierarchy. Every class has Object as a superclass. 
 		* All objects, including arrays, implement the methods of this class.
@@ -232,7 +234,7 @@ public class JavaIntroNotes {
 		* File srcFile = new File("D:\\Screenshot.png");
 		* srcFile.createNewFile();
 		* 
-		* 
+		* New features in Java 8: https://howtodoinjava.com/java-8-tutorial/
 		* 
 		* Difference between method overloading and overriding
 		* 1. Overloading happens at compile-time while Overriding happens at runtime: The binding of overloaded method call to its definition has happens at

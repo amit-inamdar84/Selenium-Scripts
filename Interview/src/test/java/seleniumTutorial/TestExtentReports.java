@@ -1,4 +1,4 @@
-package com.amit.web.testscripts;
+package seleniumTutorial;
 
 import org.testng.annotations.Test;
 

@@ -1,4 +1,4 @@
-package com.amit.web.testscripts;
+package seleniumTutorial;
 
 import org.apache.log4j.Logger;
 import org.testng.SkipException;

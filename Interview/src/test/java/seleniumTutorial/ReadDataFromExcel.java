@@ -1,4 +1,4 @@
-package com.amit.web.testscripts;
+package seleniumTutorial;
 //Logic: Create object of current class and pass file path as argument to its parameterized constructor.
 //Define instance variables.
 //Invoke constructor and initialize object of FileInputStream class and pass FileInputStream object to XSSFWorkbook class constructor.

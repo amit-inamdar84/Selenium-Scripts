@@ -1,8 +1,10 @@
-package com.amit.web.corejava;
+package javaStaticAndNonStatic;
+// Static members are accessed by class name
+// Non static members are accessed by object
+//Every object created will receive one separate copy of non-static members.
 
 public class StaticAndNonStatic {
-	// Static members are accessed by class name
-	// Non static members are accessed by object
+
 	int i = 80;
 	static int j = 90;
 

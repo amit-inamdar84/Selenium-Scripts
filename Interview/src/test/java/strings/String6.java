@@ -16,17 +16,8 @@ public class String6 {
 		String6 obj = new String6();
 		System.out.println(obj.s1.charAt(7));
 		
-//compareTo() method compare given string with current string lexicographically. i.e. alphabetical order. Return positive or negative number or 0.
-//It basically does a sequential comparison of letters in the string that have the same position.
 		String s1 = "Amit";
 		String s2 = "TCEE";
-		String s3 = "Wabtec";
-		String s4 = "Amit";
-		
-		System.out.println(s1.compareTo(s2));
-		System.out.println(s2.compareTo(s3));
-		System.out.println(s3.compareTo(s4));
-		System.out.println(s1.compareTo(s4));
 		
 		char[] c = new char[6];
 		//Src end - index after the last character in the string to copy.
@@ -56,6 +47,9 @@ public class String6 {
 		System.out.println((str==str1));
 		//Return true as reference will now be same after using intern method.
 		System.out.println(str1==str2);
+		String str3 = "Wab";
+		String str4 = str3.intern();
+		System.out.println(str3 == str4);
 		System.out.println("-----------------------");
 		
 		String a = "";

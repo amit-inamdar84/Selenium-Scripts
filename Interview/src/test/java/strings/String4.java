@@ -1,19 +1,17 @@
 package strings;
 
-/**
- * contains() method will match sequence of character and return true or false
- * public boolean contains(CharSequence s)
- * Throws null pointer exception if sequence is null.
- * endsWith(): Checks if given string ends with predefined suffix. Returns true or false.
- * public boolean endsWith(String suffix)
- * The java.util.Locale class object represents a specific geographical, political, or cultural region.
- * Locale is a mechanism for identifying objects, not a container for the objects themselves.
- * format(): This method returns the formatted string by given locale, format and arguments.
- * public static String format(String format, Object... args)
- * public static String format(Locale loc, String format, Object... args)
- * %s – for strings; %f – for floats; %d – for integers
- * getBytes() - This method is in String class. It will convert the string into an array of bytes.
- */
+ //contains() method will match sequence of character and return true or false
+ //public boolean contains(CharSequence s)
+ //Throws null pointer exception if sequence is null.
+ //endsWith(): Checks if given string ends with predefined suffix. Returns true or false.
+ //public boolean endsWith(String suffix)
+ //The java.util.Locale class object represents a specific geographical, political, or cultural region.
+ //Locale is a mechanism for identifying objects, not a container for the objects themselves.
+ //format(): This method returns the formatted string by given locale, format and arguments.
+ //public static String format(String format, Object... args)
+ //public static String format(Locale loc, String format, Object... args)
+ //%s – for strings; %f – for floats; %d – for integers
+ //getBytes() - This method is in String class. It will convert the string into an array of bytes.
 
 public class String4 {
 	public static void main(String[] args) {
@@ -36,6 +34,7 @@ public class String4 {
 		//Here we are formatting the floating number by adding 4 decimal places
 		System.out.println(String.format("Earning is %.4f", 55.55));
 		//Here we are left padding a number with 0’s and converting the number to a formatted String.
+		//%05d indicates insert 0 on left and print total 5 digit integers.
 		System.out.println(String.format("%05d", num));
 		System.out.println("----------------------");
 

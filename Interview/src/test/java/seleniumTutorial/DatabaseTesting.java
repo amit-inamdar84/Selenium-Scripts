@@ -1,4 +1,4 @@
-package com.amit.web.testscripts;
+package seleniumTutorial;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -1,4 +1,4 @@
-package com.amit.web.testscripts;
+package seleniumTutorial;
 /*Maven
  * Maven is a project management tool that is based on POM-Project object model
  * Used to build project, dependency.

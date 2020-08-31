@@ -2,6 +2,7 @@ package methodOverriding;
 //Method overriding is a feature in java that allows child class to have the exact same method as in parent class.
 //For overriding method name, no of arguments, sequence, return type and data type in argument list should be same. Also access modifier of the overriding
 //method of subclass cannot be more restrictive than the overridden method of parent class.
+//Method body can change in child class and have its own implementation.
 //Also called run time polymorphism or dynamic dispatch because the method call is determined at run time depending on which class the object belongs to.
 //To override correctly, we need to create reference of parent class and object of child class and call parent method.
 //Overriding can be done using inheritance only
@@ -14,6 +15,7 @@ package methodOverriding;
 
 public class ChildClass extends ParentClass {
 
+	@Override
 	public void test1() {
 		System.out.println("Child class test1 method");
 	}
@@ -29,13 +31,17 @@ public class ChildClass extends ParentClass {
 	}*/
 
 	public static void main(String[] args) {
+		//Parent class reference and child class object. Can access only parent class methods at compile time
 		ParentClass obj = new ChildClass();
 		// During run time compiler will call child class method.
 		obj.test1();
 		obj.test3();
 		
+		//Child class object and reference. Can call parent and child class methods at compile time.
 		ChildClass obj1 = new ChildClass();
 		obj1.test3();
+		obj1.test1();
+		obj1.test4();
 
 	}
 

@@ -1,11 +1,11 @@
-package com.amit.web.corejava;
+package javaThisKeyword;
+//This is used to refer to current class instance variable when local and global variable are same
 //This is used to invoke current class constructor
-
 //This is used to invoke current class method
 //This can be passed as an argument in the method call
 //This can be passed as an argument in the constructor call - See classes - ThisKeyword2 and ThisKeyword3
 //This is used to return current class instance
-//Available only for non static members
+//Available only for non static members. this keyword cannot be used in main method as main method is static.
 
 public class ThisKeyword1 {
 
@@ -28,7 +28,7 @@ public class ThisKeyword1 {
 	}
 
 	public void test2() {
-		this.test1();
+		this.test1();//Invokes current class method.
 		System.out.println("Method 2");
 	}
 
@@ -39,20 +39,22 @@ public class ThisKeyword1 {
 
 	public void test4() {
 		//Pass this is an argument alternative to passing object of class type
-		//test3(this);
+		test3(this);
 		
-		ThisKeyword1 obj = new ThisKeyword1();
-		test3(obj);
+		//ThisKeyword1 obj = new ThisKeyword1();
+		//test3(obj);
 	}
 	
 	public ThisKeyword1 test5() {
-		return this;
+		return this;//returns current class instance
 		//return new ThisKeyword1(); Alternative return for this
 	}
 
 	public static void main(String[] args) {
 		ThisKeyword1 obj = new ThisKeyword1(5, 6);
 		obj.test4();
+		obj.test2();
+		System.out.println(obj.test5());
 	}
 
 }

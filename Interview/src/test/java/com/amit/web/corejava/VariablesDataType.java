@@ -13,14 +13,17 @@ public class VariablesDataType {
 	int data = 50; // Instance variable
 	static int m = 1000;// Static variable
 
-	void method() {
+	public int method() {
 		int a = 10;// local variable
+		return a;
 	}
 
 	public static void main(String[] args) {
-		// System.out.println("Instance variable" +data);
-		System.out.println("Static variable" + m);
-		// System.out.println("Local variable" +a);
+		VariablesDataType obj = new VariablesDataType();
+		System.out.println("Instance variable: " +obj.data);
+		System.out.println("Static variable: " + m);
+		int c = obj.method();
+		System.out.println("Local variable: " +c);
 	}
 
 	/*Type      Default   Size    Range

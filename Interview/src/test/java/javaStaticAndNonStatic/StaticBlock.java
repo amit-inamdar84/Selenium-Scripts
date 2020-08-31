@@ -1,4 +1,4 @@
-package com.amit.web.corejava;
+package javaStaticAndNonStatic;
 
 //Static block is used for initializing static variables. This block gets executed when the class is loaded into the memory.
 //Multiple static block can exist within a class and will get executed in same sequence in which they have been written.
