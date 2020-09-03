@@ -2683,3 +2683,55 @@
 2020-07-24 12:24:26 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
 2020-07-24 12:24:29 INFO  VerificationHelper:21 - element is Displayed..About Us
 2020-07-24 12:24:29 INFO  TestBase:82 - **************testLoginFinished***************
+2020-09-01 13:05:58 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-09-01 13:05:58 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-01 13:05:58 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-09-01 13:05:58 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-09-01 13:05:58 INFO  WaitHelper:141 - page is loaded
+2020-09-01 13:06:03 INFO  TestBase:64 - **************testLoginStarted***************
+2020-09-01 13:06:06 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-01 13:06:07 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (ef59bee503d86bc668928abc5f86614d)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-09-01 13:06:07 INFO  WaitHelper:154 - element is visible now
+2020-09-01 13:06:07 INFO  TestBase:156 - capturing ui navigation screen...
+2020-09-01 13:06:07 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-01 13:06:09 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-01 13:06:09 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-09-01 13:06:09 INFO  LoginPage:37 - Clicked login link
+2020-09-01 13:06:11 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-09-01 13:06:11 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-09-01 13:06:12 INFO  LoginPage:62 - entering password....Screener_3007
+2020-09-01 13:06:13 INFO  LoginPage:71 - clicking on login button...
+2020-09-01 13:06:14 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-01 13:06:14 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (ef59bee503d86bc668928abc5f86614d)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-09-01 13:06:15 INFO  WaitHelper:154 - element is visible now
+2020-09-01 13:06:15 INFO  TestBase:156 - capturing ui navigation screen...
+2020-09-01 13:06:15 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-01 13:06:16 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-01 13:06:16 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-01 13:06:16 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (ef59bee503d86bc668928abc5f86614d)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-09-01 13:06:16 INFO  WaitHelper:154 - element is visible now
+2020-09-01 13:06:16 INFO  TestBase:156 - capturing ui navigation screen...
+2020-09-01 13:06:16 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-01 13:06:17 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-01 13:06:18 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-09-01 13:06:18 INFO  LoginPage:30 - Logging out
+2020-09-01 13:06:19 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-09-01 13:06:20 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-09-01 13:06:20 INFO  TestBase:82 - **************testLoginFinished***************
+2020-09-01 14:57:25 INFO  TestBase:123 - Web driver is now initialized: 1424788681
+2020-09-01 14:57:25 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-01 14:57:25 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-09-01 14:57:25 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-09-01 14:57:25 INFO  WaitHelper:141 - page is loaded
+2020-09-01 14:57:30 INFO  TestBase:64 - **************testLoginStarted***************
+2020-09-01 16:21:22 INFO  TestBase:123 - Web driver is now initialized: 429353573
+2020-09-01 16:21:22 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-01 16:21:22 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-09-01 16:21:22 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-09-01 16:21:22 INFO  WaitHelper:141 - page is loaded
+2020-09-01 16:21:24 INFO  TestBase:64 - **************test1Started***************
+2020-09-01 16:21:24 INFO  AssertionHelper:17 - making script PASS..
+2020-09-01 16:21:24 INFO  TestBase:82 - **************test1Finished***************
+2020-09-01 16:21:26 INFO  TestBase:64 - **************test2Started***************
+2020-09-01 16:21:26 INFO  AssertionHelper:27 - making script FAIL..
+2020-09-01 16:21:27 INFO  TestBase:82 - **************test2Finished***************

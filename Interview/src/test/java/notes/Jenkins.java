@@ -39,7 +39,9 @@ package notes;
 //Add one choice parameter for testng.xml. Give a name and in choices write the path of all xml files. This will serve as a drop down.
 //In build section change the goal to clean test -DsuiteXmlFile=$testSuite where -D is syntax for system property variable, suiteXmlFile is the tag specified
 //in pom.xml and $testSuite is the name given in previous step for choice parameter.
-//Check the box Inject build variables
+//CLick on advanced and check the box Inject build variables
+//Now build the project and in next page select string parameters and choice parameter(testng.xml options)
+//
 
 public class Jenkins {
 

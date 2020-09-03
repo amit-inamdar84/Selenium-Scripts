@@ -43,6 +43,7 @@ public class Login extends TestBase {
 		loginpage.verifyLandingPageText();
 		loginpage.clickAboutUsLink();
 		loginpage.verifyAboutUsText();
+		log.info("Test steps execution completed");
 	}
 
 	/*

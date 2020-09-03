@@ -13,16 +13,22 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,14 +44,21 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 import org.testng.annotations.Test;
 
+import com.amit.web.helper.resource.ResourceHelper;
 import com.amit.web.testBase.TestBase;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class SeleniumCommands extends TestBase {
 
 	@Test
-	public void basicCommands() throws IOException {
+	public void basicCommands(ITestResult result) throws IOException, InterruptedException {
 		
 		//Configuring browsers
 		//setProperty accepts a key and a value
@@ -130,17 +143,27 @@ public class SeleniumCommands extends TestBase {
 		//Waits till expected condition occurs to a maximum of specified time and then throws exception.
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("xpath")));
+		wait.pollingEvery(Duration.ofMillis(1000));
+		wait.ignoring(NoSuchElementException.class);
+		wait.ignoring(ElementNotVisibleException.class);
+		wait.ignoring(StaleElementReferenceException.class);
+		wait.ignoring(NoSuchFrameException.class);
 		
 		//Implicit wait
-		//Waits for specified time to find an element which comes after the wait statement. If found within the time, next statement is executed.
+		//driver waits for specified time to find an element. If found within the time, next statement is executed.
 		//Else after specified time NoSuchElementException is thrown.
+		//This wait applies to all the elements in the test script.
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
-		//Fluent wait
+		//Fluent wait - Another type of explicit wait.
 		//Fluent Wait looks for a web element repeatedly at regular intervals until timeout happens or until the object is found.
+		//We use FluentWait commands mainly when we have web elements which sometimes visible in few seconds and some times take more time than usual.
+		//Mainly in Ajax applications. We could set the default pooling period based on our requirement. We could ignore any exception while polling an element.
 		Wait<WebDriver> wait1 = new FluentWait<WebDriver>(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(5, TimeUnit.SECONDS);//Deprecated
 		//wait1.until(isTrue);
 		Wait<WebDriver> wait2 = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(5));
+		Wait<WebDriver> wait3 = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
+		wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("xpath")));
 
 		// Close browser
 		driver.close();// Close the current window, quitting the browser if it's
@@ -292,6 +315,12 @@ public class SeleniumCommands extends TestBase {
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(srcFile, new File("D:\\Screenshot.png"));
 		
+		//Taking screenshot of failed test case
+		if(result.getStatus() == ITestResult.FAILURE){
+			File srcFile1 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(srcFile1, new File("D:\\Screenshot.png"));
+		}
+		
 		//Reading property file
 		Properties OR = new Properties();
 		File file = new File("D:\\Git\\Interview\\src\\main\\java\\com\\amit\\web\\config\\config1.properties");
@@ -301,6 +330,8 @@ public class SeleniumCommands extends TestBase {
 	
 		
 		//All classes related to firefox options/launching/capabilities
+		//https://sites.google.com/a/chromium.org/chromedriver/capabilities
+		//Chrome Options class includes methods to Start Chrome maximized, Block pop-up windows, Set download directory etc. More details in link above.
 		//Create FirefoxOptions class object and access its method addPreference to set properties to browser.
 		FirefoxOptions options = new FirefoxOptions();
 		options.addPreference("browser.download.dir", "/Users/AMIT/Downloads");
@@ -340,6 +371,7 @@ public class SeleniumCommands extends TestBase {
 			//Also the JDBC driver gets registered
 			Class.forName(driver);
 			//Driver manager provides basic service for managing JDBC drivers. getConnection establishes connection to give DB URL.
+			//The result is stored in a variable of interface type Connection.
 			Connection con = DriverManager.getConnection(connection, userName, password);
 			//On a connection session createStatement() method creates a statement object.
 			Statement stmt = con.createStatement();
@@ -361,6 +393,44 @@ public class SeleniumCommands extends TestBase {
 			e.printStackTrace();
 		}
 		
+		//Download file
+		System.setProperty("webdriver.gecko.driver", "Path");
+		FirefoxOptions options1 = new FirefoxOptions();
+		options1.addPreference("browser.download.dir", "/Users/AMIT/Downloads");
+		options1.addPreference("browser.download.folderList", 1);
+		options1.addPreference("browser.helperApps.neverAsk.saveToDisk", "application/octet-stream;"); //MIME type for exe file
+		driver = new FirefoxDriver(options1);
+		driver.get("https://www.eclipse.org/downloads/");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//a[text()='Allow cookies']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[contains(text(),'Download 64 bit')]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id='novaContent']/div[1]/div[1]/div/div/a")).click();
+		Thread.sleep(5000);
+		
+		//Configuring log4j
+		//PropertyConfigurator class allows the configuration of log4j from an external file
+		PropertyConfigurator.configure("Path of log4j properties file");
+		//getLogger method in Logger class takes the class name and returns a Logger.
+		Logger log = Logger.getLogger(SeleniumCommands.class);
+		//One the logger returned we can call log.info to log the results. 
+		log.info("test");
+		
+		//Extent reports
+		//ExtentReports, ExtentTest and ExtentHtmlReporter are the main classes for extent reports.
+		String fileName = "Path of extent report HTML file";
+		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
+		htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
+		htmlReporter.config().setChartVisibilityOnOpen(true);
+		htmlReporter.config().setTheme(Theme.STANDARD);
+		htmlReporter.config().setDocumentTitle(fileName);
+		htmlReporter.config().setEncoding("utf-8");
+		htmlReporter.config().setReportName("Automation Report");
+		extent = new ExtentReports();
+		extent.attachReporter(htmlReporter);
+		test = extent.createTest(getClass().getSimpleName());
+		test.log(Status.INFO, "Details");
 
 		/*
 		 * Ways to run test scripts:

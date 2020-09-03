@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Listener suite]">
   <listeners>
-    <listener class-name="com.amit.web.listeners.ListenerInTestNG"/>
+    <listener class-name="com.amit.web.helper.listener.ListenerInTestNG"/>
   </listeners>
   <test thread-count="5" name="Listener test(failed)">
     <classes>

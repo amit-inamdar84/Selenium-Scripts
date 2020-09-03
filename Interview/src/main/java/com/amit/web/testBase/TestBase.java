@@ -53,7 +53,7 @@ public class TestBase {
 	public void beforeTest() throws Exception{
 		ObjectReader.reader = new PropertyReader();
 		reportDirectery = new File(ResourceHelper.getResourcePath("/src/main/resources/screenShots"));
-		setUpDriver(ObjectReader.reader .getBrowserType());
+		setUpDriver(ObjectReader.reader.getBrowserType());
 		test = extent.createTest(getClass().getSimpleName());
 	}
 	
