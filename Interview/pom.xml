@@ -92,8 +92,10 @@
 					<systemPropertyVariables>
 						<implicitWait>${DimplicitWait}</implicitWait>
 					</systemPropertyVariables>
-					<!-- <suiteXmlFiles>testng.xml</suiteXmlFiles> -->
-					<suiteXmlFiles>${suiteXmlFile}</suiteXmlFiles>
+					<suiteXmlFiles>
+					<!-- <suiteXmlFile>testng.xml</suiteXmlFile> -->
+					<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>

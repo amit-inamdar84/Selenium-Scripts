@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FrameworkTest]">
+  <test thread-count="5" name="JenkinsTest(failed)">
     <classes>
-      <class name="com.amit.web.testscripts.TestExtentReports">
+      <class name="seleniumTutorial.JenkinsParameterTest">
         <methods>
           <include name="beforeSuite"/>
+          <include name="testParameters"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="test2"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.amit.web.testscripts.TestExtentReports -->
+      </class> <!-- seleniumTutorial.JenkinsParameterTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- JenkinsTest(failed) -->
+</suite> <!-- Failed suite [FrameworkTest] -->

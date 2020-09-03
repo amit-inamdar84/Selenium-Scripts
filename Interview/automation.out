@@ -2735,3 +2735,150 @@
 2020-09-01 16:21:26 INFO  TestBase:64 - **************test2Started***************
 2020-09-01 16:21:26 INFO  AssertionHelper:27 - making script FAIL..
 2020-09-01 16:21:27 INFO  TestBase:82 - **************test2Finished***************
+2020-09-03 15:53:30 INFO  TestBase:116 - session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-D8C95I2', ip: '192.168.225.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00A69563+2725219]
+	Ordinal0 [0x00968551+1672529]
+	Ordinal0 [0x00850359+525145]
+	Ordinal0 [0x007E0B77+68471]
+	Ordinal0 [0x007DD32C+54060]
+	Ordinal0 [0x007FCC37+183351]
+	Ordinal0 [0x007FCA3D+182845]
+	Ordinal0 [0x007FA94B+174411]
+	Ordinal0 [0x007E2528+75048]
+	Ordinal0 [0x007E35A0+79264]
+	Ordinal0 [0x007E3539+79161]
+	Ordinal0 [0x0097D607+1758727]
+	GetHandleVerifier [0x00B86546+1050150]
+	GetHandleVerifier [0x00B86291+1049457]
+	GetHandleVerifier [0x00B910D7+1094071]
+	GetHandleVerifier [0x00B86B46+1051686]
+	Ordinal0 [0x00975B06+1727238]
+	Ordinal0 [0x0097EB7B+1764219]
+	Ordinal0 [0x0097ECE3+1764579]
+	Ordinal0 [0x00994C05+1854469]
+	BaseThreadInitThunk [0x77136359+25]
+	RtlGetAppContainerNamedObjectPath [0x77B97C24+228]
+	RtlGetAppContainerNamedObjectPath [0x77B97BF4+180]
+
+2020-09-03 16:06:10 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-09-03 16:06:10 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-03 16:06:10 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-09-03 16:06:10 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-09-03 16:06:10 INFO  WaitHelper:141 - page is loaded
+2020-09-03 16:06:14 INFO  TestBase:64 - **************testParametersStarted***************
+2020-09-03 16:06:20 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-03 16:06:20 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (03f18e0e382fc9647b81fc299a71a8a4)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-09-03 16:06:20 INFO  WaitHelper:154 - element is visible now
+2020-09-03 16:06:20 INFO  TestBase:156 - capturing ui navigation screen...
+2020-09-03 16:06:20 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 16:06:22 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 16:06:22 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-09-03 16:06:22 INFO  LoginPage:37 - Clicked login link
+2020-09-03 16:06:24 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-09-03 16:06:24 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-09-03 16:06:24 INFO  LoginPage:62 - entering password....Screener_3007
+2020-09-03 16:06:25 INFO  LoginPage:71 - clicking on login button...
+2020-09-03 16:06:26 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-03 16:06:27 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (03f18e0e382fc9647b81fc299a71a8a4)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-09-03 16:06:27 INFO  WaitHelper:154 - element is visible now
+2020-09-03 16:06:27 INFO  TestBase:156 - capturing ui navigation screen...
+2020-09-03 16:06:27 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 16:06:28 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 16:06:28 INFO  JenkinsParameterTest:41 - 
+2020-09-03 16:06:28 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-03 16:06:28 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (03f18e0e382fc9647b81fc299a71a8a4)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-09-03 16:06:28 INFO  WaitHelper:154 - element is visible now
+2020-09-03 16:06:28 INFO  TestBase:156 - capturing ui navigation screen...
+2020-09-03 16:06:28 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 16:06:29 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 16:06:30 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-09-03 16:06:30 INFO  LoginPage:30 - Logging out
+2020-09-03 16:06:31 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-09-03 16:06:32 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-09-03 16:06:32 INFO  TestBase:82 - **************testParametersFinished***************
+2020-09-03 16:09:51 INFO  TestBase:123 - Web driver is now initialized: 2017797638
+2020-09-03 16:09:51 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-03 16:09:51 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-09-03 16:09:51 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-09-03 16:09:51 INFO  WaitHelper:141 - page is loaded
+2020-09-03 16:09:56 INFO  TestBase:64 - **************testParametersStarted***************
+2020-09-03 16:09:56 INFO  TestBase:132 - driver is null..
+2020-09-03 16:09:56 INFO  TestBase:82 - **************testParametersFinished***************
+2020-09-03 16:09:57 INFO  TestBase:64 - **************test1Started***************
+2020-09-03 16:09:57 INFO  AssertionHelper:17 - making script PASS..
+2020-09-03 16:09:57 INFO  TestBase:82 - **************test1Finished***************
+2020-09-03 16:09:57 INFO  TestBase:64 - **************test2Started***************
+2020-09-03 16:09:57 INFO  AssertionHelper:27 - making script FAIL..
+2020-09-03 16:09:58 INFO  TestBase:82 - **************test2Finished***************
+2020-09-03 16:09:58 INFO  TestBase:64 - **************testStarted***************
+2020-09-03 16:09:58 INFO  TestBase:132 - driver is null..
+2020-09-03 16:09:58 INFO  TestBase:82 - **************testFinished***************
+2020-09-03 16:09:58 INFO  TestBase:64 - **************readBullCartelDataStarted***************
+2020-09-03 16:09:58 INFO  TestBase:132 - driver is null..
+2020-09-03 16:09:58 INFO  TestBase:82 - **************readBullCartelDataFinished***************
+2020-09-03 16:09:59 INFO  TestBase:64 - **************verifySortStarted***************
+2020-09-03 16:09:59 INFO  TestBase:132 - driver is null..
+2020-09-03 16:09:59 INFO  TestBase:82 - **************verifySortFinished***************
+2020-09-03 16:27:24 INFO  TestBase:123 - Web driver is now initialized: 2017797638
+2020-09-03 16:27:24 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-03 16:27:24 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-09-03 16:27:24 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-09-03 16:27:24 INFO  WaitHelper:141 - page is loaded
+2020-09-03 16:27:29 INFO  TestBase:64 - **************testParametersStarted***************
+2020-09-03 16:27:29 INFO  TestBase:132 - driver is null..
+2020-09-03 16:27:29 INFO  TestBase:82 - **************testParametersFinished***************
+2020-09-03 16:27:30 INFO  TestBase:64 - **************test1Started***************
+2020-09-03 16:27:30 INFO  AssertionHelper:17 - making script PASS..
+2020-09-03 16:27:30 INFO  TestBase:82 - **************test1Finished***************
+2020-09-03 16:27:31 INFO  TestBase:64 - **************test2Started***************
+2020-09-03 16:27:31 INFO  AssertionHelper:27 - making script FAIL..
+2020-09-03 16:27:31 INFO  TestBase:82 - **************test2Finished***************
+2020-09-03 16:27:32 INFO  TestBase:64 - **************testStarted***************
+2020-09-03 16:27:32 INFO  TestBase:132 - driver is null..
+2020-09-03 16:27:32 INFO  TestBase:82 - **************testFinished***************
+2020-09-03 16:27:32 INFO  TestBase:64 - **************readBullCartelDataStarted***************
+2020-09-03 16:27:32 INFO  TestBase:132 - driver is null..
+2020-09-03 16:27:32 INFO  TestBase:82 - **************readBullCartelDataFinished***************
+2020-09-03 16:27:33 INFO  TestBase:64 - **************verifySortStarted***************
+2020-09-03 16:27:33 INFO  TestBase:132 - driver is null..
+2020-09-03 16:27:33 INFO  TestBase:82 - **************verifySortFinished***************
+2020-09-03 17:15:52 INFO  TestBase:123 - Web driver is now initialized: 1237912220
+2020-09-03 17:15:52 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-03 17:15:52 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-09-03 17:15:52 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-09-03 17:15:52 INFO  WaitHelper:141 - page is loaded
+2020-09-03 17:15:56 INFO  TestBase:64 - **************testParametersStarted***************
+2020-09-03 17:16:01 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-03 17:16:01 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (d58f11b7ccd23bb523e083ff48feed78)] -> xpath: //*[@id='top-nav-menu']/a[4]] for :20 seconds
+2020-09-03 17:16:02 INFO  WaitHelper:154 - element is visible now
+2020-09-03 17:16:02 INFO  TestBase:156 - capturing ui navigation screen...
+2020-09-03 17:16:02 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 17:16:03 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 17:16:03 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-09-03 17:16:03 INFO  LoginPage:37 - Clicked login link
+2020-09-03 17:16:05 INFO  VerificationHelper:21 - element is Displayed..Investor Login
+2020-09-03 17:16:05 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-09-03 17:16:05 INFO  LoginPage:62 - entering password....Screener_3007
+2020-09-03 17:16:05 INFO  LoginPage:71 - clicking on login button...
+2020-09-03 17:16:07 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-03 17:16:07 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (d58f11b7ccd23bb523e083ff48feed78)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-09-03 17:16:07 INFO  WaitHelper:154 - element is visible now
+2020-09-03 17:16:07 INFO  TestBase:156 - capturing ui navigation screen...
+2020-09-03 17:16:07 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 17:16:09 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 17:16:09 INFO  JenkinsParameterTest:41 - 
+2020-09-03 17:16:09 INFO  WaitHelper:26 - WaitHelper object created..
+2020-09-03 17:16:09 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (d58f11b7ccd23bb523e083ff48feed78)] -> xpath: //*[@id='content-area']/div/h1] for :20 seconds
+2020-09-03 17:16:09 INFO  WaitHelper:154 - element is visible now
+2020-09-03 17:16:09 INFO  TestBase:156 - capturing ui navigation screen...
+2020-09-03 17:16:09 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 17:16:10 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-09-03 17:16:10 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-09-03 17:16:10 INFO  LoginPage:30 - Logging out
+2020-09-03 17:16:10 INFO  VerificationHelper:21 - element is Displayed..The best research tool for equity investors in India.
+2020-09-03 17:16:11 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-09-03 17:16:11 INFO  TestBase:82 - **************testParametersFinished***************
