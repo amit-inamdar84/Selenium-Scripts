@@ -23,8 +23,8 @@ package notes;
 //In post build actions select publish testng results.
 //Click apply and save.
 
-//Go to project>>Configure. IN build triggers section, check the box - Build periodically.
-//IN schedule text box, write the CRON job expression - 
+//Go to project>>Configure. In build triggers section, check the box - Build periodically.
+//In schedule text box, write the CRON job expression - 
 //H H 1,15 1-11 *. i.e. Run once a day on the 1st and 15th of every month except December
 //H/15 * * * * i.e. Run every 15 minutes.
 //@daily, @midnight - Every day at midnight.
@@ -36,9 +36,11 @@ package notes;
 //<!-- <suiteXmlFiles>testng.xml</suiteXmlFiles> -->
 //<suiteXmlFiles>${suiteXmlFile}</suiteXmlFiles>
 //In jenkins in configure section add string parameters for test scripts parameters like implicit, explicit wait, url etc.
+//Check the box - This project is parameterized
 //Add one choice parameter for testng.xml. Give a name and in choices write the path of all xml files. This will serve as a drop down.
 //In build section change the goal to clean test -DsuiteXmlFile=$testSuite where -D is syntax for system property variable, suiteXmlFile is the tag specified
 //in pom.xml and $testSuite is the name given in previous step for choice parameter.
+//We can also specify the goal - clean install -DsuiteXmlFile=$testSuite
 //CLick on advanced and check the box Inject build variables
 //Now build the project and in next page select string parameters and choice parameter(testng.xml options)
 //

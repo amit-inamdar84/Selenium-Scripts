@@ -93,7 +93,7 @@
 						<implicitWait>${DimplicitWait}</implicitWait>
 					</systemPropertyVariables>
 					<suiteXmlFiles>
-					<!-- <suiteXmlFile>testng.xml</suiteXmlFile> -->
+					<!-- <suiteXmlFile>jenkinsTestng.xml</suiteXmlFile> -->
 					<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
