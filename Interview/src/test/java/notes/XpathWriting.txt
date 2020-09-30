@@ -91,7 +91,7 @@ Preceding tag is previous to previous tag and all tags above it.
 //a[contains(text(),'Debt free companies')]/preceding::li
 Following: Following starts with next to next tag and all tags below it.
 //a[contains(text(),'Debt free companies')]/following::li
-
+//*[@id="industry-filter-results"]/div[2]/table/tbody/tr/td[2]/a[contains(text(),'Guj')]
 
 
 

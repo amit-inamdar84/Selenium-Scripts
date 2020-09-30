@@ -28,9 +28,10 @@ public class WindowHelper {
 	 * 
 	 * @param index
 	 */
-	public void switchToWindow(int index) {
+	public String switchToWindow(int index) {
 		Set<String> windows = driver.getWindowHandles();
-		int i = 1;
+		String mainwindow = driver.getWindowHandle();
+		int i = 0;
 		for (String window : windows) {
 			if (i == index) {
 				log.info("switched to : " + index + " window");
@@ -39,22 +40,25 @@ public class WindowHelper {
 				i++;
 			}
 		}
+		return mainwindow;
 	}
 
 	/**
 	 * This method will close all tabbed window and switched to main window
+	 * @throws InterruptedException 
 	 */
-	public void closeAllTabsAndSwitchToMainWindow() {
+	public void closeAllTabsAndSwitchToMainWindow(String mainWindow) throws InterruptedException {
 		Set<String> windows = driver.getWindowHandles();
-		String mainwindow = driver.getWindowHandle();
+		//String mainWindow = driver.getWindowHandle();
 
 		for (String window : windows) {
-			if (!window.equalsIgnoreCase(mainwindow)) {
+			if (!window.equalsIgnoreCase(mainWindow)) {
 				driver.close();
 			}
 		}
 		log.info("switched to main window");
-		driver.switchTo().window(mainwindow);
+		Thread.sleep(3000);
+		driver.switchTo().window(mainWindow);
 	}
 
 	/**

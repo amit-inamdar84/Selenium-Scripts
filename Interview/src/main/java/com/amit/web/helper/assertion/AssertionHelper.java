@@ -9,7 +9,7 @@ public class AssertionHelper {
 	private static Logger log = LoggerHelper.getLogger(AssertionHelper.class);
 
 	public static void verifyText(String s1, String s2) {
-		log.info("veryfing test: " + s1 + " with " + s2);
+		log.info("Expected text matched actual text: " + s1 + " with " + s2);
 		Assert.assertEquals(s1, s1);
 	}
 

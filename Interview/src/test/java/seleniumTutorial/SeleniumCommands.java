@@ -56,7 +56,6 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class SeleniumCommands extends TestBase {
-
 	@Test
 	public void basicCommands(ITestResult result) throws IOException, InterruptedException {
 		
@@ -93,19 +92,18 @@ public class SeleniumCommands extends TestBase {
 		
 		//Fetching css value:
 		driver.findElement(By.xpath("xpath")).getCssValue("font-size");
-
-		// Switching window using for each loop
-		for (String childWindow : driver.getWindowHandles()) {
-			driver.switchTo().window(childWindow);
-		}
 		
 		// Switching window using iterator on Set interface
+		//Before switching to child store the parent window which will be required later to switch back to parent.
 		Set<String> windows = driver.getWindowHandles();
+		String parentWindow = driver.getWindowHandle();
 		Iterator<String> itr = windows.iterator();
 		while(itr.hasNext()){
 			String childWindow = itr.next();
 			driver.switchTo().window(childWindow);
 		}
+		//Once work is done in child window switch to parent window
+		driver.switchTo().window(parentWindow);
 		
 		//This method will switch to child window based on index
 		Set<String> windows1 = driver.getWindowHandles();
@@ -260,6 +258,11 @@ public class SeleniumCommands extends TestBase {
 		dd.getFirstSelectedOption();
 		dd.getOptions();
 		dd.isMultiple();
+		
+		//Handling radio buttons
+		//If there are multiple radio buttons get the size and use get(index) to locate a particular button and click.
+		int noOfButtons = driver.findElements(By.xpath("xpath")).size();
+		driver.findElements(By.xpath("xpath")).get(1).click();
 
 		// Drag and drop - Actions class and Action interface
 		//Actions class contains the below methods for user facing API interactions.
@@ -283,7 +286,8 @@ public class SeleniumCommands extends TestBase {
 		//Here the keys pressed are not released and there is no attempt to refocus on the element.
 		action.sendKeys(des, Keys.CLEAR).build().perform();
 		//Mouse over
-		action.moveToElement(des);
+		action.moveToElement(des).build().perform();
+		//After mouse over we can use driver.findElement(By.xpath("xpath")).click();
 
 		// Handling iFrames
 		List frames = driver.findElements(By.tagName("iframe"));
@@ -419,6 +423,7 @@ public class SeleniumCommands extends TestBase {
 		
 		//Extent reports
 		//ExtentReports, ExtentTest and ExtentHtmlReporter are the main classes for extent reports.
+		//https://www.softwaretestinghelp.com/extent-reports-selenium-webdriver/
 		String fileName = "Path of extent report HTML file";
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
@@ -431,6 +436,9 @@ public class SeleniumCommands extends TestBase {
 		extent.attachReporter(htmlReporter);
 		test = extent.createTest(getClass().getSimpleName());
 		test.log(Status.INFO, "Details");
+		
+		//Print all data in web table - TestToVerifyDataInTable.java
+		//Get max value of a column in a web table - TestToPrintMaxValueInWebTable.java
 
 		/*
 		 * Ways to run test scripts:

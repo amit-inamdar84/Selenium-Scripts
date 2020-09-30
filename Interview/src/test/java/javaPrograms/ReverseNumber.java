@@ -3,7 +3,7 @@ package javaPrograms;
 import java.util.Scanner;
 
 public class ReverseNumber {
-	public void reverseNumber() {
+	public int reverseNumber() {
 		int num = 0;
 		int reversenum = 0;
 		System.out.println("Input your number and press enter: ");
@@ -13,17 +13,18 @@ public class ReverseNumber {
 		num = in.nextInt();
 		// While Loop: Logic to find out the reverse number
 		while (num != 0) {
-			reversenum = reversenum * 10;
-			reversenum = reversenum + num % 10;
+			//reversenum = reversenum * 10;
+			reversenum = (reversenum * 10) + num % 10;
 			num = num / 10;
 		}
 
-		System.out.println("Reverse of input number is: " + reversenum);
+		return reversenum;
 	}
 	
 	public static void main(String[] args) {
 		ReverseNumber obj = new ReverseNumber();
-		obj.reverseNumber();
+		int rev = obj.reverseNumber();
+		System.out.println(rev);
 	}
 
 }

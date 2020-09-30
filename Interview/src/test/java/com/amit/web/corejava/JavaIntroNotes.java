@@ -251,7 +251,21 @@ public class JavaIntroNotes {
 		* However in case of method overriding the overriding method can have more specific return type.
 		* 8. Argument list should be different while doing method overloading. Argument list should be same in method Overriding.
 		* 
+		* Similarities between interface and abstract class
+		* We cannot create objects
+		* Both are used to achieve abstraction
+		* 
+		* 
 		* Difference between interface and abstract
+		* Interface achieves 100% abstraction. Abstract class achieves partial abstraction.
+		* Interface methods are by default public whereas abstract class methods are not public
+		* Abstract class variables are not by default public, static and final. Interface variables are by default public, static and final.
+		* We cannot create constructor of interface whereas abstract class constructor can be created.
+		* Interface contains only unimplemented methods. Abstract class contains both.
+		* Multiple inheritance is possible in interface but not in abstract class.
+		* Abstract keyword is not used in interface. In Abstract class we use.
+		* 
+		* 
 		
 		*/
 	

@@ -1,104 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
-    <line>
-      <![CDATA[captureScreen method called]]>
-    </line>
-    <line>
-      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_21.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_21.png'height='100' width='100'/></a>]]>
-    </line>
-    <line>
-      <![CDATA[captureScreen method called]]>
-    </line>
-    <line>
-      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_27.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_27.png'height='100' width='100'/></a>]]>
-    </line>
-    <line>
-      <![CDATA[captureScreen method called]]>
-    </line>
-    <line>
-      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_28.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_28.png'height='100' width='100'/></a>]]>
-    </line>
   </reporter-output>
-  <suite name="FrameworkTest" duration-ms="49226" started-at="2020-09-03T10:35:44Z" finished-at="2020-09-03T10:36:33Z">
+  <suite name="Default suite" duration-ms="137" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
     <groups>
     </groups>
-    <test name="JenkinsTest" duration-ms="49226" started-at="2020-09-03T10:35:44Z" finished-at="2020-09-03T10:36:33Z">
-      <class name="seleniumTutorial.JenkinsParameterTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:seleniumTutorial.JenkinsParameterTest@7fac631b]" name="beforeSuite" is-config="true" duration-ms="505" started-at="2020-09-03T10:35:44Z" finished-at="2020-09-03T10:35:44Z">
+    <test name="Default test" duration-ms="137" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+      <class name="testNG.TestNGTutorial">
+        <test-method status="PASS" signature="test1()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test1" is-config="true" duration-ms="51" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:seleniumTutorial.JenkinsParameterTest@7fac631b]" name="beforeTest" is-config="true" duration-ms="28113" started-at="2020-09-03T10:35:44Z" finished-at="2020-09-03T10:36:12Z">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test2" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:seleniumTutorial.JenkinsParameterTest@7fac631b]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2020-09-03T10:36:14Z" finished-at="2020-09-03T10:36:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void seleniumTutorial.JenkinsParameterTest.testParameters(java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test3" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumTutorial.JenkinsParameterTest@7fac631b]" name="testParameters" duration-ms="17719" started-at="2020-09-03T10:36:14Z" data-provider="SingleLogin" finished-at="2020-09-03T10:36:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[amit.inamdar84@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Screener_3007]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[y]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[captureScreen method called]]>
-            </line>
-            <line>
-              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_21.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_21.png'height='100' width='100'/></a>]]>
-            </line>
-            <line>
-              <![CDATA[captureScreen method called]]>
-            </line>
-            <line>
-              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_27.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_27.png'height='100' width='100'/></a>]]>
-            </line>
-            <line>
-              <![CDATA[captureScreen method called]]>
-            </line>
-            <line>
-              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_28.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_03_09_2020_04_06_28.png'height='100' width='100'/></a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testParameters -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:seleniumTutorial.JenkinsParameterTest@7fac631b]" name="afterMethod" is-config="true" duration-ms="1246" started-at="2020-09-03T10:36:32Z" finished-at="2020-09-03T10:36:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testParameters status=SUCCESS method=JenkinsParameterTest.testParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumTutorial.JenkinsParameterTest@7fac631b] output=captureScreen method called]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test4" is-config="true" duration-ms="2" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:seleniumTutorial.JenkinsParameterTest@7fac631b]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-09-03T10:36:33Z" finished-at="2020-09-03T10:36:33Z">
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test5()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test5" duration-ms="24" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- seleniumTutorial.JenkinsParameterTest -->
-    </test> <!-- JenkinsTest -->
-  </suite> <!-- FrameworkTest -->
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="test10()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test10" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test4" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test6()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test6" duration-ms="7" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test10()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test10" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method status="PASS" signature="test9()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test9" is-config="true" duration-ms="0" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+        <test-method status="PASS" signature="test8()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test8" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="PASS" signature="test7()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test7" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:37Z" finished-at="2020-09-23T03:24:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+      </class> <!-- testNG.TestNGTutorial -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

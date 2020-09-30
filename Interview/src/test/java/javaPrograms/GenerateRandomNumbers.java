@@ -7,7 +7,7 @@ public class GenerateRandomNumbers {
 		Random ram = new Random();
 
 		for (int i = 0; i < 5; i++) {//Generate 5 random numbers.
-			int num = ram.nextInt(50);//Generate a random number between 0 and 99
+			int num = ram.nextInt(100);//Generate a random number between 0 and 99
 			System.out.println(num);
 		}
 	}

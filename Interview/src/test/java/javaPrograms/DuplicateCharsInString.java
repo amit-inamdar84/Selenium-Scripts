@@ -9,7 +9,7 @@ import java.util.Set;
 //Run a keyset iterator on map and print only those characters whose value is greater than 1.
 
 public class DuplicateCharsInString {
-	String str = "thisisseleniumtest";
+	String str = "Thisistotest";
 
 	public void findDuplicateChars(String s) {
 		Map<Character, Integer> charMap = new HashMap<Character, Integer>();

@@ -3,12 +3,11 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.amit.testscripts.TC004">
+      <class name="com.amit.testscripts.TC003">
         <methods>
-          <include name="testCreatePosts"/>
-          <include name="getPostsByID"/>
+          <include name="loginAuthentication"/>
         </methods>
-      </class> <!-- com.amit.testscripts.TC004 -->
+      </class> <!-- com.amit.testscripts.TC003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

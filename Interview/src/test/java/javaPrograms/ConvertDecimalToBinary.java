@@ -3,7 +3,7 @@ package javaPrograms;
 //while (number > 0), divide the number by 2 and store the remainder(0 or 1) in array list.
 //Make the number half and repeat the while loop with its quotient.
 //While loop will end when quotient<=0.
-//Print the array list containing binary number.
+//Print the array list containing binary number(In reverse order).
 
 import java.util.ArrayList;
 

@@ -12,17 +12,6 @@ WHERE CustomerID IN
 FROM Info 
 WHERE Country='USA') ;
 
--- Select 2nd highest amount value
-select * from
-(select Amount from Orders
-order by Amount desc
-LIMIT 2) as Order_Amounts
-order by Amount asc
-LIMIT 1;
-
--- Select 2nd highest amount value. limit arguments - offset (0,,1,2) and no of rows(1,2).
-select distinct(Amount) from Orders order by Amount desc limit 1,1;
-
 
 -- Select 2nd highest amount value
 select Max(Amount)
@@ -42,29 +31,12 @@ WHERE 2 = (
                 WHERE o2.Amount > o1.Amount
             );
 
--- Display date
-SELECT CURRENT_DATE();
--- Displays date and time
-SELECT NOW();
+
 
 ALTER TABLE Orders ADD Commission int(20);
 
 update Orders
 set Commission=Amount*5/100;
-
--- Display the various customers along with totalnumber of orders placed for each customer.The output should contain only those customers with more than 1 order.
-select i.CustomerID,FirstName, count(o.CustomerID)
-from Info i
-inner join Orders o
-on i.CustomerID = o.CustomerID
-group by i.CustomerID
-having count(o.CustomerID)>1;
-
--- Display the name of the customer who earns highest commission
-select * from Orders
-where Commission=
-(select max(Commission) 
-from Orders);
 
 -- Get first 3 characters of Last name from info table
 select substring(LastName,1,3) from info;

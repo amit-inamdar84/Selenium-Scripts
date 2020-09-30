@@ -1,4 +1,8 @@
 package javaPrograms;
+//Here for 1st element we are comparing all other array elements. Initialize index to 1st element.i.e. i=0
+//If smaller element is found we are making that as index. In 1st iteration after 1st element is compared with all other elements, store element at index in
+//temp variable smallIndex. Now swap elements at ith position with element at index position.
+//In next ith iteration index will be at i=1 and compare with remaining elements. The next smallest number will be placed at 2nd position in this iteration.
 
 public class SelectionSort {
 	public static int[] selectionSort(int[] array) {
@@ -23,7 +27,7 @@ public class SelectionSort {
 	}
 
 	public static void main(String[] args) {
-		int[] array1 = { 10, 34, 2, 5, 6, 88, 66 };
+		int[] array1 = { 10, 5, 8 };
 		int[] result = selectionSort(array1);
 
 		print(result);

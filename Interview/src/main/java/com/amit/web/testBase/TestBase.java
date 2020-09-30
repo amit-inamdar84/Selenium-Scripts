@@ -85,8 +85,8 @@ public class TestBase {
 	
 	@AfterTest
 	public void afterTest() throws Exception{
-		/*if(driver!=null){
-			driver.quit();
+/*		if(driver!=null){
+			driver.close();
 		}*/
 	}
 	
