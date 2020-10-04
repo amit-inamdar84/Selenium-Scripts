@@ -3,7 +3,7 @@
 <suite name="FrameworkTest">
   <test name="JenkinsTest">
     <classes>
-      <class name="com.amit.web.testscripts.Login"/>
+      <class name="com.amit.web.testscripts.TestToVerifyCompanySearchBox"/>
     </classes>
   </test>
 </suite>

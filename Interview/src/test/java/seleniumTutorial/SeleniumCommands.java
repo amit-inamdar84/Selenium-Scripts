@@ -18,6 +18,8 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import javax.naming.directory.NoSuchAttributeException;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -26,11 +28,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
+import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -436,6 +442,17 @@ public class SeleniumCommands extends TestBase {
 		extent.attachReporter(htmlReporter);
 		test = extent.createTest(getClass().getSimpleName());
 		test.log(Status.INFO, "Details");
+		extent.flush();
+		
+		//Exceptions: Selenium related exceptions avaiable in org.openqa.selenium package
+		Class test = org.openqa.selenium.NoSuchElementException.class;//Thrown when requested web element is not found
+		Class test1 = ElementNotVisibleException.class;//Thrown to indicate that although an element is present on the DOM, it is not visible, and so is not able to be interacted with.
+		Class test2 = StaleElementReferenceException.class;//Indicates that a reference to an element is now "stale" --- the element no longer appears on the DOM of the page.
+		Class test3 = NoSuchFrameException.class;//When requested frame is not found
+		Class test4 = NoAlertPresentException.class;//Indicates that a user has tried to access an alert when one is not present.
+		Class test5 = NoSuchWindowException.class;//Thrown when using driver.switchTo.window() and no window was found.
+		Class test6 = TimeoutException.class;//Thrown when a command does not complete in enough time.
+		Class test7 = WebDriverException.class;//
 		
 		//Print all data in web table - TestToVerifyDataInTable.java
 		//Get max value of a column in a web table - TestToPrintMaxValueInWebTable.java

@@ -1,61 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_04_10_2020_03_31_55.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_04_10_2020_03_31_55.png'height='100' width='100'/></a>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="137" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+  <suite name="Default suite" duration-ms="157824" started-at="2020-10-04T10:00:09Z" finished-at="2020-10-04T10:02:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="137" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
-      <class name="testNG.TestNGTutorial">
-        <test-method status="PASS" signature="test1()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test1" is-config="true" duration-ms="51" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+    <test name="Default test" duration-ms="157824" started-at="2020-10-04T10:00:09Z" finished-at="2020-10-04T10:02:47Z">
+      <class name="com.amit.web.testscripts.TestToVerifyCompanySearchBox">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="beforeSuite" is-config="true" duration-ms="586" started-at="2020-10-04T10:00:08Z" finished-at="2020-10-04T10:00:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test2" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="beforeTest" is-config="true" duration-ms="11709" started-at="2020-10-04T10:00:09Z" finished-at="2020-10-04T10:00:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test3" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="beforeMethod" is-config="true" duration-ms="47" started-at="2020-10-04T10:00:21Z" finished-at="2020-10-04T10:00:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.amit.web.testscripts.TestToVerifyCompanySearchBox.companySearch()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="test4()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test4" is-config="true" duration-ms="2" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="companySearch()[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="companySearch" duration-ms="142018" started-at="2020-10-04T10:00:21Z" finished-at="2020-10-04T10:02:43Z">
+          <reporter-output>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_04_10_2020_03_31_55.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_04_10_2020_03_31_55.png'height='100' width='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- companySearch -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="afterMethod" is-config="true" duration-ms="3803" started-at="2020-10-04T10:02:43Z" finished-at="2020-10-04T10:02:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=companySearch status=SUCCESS method=TestToVerifyCompanySearchBox.companySearch()[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa] output=captureScreen method called]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method status="PASS" signature="test5()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test5" duration-ms="24" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="afterTest" is-config="true" duration-ms="3" started-at="2020-10-04T10:02:47Z" finished-at="2020-10-04T10:02:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test5 -->
-        <test-method status="PASS" signature="test10()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test10" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test10 -->
-        <test-method status="PASS" signature="test4()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test4" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method status="PASS" signature="test6()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test6" duration-ms="7" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test6 -->
-        <test-method status="PASS" signature="test10()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test10" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test10 -->
-        <test-method status="PASS" signature="test9()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test9" is-config="true" duration-ms="0" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test9 -->
-        <test-method status="PASS" signature="test8()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test8" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:36Z" finished-at="2020-09-23T03:24:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test8 -->
-        <test-method status="PASS" signature="test7()[pri:0, instance:testNG.TestNGTutorial@4667ae56]" name="test7" is-config="true" duration-ms="1" started-at="2020-09-23T03:24:37Z" finished-at="2020-09-23T03:24:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test7 -->
-      </class> <!-- testNG.TestNGTutorial -->
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.amit.web.testscripts.TestToVerifyCompanySearchBox -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -93,6 +93,31 @@ public class LoginPage extends TestBase {
 	public void clickOnMenu(WebElement element){
 		element.click();
 	}
+	
+	@FindBy(xpath = "//*[@id='top-nav-search']/div/input")
+	WebElement companySearchBox;
+	
+	public void enterTextInCompanySearch(){
+		companySearchBox.sendKeys("Avanti");
+	}
+	
+	@FindBy(xpath = "//*[@id='top-nav-search']/div/ul/li")
+	WebElement autoSuggestionDropDown;
+	
+	public void waitToDisplayAutoSuggestDD(){
+		new WaitHelper(driver).waitForElement(autoSuggestionDropDown, ObjectReader.reader.getExplicitWait());
+	}
+	
+	public void clickAutoSuggestDropDown(){
+		clickOnMenu(autoSuggestionDropDown);
+	}
+	
+	@FindBy(xpath = "//*[@id='company-info']/h1")
+	WebElement searchResultText;
+
+	public boolean verifySearchResultText() {
+		return new VerificationHelper(driver).isDisplayed(searchResultText);
+	}
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;

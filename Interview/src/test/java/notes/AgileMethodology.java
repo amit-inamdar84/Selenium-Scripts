@@ -22,4 +22,6 @@ public class AgileMethodology {
 //Team works on the defined sprint backlog
 //Team checks for the daily work
 //At the end of the sprint, team delivers product functionality
+	
+//
 }
