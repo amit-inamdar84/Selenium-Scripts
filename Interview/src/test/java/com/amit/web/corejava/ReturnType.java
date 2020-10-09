@@ -1,4 +1,5 @@
 package com.amit.web.corejava;
+//Return type is the last statement executed in a method. Any statements after the return type will be ignored. Finally block is the only exception.
 
 public class ReturnType {
 	

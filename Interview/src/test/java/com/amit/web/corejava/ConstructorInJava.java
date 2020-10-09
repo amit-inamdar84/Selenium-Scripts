@@ -9,7 +9,9 @@ public class ConstructorInJava {
 	// When we have only a parameterized constructor, we cannot create object of
 	// default constructor. i.e. when we have a parameterized constructor in class, Java compiler will not keep default constructor.
 	//The parameterized constructor is used to provide different values to the distinct objects. However, you can provide the same values also.
-	// Constructor overloading is possible. We need to change parameter num.
+	//Constructors do not participate in inheritance.
+	//If you have more than one constructor in a class, it means you have overloaded constructors.
+	// Constructor overloading is possible. We need to change parameter num. The below 2 constructors are overloaded.
 
 	int a;
 	int b;

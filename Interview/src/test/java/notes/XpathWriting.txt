@@ -83,13 +83,15 @@ Features tab:
 Descendant traverses all the nodes under the root node plus all the sub nodes under those nodes.
 //div[@class='flex-row'][1]/descendant::*
 
-Screens:
-Undervalued growth stocks: 
-Ancestor starts from grandparent and then moves above.
-//strong[contains(text(),'Undervalue')]/ancestor::div
-Preceding tag is previous to previous tag and all tags above it.
-//strong[contains(text(),'Undervalue')]/preceding::li
 
+Stock screens and sectors:
+Ancestor starts from grandparent and then moves above.
+//a[contains(text(),'Undervalued companies')]/ancestor::div
+Preceding tag is previous to previous tag and all tags above it.
+//a[contains(text(),'Debt free companies')]/preceding::li
+Following: Following starts with next to next tag and all tags below it.
+//a[contains(text(),'Debt free companies')]/following::li
+//*[@id="industry-filter-results"]/div[2]/table/tbody/tr/td[2]/a[contains(text(),'Guj')]
 
 
 

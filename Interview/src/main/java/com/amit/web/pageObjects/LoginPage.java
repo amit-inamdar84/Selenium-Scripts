@@ -23,14 +23,14 @@ public class LoginPage extends TestBase {
 	 * public String getWelcomeText() { return verifyWelcomeText.getText(); }
 	 */
 
-	@FindBy(xpath = "//*[@id='content-area']/div/p")
+	@FindBy(xpath = "//p[@class='bigger']")
 	WebElement landingPageText;
 
 	public boolean verifyLandingPageText() {
 		return new VerificationHelper(driver).isDisplayed(landingPageText);
 	}
 
-	@FindBy(xpath = "//*[@id='top-nav-menu']/a[4]")
+	@FindBy(xpath = "//a[@class='button account']")
 	WebElement loginLink;
 
 	public void clickLoginLink() {
@@ -39,7 +39,7 @@ public class LoginPage extends TestBase {
 		loginLink.click();
 	}
 
-	@FindBy(xpath = "//*[@id='content-area']/h1")
+	@FindBy(xpath = "//h1[contains(text(),'Welcome back!')]")
 	WebElement investorLoginText;
 
 	public boolean verifyInvestorLoginText() {
@@ -64,7 +64,7 @@ public class LoginPage extends TestBase {
 		this.passsword.sendKeys(password);
 	}
 
-	@FindBy(xpath = "//*[@id='content-area']/form/button")
+	@FindBy(xpath = "//button[@type='submit']")
 	WebElement loginButton;
 
 	public HomePage clickLoginButton() {
@@ -74,7 +74,7 @@ public class LoginPage extends TestBase {
 		return new HomePage(driver);
 	}
 
-	@FindBy(xpath = "//a[contains(text(),'About Us')]")
+	@FindBy(xpath = "//a[contains(text(),'About us')]")
 	WebElement aboutUsLink;
 
 	public void clickAboutUsLink() {
@@ -92,6 +92,31 @@ public class LoginPage extends TestBase {
 	//This is useful when there are too many links to click under a menu. Write xpath for all links but have one single click method.
 	public void clickOnMenu(WebElement element){
 		element.click();
+	}
+	
+	@FindBy(xpath = "//*[@id='top-nav-search']/div/input")
+	WebElement companySearchBox;
+	
+	public void enterTextInCompanySearch(){
+		companySearchBox.sendKeys("Avanti");
+	}
+	
+	@FindBy(xpath = "//*[@id='top-nav-search']/div/ul/li")
+	WebElement autoSuggestionDropDown;
+	
+	public void waitToDisplayAutoSuggestDD(){
+		new WaitHelper(driver).waitForElement(autoSuggestionDropDown, ObjectReader.reader.getExplicitWait());
+	}
+	
+	public void clickAutoSuggestDropDown(){
+		clickOnMenu(autoSuggestionDropDown);
+	}
+	
+	@FindBy(xpath = "//*[@id='company-info']/h1")
+	WebElement searchResultText;
+
+	public boolean verifySearchResultText() {
+		return new VerificationHelper(driver).isDisplayed(searchResultText);
 	}
 
 	public LoginPage(WebDriver driver) {

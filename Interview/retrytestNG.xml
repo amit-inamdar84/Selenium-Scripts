@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed tests">
 	<listeners>
-		<listener class-name="com.amit.web.listeners.Retry"></listener>
+		<listener class-name="com.amit.web.helper.listener.Retry"></listener>
 	</listeners>
 	<test name="Retry failed tests">
 		<classes>

@@ -4,16 +4,15 @@ import java.util.Arrays;
 import java.util.List;
 
 //int indexOf() method returns index of given character, value or substring
-
 //int indexOf(int ch) returns index of 1st occurrence of character in a string
-//int indexOf(int ch, int fromIndex) returns index of 1st occurrence of character starting from specified index
+//int indexOf(int ch, int fromIndex) returns index of 1st occurrence of character starting from specified index. Useful when we need to retrieve 2nd occurrence.
 //Here ch is in int because it is unicode code point representation of character.
 //int indexOf(String str) returns index of given string
 //int indexOf(String str, int fromIndex)  returns index of given string starting from specified index
 //If not found returns -1
 //lastIndexOf: Returns the last index of given character, value or substring.
 //Overloaded methods of lastIndexOf() - same as IndexOf
-//If index argument is specified, then it will search for character before the index.
+//lastIndexOf(int ch, int fromIndex) - If index argument is specified, then it will search for character before the index.
 
 public class String5 {
 	public static void main(String[] args) {
@@ -21,7 +20,7 @@ public class String5 {
 		String s1 = "est";
 		System.out.println(s.indexOf('T'));
 		System.out.println(s.indexOf('a'));
-		System.out.println(s.indexOf('x', 6));
+		System.out.println(s.indexOf('e', 6));
 		System.out.println("-----------------------");
 
 		System.out.println(s.indexOf("ex"));
@@ -62,6 +61,7 @@ public class String5 {
 		for (String w : split) {
 			System.out.println(w);
 		}
+		System.out.println("-----------------------");
 		
 		String test1 = "Amit,Ramesh,Inamdar";
 		String [] splitest = test1.split(",");
@@ -82,7 +82,7 @@ public class String5 {
 		//public String substring(int beginIndex, int endIndex)
 		//The substring begins with the character at the specified index and extends to the character at index endIndex - 1.
 		System.out.println(test.substring(4));
-		System.out.println(test.substring(2, 8));
+		System.out.println(test.substring(2, 9));
 		System.out.println("-----------------------");
 		
         //This method converts string to a character array.
@@ -97,7 +97,7 @@ public class String5 {
 		for (int i = ch.length - 1; i >= 0; i--) {
 			System.out.print(ch[i]);
 		}
-		
+		System.out.println();
 		System.out.println("-----------------------");
 		
         //toLowerCase()
@@ -109,8 +109,6 @@ public class String5 {
 		//public String toUpperCase()
 		String name = "name";
 		System.out.println(name.toUpperCase());
-		
-
 	}
 
 }

@@ -8,6 +8,7 @@ public class ChildClass1 extends ParentClass1{
 	String name;
 	
 	ChildClass1(){
+		//by default super() is placed here.
 		System.out.println("I am child class default constructor");
 	}
 	

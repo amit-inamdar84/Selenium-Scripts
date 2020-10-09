@@ -10,8 +10,11 @@ public class Array6 {
 	}
 
 	public static void main(String[] args) {
+		//Declaring and initializing an array which is of class type Array6
 		Array6[] obj = new Array6[3];
 		int x = 0;
+		//At index obj[0] we are inserting the objects of class type Array6.
+		//And also calling constructor to initialize instance variables.
 		obj[0] = new Array6("Head First Java","Bob");
 		obj[1] = new Array6("Java Cookbook","Sue");
 		obj[2] = new Array6("Selenium","Ian");
@@ -25,7 +28,7 @@ public class Array6 {
 		obj[2].author = "Ian";*/
 
 		while (x < 3) {
-			System.out.print(obj[x].title);
+			System.out.print(obj[x].title);//Accessing array elements(objects and their values)
 			System.out.print(" by ");
 			System.out.println(obj[x].author);
 			x = x + 1;

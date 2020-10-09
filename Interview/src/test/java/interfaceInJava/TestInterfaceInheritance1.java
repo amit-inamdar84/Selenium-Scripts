@@ -4,7 +4,7 @@ package interfaceInJava;
 //of all these interfaces
 //Above is called interface inheritance
 
-public class TestInterfaceInheritance1 implements InterfaceInJava2{
+public class TestInterfaceInheritance1 extends ExtendAndImplement implements InterfaceInJava2 {
 
 	public static void main(String[] args) {
 		TestInterfaceInheritance1 obj = new TestInterfaceInheritance1();

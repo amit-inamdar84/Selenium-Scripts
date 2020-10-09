@@ -9,13 +9,14 @@ public class String3 {
         //When 2 strings are concatenated the result can be stored in new string reference.
 		String s2 = "ABC";
 		String s3 = "XYZ";
-		String s4 = s2.concat(s3);
+		String s = "DEF";
+		String s4 = s2.concat(s3).concat(s);
 		System.out.println(s4);
 
 		// Here s5 points to Java
 		String s5 = "Java";
 		String s6 = "Selenium";
-		// Now s5 will point to JavaSelenium
+		// Now s5 will point to JavaSelenium. s5 is just referring to a new value. The value Java will not change.
 		s5 = s5.concat(s6);
 		System.out.println(s5);
 		

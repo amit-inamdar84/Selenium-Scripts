@@ -4,7 +4,6 @@ package superKeyword;
 //So the order to execution when we create the object of child class is: parent class constructor is executed first and then the child class constructor
 //is executed. It happens because compiler itself adds super()(this invokes the no-arg constructor of parent class) as the first statement in the constructor
 //of child class.
-//
 
 public class ParentClass1 {
 

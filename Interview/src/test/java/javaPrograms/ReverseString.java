@@ -2,11 +2,14 @@ package javaPrograms;
 
 public class ReverseString {
 	String s1 = "Amit";
+	String reverse = "";
 
 	public void reverseString(String str) {
 		for (int i = str.length() - 1; i >= 0; i--) {
-			System.out.print(str.charAt(i));
+			reverse = reverse + str.charAt(i);
 		}
+		
+		System.out.print(reverse);
 
 	}
 

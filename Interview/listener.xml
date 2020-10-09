@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Listener suite">
 	<listeners>
-		<listener class-name="com.amit.web.listeners.ListenerInTestNG" />
+		<listener class-name="com.amit.web.helper.listener.ListenerInTestNG" />
 	</listeners>
 	<test name="Listener test">
 		<classes>

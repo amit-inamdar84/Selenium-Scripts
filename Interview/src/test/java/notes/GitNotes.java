@@ -9,20 +9,68 @@ public class GitNotes {
 		Download git from https://git-scm.com/download/
 		Install in C:\Program Files\Git
 		If project already exists in eclipse do Team>>Share Project and create a git local repository in same drive as eclipse workspace
-		Open command prompt go to local repository
+		Open command prompt(Or git-bash.exe) go to local repository
 		C:\>D:
 		D:\>cd Git
+		D:\>cd git branch - This is very important as we need to confirm the branch before committing code.
 		D:\Git>git status
-		D:\Git>git pull - This is required if we want to get the code updates/commits of other team members.
-		D:\Git>git stash - Temporarily saves only modified files and will not be listed for commit.
-		D:\Git>git stash -u - Temporarily saves both modified files and new files and will not be listed for commit.
+		D:\Git>git pull - This is required if we want to get the code updates/commits of other team members. OR
+		D:\Git>git pull origin master - This also serves the same purpose
 		Type 
 		D:\Git>git add filename
 		OR
 		D:\Git>git add .
+		D:\Git>git stash - Temporarily saves only modified files and will not be listed for commit. (First we need to index the file)
+		D:\Git>git stash -u - Temporarily saves both modified files and new files and will not be listed for commit.
 		D:\Git>git commit -m "comments"
 		D:\Git>git push
-		After above commands are executed, code will be committed to remote repository-master
+		After above commands are executed, code will be committed to remote repository-branch
+		git status - Shows the working tree status
+		git add - Add file contents to index.
+		git *java - It will add all the java files.
+		git commit - Record changes to the repository.
+		git push - Update remote refs along with associated objects.
+		git diff filename - lists the difference between what was present and what was added to a specified file.
+		
+		Once commit is done go to Git web site and create a PR or pull request. Enter proper comments and select a reviewer (Send the PR URL to them). 
+		Click create pull request.
+		After review is done by the reviewer, click on Merge pull request and then confirm merge. Now you should see that the branch code is merged with
+		master code.
+		
+		How to get latest code from master branch (Committed by other team members):
+		git checkout master
+		git branch - Just to ensure we are in master branch.
+		git pull origin master
+		Now we have latest code in master branch.
+		Switch to local branch now.
+		git checkout practice-java
+		git pull origin master
+		Now we have the latest code copied from master to local branch.
+		Need to revisit below section. Did not fully understand.
+		Sometimes when we have local changes and we try to get latest code in master, local changes might give some error
+		Then we have to do git stash to temporarily save local changes.
+		Then do git pull origin master in master branch and do git stash apply. All code will be merged and updated.
+		
+		
+Resolving merge conflicts:		
+1. Add some code in line N to file X from system 1.
+2. Add some code in line N to same file X from system 2.
+3. Do git pull origin master from local.
+4. You will see a message  - Your local changes to the following files would be overwritten by merge.
+5. Do git stash to save your local changes temporarily.
+6. Do git status and you will not see your local file
+7. Now do git pull origin master from local. Git will do auto merge.
+8. Press ESC, then :wq
+9. Do git stash apply to apply the temporarily saved local changes in step 5.
+10.You can now see conflict.
+11.Manually resolve the conflict by keeping the changes we want and deleting that we dont need.
+12.git status
+13.git add *java
+14.git commit -m "Resolved conflicts"
+15.git push origin practice-java
+16.Now we can create PR and get it reviewed and merged to master.
+17.Go to master branch and do git pull origin master to see the latest code in master.
+18.Repeat step 17 for local branch
 		-----------------------------------------------------------------------------------------------------
 		Then create a branch. -b argument should be given only when creating new branch. For existing branch checkout skip -b.
 		

@@ -5,35 +5,52 @@
       <![CDATA[captureScreen method called]]>
     </line>
     <line>
-      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'height='100' width='100'/></a>]]>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_21.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_21.png'height='100' width='100'/></a>]]>
     </line>
     <line>
       <![CDATA[captureScreen method called]]>
     </line>
     <line>
-      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'height='100' width='100'/></a>]]>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_28.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_28.png'height='100' width='100'/></a>]]>
     </line>
     <line>
       <![CDATA[captureScreen method called]]>
     </line>
     <line>
-      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'height='100' width='100'/></a>]]>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_30.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_30.png'height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_33.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_33.png'height='100' width='100'/></a>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25565" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:50Z">
+  <suite name="Default suite" duration-ms="42459" started-at="2020-10-07T14:02:03Z" finished-at="2020-10-07T14:02:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25565" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:50Z">
-      <class name="com.amit.web.testscripts.JenkinsParameterTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="beforeSuite" is-config="true" duration-ms="691" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:24Z">
+    <test name="Default test" duration-ms="42459" started-at="2020-10-07T14:02:03Z" finished-at="2020-10-07T14:02:46Z">
+      <class name="com.amit.web.testscripts.SwitchingWindows">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="beforeSuite" is-config="true" duration-ms="501" started-at="2020-10-07T14:02:03Z" finished-at="2020-10-07T14:02:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="beforeTest" is-config="true" duration-ms="10558" started-at="2020-07-23T12:57:24Z" finished-at="2020-07-23T12:57:35Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="beforeTest" is-config="true" duration-ms="9536" started-at="2020-10-07T14:02:03Z" finished-at="2020-10-07T14:02:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="testParameters" duration-ms="11895" started-at="2020-07-23T12:57:37Z" data-provider="SingleLogin" finished-at="2020-07-23T12:57:49Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2020-10-07T14:02:15Z" finished-at="2020-10-07T14:02:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.amit.web.testscripts.SwitchingWindows.switchToWindow(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="switchToWindow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="switchToWindow" duration-ms="28766" started-at="2020-10-07T14:02:15Z" data-provider="BullCartelData" finished-at="2020-10-07T14:02:44Z">
           <params>
             <param index="0">
               <value>
@@ -56,49 +73,44 @@
               <![CDATA[captureScreen method called]]>
             </line>
             <line>
-              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_40.png'height='100' width='100'/></a>]]>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_21.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_21.png'height='100' width='100'/></a>]]>
             </line>
             <line>
               <![CDATA[captureScreen method called]]>
             </line>
             <line>
-              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_45.png'height='100' width='100'/></a>]]>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_28.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_28.png'height='100' width='100'/></a>]]>
             </line>
             <line>
               <![CDATA[captureScreen method called]]>
             </line>
             <line>
-              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_23_07_2020_06_27_47.png'height='100' width='100'/></a>]]>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_30.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_30.png'height='100' width='100'/></a>]]>
+            </line>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_33.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_33.png'height='100' width='100'/></a>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testParameters -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-23T12:57:37Z" finished-at="2020-07-23T12:57:37Z">
+        </test-method> <!-- switchToWindow -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="afterMethod" is-config="true" duration-ms="1633" started-at="2020-10-07T14:02:44Z" finished-at="2020-10-07T14:02:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.amit.web.testscripts.JenkinsParameterTest.testParameters(java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="afterMethod" is-config="true" duration-ms="734" started-at="2020-07-23T12:57:49Z" finished-at="2020-07-23T12:57:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testParameters status=SUCCESS method=JenkinsParameterTest.testParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b] output=captureScreen method called]]]>
+                <![CDATA[[TestResult name=switchToWindow status=SUCCESS method=SwitchingWindows.switchToWindow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b] output=captureScreen method called]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amit.web.testscripts.JenkinsParameterTest@7fac631b]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-07-23T12:57:50Z" finished-at="2020-07-23T12:57:50Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-10-07T14:02:46Z" finished-at="2020-10-07T14:02:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.amit.web.testscripts.JenkinsParameterTest -->
+      </class> <!-- com.amit.web.testscripts.SwitchingWindows -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -2,20 +2,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Failed tests]">
   <listeners>
-    <listener class-name="com.amit.web.listeners.Retry"/>
+    <listener class-name="com.amit.web.helper.listener.Retry"/>
   </listeners>
   <test thread-count="5" name="Retry failed tests(failed)">
     <classes>
-      <class name="testNG.RetryFailedTest">
-        <methods>
-          <include name="test1"/>
-        </methods>
-      </class> <!-- testNG.RetryFailedTest -->
       <class name="testNG.RetryAgain">
         <methods>
           <include name="tryAgain"/>
         </methods>
       </class> <!-- testNG.RetryAgain -->
+      <class name="testNG.RetryFailedTest">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- testNG.RetryFailedTest -->
     </classes>
   </test> <!-- Retry failed tests(failed) -->
 </suite> <!-- Failed suite [Failed tests] -->

@@ -4,9 +4,9 @@ package collectionsFramework;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
-
-//Only compareTo method available
-//Can sort based on only single data type
+//A comparable object is capable of comparing itself with another object.
+//Only compareTo method available.
+//Can sort based on only single data type. i.e. if object has 3 data members we can sort based on only one type.
 //compareTo method cannot sort Strings or other kind of data as String comparison conditions in method do not apply to strings.
 //Mainly used to sort lists. Sets can be sorted using Tree set.
 //Primitive data types can be sorted directly using Collection.sort method. However for custom data type like class type we need to implement

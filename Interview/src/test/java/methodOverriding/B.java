@@ -5,7 +5,8 @@ package methodOverriding;
 
 public class B extends A{
 	
-	public void test(int a, double b) {
+	//Overrided this method and changed data type in argument list. Not an overridden method anymore.
+	public void test(int a, int b) {
 		System.out.println("From B");
 	}
 	

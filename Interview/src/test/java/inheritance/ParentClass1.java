@@ -15,7 +15,8 @@ public class ParentClass1 {
 	}
 
 	public static void main(String[] args) {
-
+		ParentClass1 obj = new ParentClass1();
+		ParentClass1 obj1 = new ParentClass1(10);
 	}
 
 }

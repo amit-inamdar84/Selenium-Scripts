@@ -22,24 +22,25 @@ public abstract class AbstractClass implements InterfaceInJava1{
 	
 	int a = 10;
 	
-	//Abstract class constructor
+	//Abstract class constructor will execute when child class's default constructor will make super() call.
 	AbstractClass() {
-		
+		System.out.println("Default constructor of abstract class");
 	}
 	
+	//Abstract class para constructor will execute when child class's para constructor will make super(1) call.
 	AbstractClass(int i) {
-		
+		System.out.println("Para constructor of abstract class");
 	}
 	
 	public void test1() {
-		System.out.println("This is abstract method");
+		System.out.println("This is abstract class's non-abstract method");
 	}
 	
     public abstract void test2();
 	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//AbstractClass obj= new AbstractClass();
 
 	}
 

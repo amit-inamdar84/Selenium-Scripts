@@ -7,5 +7,9 @@ public class ClassA {
 	public void test1() {
 		System.out.println("Method from ClassA");
 	}
+	
+	public void test2() {
+		System.out.println("Another method from ClassA");
+	}
 
 }

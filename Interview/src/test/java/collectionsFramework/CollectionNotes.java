@@ -43,3 +43,7 @@ public class CollectionNotes {
 	}
 
 }
+
+//Learning hierarchy
+//CollectionNotes, Person, ArrayListJava, ArrayListJava1, LinkedListInJava, IteratorInJava, HashSetInJava, HashSetInJava1, LinkedHashSetInJava, TreeSetInJava,
+//PriorityQueueInJava, PriorityQueueInJava1, HashMapInJava, LinkedHashMapInJava, TreeMapInJava, HashTableInJava, Customer, Customer1, VectorClass, EnumerationInJava

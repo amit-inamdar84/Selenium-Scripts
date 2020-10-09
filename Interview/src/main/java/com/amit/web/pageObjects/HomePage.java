@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.amit.web.helper.action.ActionHelper;
 import com.amit.web.helper.assertion.VerificationHelper;
 import com.amit.web.helper.browserConfiguration.config.ObjectReader;
 import com.amit.web.helper.logger.LoggerHelper;
@@ -16,11 +17,18 @@ public class HomePage extends TestBase{
 	private WebDriver driver;
 	private final Logger log = LoggerHelper.getLogger(LoginPage.class);
 	
-	@FindBy(xpath = "//*[@id='content-area']/div/h1")
+	@FindBy(xpath = "//h1[contains(text(),'Watchlist updates')]")
 	WebElement watchListUpdatesText;
 
 	public boolean verifywatchListUpdatesText() {
 		return new VerificationHelper(driver).isDisplayed(watchListUpdatesText);
+	}
+	
+	@FindBy(xpath = "//i[@class='icon-down']")
+	WebElement nameMenuDropDown;
+	
+	public void mouseOverOnNameDropDown(){
+		new ActionHelper(driver).mouseHover(nameMenuDropDown);
 	}
 
 	@FindBy(xpath = "//button[@type='submit']/i")
@@ -32,7 +40,7 @@ public class HomePage extends TestBase{
 		logoutButton.click();
 	}
 	
-	@FindBy(xpath="//*[@id='top-nav-menu']/a[3]")
+	@FindBy(xpath="//a[contains(text(),'Screens')]")
 	WebElement screensMenuItem;
 	
 	public ScreensPage clickScreensMenu(){

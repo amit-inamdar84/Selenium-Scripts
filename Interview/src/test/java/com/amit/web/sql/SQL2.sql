@@ -6,7 +6,7 @@
 -- COUNT(column name) counts the no of rows that have values in a specific column, ignoring NULL values.
 -- MAX() returns the highest value in a specified column. It requires that the column be specified.
 -- MIN() returns the lowest value in a specified column. It requires that the column be specified.
--- SUM() returns the sum of values in a specific column. Can also be used to total calculated values.
+-- SUM() returns the sum of values in a specific column. Can also be used to total calculated values. i.e. SUM(Amount*Comission)
 -- Aggregate functions can be used with distinct argument to include only distinct values. Default argument is ALL which includes all rows.
 -- date_format(colname, '%y') function takes argument col name and  %y to format the column as year
 -- date_format(colname, '%b') function takes argument col name and  %b to format the column as month

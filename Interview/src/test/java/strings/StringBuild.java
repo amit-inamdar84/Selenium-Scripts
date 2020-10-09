@@ -1,6 +1,5 @@
 package strings;
 //String builder is same as string buffer class except that it is non-synchronized
-
 //Difference between String buffer and String builder
 //String buffer is synchronized. Data corruption will not happen. i.e.two threads cannot call the methods of String buffer simultaneously. String builder
 //is non synchronized.

@@ -2,6 +2,7 @@ package threading;
 //Daemon thread is a service provider thread that provides service to user thread.
 //Life is dependent on user threads. When user threads dies, JVM terminates this thread automatically.
 //Ex: Garbage collector, Finalizer.
+//The main purpose of a finalizer is to release resources used by objects before they're removed from the memory.
 //It provides services to user threads for background supporting tasks.
 //It is a low priority thread.
 

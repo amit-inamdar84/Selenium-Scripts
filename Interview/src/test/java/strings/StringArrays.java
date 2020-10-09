@@ -14,8 +14,13 @@ public class StringArrays {
 		System.out.println(data);
 		
 		
-		//Map<Integer, int[]> data1 = new TreeMap<Integer, int[]>();
-		//data.put(1, new int[]{1,2});
+		Map<Integer, int[]> data1 = new TreeMap<Integer, int[]>();
+		data1.put(1, new int[]{1,2});
+		System.out.println(data1);
+		
+		Map<Integer, String[]> data2 = new TreeMap<Integer, String[]>();
+		data2.put(1, str);
+		System.out.println(data2);
 	}
 
 }

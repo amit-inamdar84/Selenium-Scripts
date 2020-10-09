@@ -1,5 +1,5 @@
 package threading;
-//currentThread() - Returns reference to the currently executing thread object.
+//currentThread() - Static method. Returns reference to the currently executing thread object.
 //Thread priority - Each thread has a priority. Value is between 1 and 10. Thread scheduler schedules the threads according to their priority know as
 //preemptive scheduling.
 //Thread class constant - public static int MIN_PRIORITY, public static int NORM_PRIORITY, public static int MAX_PRIORITY
@@ -16,6 +16,9 @@ public class Example7 extends Thread{
 	}
 	
 	public static void main(String[] args) {
+		System.out.println("Main Thread: "+Thread.currentThread().getName());
+		System.out.println(Thread.currentThread().getPriority());
+		
 		Example7 obj = new Example7();
 		obj.setPriority(MIN_PRIORITY);
 		obj.start();

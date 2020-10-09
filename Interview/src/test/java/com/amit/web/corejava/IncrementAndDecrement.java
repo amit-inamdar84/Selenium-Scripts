@@ -5,8 +5,8 @@ public class IncrementAndDecrement {
 	public static void main(String[] args) {
 		int n=0;
 		System.out.println("Pre-increment: "+ ++n);
-		System.out.println("Increment: "+ n++);
-		System.out.println("Post-increment: "+n);
+		System.out.println("Post-increment: "+ n++);
+		System.out.println("Increment: "+n);
 		
 		System.out.println("------------------------");
 		

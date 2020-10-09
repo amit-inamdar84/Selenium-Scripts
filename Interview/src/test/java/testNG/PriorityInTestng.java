@@ -3,7 +3,8 @@ package testNG;
 import org.testng.annotations.Test;
 
 public class PriorityInTestng {
-//Priority starts with 0
+//Priority starts with 0. If no priority is specified default is 0. When two @Test methods are of 0 priority, they will be run in alphabetical order
+//and not in the order they appear in the code.
 	
 	@Test(priority=2)
 	public void test1(){

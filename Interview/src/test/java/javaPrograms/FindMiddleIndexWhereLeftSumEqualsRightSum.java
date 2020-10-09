@@ -1,4 +1,11 @@
 package javaPrograms;
+//Set start index at the first element and last index at the last element.
+//Initialize sumleft and sumright to 0.
+//Keep checking  a condition if sumLeft > sumRight and startIndex > endIndex
+//if sumLeft > sumRight will be false for 1st pass as both will be 0.
+//So in else condition start adding start index to sumleft and increment start index.
+//If not if sumLeft > sumRight keep adding end index number to sumright and decrement end index.
+//In this process if startIndex > endIndex then check if sumLeft == sumRight and break the loop.
 
 public class FindMiddleIndexWhereLeftSumEqualsRightSum {
 	public static int findMiddleIndex(int[] numbers) throws Exception {
