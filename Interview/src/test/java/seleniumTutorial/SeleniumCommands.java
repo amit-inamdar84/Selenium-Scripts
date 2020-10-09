@@ -25,6 +25,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -453,6 +454,7 @@ public class SeleniumCommands extends TestBase {
 		Class test5 = NoSuchWindowException.class;//Thrown when using driver.switchTo.window() and no window was found.
 		Class test6 = TimeoutException.class;//Thrown when a command does not complete in enough time.
 		Class test7 = WebDriverException.class;//
+		Class test8 = ElementNotInteractableException.class;
 		
 		//Print all data in web table - TestToVerifyDataInTable.java
 		//Get max value of a column in a web table - TestToPrintMaxValueInWebTable.java

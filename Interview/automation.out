@@ -4964,3 +4964,328 @@ remote stacktrace: Backtrace:
 2020-10-04 15:32:39 INFO  VerificationHelper:21 - element is Displayed..Avanti Feeds Ltd
 2020-10-04 15:32:41 INFO  TestToVerifyCompanySearchBox:23 - Test verified
 2020-10-04 15:32:43 INFO  TestBase:82 - **************companySearchFinished***************
+2020-10-05 12:27:24 INFO  TestBase:123 - Web driver is now initialized: 429353573
+2020-10-05 12:27:24 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-05 12:27:24 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-10-05 12:27:24 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-10-05 12:27:24 INFO  WaitHelper:141 - page is loaded
+2020-10-05 12:27:27 INFO  TestBase:64 - **************companySearchStarted***************
+2020-10-05 12:27:33 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-05 12:27:53 INFO  WaitHelper:151 - waiting for :Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='top-nav-menu']/a[4]' for :20 seconds
+2020-10-05 12:28:36 INFO  TestBase:82 - **************companySearchFinished***************
+2020-10-05 12:34:23 INFO  TestBase:123 - Web driver is now initialized: 429353573
+2020-10-05 12:34:23 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-05 12:34:23 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-10-05 12:34:23 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-10-05 12:34:23 INFO  WaitHelper:141 - page is loaded
+2020-10-05 12:34:26 INFO  TestBase:64 - **************companySearchStarted***************
+2020-10-05 12:34:29 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-05 12:34:49 INFO  WaitHelper:151 - waiting for :Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='top-nav-menu']/a[4]' for :20 seconds
+2020-10-05 12:35:30 INFO  TestBase:82 - **************companySearchFinished***************
+2020-10-07 14:21:16 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-10-07 14:21:16 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:21:16 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-10-07 14:21:16 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-10-07 14:21:16 INFO  WaitHelper:141 - page is loaded
+2020-10-07 14:21:24 INFO  TestBase:64 - **************testLoginStarted***************
+2020-10-07 14:21:27 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:21:28 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (5740079dac37bf634e6527f06ed1de57)] -> xpath: //a[@class='button account']] for :20 seconds
+2020-10-07 14:21:28 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:21:28 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:21:28 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:21:30 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:21:30 INFO  VerificationHelper:21 - element is Displayed..Stock analysis and screening tool for investors in India.
+2020-10-07 14:21:30 INFO  LoginPage:37 - Clicked login link
+2020-10-07 14:21:32 INFO  VerificationHelper:21 - element is Displayed..Welcome back!
+2020-10-07 14:21:32 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-10-07 14:21:32 INFO  LoginPage:62 - entering password....Screener_3007
+2020-10-07 14:21:32 INFO  LoginPage:71 - clicking on login button...
+2020-10-07 14:21:33 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:21:33 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (5740079dac37bf634e6527f06ed1de57)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:21:34 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:21:34 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:21:34 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:21:35 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:21:35 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:21:35 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (5740079dac37bf634e6527f06ed1de57)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:21:35 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:21:35 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:21:35 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:21:37 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:21:37 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-10-07 14:21:37 INFO  LoginPage:30 - Logging out
+2020-10-07 14:21:59 INFO  TestBase:82 - **************testLoginFinished***************
+2020-10-07 14:38:38 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-10-07 14:38:38 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:38:38 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-10-07 14:38:38 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-10-07 14:38:38 INFO  WaitHelper:141 - page is loaded
+2020-10-07 14:40:44 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-10-07 14:40:45 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:40:45 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-10-07 14:40:45 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-10-07 14:40:45 INFO  WaitHelper:141 - page is loaded
+2020-10-07 14:40:49 INFO  TestBase:64 - **************testLoginStarted***************
+2020-10-07 14:40:52 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:40:52 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (a25986fe31c164728c61d0d319c055ea)] -> xpath: //a[@class='button account']] for :20 seconds
+2020-10-07 14:40:53 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:40:53 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:40:53 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:40:54 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:40:54 INFO  VerificationHelper:21 - element is Displayed..Stock analysis and screening tool for investors in India.
+2020-10-07 14:40:54 INFO  LoginPage:37 - Clicked login link
+2020-10-07 14:40:56 INFO  VerificationHelper:21 - element is Displayed..Welcome back!
+2020-10-07 14:40:56 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-10-07 14:40:56 INFO  LoginPage:62 - entering password....Screener_3007
+2020-10-07 14:40:56 INFO  LoginPage:71 - clicking on login button...
+2020-10-07 14:40:57 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:40:57 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (a25986fe31c164728c61d0d319c055ea)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:40:57 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:40:57 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:40:57 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:40:58 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:40:59 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:40:59 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (a25986fe31c164728c61d0d319c055ea)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:40:59 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:40:59 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:40:59 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:41:00 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:41:01 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-10-07 14:41:01 INFO  ActionHelper:16 - ActionHelper object is created..
+2020-10-07 14:41:01 INFO  LoginPage:35 - Logging out
+2020-10-07 14:41:22 INFO  TestBase:82 - **************testLoginFinished***************
+2020-10-07 14:43:01 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-10-07 14:43:02 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:43:02 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-10-07 14:43:02 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-10-07 14:43:02 INFO  WaitHelper:141 - page is loaded
+2020-10-07 14:43:06 INFO  TestBase:64 - **************testLoginStarted***************
+2020-10-07 14:43:09 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:43:09 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (3588399e917dc086a91d41881c2a0c96)] -> xpath: //a[@class='button account']] for :20 seconds
+2020-10-07 14:43:09 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:43:09 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:43:09 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:43:11 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:43:11 INFO  VerificationHelper:21 - element is Displayed..Stock analysis and screening tool for investors in India.
+2020-10-07 14:43:11 INFO  LoginPage:37 - Clicked login link
+2020-10-07 14:43:12 INFO  VerificationHelper:21 - element is Displayed..Welcome back!
+2020-10-07 14:43:12 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-10-07 14:43:12 INFO  LoginPage:62 - entering password....Screener_3007
+2020-10-07 14:43:13 INFO  LoginPage:71 - clicking on login button...
+2020-10-07 14:43:14 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:43:14 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (3588399e917dc086a91d41881c2a0c96)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:43:14 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:43:14 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:43:14 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:43:15 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:43:16 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:43:16 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (3588399e917dc086a91d41881c2a0c96)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:43:16 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:43:16 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:43:16 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:43:17 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:43:17 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-10-07 14:43:17 INFO  ActionHelper:16 - ActionHelper object is created..
+2020-10-07 14:43:17 INFO  LoginPage:35 - Logging out
+2020-10-07 14:43:39 INFO  TestBase:82 - **************testLoginFinished***************
+2020-10-07 14:47:37 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-10-07 14:47:37 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:47:37 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-10-07 14:47:37 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-10-07 14:47:37 INFO  WaitHelper:141 - page is loaded
+2020-10-07 14:47:42 INFO  TestBase:64 - **************testLoginStarted***************
+2020-10-07 14:47:45 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:47:45 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (8b396c4d932653d88a794bd47edd9f9f)] -> xpath: //a[@class='button account']] for :20 seconds
+2020-10-07 14:47:46 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:47:46 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:47:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:47:47 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:47:47 INFO  VerificationHelper:21 - element is Displayed..Stock analysis and screening tool for investors in India.
+2020-10-07 14:47:47 INFO  LoginPage:37 - Clicked login link
+2020-10-07 14:47:48 INFO  VerificationHelper:21 - element is Displayed..Welcome back!
+2020-10-07 14:47:48 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-10-07 14:47:49 INFO  LoginPage:62 - entering password....Screener_3007
+2020-10-07 14:47:49 INFO  LoginPage:71 - clicking on login button...
+2020-10-07 14:47:50 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:47:50 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (8b396c4d932653d88a794bd47edd9f9f)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:47:50 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:47:50 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:47:50 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:47:51 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:47:51 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:47:51 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (8b396c4d932653d88a794bd47edd9f9f)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:47:51 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:47:51 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:47:51 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:47:52 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:47:52 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-10-07 14:47:52 INFO  ActionHelper:16 - ActionHelper object is created..
+2020-10-07 14:47:52 INFO  LoginPage:38 - Logging out
+2020-10-07 14:47:54 INFO  VerificationHelper:21 - element is Displayed..Stock analysis and screening tool for investors in India.
+2020-10-07 14:47:55 INFO  VerificationHelper:21 - element is Displayed..About Us
+2020-10-07 14:47:55 INFO  Login:47 - Test steps execution completed
+2020-10-07 14:47:55 INFO  TestBase:82 - **************testLoginFinished***************
+2020-10-07 14:51:42 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-10-07 14:51:42 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:51:42 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-10-07 14:51:42 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-10-07 14:51:42 INFO  WaitHelper:141 - page is loaded
+2020-10-07 14:51:46 INFO  TestBase:64 - **************mutipleLoginStarted***************
+2020-10-07 14:51:54 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:51:54 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (af3189695a93e127797995d117e346c6)] -> xpath: //a[@class='button account']] for :20 seconds
+2020-10-07 14:51:55 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:51:55 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:51:55 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:51:56 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:51:56 INFO  VerificationHelper:21 - element is Displayed..Stock analysis and screening tool for investors in India.
+2020-10-07 14:51:56 INFO  LoginPage:37 - Clicked login link
+2020-10-07 14:51:57 INFO  VerificationHelper:21 - element is Displayed..Welcome back!
+2020-10-07 14:51:57 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-10-07 14:51:57 INFO  LoginPage:62 - entering password....Screener_3007
+2020-10-07 14:51:57 INFO  LoginPage:71 - clicking on login button...
+2020-10-07 14:52:00 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:52:00 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (af3189695a93e127797995d117e346c6)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:52:00 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:52:00 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:52:00 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:52:01 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:52:01 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:52:01 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (af3189695a93e127797995d117e346c6)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:52:01 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:52:01 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:52:01 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:52:02 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:52:03 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-10-07 14:52:03 INFO  LoginPage:38 - Logging out
+2020-10-07 14:52:24 INFO  TestBase:82 - **************mutipleLoginFinished***************
+2020-10-07 14:52:26 INFO  TestBase:64 - **************mutipleLoginStarted***************
+2020-10-07 14:52:26 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:52:46 INFO  WaitHelper:151 - waiting for :Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='button account']' for :20 seconds
+2020-10-07 14:54:27 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-10-07 14:54:27 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:54:27 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-10-07 14:54:27 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-10-07 14:54:27 INFO  WaitHelper:141 - page is loaded
+2020-10-07 14:54:31 INFO  TestBase:64 - **************mutipleLoginStarted***************
+2020-10-07 14:54:37 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:54:37 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (c1f2bbfe50e61598c635cdf0a01164bd)] -> xpath: //a[@class='button account']] for :20 seconds
+2020-10-07 14:54:38 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:54:38 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:54:38 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:39 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:39 INFO  VerificationHelper:21 - element is Displayed..Stock analysis and screening tool for investors in India.
+2020-10-07 14:54:39 INFO  LoginPage:37 - Clicked login link
+2020-10-07 14:54:40 INFO  VerificationHelper:21 - element is Displayed..Welcome back!
+2020-10-07 14:54:40 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-10-07 14:54:41 INFO  LoginPage:62 - entering password....Screener_3007
+2020-10-07 14:54:41 INFO  LoginPage:71 - clicking on login button...
+2020-10-07 14:54:43 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:54:43 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (c1f2bbfe50e61598c635cdf0a01164bd)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:54:43 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:54:43 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:54:43 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:45 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:45 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:54:45 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (c1f2bbfe50e61598c635cdf0a01164bd)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:54:45 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:54:45 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:54:45 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:46 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:46 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-10-07 14:54:46 INFO  ActionHelper:16 - ActionHelper object is created..
+2020-10-07 14:54:47 INFO  LoginPage:38 - Logging out
+2020-10-07 14:54:47 INFO  TestBase:82 - **************mutipleLoginFinished***************
+2020-10-07 14:54:48 INFO  TestBase:64 - **************mutipleLoginStarted***************
+2020-10-07 14:54:48 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:54:48 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (c1f2bbfe50e61598c635cdf0a01164bd)] -> xpath: //a[@class='button account']] for :20 seconds
+2020-10-07 14:54:49 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:54:49 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:54:49 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:49 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:49 INFO  VerificationHelper:21 - element is Displayed..Stock analysis and screening tool for investors in India.
+2020-10-07 14:54:49 INFO  LoginPage:37 - Clicked login link
+2020-10-07 14:54:50 INFO  VerificationHelper:21 - element is Displayed..Welcome back!
+2020-10-07 14:54:50 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-10-07 14:54:50 INFO  LoginPage:62 - entering password....Screener_3007
+2020-10-07 14:54:50 INFO  LoginPage:71 - clicking on login button...
+2020-10-07 14:54:51 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:54:51 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (c1f2bbfe50e61598c635cdf0a01164bd)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:54:51 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:54:51 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:54:51 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:52 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:52 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:54:52 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (c1f2bbfe50e61598c635cdf0a01164bd)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 14:54:52 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:54:52 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:54:52 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:53 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:53 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-10-07 14:54:53 INFO  ActionHelper:16 - ActionHelper object is created..
+2020-10-07 14:54:53 INFO  LoginPage:38 - Logging out
+2020-10-07 14:54:54 INFO  TestBase:82 - **************mutipleLoginFinished***************
+2020-10-07 14:54:54 INFO  TestBase:64 - **************mutipleLoginStarted***************
+2020-10-07 14:54:54 INFO  TestBase:82 - **************mutipleLoginFinished***************
+2020-10-07 14:54:55 INFO  TestBase:64 - **************mutipleLoginStarted***************
+2020-10-07 14:54:55 INFO  TestBase:82 - **************mutipleLoginFinished***************
+2020-10-07 14:54:55 INFO  TestBase:64 - **************mutipleLoginStarted***************
+2020-10-07 14:54:55 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:54:55 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (c1f2bbfe50e61598c635cdf0a01164bd)] -> xpath: //a[@class='button account']] for :20 seconds
+2020-10-07 14:54:55 INFO  WaitHelper:154 - element is visible now
+2020-10-07 14:54:55 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 14:54:55 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:56 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 14:54:56 INFO  VerificationHelper:21 - element is Displayed..Stock analysis and screening tool for investors in India.
+2020-10-07 14:54:56 INFO  LoginPage:37 - Clicked login link
+2020-10-07 14:54:57 INFO  VerificationHelper:21 - element is Displayed..Welcome back!
+2020-10-07 14:54:57 INFO  LoginPage:53 - entering email address....test@gmail.com
+2020-10-07 14:54:57 INFO  LoginPage:62 - entering password....Screener
+2020-10-07 14:54:57 INFO  LoginPage:71 - clicking on login button...
+2020-10-07 14:54:57 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 14:55:17 INFO  WaitHelper:151 - waiting for :Proxy element for: DefaultElementLocator 'By.xpath: //h1[contains(text(),'Watchlist updates')]' for :20 seconds
+2020-10-07 14:55:59 INFO  TestBase:82 - **************mutipleLoginFinished***************
+2020-10-07 19:32:11 INFO  TestBase:123 - Web driver is now initialized: 1975873209
+2020-10-07 19:32:11 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 19:32:11 INFO  WaitHelper:36 - Implicit Wait has been set to: 20
+2020-10-07 19:32:11 INFO  WaitHelper:139 - waiting for page to load for : SECONDS seconds
+2020-10-07 19:32:11 INFO  WaitHelper:141 - page is loaded
+2020-10-07 19:32:15 INFO  TestBase:64 - **************switchToWindowStarted***************
+2020-10-07 19:32:20 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 19:32:21 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (5c8050f4696c142435c65258567d71b9)] -> xpath: //a[@class='button account']] for :20 seconds
+2020-10-07 19:32:21 INFO  WaitHelper:154 - element is visible now
+2020-10-07 19:32:21 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 19:32:21 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 19:32:22 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 19:32:23 INFO  VerificationHelper:21 - element is Displayed..Stock analysis and screening tool for investors in India.
+2020-10-07 19:32:23 INFO  LoginPage:37 - Clicked login link
+2020-10-07 19:32:24 INFO  VerificationHelper:21 - element is Displayed..Welcome back!
+2020-10-07 19:32:24 INFO  LoginPage:53 - entering email address....amit.inamdar84@gmail.com
+2020-10-07 19:32:24 INFO  LoginPage:62 - entering password....Screener_3007
+2020-10-07 19:32:25 INFO  LoginPage:71 - clicking on login button...
+2020-10-07 19:32:27 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 19:32:27 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (5c8050f4696c142435c65258567d71b9)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 19:32:27 INFO  WaitHelper:154 - element is visible now
+2020-10-07 19:32:27 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 19:32:27 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 19:32:30 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 19:32:30 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 19:32:30 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (5c8050f4696c142435c65258567d71b9)] -> xpath: //h1[contains(text(),'Watchlist updates')]] for :20 seconds
+2020-10-07 19:32:30 INFO  WaitHelper:154 - element is visible now
+2020-10-07 19:32:30 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 19:32:30 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 19:32:31 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 19:32:32 INFO  VerificationHelper:21 - element is Displayed..Watchlist updates
+2020-10-07 19:32:33 INFO  WaitHelper:26 - WaitHelper object created..
+2020-10-07 19:32:33 INFO  WaitHelper:151 - waiting for :[[ChromeDriver: chrome on WINDOWS (5c8050f4696c142435c65258567d71b9)] -> xpath: //h1[contains(text(),'Explore stock screens')]] for :20 seconds
+2020-10-07 19:32:33 INFO  WaitHelper:154 - element is visible now
+2020-10-07 19:32:33 INFO  TestBase:156 - capturing ui navigation screen...
+2020-10-07 19:32:33 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 19:32:34 INFO  JavaScriptHelper:17 - JavaScriptHelper has been initialised
+2020-10-07 19:32:35 INFO  VerificationHelper:21 - element is Displayed..Explore stock screens
+2020-10-07 19:32:37 INFO  VerificationHelper:21 - element is Displayed..Bull Cartel
+2020-10-07 19:32:38 INFO  WindowHelper:37 - switched to : 1 window
+2020-10-07 19:32:41 INFO  VerificationHelper:21 - element is Displayed..Market Cap
+2020-10-07 19:32:41 INFO  WindowHelper:59 - switched to main window
+2020-10-07 19:32:44 INFO  VerificationHelper:21 - element is Displayed..Bull Cartel
+2020-10-07 19:32:44 INFO  AssertionHelper:12 - Expected text matched actual text: Bull Cartel with The Bull Cartel
+2020-10-07 19:32:44 INFO  TestBase:82 - **************switchToWindowFinished***************

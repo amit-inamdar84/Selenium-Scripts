@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class FirstNonRepeatedStringCharacter {
-	String s = "hello";
+	String s = "hhello";
 
 	public static char getFirstNonRepeatedChar(String str) {
 		Map<Character, Integer> counts = new LinkedHashMap<>(str.length());

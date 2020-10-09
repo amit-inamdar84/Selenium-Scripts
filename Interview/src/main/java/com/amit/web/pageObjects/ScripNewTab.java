@@ -13,11 +13,11 @@ public class ScripNewTab {
 	private WebDriver driver;
 	private final Logger log = LoggerHelper.getLogger(ScripNewTab.class);
 	
-	@FindBy(xpath="//*[@id='content-area']/section[1]/ul/li[3]")
-	WebElement verify52WeekHLText;
+	@FindBy(xpath="//span[contains(text(),'Market Cap')]")
+	WebElement verifyMarketCapText;
 	
 	public boolean verifyNewPageText(){
-		return new VerificationHelper(driver).isDisplayed(verify52WeekHLText);
+		return new VerificationHelper(driver).isDisplayed(verifyMarketCapText);
 	}
 	
 	public ScripNewTab(WebDriver driver){

@@ -1,6 +1,7 @@
 package strings;
 //Strings are immutable in java. Once created they cannot be modified. 
 //String is a class in java which represents sequence of characters.
+//String is in package java.lang. Classes in this package do not require import statement.
 //String comparison is done by content and reference - equals(), == and compareTo() methods available
 //Some important constructors of String class - String(byte[] byte_arr), String(char[] char_arr), String(StringBuffer s_buffer), String(StringBuilder s_builder), String(String original)
 //Methods - equals, equalsIgnoreCase, compareTo, concat, contains, endsWith, format, getBytes,indexOf(int ch), indexOf(int ch, int fromIndex), lastIndexOf(int ch)

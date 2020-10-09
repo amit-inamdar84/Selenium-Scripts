@@ -39,6 +39,7 @@ public class Login extends TestBase {
 		homePage = new HomePage(driver);
 		boolean status = homePage.verifywatchListUpdatesText();
 		AssertionHelper.updateTestStatus(status);
+		homePage.mouseOverOnNameDropDown();
 		homePage.clickLogoutButton();
 		loginpage.verifyLandingPageText();
 		loginpage.clickAboutUsLink();

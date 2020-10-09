@@ -29,7 +29,7 @@ public class BullCartel extends TestBase {
 		bullCartelLink.click();
 	}
 
-	@FindBy(xpath = "//*[@id='screen-info']/div/h1")
+	@FindBy(xpath = "//h1[contains(text(),'Bull Cartel')]")
 	public WebElement bullCartelText;
 
 	public boolean getBullCartelText() {
@@ -196,7 +196,7 @@ public class BullCartel extends TestBase {
 		System.out.println("Max CMP value is: " +db.get(db.size()-1));
 	}
 	
-	@FindBy(xpath = "//*[@id='industry-filter-results']/div[2]/table/tbody/tr[2]/td[2]/a")
+	@FindBy(xpath = "//table[@class='data-table text-nowrap striped']/tbody/tr[2]/td[2]/a")
 	WebElement firstScripLink;
 	
 	public void clickOnFirstScrip(){

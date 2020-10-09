@@ -23,14 +23,14 @@ public class LoginPage extends TestBase {
 	 * public String getWelcomeText() { return verifyWelcomeText.getText(); }
 	 */
 
-	@FindBy(xpath = "//*[@id='content-area']/div/p")
+	@FindBy(xpath = "//p[@class='bigger']")
 	WebElement landingPageText;
 
 	public boolean verifyLandingPageText() {
 		return new VerificationHelper(driver).isDisplayed(landingPageText);
 	}
 
-	@FindBy(xpath = "//*[@id='top-nav-menu']/a[4]")
+	@FindBy(xpath = "//a[@class='button account']")
 	WebElement loginLink;
 
 	public void clickLoginLink() {
@@ -39,7 +39,7 @@ public class LoginPage extends TestBase {
 		loginLink.click();
 	}
 
-	@FindBy(xpath = "//*[@id='content-area']/h1")
+	@FindBy(xpath = "//h1[contains(text(),'Welcome back!')]")
 	WebElement investorLoginText;
 
 	public boolean verifyInvestorLoginText() {
@@ -64,7 +64,7 @@ public class LoginPage extends TestBase {
 		this.passsword.sendKeys(password);
 	}
 
-	@FindBy(xpath = "//*[@id='content-area']/form/button")
+	@FindBy(xpath = "//button[@type='submit']")
 	WebElement loginButton;
 
 	public HomePage clickLoginButton() {
@@ -74,7 +74,7 @@ public class LoginPage extends TestBase {
 		return new HomePage(driver);
 	}
 
-	@FindBy(xpath = "//a[contains(text(),'About Us')]")
+	@FindBy(xpath = "//a[contains(text(),'About us')]")
 	WebElement aboutUsLink;
 
 	public void clickAboutUsLink() {

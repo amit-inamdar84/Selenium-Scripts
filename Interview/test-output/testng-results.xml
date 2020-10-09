@@ -5,59 +5,112 @@
       <![CDATA[captureScreen method called]]>
     </line>
     <line>
-      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_04_10_2020_03_31_55.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_04_10_2020_03_31_55.png'height='100' width='100'/></a>]]>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_21.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_21.png'height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_28.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_28.png'height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_30.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_30.png'height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_33.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_33.png'height='100' width='100'/></a>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="157824" started-at="2020-10-04T10:00:09Z" finished-at="2020-10-04T10:02:47Z">
+  <suite name="Default suite" duration-ms="42459" started-at="2020-10-07T14:02:03Z" finished-at="2020-10-07T14:02:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="157824" started-at="2020-10-04T10:00:09Z" finished-at="2020-10-04T10:02:47Z">
-      <class name="com.amit.web.testscripts.TestToVerifyCompanySearchBox">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="beforeSuite" is-config="true" duration-ms="586" started-at="2020-10-04T10:00:08Z" finished-at="2020-10-04T10:00:09Z">
+    <test name="Default test" duration-ms="42459" started-at="2020-10-07T14:02:03Z" finished-at="2020-10-07T14:02:46Z">
+      <class name="com.amit.web.testscripts.SwitchingWindows">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="beforeSuite" is-config="true" duration-ms="501" started-at="2020-10-07T14:02:03Z" finished-at="2020-10-07T14:02:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="beforeTest" is-config="true" duration-ms="11709" started-at="2020-10-04T10:00:09Z" finished-at="2020-10-04T10:00:21Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="beforeTest" is-config="true" duration-ms="9536" started-at="2020-10-07T14:02:03Z" finished-at="2020-10-07T14:02:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="beforeMethod" is-config="true" duration-ms="47" started-at="2020-10-04T10:00:21Z" finished-at="2020-10-04T10:00:21Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2020-10-07T14:02:15Z" finished-at="2020-10-07T14:02:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.amit.web.testscripts.TestToVerifyCompanySearchBox.companySearch()]]>
+                <![CDATA[public void com.amit.web.testscripts.SwitchingWindows.switchToWindow(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="companySearch()[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="companySearch" duration-ms="142018" started-at="2020-10-04T10:00:21Z" finished-at="2020-10-04T10:02:43Z">
+        <test-method status="PASS" signature="switchToWindow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="switchToWindow" duration-ms="28766" started-at="2020-10-07T14:02:15Z" data-provider="BullCartelData" finished-at="2020-10-07T14:02:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amit.inamdar84@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Screener_3007]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[y]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[captureScreen method called]]>
             </line>
             <line>
-              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_04_10_2020_03_31_55.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_04_10_2020_03_31_55.png'height='100' width='100'/></a>]]>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_21.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_21.png'height='100' width='100'/></a>]]>
+            </line>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_28.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_28.png'height='100' width='100'/></a>]]>
+            </line>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_30.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_30.png'height='100' width='100'/></a>]]>
+            </line>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_33.png'><img src='D:\Git\Interview\src\main\resources\screenShots\blank_07_10_2020_07_32_33.png'height='100' width='100'/></a>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- companySearch -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="afterMethod" is-config="true" duration-ms="3803" started-at="2020-10-04T10:02:43Z" finished-at="2020-10-04T10:02:47Z">
+        </test-method> <!-- switchToWindow -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="afterMethod" is-config="true" duration-ms="1633" started-at="2020-10-07T14:02:44Z" finished-at="2020-10-07T14:02:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=companySearch status=SUCCESS method=TestToVerifyCompanySearchBox.companySearch()[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa] output=captureScreen method called]]]>
+                <![CDATA[[TestResult name=switchToWindow status=SUCCESS method=SwitchingWindows.switchToWindow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b] output=captureScreen method called]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amit.web.testscripts.TestToVerifyCompanySearchBox@682b2fa]" name="afterTest" is-config="true" duration-ms="3" started-at="2020-10-04T10:02:47Z" finished-at="2020-10-04T10:02:47Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amit.web.testscripts.SwitchingWindows@7fac631b]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-10-07T14:02:46Z" finished-at="2020-10-07T14:02:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.amit.web.testscripts.TestToVerifyCompanySearchBox -->
+      </class> <!-- com.amit.web.testscripts.SwitchingWindows -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -16,14 +16,14 @@ public class ScreensPage {
 	private WebDriver driver;
 	private final Logger log = LoggerHelper.getLogger(LoginPage.class);
 	
-	@FindBy(xpath = "//*[@id='content-area']/div[1]/h1")
+	@FindBy(xpath = "//h1[contains(text(),'Explore stock screens')]")
 	WebElement screensPageHeader;
 
 	public boolean verifyScreensPageHeader() {
 		return new VerificationHelper(driver).isDisplayed(screensPageHeader);
 	}
 	
-	@FindBy(xpath = "//*[@id='content-area']/ul/li[1]/a/strong")
+	@FindBy(xpath = "//a[contains(text(),'Bull Cartel')]")
 	WebElement theBullCartel;
 
 	public BullCartel clickBullCartelLink() {

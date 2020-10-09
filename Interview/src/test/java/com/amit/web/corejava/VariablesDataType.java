@@ -12,6 +12,7 @@ public class VariablesDataType {
 
 	int data = 50; // Instance variable
 	static int m = 1000;// Static variable
+	int x,y,z;//Multiple variables of same type can be declared in single line.
 
 	public int method() {
 		int a = 10;// local variable
