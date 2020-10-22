@@ -5,6 +5,7 @@ public class WebserviceBasics {
 	 * It can also be an exposed API by one application which is consumed by another application.
 	 * Or in very general terms it is the method of communication between two devices over the network.
 	 * API is a set of routines and protocols which enables communication and data exchange between two separate software systems.
+	 * Example of API. User data from DB is given to external company using API instead of direct DB access. 
 	 * When a request is sent from client to server it is a HTTP request in the form of JSON,XML,Text or HTML.
 	 * The response from server to client is also a HTTP request in the form of JSON,XML,Text or HTML.
 	 * There should be a medium to transfer HTTP request from client to server. This medium can be HTTP client or rest assured(Java library)
@@ -61,6 +62,11 @@ public class WebserviceBasics {
 	 * Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory.
 	 * REST API tutorials - https://www.toolsqa.com/rest-assured/rest-api-automation-testing-framework/
 	 * Interview questions:
+	 * What is API; Give real time example.
+	 * Status codes, Response validation, Tools used for manual and automation, root cause for API bug
+	 * Designing test cases for API testing is same as we do for UI.
+	 * Given a website how do you get API's to test? Using network tab in browser tool.
+	 * For mobile apps we use proxy tools like Charles proxy to get API's
 	 * https://www.guru99.com/web-services-interview-questions.html
 	 * https://www.javatpoint.com/api-testing-interview-questions
 	 * https://www.katalon.com/resources-center/blog/web-api-testing-interview-questions/
@@ -125,6 +131,7 @@ public class WebserviceBasics {
 	 * 
 	 * Header types-Accept(response) and content type(request)
 	 * 
+	 * https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/
 	 * Microservices - also known as the microservice architecture - is an architectural style that structures an application as a collection of services
 	 * that are highly maintainable, testable, distributed and loosely coupled.
 	 * What sets a microservices architecture apart from more traditional, monolithic approaches is how it breaks an app down into its core functions.
