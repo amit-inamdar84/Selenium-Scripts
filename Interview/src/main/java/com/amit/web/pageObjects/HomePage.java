@@ -45,6 +45,7 @@ public class HomePage extends TestBase{
 	
 	public ScreensPage clickScreensMenu(){
 		screensMenuItem.click();
+		log.info("Clicked on screens menu item");
 		return new ScreensPage(driver);
 	}
 
