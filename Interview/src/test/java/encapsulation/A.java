@@ -6,6 +6,8 @@ package encapsulation;
  * We can make a class read-only or write-only 
  * We can create a fully encapsulated class in Java by making all data members of class private 
  * We can then use getter and setter methods to access the private member outside the class 
+ * In encapsulation, the variables or data of a class is hidden from any other class and can be accessed only through any member function of own
+ * class in which they are declared.
  * The object that sets the data only that object can get the data. No data sharing between objects
  * We can insert conditions inside setter methods to prevent unauthorized data to instance variables
  */

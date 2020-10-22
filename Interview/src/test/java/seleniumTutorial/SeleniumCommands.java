@@ -429,7 +429,7 @@ public class SeleniumCommands extends TestBase {
 		log.info("test");
 		
 		//Extent reports
-		//ExtentReports, ExtentTest and ExtentHtmlReporter are the main classes for extent reports.
+		//ExtentReports, ExtentTest and ExtentHtmlReporter are the main classes for extent reports in the package com.aventstack.extentreports
 		//https://www.softwaretestinghelp.com/extent-reports-selenium-webdriver/
 		String fileName = "Path of extent report HTML file";
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
