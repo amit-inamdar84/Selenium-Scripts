@@ -9,6 +9,7 @@ public interface ConfigReader {
 	public int getPageLoadTime();
 	public BrowserType getBrowserType();
 	public String getUrl();
+	public String getUrl1();
 	public String getUserName();
 	public String getPassword();
 }

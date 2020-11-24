@@ -90,6 +90,12 @@ Stock screens and sectors:
 //a[contains(text(),'Debt free companies')]/following::li
 //*[@id="industry-filter-results"]/div[2]/table/tbody/tr/td[2]/a[contains(text(),'Guj')]
 
+Automation practice: 
+For HTML element containing only text without any tag, use below xpath and check if text is embedded inside parent. If yes, try to get inner text or getText()
+//*[text() = 'Call us now: ']
+Finally solved. We need to put text(). Below is the xpath:
+//span[@class='shop-phone']/text()[2]
+
 
 
 

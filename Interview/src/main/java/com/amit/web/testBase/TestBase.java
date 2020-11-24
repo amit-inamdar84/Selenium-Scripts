@@ -18,6 +18,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -51,10 +52,14 @@ public class TestBase {
 	
 	@BeforeTest
 	public void beforeTest() throws Exception{
-		ObjectReader.reader = new PropertyReader();
 		reportDirectery = new File(ResourceHelper.getResourcePath("/src/main/resources/screenShots"));
-		setUpDriver(ObjectReader.reader.getBrowserType());
 		test = extent.createTest(getClass().getSimpleName());
+	}
+	
+	@BeforeClass
+	public void beforeClass() throws Exception{
+		ObjectReader.reader = new PropertyReader();
+		setUpDriver(ObjectReader.reader.getBrowserType());
 	}
 	
 	
@@ -81,6 +86,10 @@ public class TestBase {
 		}
 		log.info("**************"+result.getName()+"Finished***************");
 		extent.flush();
+		
+		if(driver!=null){
+			driver.close();
+		}
 	}
 	
 	@AfterTest

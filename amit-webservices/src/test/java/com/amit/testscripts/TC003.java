@@ -19,10 +19,11 @@ public class TC003 {
 		return result;
 	}
 
-	@Test(description = "Form based authentication")
+	//@Test(description = "Form based authentication")
 	public void loginAuthentication() {
-		RequestSpecification requestSpecification = RestAssured.given().auth().form("amit.inamdar84@gmail.com","Test", new FormAuthConfig("/session", "login", "password"));
-		Response response = requestSpecification.get("https://github.com/session");//Not redirecting to the required page. Need to check.
+		RequestSpecification requestSpecification = RestAssured.given().auth().form("amit.inamdar84@gmail.com","Github_3007", new FormAuthConfig("/session", "login", "password"));
+		requestSpecification.contentType(ContentType.JSON);
+		Response response = requestSpecification.post("https://github.com/session");//Not redirecting to the required page. Need to check.
 		System.out.println(response.getStatusCode());
 		System.out.println(response.body().asString());
 		//JSONObject obj = new JSONObject(response);
@@ -36,5 +37,17 @@ public class TC003 {
 		requestSpecification.contentType(ContentType.JSON);
 		Response response = requestSpecification.post("https://reqres.in/api/login");
 		System.out.println(response.body().asString());
+	}
+	
+	@Test(description = "Basic authentication")
+	public void loginAuthentication1() {
+		RequestSpecification requestSpecification = RestAssured.given().auth().preemptive().basic("amit.inamdar84@gmail.com","Github_3007");
+		requestSpecification.contentType(ContentType.JSON);
+		Response response = requestSpecification.post("https://github.com/session");//Not redirecting to the required page. Need to check.
+		System.out.println(response.getStatusCode());
+		System.out.println(response.body().asString());
+		//JSONObject obj = new JSONObject(response);
+		//String auth = obj.getString("authenticity_token");
+		//System.out.println(auth);
 	}
 }

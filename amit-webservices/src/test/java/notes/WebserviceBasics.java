@@ -56,6 +56,7 @@ public class WebserviceBasics {
 	 * JSON Formatter: https://jsonformatter.curiousconcept.com/
 	 * JSON validater: https://jsonlint.com/
 	 * JSON to Pojo classes: http://www.jsonschema2pojo.org/
+	 * Different types of JSON data - https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html#Example6
 	 * POJO stands for Plain Old Java Object. It is an ordinary Java object, not bound by any special restriction other than those forced by the Java Language Specification and not requiring
 	 * any class path. POJOs are used for increasing the readability and re-usability of a program.
 	 * Serialization is a mechanism of converting the state of an object into a byte stream. 

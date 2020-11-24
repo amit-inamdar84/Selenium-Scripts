@@ -133,5 +133,38 @@ public class JavaScriptHelper {
 	public void clickElement(WebElement element) {
 		executeScript("arguments[0].click();", element);
 	}
+	
+	/*
+	 * This method will highlight and element by changing the color.
+	 */
+	
+	public void highlightElement(WebElement element) throws InterruptedException{
+		String bgColor = element.getCssValue("backgroundColor");
+		for(int i = 0;i<10;i++){
+			changeColor("rgb(0,200,0)", element);
+			changeColor(bgColor, element);
+		}
+	}
+	
+	/*
+	 * This method will change color of an element 
+	 */
+	public void changeColor(String color, WebElement element) throws InterruptedException{
+		executeScript("arguments[0].style.backgroundColor = '"+color+"'",element);
+		Thread.sleep(1000);
+	}
+	
+	/*
+	 * This method will draw border around a web element
+	 */
+	public void drawBorder(WebElement element){
+		executeScript("arguments[0].style.border = '3px solid red'",element);
+	}
+	/*
+	 * This method will take a date and change the attribute called value in HTML code. The new date will reflect in the date field
+	 */
+	public void selectDateByJS(WebElement element, String date){
+		executeScript("arguments[0].setAttribute('value','"+date+"');", element);
+	}
 
 }

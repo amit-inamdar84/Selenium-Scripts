@@ -65,6 +65,8 @@ public class SwitchingWindows extends TestBase{
 		status = bullcartel.getBullCartelText();
 		AssertionHelper.updateTestStatus(status);
 		bullcartel.verifyBullCartelText();
+		homePage.mouseOverOnNameDropDown();
+		homePage.clickLogoutButton();
 	}
 
 }
