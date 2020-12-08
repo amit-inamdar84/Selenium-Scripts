@@ -21,7 +21,7 @@ public class TC003 {
 
 	//@Test(description = "Form based authentication")
 	public void loginAuthentication() {
-		RequestSpecification requestSpecification = RestAssured.given().auth().form("amit.inamdar84@gmail.com","Github_3007", new FormAuthConfig("/session", "login", "password"));
+		RequestSpecification requestSpecification = RestAssured.given().auth().form("amit.inamdar84@gmail.com","XYA", new FormAuthConfig("/session", "login", "password"));
 		requestSpecification.contentType(ContentType.JSON);
 		Response response = requestSpecification.post("https://github.com/session");//Not redirecting to the required page. Need to check.
 		System.out.println(response.getStatusCode());

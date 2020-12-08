@@ -475,6 +475,16 @@ public class SeleniumCommands extends TestBase {
 		
 		//Print all data in web table - TestToVerifyDataInTable.java
 		//Get max value of a column in a web table - TestToPrintMaxValueInWebTable.java
+		//Pending scenarios:;
+		//OTP automation
+		//Broken links in selenium
+		//Selenium IDE can be used to capture locators which flash and disappears in micro seconds
+		//Text in image
+		//Sikuli
+		//Using java regex
+		//Generics in Java
+		//OCX - Alternative for sikuli
+		//
 
 		/*
 		 * Ways to run test scripts:

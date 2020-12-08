@@ -1,0 +1,142 @@
+{
+	"id": "bdc77dd1-af5a-4ae1-849f-2918353c0495",
+	"name": "Fake API calls",
+	"timestamp": "2020-11-25T12:21:47.262Z",
+	"collection_id": "ca9800d4-fe26-4ca3-8edd-52a773fc7252",
+	"folder_id": 0,
+	"environment_id": "7b38fcb5-61bc-4063-b26e-ba530b4285a9",
+	"totalPass": 4,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "6e0e6e97-e89c-4fae-9576-96547fd4345b",
+			"name": "UserRegistration",
+			"url": "https://reqres.in/api/register",
+			"time": 1122,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": false,
+				"Body matches string": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1122
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": false,
+					"Body matches string": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "85eddf75-82ec-4d8a-82bd-6d968d68ec45",
+			"name": "Login Success",
+			"url": "https://reqres.in/api/login",
+			"time": 919,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				919
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "20c075c1-6c6a-491e-8ca2-4a965183cef7",
+			"name": "GetUserList",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 589,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				589
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "004676e9-fdb0-4320-ac0d-81e1882f140f",
+			"name": "GetSpecificUser",
+			"url": "https://reqres.in/api/users/2",
+			"time": 599,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				599
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3229,
+	"collection": {
+		"requests": [
+			{
+				"id": "6e0e6e97-e89c-4fae-9576-96547fd4345b",
+				"method": "POST"
+			},
+			{
+				"id": "85eddf75-82ec-4d8a-82bd-6d968d68ec45",
+				"method": "POST"
+			},
+			{
+				"id": "20c075c1-6c6a-491e-8ca2-4a965183cef7",
+				"method": "GET"
+			},
+			{
+				"id": "004676e9-fdb0-4320-ac0d-81e1882f140f",
+				"method": "GET"
+			}
+		]
+	}
+}
