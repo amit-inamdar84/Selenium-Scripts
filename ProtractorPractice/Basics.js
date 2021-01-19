@@ -48,4 +48,12 @@ do{
 	console.log(j);
 	j++;
 }while(j<6)
+	
+/*Javascript objects:
+* JS is object based language rather than object oriented language.
+* It is template based and not class based.
+ * We dont create class to get objects but we directly create objects.
+ * Everything is an object in Javascript.
+ * 
+ */
 

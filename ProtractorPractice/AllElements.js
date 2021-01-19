@@ -23,7 +23,7 @@ describe("Test case to demo retrieving all elements in a table/web table, resolv
 		})
 		
 		element.all(by.repeater("result in memory")).each(function(item) {
-			item.element(by.css("td:nth-child(3)")).getText().then(function(text) {
+			item.element(by.css("td:nth-child(3)")).getText().then(function(text) {//Now the element search scope will be within element.all(by.repeater("result in memory"))
 				console.log(text);
 			})
 		})

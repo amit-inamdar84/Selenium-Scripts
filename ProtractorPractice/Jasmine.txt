@@ -1,0 +1,10 @@
+//To use jasmine data provider include the dependency: jasmine-data-provider in your package.json file.
+//Go to the project path and run the command: npm install.
+//It basically helps to provide multiple sets of data to the specs.
+//We can use module.exports to tie up with data file object and then in test case file we can use var obj = require("./data.js");
+//i.e. obj.datadrive.firstinput can be used to replace hard coded data values in spec. 
+//The above method will help to read only 1 set of data. So we need to use jasmine data provider and make changes to data file:
+//Add multiple data sets under a parent object. Then export the entire object using module.exports. For details see data.js file.
+//Once the data file is ready with multiple data sets, we need to wrap the test case with a jasmine concept called "using".
+//Also need to import jasmine data provider as it is not a core part of Jasmine and is external.For details see data.js file and spec TC001.js.
+
