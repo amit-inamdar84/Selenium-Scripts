@@ -3,16 +3,26 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [FrameworkTest]">
   <test thread-count="5" name="JenkinsTest(failed)">
     <classes>
-      <class name="seleniumTutorial.JenkinsParameterTest">
+      <class name="com.amit.web.testscripts.TC001Testtoverifyhomepage">
         <methods>
           <include name="beforeSuite"/>
-          <include name="testParameters"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="automationPracticeHomePageAccess"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.amit.web.testscripts.TC001Testtoverifyhomepage -->
+      <class name="com.amit.web.testscripts.SwitchingWindows">
+        <methods>
+          <include name="switchToWindow" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- seleniumTutorial.JenkinsParameterTest -->
+      </class> <!-- com.amit.web.testscripts.SwitchingWindows -->
     </classes>
   </test> <!-- JenkinsTest(failed) -->
 </suite> <!-- Failed suite [FrameworkTest] -->

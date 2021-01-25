@@ -97,6 +97,9 @@ public class SeleniumCommands extends TestBase {
 		driver.findElement(By.xpath("xpath")).getAttribute("Title");
 		driver.findElement(By.xpath("xpath")).getAttribute("Value");
 		
+		//Deleting cookies
+		driver.manage().deleteAllCookies();
+		
 		//Fetching css value:
 		driver.findElement(By.xpath("xpath")).getCssValue("font-size");
 		
@@ -250,6 +253,10 @@ public class SeleniumCommands extends TestBase {
 		js.executeScript("$('ul.menus.menu-secondary.sf-js-enabled.sub-menu li').hover()");
 		//Zoom in
 		js.executeScript("document.body.style.zoom='100%'");
+		//Change color/flash a web element. Refer framework for method definition and calling.
+		js.executeScript("arguments[0].style.backgroundColor = 'Green'", element1);
+		//Draw border for a web element
+		js.executeScript("arguments[0].style.border = '3px solid red'", element1);
 
 		// Drop down selection
 		WebElement element2 = driver.findElement(By.xpath("xpath"));
@@ -313,6 +320,12 @@ public class SeleniumCommands extends TestBase {
 			}
 		}
 		
+		//Fetching all broken links - refer class - BrokenLinks.java
+		//Collect all the links in the web page based on <a> tag.
+		//Send HTTP request for the link and read HTTP response code.
+		//Find out whether the link is valid or broken based on HTTP response code.
+		//Repeat this for all the links captured.
+		
 		//Display date in required format
 		SimpleDateFormat formattedDate = new SimpleDateFormat("MM/dd/yyyy");
 		Date date = new Date();
@@ -355,6 +368,7 @@ public class SeleniumCommands extends TestBase {
 		//We can configure driver instance like FirefoxDriver, ChromeDriver, InternetExplorerDriver by using desired capabilities.
 		//The Desired Capabilities class will help to set an environment to define the behaviour of the browser/environment on which the test can be executed.
 		//DesiredCapabilities.firefox() is a firefox specific static method. We have similar methods for Chrome Android etc.
+		//To run our test cases in remote machine we need to use DesiredCapabilities class together with RemoteWebDriver class
 		DesiredCapabilities firefox = DesiredCapabilities.firefox();
 		FirefoxProfile profile = new FirefoxProfile();
 		profile.setAcceptUntrustedCertificates(true);
@@ -404,6 +418,9 @@ public class SeleniumCommands extends TestBase {
 			e.printStackTrace();
 		}
 		
+		//Upload file using browse button with or without file path text box. DO NOT click use sendKeys instead.
+		driver.findElement(By.xpath("xpath")).sendKeys("FilePath");
+		
 		//Download file
 		System.setProperty("webdriver.gecko.driver", "Path");
 		FirefoxOptions options1 = new FirefoxOptions();
@@ -429,7 +446,7 @@ public class SeleniumCommands extends TestBase {
 		log.info("test");
 		
 		//Extent reports
-		//ExtentReports, ExtentTest and ExtentHtmlReporter are the main classes for extent reports.
+		//ExtentReports, ExtentTest and ExtentHtmlReporter are the main classes for extent reports in the package com.aventstack.extentreports
 		//https://www.softwaretestinghelp.com/extent-reports-selenium-webdriver/
 		String fileName = "Path of extent report HTML file";
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
@@ -458,6 +475,16 @@ public class SeleniumCommands extends TestBase {
 		
 		//Print all data in web table - TestToVerifyDataInTable.java
 		//Get max value of a column in a web table - TestToPrintMaxValueInWebTable.java
+		//Pending scenarios:;
+		//OTP automation
+		//Broken links in selenium
+		//Selenium IDE can be used to capture locators which flash and disappears in micro seconds
+		//Text in image
+		//Sikuli
+		//Using java regex
+		//Generics in Java
+		//OCX - Alternative for sikuli
+		//
 
 		/*
 		 * Ways to run test scripts:

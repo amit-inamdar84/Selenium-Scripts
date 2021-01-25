@@ -10,6 +10,7 @@ import com.amit.web.helper.resource.ResourceHelper;
 public class PropertyReader implements ConfigReader {
 	private static FileInputStream file;
 	public static Properties OR;
+	public static Properties OR1;
 
 	public PropertyReader() {
 		try {
@@ -20,12 +21,11 @@ public class PropertyReader implements ConfigReader {
 
 			// In future if another config file is required to be added to
 			// framework we can use below code
-			/*
-			 * String filePath1 = ResourceHelper.getResourcePath(
-			 * "src/main/resources/configfile/config1.properties"); file = new
-			 * FileInputStream(new File(filePath1)); OR = new Properties();
-			 * OR.load(file);
-			 */
+			String filePath1 = ResourceHelper.getResourcePath("/src/main/resources/configfile/config1.properties");
+			file = new FileInputStream(new File(filePath1));
+			OR1 = new Properties();
+			OR1.load(file);
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -53,10 +53,18 @@ public class PropertyReader implements ConfigReader {
 
 	@Override
 	public String getUrl() {
-		if(System.getProperty("url")!=null){
+		if (System.getProperty("url") != null) {
 			return System.getProperty("url");
 		}
 		return OR.getProperty("applicationUrl");
+	}
+	
+	@Override
+	public String getUrl1() {
+		if (System.getProperty("url") != null) {
+			return System.getProperty("url");
+		}
+		return OR1.getProperty("applicationUrl1");
 	}
 
 	@Override
@@ -68,5 +76,7 @@ public class PropertyReader implements ConfigReader {
 	public String getPassword() {
 		return OR.getProperty("password");
 	}
+
+
 
 }

@@ -23,5 +23,9 @@ public class AgileMethodology {
 //Team checks for the daily work
 //At the end of the sprint, team delivers product functionality
 	
-//
+//Ceremonies:
+	//Sprint planning meeting
+	//Daily standup meeting
+	//Sprint review meeting
+	//Introspection meeting
 }

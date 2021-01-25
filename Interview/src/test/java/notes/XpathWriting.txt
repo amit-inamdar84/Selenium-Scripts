@@ -50,14 +50,15 @@ Text():
 Axes methods are used to find those elements, which dynamically change on refresh or any other
 operations. There are few axes methods commonly used in Selenium Webdriver like child, parent,
 ancestor, sibling, preceding, self, etc.
-Following:  See below
-Ancestor: See below
+Following:  Following starts with next to next tag and all tags below it.
+Ancestor: Ancestor starts from grandparent and then moves above.
 Child: //*[@id='java_technologies']//child::li[1]
-Preceding: //*[@type='submit']//preceding::input
+Preceding: Preceding tag is previous to previous tag and all tags above it.
+//*[@type='submit']//preceding::input
 Following-sibling: //*[@type='submit']//following-sibling::input
 Parent: //*[@id='rt-feature']//parent::div
 Self: //*[@type='password']//self::input
-Descendant: See below
+Descendant: Descendant traverses all the nodes under the root node plus all the sub nodes under those nodes.
 
 
 Screener xpaths: For practice only.....
@@ -80,18 +81,20 @@ Peer comparison:
 
 Features tab:
 (//img[starts-with(@src,'/static/icons/')])[3]
-Descendant traverses all the nodes under the root node plus all the sub nodes under those nodes.
 //div[@class='flex-row'][1]/descendant::*
 
 
 Stock screens and sectors:
-Ancestor starts from grandparent and then moves above.
 //a[contains(text(),'Undervalued companies')]/ancestor::div
-Preceding tag is previous to previous tag and all tags above it.
 //a[contains(text(),'Debt free companies')]/preceding::li
-Following: Following starts with next to next tag and all tags below it.
 //a[contains(text(),'Debt free companies')]/following::li
 //*[@id="industry-filter-results"]/div[2]/table/tbody/tr/td[2]/a[contains(text(),'Guj')]
+
+Automation practice: 
+For HTML element containing only text without any tag, use below xpath and check if text is embedded inside parent. If yes, try to get inner text or getText()
+//*[text() = 'Call us now: ']
+Finally solved. We need to put text(). Below is the xpath:
+//span[@class='shop-phone']/text()[2]
 
 
 

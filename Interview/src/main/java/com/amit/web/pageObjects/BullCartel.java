@@ -141,6 +141,7 @@ public class BullCartel extends TestBase {
 		String firstPart = "(//*[@id='industry-filter-results']/div[2]/table/tbody/tr/td[2]/parent::tr)[";
 		String secondPart = "1";
 		String thirdPart = "]";
+		boolean flag = false;
 		// Loop through rows one by one. Start from 1st row till row count.
 		for (int i = 1; i <= rowCount; i++) {
 			// For every row, loop through columns one by one. Start from 1st
@@ -150,8 +151,17 @@ public class BullCartel extends TestBase {
 				System.out.println(finalPart);
 				String text = driver.findElement(By.xpath(finalPart)).getText();
 				System.out.print(text + " | ");
+				//If we need to stop after a particular text is matched use if condition
+				if(text.contains("abc")){
+					System.out.println(text);
+					flag = true;//Set flag as true(Logic from Naveen automation labs)
+					break;//This will stop iterating the columns.(https://www.youtube.com/watch?v=Rjs9qLRP9tM&list=PLFGoYjJG_fqo4oVsa6l_V-_7-tzBnlulT&index=18)
+				}
 			}
 			System.out.println();
+			if(flag){
+				break;//This will break outer loop only if flag is true. i.e. we have retrieved the text that we need. If not it will continue with next iteration.
+			}
 		}
 	}
 	
@@ -180,6 +190,7 @@ public class BullCartel extends TestBase {
 	}
 
 	// Alternative for readTableData() method above
+	//This method will only iterate rows and not columns. It will simply print all data in that row.
 	public void readTableData1() {
 		// Find row size
 		List<WebElement> rowCount = driver.findElements(By.xpath("//*[@id='industry-filter-results']/div[2]/table/tbody/tr/td/parent::*"));

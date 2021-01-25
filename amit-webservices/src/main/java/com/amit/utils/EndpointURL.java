@@ -4,7 +4,8 @@ public enum EndpointURL {
 	TODOS("/todos"),//API for get and post todos
 	TODOS_BY_ID("/todos/"),//Declaring endpoint URL for todo by ID
 	ADD_USERS("/users/"),//Post API call for creating new user
-	CREATE_POSTS("/posts/");
+	CREATE_POSTS("/posts/"),
+	PRODUCTS("/products");//Best buy products API for GET and POST
 	
 	String resourcePath;
 	EndpointURL(String resourcePath){

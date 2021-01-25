@@ -138,6 +138,110 @@ Switched to branch 'branch name'
 D:\Git>git branch
 * branch name
   master
+  
+  -------------------------------------------------------------------------------------------------
+  Recover a deleted local branch:
+  AMIT@DESKTOP-D8C95I2 MINGW64 ~/Desktop
+$ cd D:
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d
+$ cd D:\Git
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (Amit-Protractor)
+$ git branch
+* Amit-Protractor
+  master
+  practice-java
+  sub-repo
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (Amit-Protractor)
+$ git fsck --full --no-reflogs --unreachable --lost-found | grep commit | cut -d\  -f3 | xargs -n 1 git log -n 1 --pretty=oneline > .git/lost-found.txt
+Checking object directories: 100% (256/256), done.
+Checking objects: 100% (7161/7161), done.
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (Amit-Protractor)
+$ git log -p <commit>
+bash: syntax error near unexpected token `newline'
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (Amit-Protractor)
+$ git reflog show
+b6127d6 (HEAD -> Amit-Protractor, origin/Amit-Protractor) HEAD@{0}: commit: Recovering deleted protractor code. Thank god.
+daaa40a (origin/practice-java, sub-repo, practice-java) HEAD@{1}: checkout: moving from practice-java to Amit-Protractor
+daaa40a (origin/practice-java, sub-repo, practice-java) HEAD@{2}: checkout: moving from Amit-Protractor to practice-java
+3cde972 HEAD@{3}: commit: Deleting protractor branch as it should be committed to new repo
+6200ef8 HEAD@{4}: commit: Committing Protractor with Javascript upskilling project files dated 17122020
+daaa40a (origin/practice-java, sub-repo, practice-java) HEAD@{5}: checkout: moving from practice-java to Amit-Protractor
+daaa40a (origin/practice-java, sub-repo, practice-java) HEAD@{6}: commit: Adding postman updated tutorial file - 12082020
+46d1ffb HEAD@{7}: commit: Adding further practice files after getting job
+5535640 HEAD@{8}: commit: Xpath changes to switching windows script.
+b65c58e HEAD@{9}: commit: Deleting screenshots
+9accb49 HEAD@{10}: commit: Deleting screenshots
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (Amit-Protractor)
+$ git branch Amit-Protractor 3cde972
+fatal: A branch named 'Amit-Protractor' already exists.
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (Amit-Protractor)
+$ git checkout practice-java
+Switched to branch 'practice-java'
+M       restAPIFramework
+Your branch is up to date with 'origin/practice-java'.
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (practice-java)
+$ git push origin --delete Amit-Protractor
+remote:
+remote: GitHub found 3 vulnerabilities on amit-inamdar84/Selenium-Scripts's default branch (2 high, 1 moderate). To find out more, visit:
+remote:      https://github.com/amit-inamdar84/Selenium-Scripts/security/dependabot
+remote:
+To https://github.com/amit-inamdar84/Selenium-Scripts
+ - [deleted]         Amit-Protractor
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (practice-java)
+$ ^C
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (practice-java)
+$ git branch Amit-Protractor 3cde972
+fatal: A branch named 'Amit-Protractor' already exists.
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (practice-java)
+$ git branch -d Amit-Protractor
+error: The branch 'Amit-Protractor' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D Amit-Protractor'.
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (practice-java)
+$ git branch -D Amit-Protractor
+Deleted branch Amit-Protractor (was b6127d6).
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (practice-java)
+$ git branch Amit-Protractor 3cde972
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (practice-java)
+$ git branch
+  Amit-Protractor
+  master
+* practice-java
+  sub-repo
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (practice-java)
+$ git checkout Amit-Protractor
+error: The following untracked working tree files would be overwritten by checkout:
+        ProtractorPractice/Calculator.js
+        ProtractorPractice/Jasmine.txt
+        ProtractorPractice/Pending.txt
+        ProtractorPractice/TC001.js
+        ProtractorPractice/configuration.js
+        ProtractorPractice/data.js
+        ProtractorPractice/package.json
+Please move or remove them before you switch branches.
+Aborting
+
+AMIT@DESKTOP-D8C95I2 MINGW64 /d/Git (practice-java)
+$ git checkout Amit-Protractor
+Updating files: 100% (3472/3472), done.
+Switched to branch 'Amit-Protractor'
+M       restAPIFramework
+
+  
 */		
 
 	}
