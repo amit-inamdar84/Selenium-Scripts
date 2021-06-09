@@ -4,8 +4,9 @@ public class GitNotes {
 
 	public static void main(String[] args) {
 /*	    How to use Git hub : https://guides.github.com/activities/hello-world/	
+ *      Basic git commands: https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
  *      Login to Github and create a repository
-		If repository already exists, import or clone to your eclipse
+		If repository already exists, import or clone to your eclipse - git clone /path/to/repository
 		Download git from https://git-scm.com/download/
 		Install in C:\Program Files\Git
 		If project already exists in eclipse do Team>>Share Project and create a git local repository in same drive as eclipse workspace
@@ -29,6 +30,7 @@ public class GitNotes {
 		git add - Add file contents to index.
 		git *java - It will add all the java files.
 		git commit - Record changes to the repository.
+		git remote add origin https://github.com/XYZ-84/XYZ - Selects repo to where the code should be pushed.
 		git push - Update remote refs along with associated objects.
 		git diff filename - lists the difference between what was present and what was added to a specified file.
 		
@@ -52,7 +54,7 @@ public class GitNotes {
 		Then do git pull origin master in master branch and do git stash apply. All code will be merged and updated.
 		
 		
-Resolving merge conflicts:		
+Resolving merge conflicts:	(By Bhanu)	
 1. Add some code in line N to file X from system 1.
 2. Add some code in line N to same file X from system 2.
 3. Do git pull origin master from local.
@@ -71,6 +73,22 @@ Resolving merge conflicts:
 16.Now we can create PR and get it reviewed and merged to master.
 17.Go to master branch and do git pull origin master to see the latest code in master.
 18.Repeat step 17 for local branch
+
+Resolving merge conflicts: (By Rahul)
+1. Make some changes in master branch and commit. Do not push yet.
+2. Create a new branch develop  from master and make changes to the same file.
+3. Commit but do not push yet.
+4. Go back to master branch and we will not see changes made in develop branch.
+5. Now in master branch delete some previous code. Commit the code.
+6. Go back to develop branch. Deletions made in previous step are unchanged here.
+7. Commit the code.
+8. Now merge master branch code to develop branch. Use command git merge master.
+9. Now we will see a conflict because in the same file master branch has changes which are not in develop branch. We need to resolve manually.
+10. Open the file and you will see >>>>>HEAD for changes in active branch (ie.develop branch.) that are not in master branch.
+11. Talk to another person who made changes in master and make changes to either master code or develop code.
+12. Now commit changes made in develop branch if changes are made here.
+13. Merge with master using - git merge master.
+14. 
 		-----------------------------------------------------------------------------------------------------
 		Then create a branch. -b argument should be given only when creating new branch. For existing branch checkout skip -b.
 		
@@ -138,6 +156,28 @@ Switched to branch 'branch name'
 D:\Git>git branch
 * branch name
   master
+  
+ --------------------------------------------------------------
+ Reset all commits and do fresh pull from master:
+ If there are problems to commit code and there is any confusion use below commands:
+ Remember to take a back up of local changes before running below commands as it will drop all commits and gets fresh code from master.
+ git fetch origin
+ git reset --hard origin/master
+ --------------------------------------------------------------------
+ New project in local. How to commit to git repository using git commands?
+ Ensure there is no code commit in main branch of repo. Else local and main code will not merge.
+ 1. git config --global user.name "Amit"
+ 2. git config --global user.email "amit.inamdar84@gmail.com"
+ 3. git init
+ 4. git status
+ 5. git add *
+ 6. git commit -m "Test"
+ 7. git remote add origin "URL of repository"
+ 8. git pull origin main (Run with this flag is there is problem or conflict --allow-unrelated-histories)
+ 7. git push origin main (Run with this flag is there is any merge problem between master and main - HEAD:main)
+ -----------------------------------------------------------------------------
+ How to undo git add
+ git restore --staged JSConcepts/Basics.js
 */		
 
 	}
