@@ -72,6 +72,7 @@ public class WebserviceBasics {
 	 * https://www.javatpoint.com/api-testing-interview-questions
 	 * https://www.katalon.com/resources-center/blog/web-api-testing-interview-questions/
 	 * https://www.guru99.com/rest-assured.html
+	 * Rest assured learning: https://devqa.io/tag/rest-assured/
 	 * 
 	 * API testing process:
 	 * For GET call - 

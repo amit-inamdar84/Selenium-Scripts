@@ -1,6 +1,0 @@
--------------------------------------------
-CTRL+Click does not work.
-Sometimes auto suggestions do not work
-Debugging how to???
-Issues dealing with promise - TC001.js line 30 and CartItemsValidation.js line 26
-// Use colors in the command line report.
