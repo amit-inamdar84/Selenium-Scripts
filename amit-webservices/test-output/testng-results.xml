@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44390" started-at="2020-10-26T07:50:35Z" finished-at="2020-10-26T07:51:20Z">
+  <suite name="Default suite" duration-ms="20044" started-at="2021-03-08T11:51:07Z" finished-at="2021-03-08T11:51:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44390" started-at="2020-10-26T07:50:35Z" finished-at="2020-10-26T07:51:20Z">
+    <test name="Default test" duration-ms="20044" started-at="2021-03-08T11:51:07Z" finished-at="2021-03-08T11:51:27Z">
       <class name="com.amit.testscripts.BestBuyProducts">
-        <test-method status="PASS" signature="getAllProducts()[pri:0, instance:com.amit.testscripts.BestBuyProducts@61832929]" name="getAllProducts" duration-ms="44281" started-at="2020-10-26T13:20:35Z" finished-at="2020-10-26T13:21:20Z">
+        <test-method status="PASS" signature="getAllProducts()[pri:0, instance:com.amit.testscripts.BestBuyProducts@27efef64]" name="getAllProducts" duration-ms="19867" started-at="2021-03-08T17:21:07Z" finished-at="2021-03-08T17:21:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllProducts -->
