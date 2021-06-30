@@ -2,7 +2,7 @@ package com.amit.web.helper.window;
 
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 import com.amit.web.helper.logger.LoggerHelper;

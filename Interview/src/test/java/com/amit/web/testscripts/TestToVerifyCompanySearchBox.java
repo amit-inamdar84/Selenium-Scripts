@@ -1,14 +1,15 @@
 package com.amit.web.testscripts;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import com.amit.web.helper.browserConfiguration.config.ObjectReader;
+import com.amit.web.helper.logger.LoggerHelper;
 import com.amit.web.pageObjects.LoginPage;
 import com.amit.web.testBase.TestBase;
 
 public class TestToVerifyCompanySearchBox extends TestBase{
-	private final Logger log = Logger.getLogger(TestToVerifyCompanySearchBox.class);
+	private final Logger log = LoggerHelper.getLogger(TestToVerifyCompanySearchBox.class);
 	LoginPage loginpage;
 	
 	@Test

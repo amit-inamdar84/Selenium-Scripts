@@ -21,8 +21,6 @@ import java.util.concurrent.TimeUnit;
 import javax.naming.directory.NoSuchAttributeException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
@@ -439,11 +437,25 @@ public class SeleniumCommands extends TestBase {
 		
 		//Configuring log4j
 		//PropertyConfigurator class allows the configuration of log4j from an external file
-		PropertyConfigurator.configure("Path of log4j properties file");
+		//PropertyConfigurator.configure("Path of log4j properties file");
 		//getLogger method in Logger class takes the class name and returns a Logger.
-		Logger log = Logger.getLogger(SeleniumCommands.class);
+		//Logger log = Logger.getLogger(SeleniumCommands.class);
 		//One the logger returned we can call log.info to log the results. 
-		log.info("test");
+		//log.info("test");
+		
+		//Configuring log4j2
+		//Add log4j-api and log4j-core dependencies to pon.xml
+		//Now create a log4j2.xml file under “src/main/resource/configFile” directory and write code in it.
+		//Add below code in pom.xml
+		 /*<build>
+		  <resources>
+		  <resource>
+		        <directory>src/main/resources/configFile</directory>
+		        <filtering>true</filtering>
+		      </resource>
+		  </resources>
+		  </build>*/
+		//Use this in test files: private static Logger log = LogManager.getLogger(Helloworldlog4j2.class);
 		
 		//Extent reports
 		//ExtentReports, ExtentTest and ExtentHtmlReporter are the main classes for extent reports in the package com.aventstack.extentreports

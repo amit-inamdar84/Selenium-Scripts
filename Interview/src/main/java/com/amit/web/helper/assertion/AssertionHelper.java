@@ -1,6 +1,6 @@
 package com.amit.web.helper.assertion;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 import com.amit.web.helper.logger.LoggerHelper;

@@ -1,0 +1,2 @@
+15:39:45.639 [main] INFO  com.amit.web.helper.logger.LoggerHelper - Log 4j is configured
+15:39:45.689 [main] INFO  com.amit.web.helper.logger.LoggerHelper - Log 4j is ready

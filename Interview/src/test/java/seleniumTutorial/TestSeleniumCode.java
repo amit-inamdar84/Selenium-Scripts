@@ -8,8 +8,8 @@ import java.util.Date;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 import com.amit.web.testBase.TestBase;
 
 public class TestSeleniumCode extends TestBase {
-	public static final Logger log = Logger.getLogger(TestSeleniumCode.class);//Classname.class will return an instance of the class.
+	public static final Logger log = LogManager.getLogger(TestSeleniumCode.class);//Classname.class will return an instance of the class.
 
 	@Test
 	public void test() throws IOException {
@@ -31,7 +31,7 @@ public class TestSeleniumCode extends TestBase {
 		OR.load(f);
 		System.out.println(OR.getProperty("Domain"));
 		String log4jConfPath = "log4j.properties";
-		PropertyConfigurator.configure(log4jConfPath);
+		//PropertyConfigurator.configure(log4jConfPath);
 		log.info("Starting chrome browser");
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver.exe");
 		driver = new ChromeDriver();

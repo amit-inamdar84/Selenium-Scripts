@@ -1,7 +1,8 @@
 package com.amit.web.helper.logger;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.amit.web.helper.resource.ResourceHelper;
 
@@ -10,11 +11,11 @@ public class LoggerHelper {
 
 	public static Logger getLogger(Class cls) {
 		if (root) {
-			return Logger.getLogger(cls);
+			return LogManager.getLogger(cls);
 		}
-		PropertyConfigurator.configure(ResourceHelper.getResourcePath("/src/main/resources/configFile/log4j.properties"));
+		//PropertyConfigurator.configure(ResourceHelper.getResourcePath("/src/main/resources/configFile/log4j.properties"));
 		root = true;
-		return Logger.getLogger(cls);
+		return LogManager.getLogger(cls);
 	}
 	
 	public static void main(String[] args) {

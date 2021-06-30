@@ -1,6 +1,6 @@
 package com.amit.web.testscripts;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
