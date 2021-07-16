@@ -1,6 +1,6 @@
 package com.amit.web.helper.listener;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;

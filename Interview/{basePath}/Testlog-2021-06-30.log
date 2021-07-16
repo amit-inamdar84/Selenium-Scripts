@@ -1,0 +1,6 @@
+12:10:29.681 [main] INFO  com.amit.web.helper.logger.LoggerHelper - Log 4j is configured
+12:10:29.713 [main] INFO  com.amit.web.helper.logger.LoggerHelper - Log 4j is ready
+12:14:58.478 [main] INFO  com.amit.web.helper.logger.LoggerHelper - Log 4j is configured
+12:14:58.486 [main] INFO  com.amit.web.helper.logger.LoggerHelper - Log 4j is ready
+12:16:46.697 [main] INFO  com.amit.web.helper.logger.LoggerHelper - Log 4j is configured
+12:16:46.697 [main] INFO  com.amit.web.helper.logger.LoggerHelper - Log 4j is ready

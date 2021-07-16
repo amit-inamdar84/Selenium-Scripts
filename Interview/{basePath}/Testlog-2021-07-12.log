@@ -1,0 +1,5 @@
+11:12:51.743 [main] INFO  com.amit.web.helper.wait.WaitHelper - waiting for :[[ChromeDriver: chrome on WINDOWS (408e0646f7577fd64c9c45f6eeac7625)] -> css selector: div[class = 'ac_results']>:nth-child(1)>:nth-child(1)] for :20 seconds
+11:12:52.355 [main] INFO  com.amit.web.helper.wait.WaitHelper - element is visible now
+11:12:58.283 [main] INFO  com.amit.web.helper.assertion.AssertionHelper - Expected text matched actual text: Printed Summer Dress with Printed Summer Dress
+
+11:12:58.299 [main] INFO  com.amit.web.testBase.TestBase - **************checkHeaderElementsDisplayFinished***************

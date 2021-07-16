@@ -1,0 +1,4 @@
+12:09:57.995 [main] INFO  com.amit.web.helper.wait.WaitHelper - element is visible now
+12:10:02.978 [main] INFO  com.amit.web.helper.assertion.AssertionHelper - Expected text matched actual text: Printed Summer Dress with Printed Summer Dress
+
+12:10:06.682 [main] INFO  com.amit.web.testBase.TestBase - **************checkHeaderElementsDisplayFinished***************

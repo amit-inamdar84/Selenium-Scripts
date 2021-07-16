@@ -1,0 +1,3 @@
+13:21:07.679 [main] INFO  com.amit.web.helper.assertion.AssertionHelper - Expected text matched actual text: http://automationpractice.com/index.php?controller=authentication&back=my-account with http://automationpractice.com/index.php?controller=authentication&back=my-account
+13:21:11.507 [main] INFO  com.amit.web.helper.assertion.AssertionHelper - Expected text matched actual text: http://automationpractice.com/index.php with http://automationpractice.com/index.php
+13:21:12.379 [main] INFO  com.amit.web.helper.wait.WaitHelper - WaitHelper object created..
