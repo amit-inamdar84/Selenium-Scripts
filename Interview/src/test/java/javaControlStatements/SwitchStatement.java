@@ -2,6 +2,12 @@ package javaControlStatements;
 //Switch variable should be a primitive data type such as int, char, enum, String and wrapper classes.
 
 public class SwitchStatement {
+	enum Fruits{
+		Mango,
+		Orange,
+		Apple
+	}
+	
 	public static void main(String[] args) {
 		int i = 0;
 		char j = 'K';
@@ -31,6 +37,19 @@ public class SwitchStatement {
 			break;
 		case 'F':
 			System.out.println("j is F");
+			break;
+		}
+		
+		Fruits type = Fruits.Orange;
+		switch(type){
+		case Mango :
+			 System.out.println(type);
+			 break;
+		case Apple:
+			System.out.println(type);
+			break;
+		case Orange:
+			System.out.println(type);
 			break;
 		}
 

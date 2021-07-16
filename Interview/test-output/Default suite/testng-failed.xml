@@ -3,16 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.amit.web.testscripts.TC001Testtoverifyhomepage">
+      <class name="seleniumTutorial.DatabaseTesting">
         <methods>
+          <include name="selectDBdata"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
+          <include name="setUp"/>
           <include name="beforeTest"/>
+          <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="automationPracticeHomePageAccess"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.amit.web.testscripts.TC001Testtoverifyhomepage -->
+      </class> <!-- seleniumTutorial.DatabaseTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

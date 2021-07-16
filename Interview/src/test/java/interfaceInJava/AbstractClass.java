@@ -4,7 +4,9 @@ public abstract class AbstractClass implements InterfaceInJava1{
 	//Contains implemented and non-implemented methods both
 	//To make an abstract class we need to make at least one method as abstract. i.e. method prefixed by abstract keyword.
 	//Normal classes extends abstract class. One abstract class extends another abstract class.
-	//We cannot create object of abstract class
+	//We cannot create object of abstract class because it does not have a complete implementation. 
+	//The purpose of an abstract class is to function as a base for subclasses. It acts like a template, or an empty or partially empty structure, you should
+	//extend it and build on it before you can use it.
 	//Abstract keyword can be used for class and method. Variable cannot be abstract
 	//When abstract class implements interface we need not implement any methods of interface
 	//But if we implement it is allowed, provided the methods are public by default

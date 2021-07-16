@@ -15,6 +15,16 @@ import org.testng.annotations.Test;
 public class TestNGTutorial {
 //TestNG Annotation is a piece of code which is inserted inside a program or business logic used to control the flow of execution of test methods.
 //After running this program the annotations will be be executed as per the testNG hierarchy and not in the order mentioned below.
+//Testng annotation execution order:
+/*	BeforeSuite
+	BeforeTest
+	BeforeClass
+	BeforeMethod
+	Test
+	AfterMethod
+	AfterClass
+	AfterTest
+	AfterSuite*/
 //Basically annotation are created using @interface and they contain methods. 
 	
 	@BeforeSuite

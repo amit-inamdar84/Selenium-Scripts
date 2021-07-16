@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [FrameworkTest]">
-  <test thread-count="5" name="JenkinsTest(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.amit.web.testscripts.TC001Testtoverifyhomepage">
+      <class name="seleniumTutorial.DatabaseTesting">
         <methods>
+          <include name="selectDBdata"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
+          <include name="setUp"/>
           <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="automationPracticeHomePageAccess"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.amit.web.testscripts.TC001Testtoverifyhomepage -->
-      <class name="com.amit.web.testscripts.SwitchingWindows">
-        <methods>
-          <include name="switchToWindow" invocation-numbers="0"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="beforeClass"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.amit.web.testscripts.SwitchingWindows -->
+      </class> <!-- seleniumTutorial.DatabaseTesting -->
     </classes>
-  </test> <!-- JenkinsTest(failed) -->
-</suite> <!-- Failed suite [FrameworkTest] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

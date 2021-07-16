@@ -30,6 +30,10 @@ public class WebserviceBasics {
 	 * REST is a type of webservice. It is basically an architecture used to build web services that aim to be lightweight, maintainable and scalable.
 	 * RESTful is a service which implements the architecture.
 	 * REST Assured is a tool for testing and validating the response of REST services in Java.
+	 * Advantages of rest assured - 
+	 * 1. It removes the need for writing a lot of boilerplate code required to set up an HTTP connection, send a request and receive and parse a response.
+	 * 2. It supports a Given/When/Then test notation, which instantly makes your tests human readable
+	 * 3. Since REST Assured is a Java library, integrating it into a continuous integration / continuous delivery setup is easy.
 	 * HTTP status codes
 	 * Informational responses (100–199), Successful responses (200–299), Redirects (300–399), Client errors (400–499), Server errors (500–599).
 	 * 200 OK
@@ -148,6 +152,8 @@ public class WebserviceBasics {
 	 * Highly scalable
 	 * Resilient
 	 * Easy to deploy
+	 * 
+	 * Sample test framework: https://github.com/basdijkstra/rest-assured-workshop
 	 */
 	
 

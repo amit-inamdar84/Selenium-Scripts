@@ -179,6 +179,11 @@ D:\Git>git branch
  How to undo git add
  git restore --staged JSConcepts/Basics.js
  ----------------------------------------------------------------------------------------
+ Delete remote branch:
+ git push <remote> --delete <branch>
+ Delete local branch:
+ git branch -d <branch>
+ 
 */		
 
 	}

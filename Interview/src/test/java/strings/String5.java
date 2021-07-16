@@ -30,7 +30,7 @@ public class String5 {
 
 		// join() method
 		String str = String.join("$", "Amit", "Ramesh", "Inamdar");
-		System.out.println(str);
+		System.out.println("See here: "+str);
 		List<String> list = Arrays.asList("Amit", "Ramesh", "Inamdar");
 		System.out.println(list);
 		String str1 = String.join("|",list);

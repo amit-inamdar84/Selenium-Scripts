@@ -4,6 +4,7 @@ public class StringTestClass {
 	char ch[] = { 'A', 'm', 'i', 't' };
 	String s1 = new String(ch);
 	int a = 10;
+	static String str = "abc123";
 
 	void display() {
 		System.out.println(a);
@@ -41,6 +42,7 @@ public class StringTestClass {
 		System.out.println(split[1]);
 		System.out.println(split[2]);
 		System.out.println("-------------------------");
+		System.out.println(Integer.valueOf(obj.a));
 
 	}
 }

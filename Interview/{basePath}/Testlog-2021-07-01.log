@@ -1,0 +1,5 @@
+18:51:05.135 [main] INFO  com.amit.web.helper.wait.WaitHelper - page is loaded
+18:51:05.572 [main] INFO  com.amit.web.testBase.TestBase - **************checkHeaderElementsDisplayStarted***************
+18:51:18.195 [main] INFO  com.amit.web.helper.assertion.VerificationHelper - element is Displayed..
+18:51:18.651 [main] INFO  com.amit.web.helper.assertion.AssertionHelper - Expected text matched actual text: Call us now: 0123-456-7890123-456-789 with Call us now: 0123-456-789
+18:51:22.675 [main] INFO  com.amit.web.helper.assertion.AssertionHelper - Expected text matched actual text: http://automationpractice.com/index.php?controller=contact with http://automationpractice.com/index.php?controller=contact
