@@ -12,7 +12,7 @@ public class ExtractSingleFieldFromResponse {
 	public void extract_single_value_from_response(){
 		Response response = given().
 		        baseUri("https://api.postman.com").
-		        header("X-Api-Key", "PMAK-60de07fe8fb00c00420c921c-3f1db985cf81176141543b003c6ec9e61d").
+		        header("X-Api-Key", "").
 		when().
 		        get("/workspaces/").
 		then().
