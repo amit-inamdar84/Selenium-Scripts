@@ -257,7 +257,7 @@ public class SeleniumCommands extends TestBase {
 		js.executeScript("arguments[0].style.border = '3px solid red'", element1);
 
 		// Drop down selection
-		WebElement element2 = driver.findElement(By.xpath("xpath"));
+		WebElement element2 = driver.findElement(By.tagName("select"));
 		Select dd = new Select(element2);
 		dd.selectByIndex(1);
 		dd.selectByValue("value");
@@ -489,7 +489,6 @@ public class SeleniumCommands extends TestBase {
 		//Get max value of a column in a web table - TestToPrintMaxValueInWebTable.java
 		//Pending scenarios:;
 		//OTP automation
-		//Broken links in selenium
 		//Selenium IDE can be used to capture locators which flash and disappears in micro seconds
 		//Text in image
 		//Sikuli

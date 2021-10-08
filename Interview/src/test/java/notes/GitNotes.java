@@ -7,6 +7,8 @@ public class GitNotes {
  *      Basic git commands: https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
  *      Login to Github and create a repository
 		If repository already exists, import or clone to your eclipse - git clone /path/to/repository
+		Use cd command and navigate to your project's root folder.
+		git branch -a lists all branches already existing in the repo
 		Download git from https://git-scm.com/download/
 		Install in C:\Program Files\Git
 		If project already exists in eclipse do Team>>Share Project and create a git local repository in same drive as eclipse workspace

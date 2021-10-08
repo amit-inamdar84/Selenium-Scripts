@@ -9,24 +9,15 @@ import java.util.Properties;
 import java.util.Set;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.helper.testdata.DataProviderClass;
+
 import io.restassured.config.LogConfig;
 import io.restassured.config.RestAssuredConfig;
 
 public class Logging {
-
-	@DataProvider(name = "GetKey")
-	public Object[] getAPIKey() throws IOException{
-		File file = new File("D:/Git/Rest-Assured/src/main/java/com/helper/configFile/config.properties");
-		FileInputStream fis = new FileInputStream(file);
-		Properties OR = new Properties();
-		OR.load(fis);
-		//Object[] data = new Object[]{OR.getProperty("APIKey")};This is alternative way to convert String to Object array.
-		Object[] data = new Object[1];//Declaring object array of size 1
-		data[0] = OR.getProperty("APIKey");//Storing string type data in 0th position of Object array.
-		return data;
-	}
 	
-	@Test(dataProvider = "GetKey")
+	@Test(dataProvider = "GetKey" , dataProviderClass = DataProviderClass.class)
 	public void logging_request_response(String apiKey){
 		Set<String> headers = new HashSet<String>();//Storing all headers in collection
 		headers.add("X-Api-Key");

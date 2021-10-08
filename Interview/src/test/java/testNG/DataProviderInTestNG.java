@@ -1,9 +1,10 @@
 package testNG;
 
 import java.lang.reflect.Method;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+//We can also specify data provider in a different class and use in this class by using dataProviderClass argument in @Test method.
 
 public class DataProviderInTestNG {
 

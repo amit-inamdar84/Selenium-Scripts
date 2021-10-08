@@ -10,9 +10,14 @@ public class ExtractResponse {
 	public void extract_response(){
 		Response response = given().
 		        baseUri("https://api.postman.com").
+		        //queryParam("key", "value"). Need to create a separate test file for query and path parameters.
+		        //queryParam("anotherparam", "multiplevalues").
+		        //queryParams(parametersMap). Can add all parameters to map and pass as argument.
+		        //queryParam("key", "value","value2","value3"). Multi value query parameter.
+		        pathParam("userid", "2").
 		        header("X-Api-Key", "PMAK-60de07fe8fb00c00420c921c-3f1db985cf81176141543b003c6ec9e61d").
 		when().
-		        get("/workspaces/").
+		        get("/workspaces/{userid}").//Inserted {userid} to include path parameter.
 		then().
 		        assertThat().
 		        statusCode(200).

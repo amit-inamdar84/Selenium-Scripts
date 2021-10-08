@@ -27,6 +27,8 @@ public class PassingHeaders {
 		        //header(header).//Another way. Passing header object.
 		        //header(matchHeader).//Another way. Passing header object.
 		        header("multiValueHeader", "value1", "value2").//Can be passed using object reference as well
+		        header("header", "value1","x-mock-match-request-headers", "header").//Multiple headers in one request.
+		        //headers("header", "value1","x-mock-match-request-headers", "header").//Multiple headers in one request.
 		        //headers(multiHeaders).//Multiple headers can be passed at once using reference of Headers class.
 		        headers(hmapHeaders).//Storing headers in map and passing object reference
 		        log().headers().

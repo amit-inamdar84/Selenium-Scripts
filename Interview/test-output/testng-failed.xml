@@ -3,18 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumTutorial.DatabaseTesting">
+      <class name="testNG.ListenerTest">
         <methods>
-          <include name="selectDBdata"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="setUp"/>
-          <include name="beforeTest"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- seleniumTutorial.DatabaseTesting -->
+      </class> <!-- testNG.ListenerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

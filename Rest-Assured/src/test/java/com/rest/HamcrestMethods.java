@@ -13,24 +13,16 @@ import java.util.Properties;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.helper.testdata.DataProviderClass;
+
 import static org.hamcrest.Matchers.*;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class HamcrestMethods {
-	@DataProvider(name = "GetKey")
-	public Object[] getAPIKey() throws IOException{
-		File file = new File("D:/Git/Rest-Assured/src/main/java/com/helper/configFile/config.properties");
-		FileInputStream fis = new FileInputStream(file);
-		Properties OR = new Properties();
-		OR.load(fis);
-		//Object[] data = new Object[]{OR.getProperty("APIKey")};This is alternative way to convert String to Object array.
-		Object[] data = new Object[1];//Declaring object array of size 1
-		data[0] = OR.getProperty("APIKey");//Storing string type data in 0th position of Object array.
-		return data;
-	}
 	
-	@Test(dataProvider = "GetKey")
+	@Test(dataProvider = "GetKey" , dataProviderClass = DataProviderClass.class)
 	public void validate_response_body_hamcrest_matchers(String apiKey){
 		given().
 		        baseUri("https://api.postman.com").
