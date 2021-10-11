@@ -1,7 +1,6 @@
 Why is API required to communicate between front end and back end?
 Because they speak different languages - Front end is developed in HTML, CSS, Javascript. Back end is developed in Java, Python etc.
 
-API Key: PMAK-60de07fe8fb00c00420c921c-3f1db985cf81176141543b003c6ec9e61d
 
 Fetching JSON data:
 Using Groovy's Gpath:

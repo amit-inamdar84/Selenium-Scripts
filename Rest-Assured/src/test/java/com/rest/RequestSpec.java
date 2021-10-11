@@ -14,6 +14,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.helper.testdata.DataProviderClass;
+
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
@@ -23,12 +25,12 @@ import static org.hamcrest.Matchers.*;
 public class RequestSpec {
 	RequestSpecification  requestSpecification;
 	
-	@BeforeClass
+	@BeforeClass()
 	public void beforeClass() throws IOException{
 		//Here creating reference of RequestSpecification means creating object of class that is implementing RequestSpecification interface
 	    requestSpecification = given().//Instead of given(), we can use with()
 				baseUri("https://api.postman.com").
-		        header("X-Api-Key", "PMAK-60de07fe8fb00c00420c921c-3f1db985cf81176141543b003c6ec9e61d");
+		        header("X-Api-Key", "Provide API Key here");
 	}
 
 	@Test

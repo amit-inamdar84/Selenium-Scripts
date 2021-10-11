@@ -2,16 +2,18 @@ package com.rest;
 
 import org.testng.annotations.Test;
 
+import com.helper.testdata.DataProviderClass;
+
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 public class AutomateGet {
-	@Test
-	public void validate_get_status_code(){
+	@Test(dataProvider = "GetKey" , dataProviderClass = DataProviderClass.class)
+	public void validate_get_status_code(String apiKey){
 		given().
 		        baseUri("https://api.postman.com").
-		        header("X-Api-Key", "PMAK-60de07fe8fb00c00420c921c-3f1db985cf81176141543b003c6ec9e61d").
+		        header("X-Api-Key", apiKey).
 		when().
 		        get("/workspaces/").
 		then().
