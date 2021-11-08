@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.ListenerTest">
+      <class name="com.amit.web.automation.SearchProductAndAddToCart">
         <methods>
-          <include name="test2"/>
+          <include name="searchProductAndAddToCart"/>
+          <include name="initBrowser"/>
+          <include name="checkoutProduct"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- testNG.ListenerTest -->
+      </class> <!-- com.amit.web.automation.SearchProductAndAddToCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
