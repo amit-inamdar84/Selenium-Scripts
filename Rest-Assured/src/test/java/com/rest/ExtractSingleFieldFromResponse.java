@@ -24,7 +24,7 @@ public class ExtractSingleFieldFromResponse {
 	public void extract_single_value_from_response(String apiKey){
 		Response response = given().
 		        baseUri("https://api.postman.com").
-		        header("X-Api-Key", apiKey).
+		        header("X-Api-Key", "PMAK-6163dd9a886923005f2aad79-2358e125bcf429d7f68e7da6cdbc05a723").
 		when().
 		        get("/workspaces/").
 		then().
@@ -46,10 +46,10 @@ public class ExtractSingleFieldFromResponse {
 		
 		//Hamcrest assertions - Visible only after importing import static org.hamcrest.MatcherAssert.assertThat;
 		//Or should add maven dependency
-		assertThat(jsonPath.getString("workspaces[0].name"), equalTo("Test2"));
+		assertThat(jsonPath.getString("workspaces[0].name"), equalTo("Test20"));
 		
 		//TestNG assertion
-		Assert.assertEquals(jsonPath.getString("workspaces[0].name"), "Test2");
+		Assert.assertEquals(jsonPath.getString("workspaces[0].name"), "Test20");
 		
 	}
 
