@@ -67,6 +67,7 @@ package notes;
 
 
 //Notes on CI/CD pipeline automation - https://dzone.com/articles/learn-how-to-setup-a-cicd-pipeline-from-scratch
+//Jenkins master slave setup: https://www.edureka.co/blog/jenkins-master-and-slave-architecture-a-complete-guide/
 
 public class Jenkins {
 

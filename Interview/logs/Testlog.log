@@ -1,4 +1,29 @@
-12:09:57.995 [main] INFO  com.amit.web.helper.wait.WaitHelper - element is visible now
-12:10:02.978 [main] INFO  com.amit.web.helper.assertion.AssertionHelper - Expected text matched actual text: Printed Summer Dress with Printed Summer Dress
+20:03:32.324 [main] INFO  com.amit.web.testBase.TestBase - session not created: This version of ChromeDriver only supports Chrome version 91
+Current browser version is 95.0.4638.69 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-D8C95I2', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00D23733+2504499]
+	Ordinal0 [0x00CBC401+2081793]
+	Ordinal0 [0x00BC2628+1058344]
+	Ordinal0 [0x00BE071A+1181466]
+	Ordinal0 [0x00BDC58C+1164684]
+	Ordinal0 [0x00BD9DC3+1154499]
+	Ordinal0 [0x00C09B82+1350530]
+	Ordinal0 [0x00C097DA+1349594]
+	Ordinal0 [0x00C05D4B+1334603]
+	Ordinal0 [0x00BE22B4+1188532]
+	Ordinal0 [0x00BE3149+1192265]
+	GetHandleVerifier [0x00E9FB8C+1512252]
+	GetHandleVerifier [0x00F4B0DF+2214031]
+	GetHandleVerifier [0x00DA4BC3+484211]
+	GetHandleVerifier [0x00DA3E69+480793]
+	Ordinal0 [0x00CC218D+2105741]
+	Ordinal0 [0x00CC66E8+2123496]
+	Ordinal0 [0x00CC6827+2123815]
+	Ordinal0 [0x00CCFB73+2161523]
+	BaseThreadInitThunk [0x7536FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77037A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77037A6E+238]
 
-12:10:06.682 [main] INFO  com.amit.web.testBase.TestBase - **************checkHeaderElementsDisplayFinished***************

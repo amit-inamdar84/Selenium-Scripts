@@ -5,7 +5,7 @@
     <classes>
       <class name="com.amit.testscripts.BestBuyProducts">
         <methods>
-          <include name="getAllProducts"/>
+          <include name="createProduct"/>
         </methods>
       </class> <!-- com.amit.testscripts.BestBuyProducts -->
     </classes>

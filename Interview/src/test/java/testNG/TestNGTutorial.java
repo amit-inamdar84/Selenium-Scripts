@@ -26,6 +26,8 @@ public class TestNGTutorial {
 	AfterTest
 	AfterSuite*/
 //Basically annotation are created using @interface and they contain methods. 
+//For parallel test execution - add below line to testng.xml file:
+	//<suite name="Suite" parallel="methods" thread-count="2">
 	
 	@BeforeSuite
 	public void test1() {

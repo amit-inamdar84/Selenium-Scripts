@@ -3,18 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumTutorial.DatabaseTesting">
+      <class name="com.amit.web.automation.SearchProductAndAddToCart">
         <methods>
-          <include name="selectDBdata"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="setUp"/>
-          <include name="beforeTest"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
+          <include name="searchProductAndAddToCart"/>
+          <include name="initBrowser"/>
+          <include name="checkoutProduct"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- seleniumTutorial.DatabaseTesting -->
+      </class> <!-- com.amit.web.automation.SearchProductAndAddToCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

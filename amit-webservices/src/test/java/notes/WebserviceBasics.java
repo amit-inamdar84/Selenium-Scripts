@@ -116,10 +116,15 @@ public class WebserviceBasics {
 	 * In API testing we generally use the term authorization instead of authentication. This is because API will provide user the authorization to access a 
 	 * resource after authenticating the user.
 	 * Type of Authentications:
-	 * Basic
-	 * Digest
-	 * Form
-	 * OAuth
+	 * Basic - Base 64 encoded username:password is sent in header called Authorization. When the HTTP request is sent to server, 
+	   it decodes the string and provides access. Base64 encoding is not secure as credentials are sent as clear text.
+	 * Digest - Based on challenge - response. Client sends request to server without username and password. Server challenges client by sending some parameters
+	   like Realm, Nonce etc. Client uses these parameters, encrypts username and pass using MD5 algorithm and sends to server. 
+	 * Bearer - When client sends username and pass, server sends bearer token. This token can be used for subsequent HTTP requests for authorizing API's
+	   The token can be specified as a value of header called Authorization.
+	 * API Key -   
+	 * Form - Contains a form with username and password and submit button.
+	 * OAuth - Used for authorization. Not for authentication (For this we use Open ID connect). OAuth solves the problem of delegated authorization.
 	 * 
 	 * Types of bugs API testing can find:
 	 * Failure to handle error mechanism - Ex: Accessing resource that is not present OR accessing resource that does not exist or was never created.
@@ -136,6 +141,10 @@ public class WebserviceBasics {
 	 * Response is obtained.
 	 * 
 	 * Header types-Accept(response) and content type(request)
+	 * A header is a part of API that specifies some information to the receiving end.
+	 * In case of request header, it tells some info about API to the server.
+	 * In case of response header, it tells some info about response to the client.
+	 * 
 	 * 
 	 * https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/
 	 * Microservices - also known as the microservice architecture - is an architectural style that structures an application as a collection of services

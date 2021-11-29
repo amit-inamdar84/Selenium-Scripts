@@ -1,77 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47922" started-at="2021-07-13T06:39:24Z" finished-at="2021-07-13T06:40:12Z">
+  <suite name="Default suite" duration-ms="67042" started-at="2021-11-07T17:18:48Z" finished-at="2021-11-07T17:19:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47922" started-at="2021-07-13T06:39:24Z" finished-at="2021-07-13T06:40:12Z">
-      <class name="com.amit.web.automation.HomePage">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amit.web.automation.HomePage@24313fcc]" name="beforeSuite" is-config="true" duration-ms="243" started-at="2021-07-13T06:39:24Z" finished-at="2021-07-13T06:39:24Z">
+    <test name="Default test" duration-ms="67042" started-at="2021-11-07T17:18:48Z" finished-at="2021-11-07T17:19:55Z">
+      <class name="com.amit.web.automation.SearchProductAndAddToCart">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.amit.web.automation.SearchProductAndAddToCart@146ba0ac]" name="initBrowser" is-config="true" duration-ms="8167" started-at="2021-11-07T17:18:48Z" finished-at="2021-11-07T17:18:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amit.web.automation.HomePage@24313fcc]" name="beforeTest" is-config="true" duration-ms="9" started-at="2021-07-13T06:39:24Z" finished-at="2021-07-13T06:39:24Z">
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="searchProductAndAddToCart()[pri:0, instance:com.amit.web.automation.SearchProductAndAddToCart@146ba0ac]" name="searchProductAndAddToCart" duration-ms="35640" started-at="2021-11-07T17:18:56Z" finished-at="2021-11-07T17:19:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.amit.web.automation.HomePage@24313fcc]" name="beforeClass" is-config="true" duration-ms="9064" started-at="2021-07-13T06:39:24Z" finished-at="2021-07-13T06:39:33Z">
+        </test-method> <!-- searchProductAndAddToCart -->
+        <test-method status="PASS" signature="checkoutProduct()[pri:0, instance:com.amit.web.automation.SearchProductAndAddToCart@146ba0ac]" name="checkoutProduct" duration-ms="21822" started-at="2021-11-07T17:19:32Z" depends-on-methods="com.amit.web.automation.SearchProductAndAddToCart.searchProductAndAddToCart" finished-at="2021-11-07T17:19:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.amit.web.automation.HomePage@24313fcc]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2021-07-13T06:39:34Z" finished-at="2021-07-13T06:39:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.amit.web.automation.HomePage.checkHeaderElementsDisplay(java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- checkoutProduct -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.amit.web.automation.SearchProductAndAddToCart@146ba0ac]" name="close" is-config="true" duration-ms="1272" started-at="2021-11-07T17:19:54Z" finished-at="2021-11-07T17:19:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getURL()[pri:0, instance:com.amit.web.automation.HomePage@24313fcc]" name="getURL" is-config="true" duration-ms="8681" started-at="2021-07-13T06:39:34Z" finished-at="2021-07-13T06:39:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getURL -->
-        <test-method status="PASS" signature="checkHeaderElementsDisplay(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.automation.HomePage@24313fcc]" name="checkHeaderElementsDisplay" duration-ms="23014" started-at="2021-07-13T06:39:43Z" data-provider="HomePage" finished-at="2021-07-13T06:40:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[SUMMER DRESSES]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Printed Summer Dress
-]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chiffon]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkHeaderElementsDisplay -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amit.web.automation.HomePage@24313fcc]" name="afterMethod" is-config="true" duration-ms="5538" started-at="2021-07-13T06:40:06Z" finished-at="2021-07-13T06:40:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkHeaderElementsDisplay status=SUCCESS method=HomePage.checkHeaderElementsDisplay(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amit.web.automation.HomePage@24313fcc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amit.web.automation.HomePage@24313fcc]" name="afterTest" is-config="true" duration-ms="1" started-at="2021-07-13T06:40:12Z" finished-at="2021-07-13T06:40:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.amit.web.automation.HomePage -->
+        </test-method> <!-- close -->
+      </class> <!-- com.amit.web.automation.SearchProductAndAddToCart -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
