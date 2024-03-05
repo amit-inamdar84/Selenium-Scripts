@@ -37,4 +37,13 @@ public class VariablesDataType {
 	 * float       0.0f  4 byte 
 	 * double      0.0d  8 byte
 	 */
+	
+	/*
+	 * The main difference between primitive and non-primitive data types are:
+Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String).
+Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.
+A primitive type has always a value, while non-primitive types can be null.
+A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.
+	 */
+	
 }

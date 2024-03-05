@@ -28,10 +28,40 @@ select * from orders;
 select * from products;
 select * from vendors;
 
--- Groups vend_id and lists the no of products per vendor.
-select vend_id, count(*) from products group by vend_id;
+CREATE TABLE products (
+         productID    INT UNSIGNED  NOT NULL AUTO_INCREMENT,
+         productCode  CHAR(3)       NOT NULL DEFAULT '',
+         vendorID INT UNSIGNED  NOT NULL DEFAULT 0,
+         name         VARCHAR(30)   NOT NULL DEFAULT '',
+         quantity     INT UNSIGNED  NOT NULL DEFAULT 0,
+         price        DECIMAL(7,2)  NOT NULL DEFAULT 99999.99,
+         PRIMARY KEY  (productID)
+       );
+       
+       INSERT INTO products (vendorID) VALUES
+         ('PEC', 'Pencil 2C', 500, 0.56),
+         ('PEC', 'Pencil 2Z', 1000, 0.99);
+         
+CREATE TABLE vendors (
+         vendorID  INT UNSIGNED  NOT NULL AUTO_INCREMENT, 
+         name        VARCHAR(30)   NOT NULL DEFAULT '', 
+         phone       CHAR(8)       NOT NULL DEFAULT '',
+         PRIMARY KEY (vendorID)
+       );
+       
+       INSERT INTO vendors VALUE
+          (501, 1, 'ABC Traders', '88881111'), 
+          (502, 2, 'XYZ Company', '88882222'), 
+          (503, 3, 'QQ Corp', '88883333'),
+          (504, null, null, '88883333');
+          
+ALTER TABLE products
+ADD vendorID INT UNSIGNED  NOT NULL DEFAULT 0;
+
+-- Groups vendorID and lists the no of products per vendor.
+select vendorID, count(*) from products group by vendorID;
 -- Multiple group by
-select prod_id, vend_id, count(*) from products group by vend_id,prod_id;
+select productID, vendorID, count(*) from products group by vendorID,productID;
 -- Lists the total price for each order number.
 select order_num, quantity*item_price as total_price from orderitems group by order_num;
 
@@ -42,7 +72,7 @@ select cust_id, count(*) from orders group by cust_id;
 select cust_id, count(*) from orders group by cust_id having count(*)>=2;
 -- Using where and having clause together.
 -- Lists all vendors who have two or more products priced at 4 or more.
-select vend_id, count(*) as num_prods from products where prod_price >= 4 group by vend_id having count(*) >= 2;
+select vendorID, count(*) as num_prods from products where prod_price >= 4 group by vendorID having count(*) >= 2;
 -- Using group by and order by together
 -- Retrieves the order number and no of items ordered for all orders containing 3 or more items.
 select order_num, count(*) as items from orderitems group by order_num having count(*) >= 3 order by items;
@@ -51,7 +81,7 @@ select order_num, count(*) as items from orderitems group by order_num having co
 -- Retrieves a list of all customers who ordered a particular item.
 select cust_name, cust_contact from customers where cust_id in(
 select cust_id from orders where order_num in(
-select order_num from orderitems where prod_id='RGAN01'
+select order_num from orderitems where productID='RGAN01'
 ));
 
 -- Retrieve the total no of orders placed by every customer. Here the orders column is a calculated column from sub query.
@@ -61,7 +91,7 @@ from customers
 order by cust_name;
 
 -- Retrieve 2nd lowest product price. Below query doesnt work in Mysql because of subquery limit support.
-select prod_id,prod_price
+select productID,prod_price
 from products
 where prod_price IN
 (select distinct prod_price
@@ -79,14 +109,14 @@ select distinct(prod_price) from products order by prod_price asc limit 1,1;
 -- It lists all vendors who have a product in products table.
 select vend_name, prod_name, prod_price
 from vendors, products
-where vendors.vend_id = products.vend_id;
+where vendors.vendorID = products.vendorID;
 
 -- Same example using inner join syntax
 select vend_name, prod_name, prod_price
 from vendors inner join products
-on vendors.vend_id = products.vend_id;
+on vendors.vendorID = products.vendorID;
 
-select orders.order_num, order_item, prod_id
+select orders.order_num, order_item, productID
 from orders inner join orderitems
 on orders.order_num = orderitems.order_num and orderitems.order_num = 20006;
 
@@ -94,7 +124,7 @@ on orders.order_num = orderitems.order_num and orderitems.order_num = 20006;
 -- Repeated example but using inner joins and aliases
 select cust_name, cust_contact
 from customers as C inner join orders as O inner join orderitems as OI
-on C.cust_id = O.cust_id and O.order_num = OI.order_num and prod_id='RGAN01';
+on C.cust_id = O.cust_id and O.order_num = OI.order_num and productID='RGAN01';
 
 -- Self joins
 -- Retrieve email of all employees for the same company as ABC.
