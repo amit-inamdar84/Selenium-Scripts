@@ -1,7 +1,7 @@
 -- Aggregate functions are used to summarize data without actually retrieving the data. These functions operate on a set of rows to calculate and return a single value.
 -- AVG(), COUNT(), MAX(), MIN(), SUM() are the types of aggregate functions.
 -- AVG() is used to return the average value of a specific column.
--- COUNT() is used to count the no of rows in a table or no of rows that match a specific criterion.
+-- COUNT() is used to count thetha no of rows in a table or no of rows t match a specific criterion.
 -- COUNT(*) is used to count the no of rows in a table, whether columns contain values or NULL values.
 -- COUNT(column name) counts the no of rows that have values in a specific column, ignoring NULL values.
 -- MAX() returns the highest value in a specified column. It requires that the column be specified.

@@ -27,12 +27,25 @@
 -- %, _, [] are wild cards
 -- Wild card search decreases performance. Should avoid using wildcards if possible. Search patterns that begin with wildcards are the slowest to process.
  
+CREATE DATABASE customers;
+ 
 CREATE TABLE Orders (
     OrderID int,
     Order_date varchar(255),
-    Amount varchar(255),
-    CustomerID int(255)
+    Amount int,
+    CustomerID int
 );
+CREATE TABLE Info (
+    CustomerID int(255),
+    LastName varchar(255),
+    FirstName varchar(255),
+    City varchar(255),
+    Country varchar(255)
+);
+
+ALTER TABLE Orders
+MODIFY COLUMN Amount int;
+
 use customers;
 
 select * from Orders;
@@ -41,10 +54,41 @@ select * from Info;
 INSERT INTO Orders (OrderID, Order_date, Amount,CustomerID)
 VALUES ('713','2000-05-15 00:00:00','833','789');
 
+INSERT INTO Orders (OrderID, Order_date, Amount,CustomerID)
+VALUES ('720','2000-05-15 00:00:00','1000','790');
+
+INSERT INTO Orders (OrderID, Order_date, Amount,CustomerID)
+VALUES ('723','2000-05-15 00:00:00','1098','791');
+
+INSERT INTO Orders (OrderID, Order_date, Amount,CustomerID)
+VALUES ('725','2023-09-28 00:00:00','209','792');
+
+INSERT INTO Orders (OrderID, Order_date, Amount,CustomerID)
+VALUES ('726','2023-10-05 00:00:00','680','792');
+
+INSERT INTO Orders (Commission)
+VALUES (9);
+
 INSERT INTO Info (CustomerID,LastName, FirstName, City, Country)
 VALUES ('456','Wanderhault','Van','Dublin', 'Ireland');
 
-select OrderID,Commission from Orders where Commission = 41.65;
+INSERT INTO Info (CustomerID,LastName, FirstName, City, Country)
+VALUES ('789','Futterkiste','Alfreds','Berlin', 'Germany');
+
+INSERT INTO Info (CustomerID,LastName, FirstName, City, Country)
+VALUES ('790','Emparedados','Ana','México', 'Mexico');
+
+INSERT INTO Info (CustomerID,LastName, FirstName, City, Country)
+VALUES ('791','snabbköp','Berglunds','Luleå', 'Sweden');
+
+INSERT INTO Info (CustomerID,LastName, FirstName, City, Country)
+VALUES ('792','Hardy','Thomas','Berlin', 'Germany');
+
+update Orders
+set Commission = '15'
+where OrderID = '725';
+
+select OrderID,Commission from Orders where Commission = 15;
 
 select Amount, CustomerID from Orders where Amount <> 765;
 

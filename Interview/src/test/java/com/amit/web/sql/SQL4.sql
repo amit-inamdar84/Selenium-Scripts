@@ -2,7 +2,7 @@
 -- https://www.whoishostingthis.com/resources/ansi-sql-standards/#:~:text=1989%3A%20The%20American%20National%20Standards,SQLI%2C%20adding%20some%20new%20features.
 -- https://artoftesting.com/qa-interview-questions
 
-select * from Orders;
+select * from orders;
 
 select * from Info;
 
@@ -10,9 +10,9 @@ SELECT * FROM Info
 WHERE CustomerID IN 
 (SELECT CustomerID 
 FROM Info 
-WHERE Country='USA') ;
+WHERE Country='Ireland') ;
 
-
+select Max(Amount) from orders; 
 -- Select 2nd highest amount value
 select Max(Amount)
 from orders
